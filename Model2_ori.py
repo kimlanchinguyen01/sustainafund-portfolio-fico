@@ -11,6 +11,37 @@ Formulation:
                 sum(ESG_i * w_i) >= 70
                 sum(w_i) per sector <= SECTOR_CAP        (NEW)
                 sum(w_i) for controversial tickers <= CONTROVERSIAL_CAP  (NEW)
+
+--------------------------------------------------------------------------
+CORRECTIONS (1 Sep 2026) — defects only, the design and the defaults are
+unchanged. `git diff` against the previous commit shows every line.
+
+1. FOUR OF TEN Tier-2 tickers do not exist in this dataset, so the screen
+   silently excluded 6 of 10. Corrected against shares_full.csv:
+       BA.L      -> BAES.L    BAE Systems
+       HO.PA     -> TCFP.PA   Thales
+       LDO.MI    -> LDOF.MI   Leonardo
+       SAAB-B.ST -> SAABb.ST  Saab
+   BA.L was the dangerous one: BA.N exists in this dataset and is BOEING,
+   so a plausible "fix" would have excluded the wrong company.
+
+2. SCENARIO_TAG is now DERIVED from the active configuration by
+   scenario_tag() instead of being a hand-edited string. Before, the tag had
+   to be changed by hand together with ENABLE_TIER2_EXCLUSION, and the tag's
+   own comment said to set it to the value it already held - so a second run
+   silently overwrote the first run's CSVs. Two runs now cannot collide, and
+   a single invocation can sweep both.
+
+3. MIP_GAP 0.01 -> 0.001. At a 1% gap the measured cost of a cheap
+   constraint is roughly double its true value (verified on an identical
+   solve: 0.078pp at 1%, 0.042pp at 0.1% and at 0.01%). Tightening costs no
+   measurable time - 0.4s either way on this problem.
+
+4. Input files now point at the current estimates rather than the 31 Aug
+   ones. The previous files were local-currency prices over a complete-case
+   universe of 997 stocks; the new constraints would have been evaluated on
+   superseded numbers. See INPUT NOTE below.
+--------------------------------------------------------------------------
 """
 
 import os
@@ -23,10 +54,23 @@ import xpress as xp
 # ============================================================
 # CONFIG
 # ============================================================
-FILE_EXPECTED_RETURN = "expected_return_final.csv"
-FILE_COVARIANCE = "covariance_matrix_shrunk.csv"
+# INPUT NOTE
+#   expected_return_v3.csv     James-Stein shrunk mu, USD, 10-year window
+#   covariance_matrix_v3.csv   20-factor PCA covariance, all 1093 stocks, PSD
+#   Both are built from USD-converted prices (ECB reference rates). Prices are
+#   quoted in 8 currencies across 19 exchanges; a local-currency return is what
+#   a domestic investor earns, not what a USD fund earns. Because
+#   ln(P_usd) = ln(P_local) + ln(fx), the FX term is additive and survives the
+#   move to returns: it barely moves mu (< 0.3pp) but it puts a shared factor
+#   into the covariance, and a local-currency Sigma understated the risk of the
+#   min-variance book by 19.7% (8.46% believed vs 10.13% actual).
+#   The previous files (expected_return_final.csv / covariance_matrix_shrunk.csv)
+#   are local-currency and cover only the 997 stocks with a complete 10-year
+#   history; they are kept in the repository for comparison.
+FILE_EXPECTED_RETURN = "expected_return_v3.csv"
+FILE_COVARIANCE = "covariance_matrix_v3.csv"
 FILE_SHARES = "shares_imputed.csv"
-FILE_SECTORS = "sectors.xlsx"          # <-- your new file
+FILE_SECTORS = "sectors.xlsx"
 
 COL_STOCK = "Stock"
 COL_REGION = "Region"
@@ -63,24 +107,32 @@ ENABLE_TIER1_EXCLUSION = True
 # independent sensitivity toggle so the report can show the exact
 # return cost of this policy choice, not bake it in silently.
 TIER2_CONTROVERSIAL_TICKERS = [
-    "LMT.N", "RTX.N", "NOC.N", "GD.N", "LHX.N",          # US primes
-    "KOG.OL", "BA.L", "HO.PA", "LDO.MI", "SAAB-B.ST",    # European primes
-]
+    "LMT.N", "RTX.N", "NOC.N", "GD.N", "LHX.N",              # US primes
+    "KOG.OL", "BAES.L", "TCFP.PA", "LDOF.MI", "SAABb.ST",    # European primes
+]   # four of these were corrected - see CORRECTIONS note 1
 ENABLE_TIER2_EXCLUSION = False   # set False for the "keep conventional defense" run
 
 CONTROVERSIAL_CAP = 0.0   # applies to whichever tier(s) are enabled: full exclusion
 
-# Tag appended to every output filename so a Tier-2-on run and a
-# Tier-2-off run never overwrite each other's CSVs.
-SCENARIO_TAG = "tier2off"  # change to "tier2off" for the second run
+# Tag appended to every output filename so a Tier-2-on run and a Tier-2-off run
+# never overwrite each other's CSVs. DERIVED, not hand-edited: it cannot fall out
+# of sync with the toggles above. See CORRECTIONS note 2.
+def scenario_tag():
+    parts = ["sec%d" % int(SECTOR_CAP * 100) if ENABLE_SECTOR_CAP else "nosec"]
+    if ENABLE_TIER1_EXCLUSION:
+        parts.append("tier1")
+    parts.append("tier2on" if ENABLE_TIER2_EXCLUSION else "tier2off")
+    if not ENABLE_ESG_CONSTRAINT:
+        parts.append("noesg")
+    return "_".join(parts)
 
 TIME_LIMIT_SEC = 300
-MIP_GAP = 0.01
+MIP_GAP = 0.001   # see CORRECTIONS note 3
 
 RUN_FULL_SWEEP = True
 N_FRONTIER_POINTS = 15
 
-os.environ.setdefault("XPAUTH_PATH", "xpauth.xpr")
+os.environ.setdefault("XPAUTH_PATH", os.path.join(os.path.dirname(os.path.abspath(__file__)), "xpauth.xpr"))
 
 
 # ============================================================
@@ -312,11 +364,12 @@ if __name__ == "__main__":
     if RUN_FULL_SWEEP:
         frontier = efficient_frontier(mu, Sigma, region, esg, sector, r_min, r_max)
         rows = [{k: v for k, v in r.items() if k != "weights"} for r in frontier]
-        pd.DataFrame(rows).to_csv(f"efficient_frontier_model2_{SCENARIO_TAG}.csv", index=False)
-        print(f"\nSaved efficient_frontier_model2_{SCENARIO_TAG}.csv")
+        tag = scenario_tag()
+        pd.DataFrame(rows).to_csv(f"efficient_frontier_model2_{tag}.csv", index=False)
+        print(f"\nSaved efficient_frontier_model2_{tag}.csv")
 
         weights_df = pd.DataFrame({f"beta_{i}": r["weights"] for i, r in enumerate(frontier) if r["feasible"]})
-        weights_df.to_csv(f"efficient_frontier_weights_{SCENARIO_TAG}.csv")
-        print(f"Saved efficient_frontier_weights_{SCENARIO_TAG}.csv")
+        weights_df.to_csv(f"efficient_frontier_weights_{tag}.csv")
+        print(f"Saved efficient_frontier_weights_{tag}.csv")
     else:
         print("\nRUN_FULL_SWEEP=False -> only the feasibility+scale check ran.")
