@@ -1,0 +1,33 @@
+# ============ LICENCE: never commit. It is a credential. ============
+*.xpr
+
+# ============ large generated artifacts ============
+# Every one of these is reproducible; see README.md for the script and timing.
+**/covariance_matrix*.csv
+**/prices_clean*.csv
+**/fx_rates_ecb.csv
+
+# ============ historical snapshots, superseded by HTWSS_v3/ ============
+teammate/
+to_send/
+HTWSS_v3/covariance/
+*.zip
+
+# ============ run logs and caches ============
+**/*_log.txt
+**/__pycache__/
+*.pyc
+
+# ============ node / editor / OS ============
+node_modules/
+package-lock.json
+package.json
+.DS_Store
+.vscode/
+.idea/
+
+# ============ pristine course dataset ============
+# Kept out of git: it is byte-identical to the copies under pipeline/, which is
+# where the scripts read from. The originals ship with the course materials
+# (data_full / data_test).
+data/
