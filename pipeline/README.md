@@ -1,73 +1,23 @@
-# SustainaFund — Portfolio Selection, package v3
+# pipeline/ — input preparation and the analysis behind it
 
-Supersedes `HTWSS_pipeline_v2.zip` (31 Aug 2026). Everything in v2 is still here,
-unchanged, under `code/00_baseline_v2/` so the diff is inspectable.
+These scripts build the inputs that `../Model2_ori.py` consumes, and they are the
+record of how each choice was established. Numbering follows the order findings
+were made, not a required run order.
 
-**The deliverable is `results/frozen/`.** Everything else is evidence for how it
-was arrived at, or superseded intermediates kept for the audit trail.
+To reproduce the model inputs, only four steps are needed:
 
----
-
-## What is frozen
-
-| | risk-averse | neutral | risk-prone |
+| step | script | produces | time |
 |---|---|---|---|
-| frontier point | 0 | 9 | 11 |
-| expected return | 7.17% | 13.02% | 14.32% |
-| predicted risk | 9.36% | 11.32% | 13.02% |
-| return / risk | 0.77 | **1.15** | 1.10 |
-| holdings | 46 | 33 | 31 |
-| ESG (weighted) | 70.00 | 70.00 | 70.00 |
-| Europe / US | 48.7 / 51.3 | 44.7 / 55.3 | 42.8 / 57.2 |
+| 1 | `02a_esg_and_price_eda_cleaning.py` | `prices_clean.csv`, imputed / excluded shares | ~1 min |
+| 2 | `03a_fx_convert.py` | `prices_clean_usd.csv` + cached ECB rates | ~1 min |
+| 3 | `13_truncate_discontinuities.py` | `prices_clean_usd_v3.csv` | <1 min |
+| 4 | `14_refreeze_v3.py` | `expected_return_v3.csv`, `covariance_matrix_v3.csv` | ~2 min |
 
-Model specification, all fixed:
+`Model2.py` is the audit baseline, unchanged since 31 August. Every later model
+asserts that it reproduces `Model2.py` exactly when its own additions are
+disabled.
 
-| component | choice | script |
-|---|---|---|
-| prices | USD, ECB reference rates (Frankfurter API, cached) | `03a` |
-| estimation window | **10 years** (2015-12-31 → 2025-12-31) — a judgement, see Limitation 1 | — |
-| expected return | James-Stein shrinkage, intensity by sample size | `04a` |
-| covariance | 20-factor PCA, all stocks retained, PSD by construction | `05d`, `14` |
-| universe | **1093 of 1093** — ZEG.L and BMPS.MI truncated at their discontinuities, none dropped | `13`, `14` |
-| optimiser | `Model3.py` = `Model2.py` + 25% country cap | `08` |
-
-`Model2.py` is byte-identical to v2. `Model3.py` differs from it only by the
-country-cap constraint, and `08_country_cap.py` asserts that Model 3 with the cap
-disabled reproduces Model 2 exactly (it does: `dret 0.00e+00`, `max|dw| 0.00e+00`).
-
----
-
-## Reproducing the frozen portfolios
-
-The package ships `covariance/covariance_matrix_v2.csv` and
-`results/frozen/expected_return_v2.csv`, so the solve reproduces with no
-re-estimation:
-
-```
-cd code && export XPAUTH_PATH=/path/to/xpauth.xpr
-python3 14_refreeze_v3.py          # needs prices_clean_usd_v3.csv, see below
-```
-
-The large intermediates are **not shipped** (351 MB in total). Regenerate in
-this order — each script prints its own validation:
-
-| to get | run | needs | time |
-|---|---|---|---|
-| `prices_clean.csv` | `00_baseline_v2/02a` | `stockprices_full.csv` | ~1 min |
-| `prices_clean_usd.csv` | `03a_fx_convert.py` | `prices_clean.csv`, `fx_rates_ecb.csv` | ~1 min |
-| `covariance_matrix_shrunk_usd*.csv` | `03b` | `prices_clean_usd.csv` | ~3 min |
-| `covariance_matrix_factor_final.csv` | `05d` | `prices_clean_usd.csv` | ~6 min |
-| `prices_clean_usd_v3.csv` | `13_truncate_discontinuities.py` | `prices_clean.csv`, `prices_clean_usd.csv` | <1 min |
-| `covariance_matrix_v3.csv` (shipped) | `14` | `prices_clean_usd_v3.csv` | ~2 min |
-
-FX rates are cached in `results/fx/fx_rates_ecb.csv`, so no network access is
-needed on rerun. `03a` re-fetches only if that file is missing.
-
-The one input not shipped is `stockprices_full.csv` (21 MB) — that is the
-original case-study dataset, unmodified, so use the copy from `data_full`.
-`shares_full.csv` is included under `results/estimates/` for convenience.
-
----
+Everything else below is why the inputs look the way they do.
 
 ## Script map — what each one answers
 
@@ -108,40 +58,18 @@ Numbering is the order things were established, not a required run order.
 | `11_refreeze_clean.py` | first attempt: drop ZEG.L entirely | superseded by `13`-`14`, which truncate instead of dropping |
 | `12_fx_model_free.py` | is the currency conversion needed at all | model-free: same holdings realised **8.04% local vs 8.99% USD**; var(fx) is **17.6%** of total USD variance |
 | `13_truncate_discontinuities.py` | find and cut trading discontinuities | exactly 2 of 1093: ZEG.L (38 identical closes, then +352% — reverse takeover) and BMPS.MI (**219** identical closes, then -69.8% — the 2016-17 recapitalisation). History starts after the break; neither stock is dropped |
-| `14_refreeze_v3.py` | re-estimate and re-freeze | Jaccard 0.94-0.97 vs v2, active share 2.7-2.9%; ZEG.L re-enters as a 557-day listing |
+| `14_refreeze_v3.py` | re-estimate; produces the current model inputs | Jaccard 0.94-0.97 vs v2, active share 2.7-2.9%; ZEG.L re-enters as a 557-day listing |
 | `15_model1_linear.py` | **Model 1**, the linear risk measure | control: identical constraint set (`max\|dw\| = 0.00e+00`), only the objective differs. Model 1 carries **+19.2% more true risk** at matched return, and always sits at the 30-stock floor because diversification is invisible to its objective |
 
 ---
 
-## Directory contents
-
-```
-code/00_baseline_v2/   the four v2 scripts, unchanged
-code/                  03a .. 12, plus Model3.py
-results/frozen/        THE DELIVERABLE - three portfolios + the mu used
-results/superseded/    earlier generations, kept for the audit trail (see note below)
-results/frontiers/     every efficient frontier computed
-results/estimates/     mu, per-stock risk, factor betas, single-index and mkt+region params
-results/diagnostics/   ESG sensitivity, bootstrap selection frequencies, outlier lists, FX check
-results/fx/            cached ECB rates
-covariance/            the final covariance only (the others regenerate, see above)
-logs/                  stdout of the three long runs, as run evidence
-```
-
-`results/superseded/` holds four earlier generations, in order:
-`FINAL_*` (no country cap) → `FINAL_v2_*` and `FROZEN_*` (country cap, ZEG.L still in)
-→ `FROZEN_v2_*` (ZEG.L dropped entirely) → `results/frozen/FROZEN_v3_*` (current:
-ZEG.L and BMPS.MI truncated, nothing dropped). Only the last is the deliverable.
-
----
-
-## Model 1 vs Model 3 — the comparison the case study asks for
+## Model 1 vs Model 3 — linear versus quadratic risk
 
 Both routes to portfolio risk are now built, with an identical constraint set
 (asserted: `max|dw| = 0.00e+00` when the same builder is given the quadratic
 objective).
 
-| | Model 1 (MILP) | Model 3 (MIQP) |
+| | Model 1 (MILP) | Model 3, archived (MIQP) |
 |---|---|---|
 | objective | `min sum_i w_i * sigma_i` | `min w' Sigma w` |
 | sees correlation | no | yes |
@@ -165,6 +93,9 @@ covariance estimate is not trustworthy. Here it is, and the 19.2% is what
 choosing it would have cost.
 
 ## Three limitations that belong on the slides
+
+These are properties of the data and the estimator, so they carry over to any
+model built on these inputs, including `Model2_ori.py`.
 
 **1. The estimation window is a judgement, and it matters.** Bootstrap
 resampling of a given window converges reliably (top selection frequency 1.00),
@@ -199,7 +130,8 @@ un-freezes a frozen local price and the detector misses it.
 
 ---
 
-## Disclaimer
+---
 
-Educational exercise for the HTW Berlin summer school 2026. Not investment
-advice. Past performance does not guarantee future results.
+The country-cap model track these notes were written around is frozen in
+`../archive/our_model_frozen/`. The current model is `../Model2_ori.py`; its
+results are in `../results_chloe/`.

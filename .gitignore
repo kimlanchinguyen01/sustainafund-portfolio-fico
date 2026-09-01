@@ -31,3 +31,7 @@ package.json
 # where the scripts read from. The originals ship with the course materials
 # (data_full / data_test).
 data/
+
+# write-ups delivered to the team as HTWSS_v3.zip, deliberately out of git
+# (they describe the archived country-cap model as the deliverable)
+HTWSS_summary_v*.docx

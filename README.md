@@ -52,8 +52,8 @@ the contested policy can be decided on principle rather than on cost.
 
 The parallel model track (a country cap instead of a sector cap) is frozen in
 `archive/our_model_frozen/`, recoverable at tag `freeze-candidate-v3`.
-`HTWSS_v3/README.md` is the full provenance map for the input pipeline and
-`HTWSS_summary_v3.docx` the write-up for the team.
+`pipeline/README.md` is the provenance map for the input pipeline — which script
+established which finding.
 
 ---
 
@@ -126,9 +126,13 @@ pipeline/                 input preparation and the analysis behind it; scripts
 pipeline/Model2.py        audit baseline (unchanged since 31 Aug)
 .devcontainer/            Codespace definition and setup check
 docs/                     Xpress 9.9 documentation, in markdown
-HTWSS_v3/                 the package sent to the team, with its own README
-HTWSS_summary_v3.docx     changelog and insights write-up
+pipeline/README.md        provenance map: script -> question -> answer
 ```
+
+The write-ups that were sent to the team (`HTWSS_v3.zip`, `HTWSS_summary_v3.docx`)
+are deliberately **not** in git: they present the archived country-cap model as
+the deliverable, which is no longer true. They remain on the author's disk and in
+git history at tag `freeze-candidate-v3`.
 
 ---
 
