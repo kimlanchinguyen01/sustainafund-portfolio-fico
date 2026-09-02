@@ -4,6 +4,9 @@
 # ============ large generated artifacts ============
 # Every one of these is reproducible; see README.md for the script and timing.
 **/covariance_matrix*.csv
+# ...except the one current model input, so FINAL_data_cleaning/ runs as shipped
+# without regenerating anything (23 MB, well under GitHub's warning threshold).
+!FINAL_data_cleaning/data/covariance_matrix_v4.csv
 **/prices_clean*.csv
 **/prices_div_usd.csv
 **/fx_rates_ecb.csv

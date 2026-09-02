@@ -15,9 +15,13 @@ Step 2 is the whole cleaning chain in one script — gap handling, USD conversio
 discontinuity truncation and the estimator. Step 1 is still needed because it
 produces the ESG imputation, which step 2 does not touch.
 
-Two raw files are **not** included (LSEG-derived, 21 and 49 MB): the original
-`stockprices_full.csv` from `data_full`, and `prices_lseg_dividend_adjusted.csv`
-— the one you produced. Put both next to the scripts.
+`data/covariance_matrix_v4.csv` is included (23 MB), so **step 3 runs as shipped**
+— you only need steps 1 and 2 if you want to rebuild the inputs from scratch.
+
+Two raw price files are **not** included (LSEG-derived, 21 and 49 MB): the
+original `stockprices_full.csv` from `data_full`, and
+`prices_lseg_dividend_adjusted.csv` — the one you produced. You need them only
+for steps 1 and 2; put them next to the scripts.
 
 Diagnostics, optional, none of them write model inputs:
 
@@ -33,6 +37,10 @@ You need an Xpress licence only for step 3. Set `XPAUTH_PATH` to it.
 ## Excel files
 
 **`data/FINAL_stock_data.xlsx`**
+
+`data/` also holds the three model inputs as CSV — `expected_return_v4.csv`,
+`per_stock_risk_v4.csv`, `covariance_matrix_v4.csv` — plus `shares_imputed.csv`,
+`shares_excluded.csv`, `shares_full.csv`, `sectors.xlsx` and the cached ECB rates.
 
 | sheet | contents |
 |---|---|
