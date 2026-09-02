@@ -161,15 +161,21 @@ mu.to_csv("expected_return_v4.csv"); sd.to_csv("per_stock_risk_v4.csv")
 Sigma.to_csv("covariance_matrix_v4.csv")
 
 # ---- 6. what changed vs v3 (price-only inputs) ----
-prev = pd.read_csv("expected_return_v3.csv", index_col=0)["expected_return"]
-both = mu.index.intersection(prev.index)
-print("\n" + "=" * 78)
-print("v3 (closing prices) -> v4 (dividend-adjusted)")
-print("=" * 78)
-print(f"  stocks: {len(prev)} -> {len(mu)}  ({len(prev)-len(both)} dropped, all from the 6 empty)")
-print(f"  mu median : {prev.loc[both].median()*100:+.2f}% -> {mu.loc[both].median()*100:+.2f}%")
-print(f"  mu mean   : {prev.loc[both].mean()*100:+.2f}% -> {mu.loc[both].mean()*100:+.2f}%")
-print(f"  negative  : {(prev.loc[both]<0).sum()} -> {(mu.loc[both]<0).sum()}")
-print(f"  correlation between the two: {np.corrcoef(prev.loc[both], mu.loc[both])[0,1]:.3f}")
+# Informational only: compare against the closing-price estimate if it happens
+# to be around. Skipped rather than fatal - the outputs above are already saved.
+try:
+    prev = pd.read_csv("expected_return_v3.csv", index_col=0)["expected_return"]
+except FileNotFoundError:
+    print("\n(expected_return_v3.csv not present - skipping the closing-price comparison)")
+else:
+    both = mu.index.intersection(prev.index)
+    print("\n" + "=" * 78)
+    print("v3 (closing prices) -> v4 (dividend-adjusted)")
+    print("=" * 78)
+    print(f"  stocks: {len(prev)} -> {len(mu)}  ({len(prev)-len(both)} dropped, all from the 6 empty)")
+    print(f"  mu median : {prev.loc[both].median()*100:+.2f}% -> {mu.loc[both].median()*100:+.2f}%")
+    print(f"  mu mean   : {prev.loc[both].mean()*100:+.2f}% -> {mu.loc[both].mean()*100:+.2f}%")
+    print(f"  negative  : {(prev.loc[both]<0).sum()} -> {(mu.loc[both]<0).sum()}")
+    print(f"  correlation between the two: {np.corrcoef(prev.loc[both], mu.loc[both])[0,1]:.3f}")
 print("\nSaved expected_return_v4.csv, per_stock_risk_v4.csv, covariance_matrix_v4.csv, "
       "prices_div_usd.csv")

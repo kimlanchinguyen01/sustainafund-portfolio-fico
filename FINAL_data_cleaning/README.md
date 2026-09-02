@@ -3,6 +3,32 @@
 Everything needed to reproduce the cleaned data and the model results from the
 raw price file. Self-contained: replace what you have with this.
 
+## If you only want to run the model — five files
+
+`Model2_ori.py` opens exactly four files. That is the whole dependency:
+
+```
+code/Model2_ori.py
+data/expected_return_v4.csv      mu, James-Stein shrunk, USD, dividend-adjusted
+data/covariance_matrix_v4.csv    20-factor PCA, 1087 stocks, PSD
+data/shares_imputed.csv          region, country, ESG (49 values imputed)
+data/sectors.xlsx                sector per stock, 1093/1093, no gaps
+```
+
+Set `XPAUTH_PATH`, run it, done. Everything else in this folder is either the
+code that produced those inputs, a diagnostic, or the results in another format.
+
+Not read by the model, kept for other reasons:
+
+| File | Why it is here |
+|---|---|
+| `data/per_stock_risk_v4.csv` | per-stock volatility, the input a **linear** risk model would use instead of the covariance. The MIQP does not touch it |
+| `data/shares_excluded.csv` | the ESG alternative — drops the 49 missing scores instead of imputing them, for sensitivity |
+| `data/shares_full.csv`, `data/fx_rates_ecb.csv` | inputs to the cleaning scripts, not to the model |
+| `code/03a_fx_convert.py` | the standalone USD conversion. **Superseded** — step 2 does the same thing inline. Kept only as the readable version of that one step |
+| `code/02b`, `code/10`, `code/12` | diagnostics; they answer questions, they do not produce model inputs |
+| `results/*.csv` | the same numbers as `FINAL_portfolios.xlsx`, for whichever format is easier |
+
 ## Run order
 
 | # | Script | Reads | Writes | Time |
