@@ -7,6 +7,7 @@
 **/prices_clean*.csv
 **/prices_div_usd.csv
 **/fx_rates_ecb.csv
+!FINAL_data_cleaning/data/fx_rates_ecb.csv
 
 # Source price data. LSEG-derived and large; the team already holds both files.
 # prices_lseg_dividend_adjusted.csv (49 MB) is the current raw input - ask Chloe.
@@ -35,7 +36,9 @@ package.json
 # Kept out of git: it is byte-identical to the copies under pipeline/, which is
 # where the scripts read from. The originals ship with the course materials
 # (data_full / data_test).
-data/
+# LEADING SLASH matters: a bare "data/" also matches FINAL_data_cleaning/data/,
+# which silently excluded the whole folder Chloe asked for.
+/data/
 
 # write-ups delivered to the team as HTWSS_v3.zip, deliberately out of git
 # (they describe the archived country-cap model as the deliverable)
