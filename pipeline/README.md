@@ -130,6 +130,70 @@ un-freezes a frozen local price and the detector misses it.
 
 ---
 
+
+---
+
+## What in here is current, and what is not
+
+Every script below has working imports and finds its inputs — audited, not
+assumed. But only four are live.
+
+### Live — these produce what the model actually uses
+
+| Script | Produces |
+|---|---|
+| `02a_esg_and_price_eda_cleaning.py` | `shares_imputed.csv` — the ESG imputation. Its price-cleaning half is superseded, its ESG half is not |
+| `20_dividend_adjusted_pipeline.py` | `expected_return_v4.csv`, `covariance_matrix_v4.csv`, `per_stock_risk_v4.csv` — the whole cleaning chain in one pass |
+| `21_backtest_walkforward.py` | the walk-forward backtest |
+| `Model2.py` | audit baseline, unchanged since 31 August |
+
+### Superseded — rewritten into `20`, kept for what each established
+
+| Script | Superseded because | What it established |
+|---|---|---|
+| `01c_test_return_risk.py` | complete-case rule, local currency | the original estimator. Its complete-case filter is what excluded 96 late listings — the defect Chloe flagged |
+| `03a_fx_convert.py` | `20` does the FX conversion inline | the suffix→currency map and the pence handling |
+| `03b_usd_return_risk.py` | `20` estimates directly | reproduced `01c` to 9.7e-17, which is what made every later attribution possible |
+| `04a_factor_model.py` | `20` embeds the factor model | the factor model that retains every stock, PSD by construction |
+| `05d_factor_count.py` | `20` fixes k=20 | **why 20 factors**: 1–2 understate portfolio risk ~18%, 5 understate none, 20 is the smallest with none anywhere |
+| `13_truncate_discontinuities.py` | `20` truncates inline | the suspension-plus-jump rule that finds ZEG.L and BMPS.MI |
+
+### Diagnostics — ran once to answer a question, produce no model inputs
+
+| Script | Question |
+|---|---|
+| `02b_price_eda_cleaning.py` | how long are internal price gaps? (all exactly 1 day) |
+| `03c_frontier_usd.py` | what did the currency error cost? (+5.71pp at matched risk) |
+| `03d_universe_effect.py` | what does excluding late listings cost? (+0.28pp) |
+| `03e_composition_stability.py` | does it change the portfolio, not just the objective? (Jaccard 0.86 vs 0.28 for an ordinary window change) |
+| `04b_frontier_factor.py` | does shrinkage fix the instability? (no) |
+| `05a_single_index.py` | single-index covariance (Chloe's P1) — understates portfolio risk 39.9% at the min-risk end |
+| `05b_risk_validation.py` | why: residual correlations +0.11 within region, −0.11 across, all set to zero |
+| `05c_multifactor.py` | market + region factor (P2) — absorbs the structure, does not fix the risk |
+| `06a_bootstrap_robust.py` | resampled weights — within a window stable, across windows Jaccard 0.28 |
+| `06b_esg_sensitivity.py` | what does ESG ≥ 70 cost? **Numbers computed on the older inputs** |
+| `07_final_portfolio.py` | first attempt at picking three profiles; belongs to the archived model track |
+| `10_outlier_relative.py` | fixed 50% threshold vs a per-stock 5σ rule |
+| `12_fx_model_free.py` | is the USD conversion necessary at all? (model-free: 8.04% local vs 8.99% USD) |
+| `16_run_chloe_model.py`, `17_chloe_full.py` | Chloe's model on the **older** inputs; superseded by running `../Model2_ori.py` directly |
+
+### Moved out
+
+Eight scripts belonging to the country-cap model track now live in
+`../archive/our_model_frozen/` alongside `Model3.py` and `Model4.py`:
+`08_country_cap`, `09_lw_on_factor`, `11_refreeze_clean`, `14_refreeze_v3`,
+`15_model1_linear`, `18_combined_model`, `19_freeze_v4`.
+
+They import `Model3`, so they only run next to it — which is why they were moved
+rather than left behind. `14_refreeze_v3.py` also produced the previous
+generation of model inputs (`*_v3.csv`), now superseded by `20`.
+
+### Result files computed on older inputs
+
+Named `*_v3inputs.csv` so they cannot be picked up by mistake, plus
+`esg_sensitivity_*.csv` and `efficient_frontier_v3.csv`. Current results are only
+in `../results_chloe/`.
+
 ---
 
 The country-cap model track these notes were written around is frozen in
