@@ -55,8 +55,17 @@ import xpress as xp
 # CONFIG
 # ============================================================
 # INPUT NOTE
-#   expected_return_v3.csv     James-Stein shrunk mu, USD, 10-year window
-#   covariance_matrix_v3.csv   20-factor PCA covariance, all 1093 stocks, PSD
+#   expected_return_v4.csv     James-Stein shrunk mu, USD, 10-year window
+#   covariance_matrix_v4.csv   20-factor PCA covariance, 1087 stocks, PSD
+#   Both are built from DIVIDEND-ADJUSTED (total-return) prices. A plain closing
+#   price omits dividends and so understates exactly the high-yield, low-volatility
+#   names a minimum-variance book is made of: switching lifts the median expected
+#   return from 7.80% to 10.39% and the increase follows dividend yield by sector
+#   (Energy +3.89pp, Utilities +3.66, Financials +3.36 ... Technology +1.18).
+#   Volatility is unchanged, as it should be - dividends add drift, not noise.
+#   Six stocks are empty in the source file and are dropped: HOLN.S, URW.PA,
+#   EA.OQ, AVB.N, EQR.N, HWM.N (three are REITs, whose adjustment factors are the
+#   largest). Hence 1087 rather than 1093. Worth a re-extraction.
 #   Both are built from USD-converted prices (ECB reference rates). Prices are
 #   quoted in 8 currencies across 19 exchanges; a local-currency return is what
 #   a domestic investor earns, not what a USD fund earns. Because
@@ -67,8 +76,8 @@ import xpress as xp
 #   The previous files (expected_return_final.csv / covariance_matrix_shrunk.csv)
 #   are local-currency and cover only the 997 stocks with a complete 10-year
 #   history; they are kept in the repository for comparison.
-FILE_EXPECTED_RETURN = "expected_return_v3.csv"
-FILE_COVARIANCE = "covariance_matrix_v3.csv"
+FILE_EXPECTED_RETURN = "expected_return_v4.csv"
+FILE_COVARIANCE = "covariance_matrix_v4.csv"
 FILE_SHARES = "shares_imputed.csv"
 FILE_SECTORS = "sectors.xlsx"
 
@@ -254,8 +263,15 @@ def solve_model2(mu, Sigma, region, esg, sector,
         p.addConstraint(portfolio_return_expr >= target_return)
         p.setObjective(portfolio_var_expr, sense=xp.minimize)
     elif mode == "max_return":
-        assert risk_cap is not None
-        p.addConstraint(portfolio_var_expr <= risk_cap)
+        # risk_cap is an annualised STANDARD DEVIATION, so it must be squared
+        # before being compared with a variance. Without the square the cap sits
+        # at variance = risk_cap, i.e. a risk of sqrt(risk_cap): passing 0.12
+        # permits 34.64% risk, 2.89x looser than intended, and on this data the
+        # constraint does not bind at all - you silently get the unconstrained
+        # max-return corner (22.29% risk instead of 12%).
+        assert risk_cap is not None, \
+            "risk_cap is an annualised STANDARD DEVIATION, e.g. 0.12 for 12%"
+        p.addConstraint(portfolio_var_expr <= risk_cap ** 2)
         p.setObjective(portfolio_return_expr, sense=xp.maximize)
     elif mode == "min_risk_only":
         p.setObjective(portfolio_var_expr, sense=xp.minimize)

@@ -41,13 +41,16 @@ invocations differing only in `ENABLE_TIER2_EXCLUSION`:
 
 | | risk-averse | neutral | risk-prone |
 |---|---|---|---|
-| expected return | 7.07% | **12.93%** | 14.89% |
-| predicted risk | 9.24% | 11.24% | 14.75% |
-| return / risk | 0.77 | **1.15** | 1.01 |
-| holdings | 46 | 30 | 30 |
-| top sector | Consumer Defensive 30.0% | 28.7% | Healthcare 27.1% |
+| expected return | 9.92% | **14.32%** | 16.53% |
+| predicted risk | 9.26% | 10.64% | 14.41% |
+| return / risk | 1.07 | **1.35** | 1.15 |
+| holdings | 43 | 30 | 30 |
+| top sector | Consumer Defensive 30.0% | 27.1% | Healthcare 23.9% |
 
-Headline from the two runs: **excluding Tier 2 costs −0.016 pp on average**, so
+Built on **dividend-adjusted** prices, which lifts the frontier by ~2.8pp — most
+of it at the risk-averse end, where the high-yield names sit.
+
+Headline from the two runs: **excluding Tier 2 costs −0.019 pp on average**, so
 the contested policy can be decided on principle rather than on cost.
 
 The parallel model track (a country cap instead of a sector cap) is frozen in
@@ -102,8 +105,8 @@ script validates itself and prints the check.
 | 1 | `02a_esg_and_price_eda_cleaning.py` | `prices_clean.csv`, imputed/excluded shares | ~1 min |
 | 2 | `03a_fx_convert.py` | `prices_clean_usd.csv` + cached ECB rates | ~1 min |
 | 3 | `13_truncate_discontinuities.py` | `prices_clean_usd_v3.csv` | <1 min |
-| 4 | `14_refreeze_v3.py` | `expected_return_v3.csv`, `covariance_matrix_v3.csv` | ~2 min |
-| 5 | `../Model2_ori.py` | the frontier, from the repository root | ~10 s |
+| 4 | `20_dividend_adjusted_pipeline.py` | `expected_return_v4.csv`, `covariance_matrix_v4.csv` — supersedes steps 1-3 for the current inputs | ~3 min |
+| 5 | `../Model2_ori.py` | the frontier, from the repository root | ~15 s |
 
 `03a` fetches ECB reference rates once (Frankfurter API) and caches them, so
 later runs are offline. Scripts `03b`–`12` and `15` are the analysis and
@@ -117,7 +120,7 @@ what justifies it.
 ```
 Model2_ori.py             THE model — Chloe's, corrected
 sectors.xlsx              sector classification, 1093/1093, no gaps
-expected_return_v3.csv    inputs the model reads
+expected_return_v4.csv    inputs the model reads (dividend-adjusted, USD)
 shares_imputed.csv
 results_chloe/            output of running exactly Model2_ori.py, with a README
 archive/our_model_frozen/ the parallel country-cap track, frozen

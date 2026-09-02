@@ -5,7 +5,12 @@
 # Every one of these is reproducible; see README.md for the script and timing.
 **/covariance_matrix*.csv
 **/prices_clean*.csv
+**/prices_div_usd.csv
 **/fx_rates_ecb.csv
+
+# Source price data. LSEG-derived and large; the team already holds both files.
+# prices_lseg_dividend_adjusted.csv (49 MB) is the current raw input - ask Chloe.
+**/prices_lseg_dividend_adjusted.csv
 
 # ============ historical snapshots, superseded by HTWSS_v3/ ============
 teammate/
