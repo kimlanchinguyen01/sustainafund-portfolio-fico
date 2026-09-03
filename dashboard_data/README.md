@@ -1,6 +1,6 @@
 # dashboard_data — everything a dashboard needs, in one place
 
-661 KB, 38 CSVs, no solver required to read any of them. Rebuilt by
+1.0 MB, 45 CSVs, no solver required to read any of them. Rebuilt by
 `build_dashboard_data.py` (~5 s) from result files elsewhere in the repo, so
 this folder can always be regenerated and can never disagree with the model.
 
@@ -27,6 +27,7 @@ says `tier2on`. That is the delivered configuration.
 | `portfolios/neutral.csv` | 30 | the recommended book's composition |
 | `backtest/equity_curves.csv` | 2023 | the out-of-sample equity chart (min-variance) |
 | `backtest_profiles/summary.csv` | 7 | four books vs 1/N — the profile comparison |
+| `benchmark_1n/summary.csv` | 5 | the naive benchmark over all 11 years |
 | `stress/panelB_windows.csv` | 20 | the crisis-window table |
 
 ---
@@ -190,6 +191,36 @@ min-variance's 83%, and at 10bp its Sharpe drops below the benchmark. Read
 `subperiods.csv` and `diagnostics.csv` here are regenerable replacements for
 `backtest/subperiods.csv` and `backtest/diagnostics.csv`, which nothing in the
 repo writes.
+
+---
+
+## benchmark_1n/  (the naive benchmark, full study period)
+
+Source: `benchmark_1n/results/`, produced by `benchmark_1n/30_benchmark_1n.py`.
+The only benchmark series covering **all 11 years** (2015-01-02 → 2025-12-31);
+the two backtest folders only reach back to 2018-04.
+
+| File | Contents |
+|---|---|
+| `curves.csv` | daily levels of five 1/N variants, indexed to 1.0, 2869 rows |
+| `summary.csv` | full-period CAGR, vol, Sharpe, maxDD, final, best/worst day |
+| `annual.csv` | calendar-year returns per variant |
+| `windows.csv` | the six `stress/` crisis windows × all five variants |
+| `feasibility.csv` | which of the brief's conditions each variant violates |
+| `universe.csv` | names held per day, per variant |
+| `gate_vs_script21.csv` | agreement with script 21's independent 1/N |
+
+**Use `1N_model_monthly`** as the default comparator — equal weight over the
+same 1077-stock universe the model optimises, so a comparison isolates the
+optimiser and not the universe.
+
+⚠ Two things to carry onto any chart that shows it. **The choice of rebalancing
+frequency moves the benchmark by 0.9 pp of CAGR** (daily 15.67%, buy-and-hold
+15.35%, monthly 14.80%), which is larger than most differences we report against
+it — so label which 1/N is plotted. And **no 1/N variant is admissible under the
+brief**: equal weight over 1077 names is 0.093% each against a 1% floor, and the
+unscreened variants also miss weighted ESG ≥ 70. It is a reference, not an
+alternative portfolio.
 
 ---
 

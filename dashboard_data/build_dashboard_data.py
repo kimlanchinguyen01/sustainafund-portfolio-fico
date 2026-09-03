@@ -71,6 +71,15 @@ COPIES = [
     ("backtest_profiles/option_b_comparison.csv",
      "backtest_profiles/results/option_b_comparison.csv"),
 
+    # 1/N benchmark over the full study period (script 30)
+    ("benchmark_1n/curves.csv",       "benchmark_1n/results/curves.csv"),
+    ("benchmark_1n/summary.csv",      "benchmark_1n/results/summary.csv"),
+    ("benchmark_1n/annual.csv",       "benchmark_1n/results/annual.csv"),
+    ("benchmark_1n/windows.csv",      "benchmark_1n/results/windows.csv"),
+    ("benchmark_1n/feasibility.csv",  "benchmark_1n/results/feasibility.csv"),
+    ("benchmark_1n/universe.csv",     "benchmark_1n/results/universe.csv"),
+    ("benchmark_1n/gate_vs_script21.csv", "benchmark_1n/results/gate_vs_script21.csv"),
+
     # crisis stress test
     ("stress/panelA_windows.csv",           "stress_test/results/panelA_windows.csv"),
     ("stress/panelB_windows.csv",           "stress_test/results/panelB_windows.csv"),

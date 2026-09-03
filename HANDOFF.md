@@ -112,6 +112,11 @@ Each is reproducible from the script named. Re-deriving them wastes a session.
 | Re-validated on v4: the cliff survives | 1–2 factors still understate ~38% at min-risk (was ~40%) | `29` |
 | But the minimum k moved and the criterion is fragile | smallest sufficient k is now 5 (+0.31% margin) while k=10 FAILS at -1.56%; 20 is the smallest with a non-marginal margin (+1.54% worst) | `29` |
 | More factors is not better | mean overstatement +4.3% at k=5 -> +11.8% at k=50, R2 median 0.436 -> 0.586, condition 2957 -> 4389 | `29` |
+| 1/N over ALL 11 years, the reference series | 2015-01-02..2025-12-31: CAGR 14.80%, vol 15.96%, Sharpe 0.928, maxDD -38.05%, 4.56x (`1N_model_monthly`, the default comparator) | `30` |
+| **No 1/N variant is admissible under the brief** | equal weight over 1077 names is 0.093% each against the 1% floor; unscreened variants miss ESG >= 70; the ESG-screened one breaks the 60% region cap at 63.2% Europe | `30` |
+| "The 1/N benchmark" is not one number | rebalancing frequency moves it 0.9pp of CAGR: daily 15.67%, buy-and-hold 15.35%, monthly 14.80%. Always name which one | `30` |
+| ESG as a constraint beats ESG as a screen, but modestly ex ante | naive ESG>=70 screen costs -0.263pp of expected return vs the constraint's -0.151pp (1.7x). The realised 11y gap is -1.471pp, i.e. 5.6x the ex-ante gap - mostly the screen's imposed exposures (63% Europe), not lower-mu stocks | `30`, `23` |
+| Benchmark gate | this 1/N and script 21's independent one agree to 0.001 of Sharpe on script 21's window (0.867 vs 0.866) | `30` |
 | The factors are PCA components, and interpretable after the fact | f1 = market (corr 0.996 with an equal-weight index, 27.8% of variance), f2 = Europe vs US (beta +1.43 vs -1.73, 7.5%), f3 = Energy vs Tech, f4 = Tech vs Utilities | `29` |
 | Quadratic beats linear | linear carries +19.2% more true risk; its objective/actual gap is 1.64x | `15_model1_linear.py` (archive) |
 | Binaries required | semi-continuous alone returns 26 positions while reporting 30 | tested inline |
@@ -257,10 +262,11 @@ Each is reproducible from the script named. Re-deriving them wastes a session.
 | `25_crisis_stress_test.py` | crisis-window stress test of the DELIVERED books, ~7 min |
 | `stress_test/` | crisis-window stress test: code, 6 CSVs, README. Panel A in-sample, Panel B point-in-time |
 | `backtest_profiles/` | walk-forward of the RECOMMENDED profile, 4 books, code + 6 CSVs + README |
-| `dashboard_data/` | 38 CSVs, 662 KB, one place with stable names; rebuilt by its own script |
+| `dashboard_data/` | 45 CSVs, 1.0 MB, one place with stable names; rebuilt by its own script |
 | `27_lseg_esg_sector_update.py` | parses and measures the LSEG ESG/GICS export, ~5 min |
 | `28_scenarios_for_deck.py` | regenerates the deck's scenario JSON; run before `build_deck.py` |
 | `29_factor_count_v4.py` | re-validates the 20-factor choice on the current data, ~9 min |
+| `benchmark_1n/` | the 1/N reference series over all 11 years: code + 7 CSVs + README, no solver |
 | `results_factor_count/` | its output: 3 CSVs + a README with the verdict and what the factors are |
 | `results_lseg_update/` | its output: 5 CSVs + a README with the adopt/don't recommendation |
 | `data_lseg_update/` | the parsed inputs, unused until the update is adopted |
