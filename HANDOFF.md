@@ -25,11 +25,41 @@ shares_imputed.csv          region, country, ESG (49 values imputed)
 sectors.xlsx                sector per stock, 1093/1093, no gaps
 ```
 
-Formulation: MIQP. `min w'Sw` subject to `w'mu >= beta`, `sum w = 1`,
-`0.01 y_i <= w_i <= 0.20 y_i`, `y_i` binary, `sum y_i >= 30`, region <= 60%,
-sector <= 30%, weighted ESG >= 70, per-stock ESG >= 30. Solves in 0.3–1.1 s.
-A per-country cap now exists too but ships **OFF** (`ENABLE_COUNTRY_CAP = False`);
-see "Country cap" below for what it costs and what is left to decide.
+Formulation: MIQP. `min w'Sw` subject to `w'mu >= beta`, `sum w = 1`. Solves in
+0.3–1.1 s. **Keep the two columns apart when presenting** — credit is for the
+right-hand one, and claiming the left-hand one invites a correction:
+
+| Constraint | Source |
+|---|---|
+| `0.01 y_i <= w_i <= 0.20 y_i`, `y_i` binary | **the brief** |
+| `sum y_i >= 30` | **the brief** |
+| region <= 60% (so >= 40% in the other region) | **the brief** |
+| weighted ESG >= 70 | **the brief** |
+| sector <= 30% | ours |
+| per-stock ESG floor >= 30 | ours (Chloe) |
+| Tier 1 / Tier 2 controversial-weapons screens | ours |
+| country <= 25%, US exempt | ours, ships **OFF** (`ENABLE_COUNTRY_CAP = False`) |
+
+The brief's exact wording for the region condition: "The total investment in any
+single region should not exceed 60% of the available budget (so at least 40% is
+invested in the other region)." `Model2_ori.py`'s docstring already marks our
+additions `(NEW)` and leaves the region line unmarked; this table says the same
+thing in one place.
+
+"Region" means three unrelated things in this project and they get confused:
+1. the **region cap** of 60% above — an optimiser constraint, from the brief;
+2. an explicit **region factor** in the covariance — `05c_multifactor.py` added
+   one to try to fix the risk understatement. It absorbed the structure
+   (residual-correlation spread +0.2237 -> -0.0010) and did **not** fix the
+   understatement, 13.6% -> 13.1%. Tested and rejected as a remedy;
+3. **PCA factor 2 turns out to be Europe vs the US** by itself, unprompted —
+   mean beta +1.43 European against -1.73 US, 7.5% of variance (`29`). Which is
+   why naming a region factor added nothing: the eigenvectors already contain it.
+   The failure was never which factor is named, it is how much variance is left
+   inside a residual block the model declares diagonal.
+
+See "Country cap" below for what the country cap costs and what is left to
+decide.
 
 `pipeline/Model2.py` is the untouched audit baseline. Every later model asserts
 it reproduces `Model2.py` exactly when its own additions are disabled.
