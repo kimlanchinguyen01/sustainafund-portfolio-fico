@@ -47,5 +47,7 @@ package.json
 # (they describe the archived country-cap model as the deliverable)
 HTWSS_summary_v*.docx
 
-# deck build scratch (charts are regenerated; the PPTX/PDF are deliverables)
-deck/charts/
+# deck: charts/ is deliverable 4 of BRIEF_build_deck.md ("every chart also saved
+# as a standalone 300 dpi PNG"), so it is TRACKED. Only the _pageNN.png renders I
+# make to eyeball layout are scratch.
+deck/charts/_page*.png
