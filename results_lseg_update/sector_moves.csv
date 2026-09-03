@@ -1,0 +1,72 @@
+Stock,sector_current,sector_gics,industry_group_gics,current_mapped,moved
+ADP.OQ,Technology,Industrials,Commercial  & Professional Services,Information Technology,True
+ADYEN.AS,Technology,Financials,Financial Services,Information Technology,True
+AMA.MC,Technology,Consumer Discretionary,Consumer Services,Information Technology,True
+AMCR.N,Consumer Cyclical,Materials,Materials,Consumer Discretionary,True
+ANA.MC,Industrials,Utilities,Utilities,Industrials,True
+ARDS.AS,Consumer Defensive,Industrials,Commercial  & Professional Services,Consumer Staples,True
+AVY.N,Consumer Cyclical,Materials,Materials,Consumer Discretionary,True
+BALL.N,Consumer Cyclical,Materials,Materials,Consumer Discretionary,True
+BCU.MI,Financial Services,Consumer Discretionary,Consumer Durables & Apparel,Financials,True
+BFT.WA,Consumer Cyclical,Industrials,Commercial  & Professional Services,Consumer Discretionary,True
+BMEB.L,Consumer Defensive,Consumer Discretionary,Consumer Discretionary Distribution & Retail,Consumer Staples,True
+BNRGn.DE,Basic Materials,Industrials,Capital Goods,Materials,True
+BNZL.L,Consumer Defensive,Industrials,Capital Goods,Consumer Staples,True
+BOLL.PA,Communication Services,Energy,Energy,Communication Services,True
+BPTB.L,Energy,Financials,Financial Services,Energy,True
+BR.N,Technology,Industrials,Commercial  & Professional Services,Information Technology,True
+CASY.OQ,Consumer Cyclical,Consumer Staples,Consumer Staples Distribution & Retail,Consumer Discretionary,True
+CLNX.MC,Real Estate,Communication Services,Telecommunication Services,Real Estate,True
+CPAY.N,Technology,Financials,Financial Services,Information Technology,True
+DD.N,Basic Materials,Industrials,Capital Goods,Materials,True
+EUFI.PA,Financial Services,Health Care,"Pharmaceuticals, Biotechnology & Life Sciences",Financials,True
+EXHO.PA,Industrials,Consumer Discretionary,Consumer Services,Industrials,True
+FIS.N,Technology,Financials,Financial Services,Information Technology,True
+FISV.OQ,Technology,Financials,Financial Services,Information Technology,True
+FTV.N,Technology,Industrials,Capital Goods,Information Technology,True
+GASI.MI,Utilities,Financials,Insurance,Utilities,True
+GPN.N,Industrials,Financials,Financial Services,Industrials,True
+GRMN.N,Technology,Consumer Discretionary,Consumer Durables & Apparel,Information Technology,True
+HLMA.L,Industrials,Information Technology,Technology Hardware & Equipment,Industrials,True
+HUBN.S,Technology,Industrials,Capital Goods,Information Technology,True
+HUH1V.HE,Consumer Cyclical,Materials,Materials,Consumer Discretionary,True
+HWDN.L,Consumer Cyclical,Industrials,Capital Goods,Consumer Discretionary,True
+IMCD.AS,Basic Materials,Industrials,Capital Goods,Materials,True
+INWT.MI,Real Estate,Communication Services,Telecommunication Services,Real Estate,True
+IP.N,Consumer Cyclical,Materials,Materials,Consumer Discretionary,True
+JKHY.OQ,Technology,Financials,Financial Services,Information Technology,True
+KBX.DE,Consumer Cyclical,Industrials,Capital Goods,Consumer Discretionary,True
+KSP.I,Consumer Defensive,Industrials,Capital Goods,Consumer Staples,True
+KYGa.I,Industrials,Consumer Staples,"Food, Beverage & Tobacco",Industrials,True
+LAGRb.ST,Industrials,Information Technology,Technology Hardware & Equipment,Industrials,True
+LDOS.N,Technology,Industrials,Commercial  & Professional Services,Information Technology,True
+LOIM.PA,Industrials,Real Estate,Equity Real Estate Investment Trusts (REITs),Industrials,True
+LUNDb.ST,Industrials,Financials,Financial Services,Industrials,True
+MKS.L,Consumer Cyclical,Consumer Staples,Consumer Staples Distribution & Retail,Consumer Discretionary,True
+MYCR.ST,Industrials,Information Technology,Technology Hardware & Equipment,Industrials,True
+NAFG.DE,Industrials,Materials,Materials,Industrials,True
+NEXII.MI,Technology,Financials,Financial Services,Information Technology,True
+PAYX.OQ,Technology,Industrials,Commercial  & Professional Services,Information Technology,True
+PKG.N,Consumer Cyclical,Materials,Materials,Consumer Discretionary,True
+POOL.OQ,Industrials,Consumer Discretionary,Consumer Discretionary Distribution & Retail,Industrials,True
+PSON.L,Communication Services,Consumer Discretionary,Consumer Services,Communication Services,True
+PST.MI,Industrials,Financials,Financial Services,Industrials,True
+ROL.N,Consumer Cyclical,Industrials,Commercial  & Professional Services,Consumer Discretionary,True
+RUBF.PA,Energy,Utilities,Utilities,Energy,True
+RXL.PA,Technology,Industrials,Capital Goods,Information Technology,True
+SATG_p.DE,Basic Materials,Health Care,"Pharmaceuticals, Biotechnology & Life Sciences",Materials,True
+SGEF.PA,Financial Services,Industrials,Capital Goods,Financials,True
+SIGNC.S,Consumer Cyclical,Materials,Materials,Consumer Discretionary,True
+STDM.PA,Technology,Health Care,"Pharmaceuticals, Biotechnology & Life Sciences",Information Technology,True
+STERV.HE,Consumer Cyclical,Materials,Materials,Consumer Discretionary,True
+SW.N,Consumer Cyclical,Materials,Materials,Consumer Discretionary,True
+TCFP.PA,Energy,Industrials,Capital Goods,Energy,True
+TKAG.DE,Industrials,Materials,Materials,Industrials,True
+UBER.N,Technology,Industrials,Transportation,Information Technology,True
+UMI.BR,Industrials,Materials,Materials,Industrials,True
+VID.MC,Consumer Cyclical,Materials,Materials,Consumer Discretionary,True
+VIE.PA,Industrials,Utilities,Utilities,Industrials,True
+VIS.MC,Consumer Cyclical,Consumer Staples,"Food, Beverage & Tobacco",Consumer Discretionary,True
+VLLP.PA,Basic Materials,Energy,Energy,Materials,True
+WISEa.L,Technology,Financials,Financial Services,Information Technology,True
+XYZ.N,Technology,Financials,Financial Services,Information Technology,True

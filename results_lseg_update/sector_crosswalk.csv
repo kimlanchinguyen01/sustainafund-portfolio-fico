@@ -1,0 +1,1094 @@
+Stock,sector_current,sector_gics,industry_group_gics,current_mapped,moved
+A.N,Healthcare,Health Care,"Pharmaceuticals, Biotechnology & Life Sciences",Health Care,False
+A2.MI,Utilities,Utilities,Utilities,Utilities,False
+AAF.L,Communication Services,Communication Services,Telecommunication Services,Communication Services,False
+AAK.ST,Consumer Defensive,Consumer Staples,"Food, Beverage & Tobacco",Consumer Staples,False
+AAL.L,Basic Materials,Materials,Materials,Materials,False
+AALB.AS,Industrials,Industrials,Capital Goods,Industrials,False
+AAPL.OQ,Technology,Information Technology,Technology Hardware & Equipment,Information Technology,False
+ABBN.S,Industrials,Industrials,Capital Goods,Industrials,False
+ABBV.N,Healthcare,Health Care,"Pharmaceuticals, Biotechnology & Life Sciences",Health Care,False
+ABDN.L,Financial Services,Financials,Financial Services,Financials,False
+ABF.L,Consumer Defensive,Consumer Staples,"Food, Beverage & Tobacco",Consumer Staples,False
+ABI.BR,Consumer Defensive,Consumer Staples,"Food, Beverage & Tobacco",Consumer Staples,False
+ABNB.OQ,Consumer Cyclical,Consumer Discretionary,Consumer Services,Consumer Discretionary,False
+ABNd.AS,Financial Services,Financials,Banks,Financials,False
+ABT.N,Healthcare,Health Care,Health Care Equipment & Services,Health Care,False
+ABVX.PA,Healthcare,Health Care,"Pharmaceuticals, Biotechnology & Life Sciences",Health Care,False
+ACCP.PA,Consumer Cyclical,Consumer Discretionary,Consumer Services,Consumer Discretionary,False
+ACGL.OQ,Financial Services,Financials,Insurance,Financials,False
+ACKB.BR,Industrials,Industrials,Capital Goods,Industrials,False
+ACLN.S,Industrials,Industrials,Capital Goods,Industrials,False
+ACN.N,Technology,Information Technology,Software & Services,Information Technology,False
+ACPP.WA,Technology,Information Technology,Software & Services,Information Technology,False
+ACS.MC,Industrials,Industrials,Capital Goods,Industrials,False
+AD.AS,Consumer Defensive,Consumer Staples,Consumer Staples Distribution & Retail,Consumer Staples,False
+ADBE.OQ,Technology,Information Technology,Software & Services,Information Technology,False
+ADDTb.ST,Industrials,Industrials,Capital Goods,Industrials,False
+ADEN.S,Industrials,Industrials,Commercial  & Professional Services,Industrials,False
+ADI.OQ,Technology,Information Technology,Semiconductors & Semiconductor Equipment,Information Technology,False
+ADM.N,Consumer Defensive,Consumer Staples,"Food, Beverage & Tobacco",Consumer Staples,False
+ADML.L,Financial Services,Financials,Insurance,Financials,False
+ADP.OQ,Technology,Industrials,Commercial  & Professional Services,Information Technology,True
+ADP.PA,Industrials,Industrials,Transportation,Industrials,False
+ADSGn.DE,Consumer Cyclical,Consumer Discretionary,Consumer Durables & Apparel,Consumer Discretionary,False
+ADSK.OQ,Technology,Information Technology,Software & Services,Information Technology,False
+ADYEN.AS,Technology,Financials,Financial Services,Information Technology,True
+AEE.N,Utilities,Utilities,Utilities,Utilities,False
+AEGN.AS,Financial Services,Financials,Insurance,Financials,False
+AENA.MC,Industrials,Industrials,Transportation,Industrials,False
+AEP.OQ,Utilities,Utilities,Utilities,Utilities,False
+AES.N,Utilities,Utilities,Utilities,Utilities,False
+AFL.N,Financial Services,Financials,Insurance,Financials,False
+AG1G.DE,Consumer Cyclical,Consumer Discretionary,Consumer Discretionary Distribution & Retail,Consumer Discretionary,False
+AGES.BR,Financial Services,Financials,Insurance,Financials,False
+AIBG.I,Financial Services,Financials,Banks,Financials,False
+AIG.N,Financial Services,Financials,Insurance,Financials,False
+AIR.PA,Industrials,Industrials,Capital Goods,Industrials,False
+AIRP.PA,Basic Materials,Materials,Materials,Materials,False
+AIXGn.DE,Technology,Information Technology,Semiconductors & Semiconductor Equipment,Information Technology,False
+AIZ.N,Financial Services,Financials,Insurance,Financials,False
+AJG.N,Financial Services,Financials,Insurance,Financials,False
+AKAM.OQ,Technology,Information Technology,Software & Services,Information Technology,False
+AKE.PA,Basic Materials,Materials,Materials,Materials,False
+AKRBP.OL,Energy,Energy,Energy,Energy,False
+AKZO.AS,Basic Materials,Materials,Materials,Materials,False
+ALB.N,Basic Materials,Materials,Materials,Materials,False
+ALCC.S,Healthcare,Health Care,Health Care Equipment & Services,Health Care,False
+ALEP.WA,Consumer Cyclical,Consumer Discretionary,Consumer Discretionary Distribution & Retail,Consumer Discretionary,False
+ALFA.ST,Industrials,Industrials,Capital Goods,Industrials,False
+ALGN.OQ,Healthcare,Health Care,Health Care Equipment & Services,Health Care,False
+ALKb.CO,Healthcare,Health Care,"Pharmaceuticals, Biotechnology & Life Sciences",Health Care,False
+ALL.N,Financial Services,Financials,Insurance,Financials,False
+ALLE.N,Industrials,Industrials,Capital Goods,Industrials,False
+ALLFG.AS,Financial Services,Financials,Financial Services,Financials,False
+ALLN.S,Real Estate,Real Estate,Real Estate Management & Development,Real Estate,False
+ALSO.PA,Industrials,Industrials,Capital Goods,Industrials,False
+ALSYDB.CO,Financial Services,Financials,Banks,Financials,False
+ALVG.DE,Financial Services,Financials,Insurance,Financials,False
+AM.PA,Industrials,Industrials,Capital Goods,Industrials,False
+AMA.MC,Technology,Consumer Discretionary,Consumer Services,Information Technology,True
+AMAT.OQ,Technology,Information Technology,Semiconductors & Semiconductor Equipment,Information Technology,False
+AMBUb.CO,Healthcare,Health Care,Health Care Equipment & Services,Health Care,False
+AMCR.N,Consumer Cyclical,Materials,Materials,Consumer Discretionary,True
+AMD.OQ,Technology,Information Technology,Semiconductors & Semiconductor Equipment,Information Technology,False
+AME.N,Industrials,Industrials,Capital Goods,Industrials,False
+AMGN.OQ,Healthcare,Health Care,"Pharmaceuticals, Biotechnology & Life Sciences",Health Care,False
+AMP.N,Financial Services,Financials,Financial Services,Financials,False
+AMT.N,Real Estate,Real Estate,Equity Real Estate Investment Trusts (REITs),Real Estate,False
+AMUN.PA,Financial Services,Financials,Financial Services,Financials,False
+AMZN.OQ,Consumer Cyclical,Consumer Discretionary,Consumer Discretionary Distribution & Retail,Consumer Discretionary,False
+ANA.MC,Industrials,Utilities,Utilities,Industrials,True
+ANDR.VI,Industrials,Industrials,Capital Goods,Industrials,False
+ANET.N,Technology,Information Technology,Technology Hardware & Equipment,Information Technology,False
+ANTO.L,Basic Materials,Materials,Materials,Materials,False
+AON.N,Financial Services,Financials,Insurance,Financials,False
+AOO.BR,Real Estate,Real Estate,Equity Real Estate Investment Trusts (REITs),Real Estate,False
+AOS.N,Industrials,Industrials,Capital Goods,Industrials,False
+APA.OQ,Energy,Energy,Energy,Energy,False
+APD.N,Basic Materials,Materials,Materials,Materials,False
+APH.N,Technology,Information Technology,Technology Hardware & Equipment,Information Technology,False
+APO.N,Financial Services,Financials,Financial Services,Financials,False
+APP.OQ,Communication Services,Communication Services,Media & Entertainment,Communication Services,False
+APTV.N,Consumer Cyclical,Consumer Discretionary,Automobiles & Components,Consumer Discretionary,False
+ARDS.AS,Consumer Defensive,Industrials,Commercial  & Professional Services,Consumer Staples,True
+ARE.N,Real Estate,Real Estate,Equity Real Estate Investment Trusts (REITs),Real Estate,False
+ARES.N,Financial Services,Financials,Financial Services,Financials,False
+ARGX.BR,Healthcare,Health Care,"Pharmaceuticals, Biotechnology & Life Sciences",Health Care,False
+ASMI.AS,Technology,Information Technology,Semiconductors & Semiconductor Equipment,Information Technology,False
+ASML.AS,Technology,Information Technology,Semiconductors & Semiconductor Equipment,Information Technology,False
+ASRNL.AS,Financial Services,Financials,Insurance,Financials,False
+ASSAb.ST,Industrials,Industrials,Capital Goods,Industrials,False
+ATCOa.ST,Industrials,Industrials,Capital Goods,Industrials,False
+ATO.N,Utilities,Utilities,Utilities,Utilities,False
+AUTOA.L,Communication Services,Communication Services,Media & Entertainment,Communication Services,False
+AV.L,Financial Services,Financials,Insurance,Financials,False
+AVANZ.ST,Financial Services,Financials,Financial Services,Financials,False
+AVB.N,Real Estate,Real Estate,Equity Real Estate Investment Trusts (REITs),Real Estate,False
+AVGO.OQ,Technology,Information Technology,Semiconductors & Semiconductor Equipment,Information Technology,False
+AVOL.S,Consumer Cyclical,Consumer Discretionary,Consumer Discretionary Distribution & Retail,Consumer Discretionary,False
+AVY.N,Consumer Cyclical,Materials,Materials,Consumer Discretionary,True
+AWK.N,Utilities,Utilities,Utilities,Utilities,False
+AXAF.PA,Financial Services,Financials,Insurance,Financials,False
+AXFO.ST,Consumer Defensive,Consumer Staples,Consumer Staples Distribution & Retail,Consumer Staples,False
+AXON.OQ,Industrials,Industrials,Capital Goods,Industrials,False
+AXP.N,Financial Services,Financials,Financial Services,Financials,False
+AYV.PA,Industrials,Industrials,Transportation,Industrials,False
+AZMT.MI,Financial Services,Financials,Financial Services,Financials,False
+AZN.L,Healthcare,Health Care,"Pharmaceuticals, Biotechnology & Life Sciences",Health Care,False
+AZO.N,Consumer Cyclical,Consumer Discretionary,Consumer Discretionary Distribution & Retail,Consumer Discretionary,False
+BA.N,Industrials,Industrials,Capital Goods,Industrials,False
+BAB.L,Industrials,Industrials,Capital Goods,Industrials,False
+BAC.N,Financial Services,Financials,Banks,Financials,False
+BAER.S,Financial Services,Financials,Financial Services,Financials,False
+BAES.L,Industrials,Industrials,Capital Goods,Industrials,False
+BAKKA.OL,Consumer Defensive,Consumer Staples,"Food, Beverage & Tobacco",Consumer Staples,False
+BALDb.ST,Real Estate,Real Estate,Real Estate Management & Development,Real Estate,False
+BALF.L,Industrials,Industrials,Capital Goods,Industrials,False
+BALL.N,Consumer Cyclical,Materials,Materials,Consumer Discretionary,True
+BAMI.MI,Financial Services,Financials,Banks,Financials,False
+BARC.L,Financial Services,Financials,Banks,Financials,False
+BARN.S,Consumer Defensive,Consumer Staples,"Food, Beverage & Tobacco",Consumer Staples,False
+BASFn.DE,Basic Materials,Materials,Materials,Materials,False
+BATS.L,Consumer Defensive,Consumer Staples,"Food, Beverage & Tobacco",Consumer Staples,False
+BAVA.CO,Healthcare,Health Care,"Pharmaceuticals, Biotechnology & Life Sciences",Health Care,False
+BAWG.VI,Financial Services,Financials,Banks,Financials,False
+BAX.N,Healthcare,Health Care,Health Care Equipment & Services,Health Care,False
+BAYGn.DE,Healthcare,Health Care,"Pharmaceuticals, Biotechnology & Life Sciences",Health Care,False
+BBOXT.L,Real Estate,Real Estate,Equity Real Estate Investment Trusts (REITs),Real Estate,False
+BBVA.MC,Financial Services,Financials,Banks,Financials,False
+BBY.N,Consumer Cyclical,Consumer Discretionary,Consumer Discretionary Distribution & Retail,Consumer Discretionary,False
+BC8G.DE,Technology,Information Technology,Software & Services,Information Technology,False
+BCP.LS,Financial Services,Financials,Banks,Financials,False
+BCU.MI,Financial Services,Consumer Discretionary,Consumer Durables & Apparel,Financials,True
+BCVN.S,Financial Services,Financials,Banks,Financials,False
+BDX.N,Healthcare,Health Care,Health Care Equipment & Services,Health Care,False
+BEAN.S,Industrials,Industrials,Capital Goods,Industrials,False
+BEIG.DE,Consumer Defensive,Consumer Staples,Household & Personal Products,Consumer Staples,False
+BEIJb.ST,Industrials,Industrials,Capital Goods,Industrials,False
+BEN.N,Financial Services,Financials,Financial Services,Financials,False
+BESI.AS,Technology,Information Technology,Semiconductors & Semiconductor Equipment,Information Technology,False
+BEZG.L,Financial Services,Financials,Insurance,Financials,False
+BFb.N,Consumer Defensive,Consumer Staples,"Food, Beverage & Tobacco",Consumer Staples,False
+BFT.WA,Consumer Cyclical,Industrials,Commercial  & Professional Services,Consumer Discretionary,True
+BG.N,Consumer Defensive,Consumer Staples,"Food, Beverage & Tobacco",Consumer Staples,False
+BGEO.L,Financial Services,Financials,Banks,Financials,False
+BGN.MI,Financial Services,Financials,Financial Services,Financials,False
+BIIB.OQ,Healthcare,Health Care,"Pharmaceuticals, Biotechnology & Life Sciences",Health Care,False
+BIOX.PA,Healthcare,Health Care,Health Care Equipment & Services,Health Care,False
+BIRG.I,Financial Services,Financials,Banks,Financials,False
+BKGH.L,Consumer Cyclical,Consumer Discretionary,Consumer Durables & Apparel,Consumer Discretionary,False
+BKNG.OQ,Consumer Cyclical,Consumer Discretionary,Consumer Services,Consumer Discretionary,False
+BKR.OQ,Energy,Energy,Energy,Energy,False
+BKT.MC,Financial Services,Financials,Banks,Financials,False
+BKWB.S,Utilities,Utilities,Utilities,Utilities,False
+BLDR.N,Industrials,Industrials,Capital Goods,Industrials,False
+BLK.N,Financial Services,Financials,Financial Services,Financials,False
+BLND.L,Real Estate,Real Estate,Equity Real Estate Investment Trusts (REITs),Real Estate,False
+BMEB.L,Consumer Defensive,Consumer Discretionary,Consumer Discretionary Distribution & Retail,Consumer Staples,True
+BMED.MI,Financial Services,Financials,Financial Services,Financials,False
+BMPS.MI,Financial Services,Financials,Banks,Financials,False
+BMWG.DE,Consumer Cyclical,Consumer Discretionary,Automobiles & Components,Consumer Discretionary,False
+BMY.N,Healthcare,Health Care,"Pharmaceuticals, Biotechnology & Life Sciences",Health Care,False
+BNPP.PA,Financial Services,Financials,Banks,Financials,False
+BNRGn.DE,Basic Materials,Industrials,Capital Goods,Materials,True
+BNY.N,Financial Services,Financials,Financial Services,Financials,False
+BNZL.L,Consumer Defensive,Industrials,Capital Goods,Consumer Staples,True
+BOL.ST,Basic Materials,Materials,Materials,Materials,False
+BOLL.PA,Communication Services,Energy,Energy,Communication Services,True
+BOUY.PA,Industrials,Industrials,Capital Goods,Industrials,False
+BP.L,Energy,Energy,Energy,Energy,False
+BPTB.L,Energy,Financials,Financial Services,Energy,True
+BR.N,Technology,Industrials,Commercial  & Professional Services,Information Technology,True
+BRBY.L,Consumer Cyclical,Consumer Discretionary,Consumer Durables & Apparel,Consumer Discretionary,False
+BRKb.N,Financial Services,Financials,Financial Services,Financials,False
+BRO.N,Financial Services,Financials,Insurance,Financials,False
+BSX.N,Healthcare,Health Care,Health Care Equipment & Services,Health Care,False
+BT.L,Communication Services,Communication Services,Telecommunication Services,Communication Services,False
+BTRW.L,Consumer Cyclical,Consumer Discretionary,Consumer Durables & Apparel,Consumer Discretionary,False
+BUCN.S,Industrials,Industrials,Capital Goods,Industrials,False
+BVI.PA,Industrials,Industrials,Commercial  & Professional Services,Industrials,False
+BWY.L,Consumer Cyclical,Consumer Discretionary,Consumer Durables & Apparel,Consumer Discretionary,False
+BX.N,Financial Services,Financials,Financial Services,Financials,False
+BXP.N,Real Estate,Real Estate,Equity Real Estate Investment Trusts (REITs),Real Estate,False
+BYG.L,Real Estate,Real Estate,Equity Real Estate Investment Trusts (REITs),Real Estate,False
+BZU.MI,Basic Materials,Materials,Materials,Materials,False
+C.N,Financial Services,Financials,Banks,Financials,False
+CABK.MC,Financial Services,Financials,Banks,Financials,False
+CAG.N,Consumer Defensive,Consumer Staples,"Food, Beverage & Tobacco",Consumer Staples,False
+CAGR.PA,Financial Services,Financials,Banks,Financials,False
+CAH.N,Healthcare,Health Care,Health Care Equipment & Services,Health Care,False
+CAMX.ST,Healthcare,Health Care,"Pharmaceuticals, Biotechnology & Life Sciences",Health Care,False
+CAPP.PA,Technology,Information Technology,Software & Services,Information Technology,False
+CARLb.CO,Consumer Defensive,Consumer Staples,"Food, Beverage & Tobacco",Consumer Staples,False
+CARR.N,Industrials,Industrials,Capital Goods,Industrials,False
+CARR.PA,Consumer Defensive,Consumer Staples,Consumer Staples Distribution & Retail,Consumer Staples,False
+CAST.ST,Real Estate,Real Estate,Real Estate Management & Development,Real Estate,False
+CASY.OQ,Consumer Cyclical,Consumer Staples,Consumer Staples Distribution & Retail,Consumer Discretionary,True
+CAT.N,Industrials,Industrials,Capital Goods,Industrials,False
+CB.N,Financial Services,Financials,Insurance,Financials,False
+CBKG.DE,Financial Services,Financials,Banks,Financials,False
+CBOE.Z,Financial Services,Financials,Financial Services,Financials,False
+CBRE.N,Real Estate,Real Estate,Real Estate Management & Development,Real Estate,False
+CCH.L,Consumer Defensive,Consumer Staples,"Food, Beverage & Tobacco",Consumer Staples,False
+CCI.N,Real Estate,Real Estate,Equity Real Estate Investment Trusts (REITs),Real Estate,False
+CCL.N,Consumer Cyclical,Consumer Discretionary,Consumer Services,Consumer Discretionary,False
+CDNS.OQ,Technology,Information Technology,Software & Services,Information Technology,False
+CDR.WA,Communication Services,Communication Services,Media & Entertainment,Communication Services,False
+CDW.OQ,Technology,Information Technology,Technology Hardware & Equipment,Information Technology,False
+CEG.OQ,Utilities,Utilities,Utilities,Utilities,False
+CF.N,Basic Materials,Materials,Materials,Materials,False
+CFG.N,Financial Services,Financials,Banks,Financials,False
+CFR.S,Consumer Cyclical,Consumer Discretionary,Consumer Durables & Apparel,Consumer Discretionary,False
+CHD.N,Consumer Defensive,Consumer Staples,Household & Personal Products,Consumer Staples,False
+CHRW.OQ,Industrials,Industrials,Transportation,Industrials,False
+CHTR.OQ,Communication Services,Communication Services,Media & Entertainment,Communication Services,False
+CI.N,Healthcare,Health Care,Health Care Equipment & Services,Health Care,False
+CIEN.N,Technology,Information Technology,Technology Hardware & Equipment,Information Technology,False
+CINF.OQ,Financial Services,Financials,Insurance,Financials,False
+CL.N,Consumer Defensive,Consumer Staples,Household & Personal Products,Consumer Staples,False
+CLNX.MC,Real Estate,Communication Services,Telecommunication Services,Real Estate,True
+CLX.N,Consumer Defensive,Consumer Staples,Household & Personal Products,Consumer Staples,False
+CMBN.S,Financial Services,Financials,Financial Services,Financials,False
+CMCSA.OQ,Communication Services,Communication Services,Telecommunication Services,Communication Services,False
+CME.OQ,Financial Services,Financials,Financial Services,Financials,False
+CMG.N,Consumer Cyclical,Consumer Discretionary,Consumer Services,Consumer Discretionary,False
+CMI.N,Industrials,Industrials,Capital Goods,Industrials,False
+CMS.N,Utilities,Utilities,Utilities,Utilities,False
+CNA.L,Utilities,Utilities,Utilities,Utilities,False
+CNC.N,Healthcare,Health Care,Health Care Equipment & Services,Health Care,False
+CNP.N,Utilities,Utilities,Utilities,Utilities,False
+COF.N,Financial Services,Financials,Financial Services,Financials,False
+COHR.N,Technology,Information Technology,Technology Hardware & Equipment,Information Technology,False
+COIN.OQ,Financial Services,Financials,Financial Services,Financials,False
+COLOb.CO,Healthcare,Health Care,Health Care Equipment & Services,Health Care,False
+CONG.DE,Consumer Cyclical,Consumer Discretionary,Automobiles & Components,Consumer Discretionary,False
+COO.OQ,Healthcare,Health Care,Health Care Equipment & Services,Health Care,False
+COP.N,Energy,Energy,Energy,Energy,False
+COR.N,Healthcare,Health Care,Health Care Equipment & Services,Health Care,False
+COST.OQ,Consumer Defensive,Consumer Staples,Consumer Staples Distribution & Retail,Consumer Staples,False
+CPAY.N,Technology,Financials,Financial Services,Information Technology,True
+CPB.OQ,Consumer Defensive,Consumer Staples,"Food, Beverage & Tobacco",Consumer Staples,False
+CPG.L,Consumer Cyclical,Consumer Discretionary,Consumer Services,Consumer Discretionary,False
+CPRI.MI,Consumer Defensive,Consumer Staples,"Food, Beverage & Tobacco",Consumer Staples,False
+CPRT.OQ,Industrials,Industrials,Commercial  & Professional Services,Industrials,False
+CPT.N,Real Estate,Real Estate,Equity Real Estate Investment Trusts (REITs),Real Estate,False
+CRDA.L,Basic Materials,Materials,Materials,Materials,False
+CRDI.MI,Financial Services,Financials,Banks,Financials,False
+CRH.N,Basic Materials,Materials,Materials,Materials,False
+CRL.N,Healthcare,Health Care,"Pharmaceuticals, Biotechnology & Life Sciences",Health Care,False
+CRM.N,Technology,Information Technology,Software & Services,Information Technology,False
+CRWD.OQ,Technology,Information Technology,Software & Services,Information Technology,False
+CSCO.OQ,Technology,Information Technology,Technology Hardware & Equipment,Information Technology,False
+CSGP.OQ,Real Estate,Real Estate,Real Estate Management & Development,Real Estate,False
+CSX.OQ,Industrials,Industrials,Transportation,Industrials,False
+CTAS.OQ,Industrials,Industrials,Commercial  & Professional Services,Industrials,False
+CTEC.L,Healthcare,Health Care,Health Care Equipment & Services,Health Care,False
+CTSH.OQ,Technology,Information Technology,Software & Services,Information Technology,False
+CTVA.N,Basic Materials,Materials,Materials,Materials,False
+CVC.AS,Financial Services,Financials,Financial Services,Financials,False
+CVNA.N,Consumer Cyclical,Consumer Discretionary,Consumer Discretionary Distribution & Retail,Consumer Discretionary,False
+CVO.PA,Real Estate,Real Estate,Equity Real Estate Investment Trusts (REITs),Real Estate,False
+CVS.N,Healthcare,Health Care,Health Care Equipment & Services,Health Care,False
+CVX.N,Energy,Energy,Energy,Energy,False
+CWK.L,Consumer Defensive,Consumer Staples,"Food, Beverage & Tobacco",Consumer Staples,False
+D.N,Utilities,Utilities,Utilities,Utilities,False
+DAL.N,Industrials,Industrials,Transportation,Industrials,False
+DANO.PA,Consumer Defensive,Consumer Staples,"Food, Beverage & Tobacco",Consumer Staples,False
+DANSKE.CO,Financial Services,Financials,Banks,Financials,False
+DASH.OQ,Consumer Cyclical,Consumer Discretionary,Consumer Services,Consumer Discretionary,False
+DAST.PA,Technology,Information Technology,Software & Services,Information Technology,False
+DB1Gn.DE,Financial Services,Financials,Financial Services,Financials,False
+DBKGn.DE,Financial Services,Financials,Financial Services,Financials,False
+DCC.L,Energy,Energy,Energy,Energy,False
+DD.N,Basic Materials,Industrials,Capital Goods,Materials,True
+DDOG.OQ,Technology,Information Technology,Software & Services,Information Technology,False
+DE.N,Industrials,Industrials,Capital Goods,Industrials,False
+DECK.N,Consumer Cyclical,Consumer Discretionary,Consumer Durables & Apparel,Consumer Discretionary,False
+DELL.N,Technology,Information Technology,Technology Hardware & Equipment,Information Technology,False
+DEMANT.CO,Healthcare,Health Care,Health Care Equipment & Services,Health Care,False
+DG.N,Consumer Defensive,Consumer Staples,Consumer Staples Distribution & Retail,Consumer Staples,False
+DGE.L,Consumer Defensive,Consumer Staples,"Food, Beverage & Tobacco",Consumer Staples,False
+DGX.N,Healthcare,Health Care,Health Care Equipment & Services,Health Care,False
+DHER.DE,Consumer Cyclical,Consumer Discretionary,Consumer Services,Consumer Discretionary,False
+DHI.N,Consumer Cyclical,Consumer Discretionary,Consumer Durables & Apparel,Consumer Discretionary,False
+DHLn.DE,Industrials,Industrials,Transportation,Industrials,False
+DHR.N,Healthcare,Health Care,"Pharmaceuticals, Biotechnology & Life Sciences",Health Care,False
+DIOR.PA,Consumer Cyclical,Consumer Discretionary,Consumer Durables & Apparel,Consumer Discretionary,False
+DIS.N,Communication Services,Communication Services,Media & Entertainment,Communication Services,False
+DKSH.S,Industrials,Industrials,Capital Goods,Industrials,False
+DLG.MI,Consumer Cyclical,Consumer Discretionary,Consumer Durables & Apparel,Consumer Discretionary,False
+DLN.L,Real Estate,Real Estate,Equity Real Estate Investment Trusts (REITs),Real Estate,False
+DLR.N,Real Estate,Real Estate,Equity Real Estate Investment Trusts (REITs),Real Estate,False
+DLTR.OQ,Consumer Defensive,Consumer Staples,Consumer Staples Distribution & Retail,Consumer Staples,False
+DNB.OL,Financial Services,Financials,Banks,Financials,False
+DNP.WA,Consumer Defensive,Consumer Staples,Consumer Staples Distribution & Retail,Consumer Staples,False
+DOC.N,Real Estate,Real Estate,Equity Real Estate Investment Trusts (REITs),Real Estate,False
+DOV.N,Industrials,Industrials,Capital Goods,Industrials,False
+DOW.N,Basic Materials,Materials,Materials,Materials,False
+DPLM.L,Industrials,Industrials,Capital Goods,Industrials,False
+DPZ.OQ,Consumer Cyclical,Consumer Discretionary,Consumer Services,Consumer Discretionary,False
+DRI.N,Consumer Cyclical,Consumer Discretionary,Consumer Services,Consumer Discretionary,False
+DRX.L,Utilities,Utilities,Utilities,Utilities,False
+DSFIR.AS,Basic Materials,Materials,Materials,Materials,False
+DSV.CO,Industrials,Industrials,Transportation,Industrials,False
+DTE.N,Utilities,Utilities,Utilities,Utilities,False
+DTEGn.DE,Communication Services,Communication Services,Telecommunication Services,Communication Services,False
+DTGGe.DE,Industrials,Industrials,Capital Goods,Industrials,False
+DUK.N,Utilities,Utilities,Utilities,Utilities,False
+DVA.N,Healthcare,Health Care,Health Care Equipment & Services,Health Care,False
+DVN.N,Energy,Energy,Energy,Energy,False
+DXCM.OQ,Healthcare,Health Care,Health Care Equipment & Services,Health Care,False
+EA.OQ,Communication Services,Communication Services,Media & Entertainment,Communication Services,False
+EBAY.OQ,Consumer Cyclical,Consumer Discretionary,Consumer Discretionary Distribution & Retail,Consumer Discretionary,False
+EBP.WA,Financial Services,Financials,Banks,Financials,False
+ECL.N,Basic Materials,Materials,Materials,Materials,False
+ED.N,Utilities,Utilities,Utilities,Utilities,False
+EDEN.PA,Financial Services,Financials,Financial Services,Financials,False
+EDP.LS,Utilities,Utilities,Utilities,Utilities,False
+EDPR.LS,Utilities,Utilities,Utilities,Utilities,False
+EFX.N,Industrials,Industrials,Commercial  & Professional Services,Industrials,False
+EG.N,Financial Services,Financials,Insurance,Financials,False
+EIX.N,Utilities,Utilities,Utilities,Utilities,False
+EL.N,Consumer Defensive,Consumer Staples,Household & Personal Products,Consumer Staples,False
+ELE.MC,Utilities,Utilities,Utilities,Utilities,False
+ELI.BR,Utilities,Utilities,Utilities,Utilities,False
+ELIS.PA,Industrials,Industrials,Commercial  & Professional Services,Industrials,False
+ELISA.HE,Communication Services,Communication Services,Telecommunication Services,Communication Services,False
+ELV.N,Healthcare,Health Care,Health Care Equipment & Services,Health Care,False
+EME.N,Industrials,Industrials,Capital Goods,Industrials,False
+EMG.L,Financial Services,Financials,Financial Services,Financials,False
+EMII.MI,Financial Services,Financials,Banks,Financials,False
+EMR.N,Industrials,Industrials,Capital Goods,Industrials,False
+EMSN.S,Basic Materials,Materials,Materials,Materials,False
+ENAG.MC,Utilities,Utilities,Utilities,Utilities,False
+ENEI.MI,Utilities,Utilities,Utilities,Utilities,False
+ENGIE.PA,Utilities,Utilities,Utilities,Utilities,False
+ENI.MI,Energy,Energy,Energy,Energy,False
+ENR1n.DE,Industrials,Industrials,Capital Goods,Industrials,False
+ENT.L,Consumer Cyclical,Consumer Discretionary,Consumer Services,Consumer Discretionary,False
+ENX.PA,Financial Services,Financials,Financial Services,Financials,False
+EOG.N,Energy,Energy,Energy,Energy,False
+EONGn.DE,Utilities,Utilities,Utilities,Utilities,False
+EPIRa.ST,Industrials,Industrials,Capital Goods,Industrials,False
+EQIX.OQ,Real Estate,Real Estate,Equity Real Estate Investment Trusts (REITs),Real Estate,False
+EQNR.OL,Energy,Energy,Energy,Energy,False
+EQR.N,Real Estate,Real Estate,Equity Real Estate Investment Trusts (REITs),Real Estate,False
+EQT.N,Energy,Energy,Energy,Energy,False
+EQTAB.ST,Financial Services,Financials,Financial Services,Financials,False
+ERICb.ST,Technology,Information Technology,Technology Hardware & Equipment,Information Technology,False
+ERIE.OQ,Financial Services,Financials,Insurance,Financials,False
+ERST.VI,Financial Services,Financials,Banks,Financials,False
+ES.N,Utilities,Utilities,Utilities,Utilities,False
+ESLX.PA,Healthcare,Health Care,Health Care Equipment & Services,Health Care,False
+ESS.N,Real Estate,Real Estate,Equity Real Estate Investment Trusts (REITs),Real Estate,False
+ESSITYb.ST,Consumer Defensive,Consumer Staples,Household & Personal Products,Consumer Staples,False
+ETN.N,Industrials,Industrials,Capital Goods,Industrials,False
+ETR.N,Utilities,Utilities,Utilities,Utilities,False
+EUFI.PA,Financial Services,Health Care,"Pharmaceuticals, Biotechnology & Life Sciences",Financials,True
+EVDG.DE,Communication Services,Communication Services,Media & Entertainment,Communication Services,False
+EVKn.DE,Basic Materials,Materials,Materials,Materials,False
+EVOG.ST,Consumer Cyclical,Consumer Discretionary,Consumer Services,Consumer Discretionary,False
+EVRG.OQ,Utilities,Utilities,Utilities,Utilities,False
+EW.N,Healthcare,Health Care,Health Care Equipment & Services,Health Care,False
+EXC.OQ,Utilities,Utilities,Utilities,Utilities,False
+EXE.OQ,Energy,Energy,Energy,Energy,False
+EXHO.PA,Industrials,Consumer Discretionary,Consumer Services,Industrials,True
+EXOR.AS,Financial Services,Financials,Financial Services,Financials,False
+EXPD.N,Industrials,Industrials,Transportation,Industrials,False
+EXPE.OQ,Consumer Cyclical,Consumer Discretionary,Consumer Services,Consumer Discretionary,False
+EXPN.L,Industrials,Industrials,Commercial  & Professional Services,Industrials,False
+EXR.N,Real Estate,Real Estate,Equity Real Estate Investment Trusts (REITs),Real Estate,False
+EZJ.L,Industrials,Industrials,Transportation,Industrials,False
+F.N,Consumer Cyclical,Consumer Discretionary,Automobiles & Components,Consumer Discretionary,False
+FANG.OQ,Energy,Energy,Energy,Energy,False
+FAST.OQ,Industrials,Industrials,Capital Goods,Industrials,False
+FBK.MI,Financial Services,Financials,Banks,Financials,False
+FCX.N,Basic Materials,Materials,Materials,Materials,False
+FDJU.PA,Consumer Cyclical,Consumer Discretionary,Consumer Services,Consumer Discretionary,False
+FDS.N,Financial Services,Financials,Financial Services,Financials,False
+FDX.N,Industrials,Industrials,Transportation,Industrials,False
+FE.N,Utilities,Utilities,Utilities,Utilities,False
+FER.MC,Industrials,Industrials,Capital Goods,Industrials,False
+FFIV.OQ,Technology,Information Technology,Technology Hardware & Equipment,Information Technology,False
+FHZN.S,Industrials,Industrials,Transportation,Industrials,False
+FICO.N,Technology,Information Technology,Software & Services,Information Technology,False
+FIS.N,Technology,Financials,Financial Services,Information Technology,True
+FISV.OQ,Technology,Financials,Financial Services,Information Technology,True
+FITB.N,Financial Services,Financials,Banks,Financials,False
+FIX.N,Industrials,Industrials,Capital Goods,Industrials,False
+FLS.CO,Industrials,Industrials,Capital Goods,Industrials,False
+FMEG.DE,Healthcare,Health Care,Health Care Equipment & Services,Health Care,False
+FNTGn.DE,Communication Services,Communication Services,Telecommunication Services,Communication Services,False
+FORTUM.HE,Utilities,Utilities,Utilities,Utilities,False
+FOUG.PA,Industrials,Industrials,Capital Goods,Industrials,False
+FOX.OQ,Communication Services,Communication Services,Media & Entertainment,Communication Services,False
+FOXA.OQ,Communication Services,Communication Services,Media & Entertainment,Communication Services,False
+FPE3_p.DE,Basic Materials,Materials,Materials,Materials,False
+FRAG.DE,Industrials,Industrials,Transportation,Industrials,False
+FREG.DE,Healthcare,Health Care,Health Care Equipment & Services,Health Care,False
+FRES.L,Basic Materials,Materials,Materials,Materials,False
+FRO.OL,Energy,Energy,Energy,Energy,False
+FRT.N,Real Estate,Real Estate,Equity Real Estate Investment Trusts (REITs),Real Estate,False
+FSLR.OQ,Technology,Information Technology,Semiconductors & Semiconductor Equipment,Information Technology,False
+FTKn.DE,Financial Services,Financials,Financial Services,Financials,False
+FTNT.OQ,Technology,Information Technology,Software & Services,Information Technology,False
+FTV.N,Technology,Industrials,Capital Goods,Information Technology,True
+G1AG.DE,Industrials,Industrials,Capital Goods,Industrials,False
+G24n.DE,Communication Services,Communication Services,Media & Entertainment,Communication Services,False
+GALD.S,Healthcare,Health Care,"Pharmaceuticals, Biotechnology & Life Sciences",Health Care,False
+GALE.S,Healthcare,Health Care,Health Care Equipment & Services,Health Care,False
+GALP.LS,Energy,Energy,Energy,Energy,False
+GASI.MI,Utilities,Financials,Insurance,Utilities,True
+GAW.L,Consumer Cyclical,Consumer Discretionary,Consumer Durables & Apparel,Consumer Discretionary,False
+GBFG.DE,Industrials,Industrials,Commercial  & Professional Services,Industrials,False
+GBLB.BR,Financial Services,Financials,Financial Services,Financials,False
+GD.N,Industrials,Industrials,Capital Goods,Industrials,False
+GDDY.N,Technology,Information Technology,Software & Services,Information Technology,False
+GE.N,Industrials,Industrials,Capital Goods,Industrials,False
+GEBN.S,Industrials,Industrials,Capital Goods,Industrials,False
+GEHC.OQ,Healthcare,Health Care,Health Care Equipment & Services,Health Care,False
+GEN.OQ,Technology,Information Technology,Software & Services,Information Technology,False
+GETIb.ST,Healthcare,Health Care,Health Care Equipment & Services,Health Care,False
+GETP.PA,Industrials,Industrials,Transportation,Industrials,False
+GEV.N,Industrials,Industrials,Capital Goods,Industrials,False
+GF.S,Industrials,Industrials,Capital Goods,Industrials,False
+GFCP.PA,Real Estate,Real Estate,Equity Real Estate Investment Trusts (REITs),Real Estate,False
+GILD.OQ,Healthcare,Health Care,"Pharmaceuticals, Biotechnology & Life Sciences",Health Care,False
+GIS.N,Consumer Defensive,Consumer Staples,"Food, Beverage & Tobacco",Consumer Staples,False
+GIVN.S,Basic Materials,Materials,Materials,Materials,False
+GJFG.OL,Financial Services,Financials,Insurance,Financials,False
+GL.N,Financial Services,Financials,Insurance,Financials,False
+GL9.I,Consumer Defensive,Consumer Staples,"Food, Beverage & Tobacco",Consumer Staples,False
+GLEN.L,Basic Materials,Materials,Materials,Materials,False
+GLW.N,Technology,Information Technology,Technology Hardware & Equipment,Information Technology,False
+GM.N,Consumer Cyclical,Consumer Discretionary,Automobiles & Components,Consumer Discretionary,False
+GMAB.CO,Healthcare,Health Care,"Pharmaceuticals, Biotechnology & Life Sciences",Health Care,False
+GNRC.N,Industrials,Industrials,Capital Goods,Industrials,False
+GOOG.OQ,Communication Services,Communication Services,Media & Entertainment,Communication Services,False
+GOOGL.OQ,Communication Services,Communication Services,Media & Entertainment,Communication Services,False
+GPC.N,Consumer Cyclical,Consumer Discretionary,Consumer Discretionary Distribution & Retail,Consumer Discretionary,False
+GPN.N,Industrials,Financials,Financial Services,Industrials,True
+GRLS.MC,Healthcare,Health Care,"Pharmaceuticals, Biotechnology & Life Sciences",Health Care,False
+GRMN.N,Technology,Consumer Discretionary,Consumer Durables & Apparel,Information Technology,True
+GS.N,Financial Services,Financials,Financial Services,Financials,False
+GSK.L,Healthcare,Health Care,"Pharmaceuticals, Biotechnology & Life Sciences",Health Care,False
+GTT.PA,Energy,Energy,Energy,Energy,False
+GWW.N,Industrials,Industrials,Capital Goods,Industrials,False
+HAGG.DE,Industrials,Industrials,Capital Goods,Industrials,False
+HAL.N,Energy,Energy,Energy,Energy,False
+HAS.OQ,Consumer Cyclical,Consumer Discretionary,Consumer Durables & Apparel,Consumer Discretionary,False
+HBAN.OQ,Financial Services,Financials,Banks,Financials,False
+HBANC.S,Financial Services,Financials,Insurance,Financials,False
+HCA.N,Healthcare,Health Care,Health Care Equipment & Services,Health Care,False
+HD.N,Consumer Cyclical,Consumer Discretionary,Consumer Discretionary Distribution & Retail,Consumer Discretionary,False
+HEIG.DE,Basic Materials,Materials,Materials,Materials,False
+HEIN.AS,Consumer Defensive,Consumer Staples,"Food, Beverage & Tobacco",Consumer Staples,False
+HEIO.AS,Consumer Defensive,Consumer Staples,"Food, Beverage & Tobacco",Consumer Staples,False
+HEXAb.ST,Technology,Information Technology,Technology Hardware & Equipment,Information Technology,False
+HIAB.HE,Industrials,Industrials,Capital Goods,Industrials,False
+HIG.N,Financial Services,Financials,Insurance,Financials,False
+HII.N,Industrials,Industrials,Capital Goods,Industrials,False
+HIK.L,Healthcare,Health Care,"Pharmaceuticals, Biotechnology & Life Sciences",Health Care,False
+HLMA.L,Industrials,Information Technology,Technology Hardware & Equipment,Industrials,True
+HLN.L,Healthcare,Health Care,"Pharmaceuticals, Biotechnology & Life Sciences",Health Care,False
+HLT.N,Consumer Cyclical,Consumer Discretionary,Consumer Services,Consumer Discretionary,False
+HMb.ST,Consumer Cyclical,Consumer Discretionary,Consumer Discretionary Distribution & Retail,Consumer Discretionary,False
+HNKG_p.DE,Consumer Defensive,Consumer Staples,Household & Personal Products,Consumer Staples,False
+HNRGn.DE,Financial Services,Financials,Insurance,Financials,False
+HOCM.L,Basic Materials,Materials,Materials,Materials,False
+HOLMb.ST,Basic Materials,Materials,Materials,Materials,False
+HOLN.S,Basic Materials,Materials,Materials,Materials,False
+HON.OQ,Industrials,Industrials,Capital Goods,Industrials,False
+HOOD.OQ,Financial Services,Financials,Financial Services,Financials,False
+HOTG.DE,Industrials,Industrials,Capital Goods,Industrials,False
+HPE.N,Technology,Information Technology,Technology Hardware & Equipment,Information Technology,False
+HPQ.N,Technology,Information Technology,Technology Hardware & Equipment,Information Technology,False
+HRA.MI,Utilities,Utilities,Utilities,Utilities,False
+HRL.N,Consumer Defensive,Consumer Staples,"Food, Beverage & Tobacco",Consumer Staples,False
+HRMS.PA,Consumer Cyclical,Consumer Discretionary,Consumer Durables & Apparel,Consumer Discretionary,False
+HSBA.L,Financial Services,Financials,Banks,Financials,False
+HSIC.OQ,Healthcare,Health Care,Health Care Equipment & Services,Health Care,False
+HST.OQ,Real Estate,Real Estate,Equity Real Estate Investment Trusts (REITs),Real Estate,False
+HSX.L,Financial Services,Financials,Insurance,Financials,False
+HSY.N,Consumer Defensive,Consumer Staples,"Food, Beverage & Tobacco",Consumer Staples,False
+HUBB.N,Industrials,Industrials,Capital Goods,Industrials,False
+HUBN.S,Technology,Industrials,Capital Goods,Information Technology,True
+HUH1V.HE,Consumer Cyclical,Materials,Materials,Consumer Discretionary,True
+HUM.N,Healthcare,Health Care,Health Care Equipment & Services,Health Care,False
+HWDN.L,Consumer Cyclical,Industrials,Capital Goods,Consumer Discretionary,True
+HWM.N,Industrials,Industrials,Capital Goods,Industrials,False
+IBE.MC,Utilities,Utilities,Utilities,Utilities,False
+IBKR.OQ,Financial Services,Financials,Financial Services,Financials,False
+IBM.N,Technology,Information Technology,Software & Services,Information Technology,False
+ICAG.L,Industrials,Industrials,Transportation,Industrials,False
+ICE.N,Financial Services,Financials,Financial Services,Financials,False
+ICGIN.L,Financial Services,Financials,Financial Services,Financials,False
+IDR.MC,Technology,Information Technology,Software & Services,Information Technology,False
+IDXX.OQ,Healthcare,Health Care,Health Care Equipment & Services,Health Care,False
+IETB.BR,Consumer Cyclical,Consumer Discretionary,Consumer Discretionary Distribution & Retail,Consumer Discretionary,False
+IEX.N,Industrials,Industrials,Capital Goods,Industrials,False
+IFF.N,Basic Materials,Materials,Materials,Materials,False
+IFXGn.DE,Technology,Information Technology,Semiconductors & Semiconductor Equipment,Information Technology,False
+IG.MI,Utilities,Utilities,Utilities,Utilities,False
+IGG.L,Financial Services,Financials,Financial Services,Financials,False
+IHG.L,Consumer Cyclical,Consumer Discretionary,Consumer Services,Consumer Discretionary,False
+III.L,Financial Services,Financials,Financial Services,Financials,False
+IMB.L,Consumer Defensive,Consumer Staples,"Food, Beverage & Tobacco",Consumer Staples,False
+IMCD.AS,Basic Materials,Industrials,Capital Goods,Materials,True
+IMI.L,Industrials,Industrials,Capital Goods,Industrials,False
+INCH.L,Consumer Cyclical,Consumer Discretionary,Consumer Discretionary Distribution & Retail,Consumer Discretionary,False
+INCY.OQ,Healthcare,Health Care,"Pharmaceuticals, Biotechnology & Life Sciences",Health Care,False
+INDT.ST,Industrials,Industrials,Capital Goods,Industrials,False
+INDUc.ST,Financial Services,Financials,Financial Services,Financials,False
+INF.L,Communication Services,Communication Services,Media & Entertainment,Communication Services,False
+INGA.AS,Financial Services,Financials,Banks,Financials,False
+INGP.WA,Financial Services,Financials,Banks,Financials,False
+INPST.AS,Industrials,Industrials,Transportation,Industrials,False
+INTC.OQ,Technology,Information Technology,Semiconductors & Semiconductor Equipment,Information Technology,False
+INTU.OQ,Technology,Information Technology,Software & Services,Information Technology,False
+INVEb.ST,Financial Services,Financials,Financial Services,Financials,False
+INVH.N,Real Estate,Real Estate,Equity Real Estate Investment Trusts (REITs),Real Estate,False
+INVP.L,Financial Services,Financials,Financial Services,Financials,False
+INWT.MI,Real Estate,Communication Services,Telecommunication Services,Real Estate,True
+IP.N,Consumer Cyclical,Materials,Materials,Consumer Discretionary,True
+IPN.PA,Healthcare,Health Care,"Pharmaceuticals, Biotechnology & Life Sciences",Health Care,False
+IQV.N,Healthcare,Health Care,"Pharmaceuticals, Biotechnology & Life Sciences",Health Care,False
+IR.N,Industrials,Industrials,Capital Goods,Industrials,False
+IRM.N,Real Estate,Real Estate,Equity Real Estate Investment Trusts (REITs),Real Estate,False
+ISP.MI,Financial Services,Financials,Banks,Financials,False
+ISRG.OQ,Healthcare,Health Care,Health Care Equipment & Services,Health Care,False
+ISS.CO,Industrials,Industrials,Commercial  & Professional Services,Industrials,False
+IT.N,Technology,Information Technology,Software & Services,Information Technology,False
+ITPG.MI,Industrials,Industrials,Capital Goods,Industrials,False
+ITRK.L,Industrials,Industrials,Commercial  & Professional Services,Industrials,False
+ITV.L,Communication Services,Communication Services,Media & Entertainment,Communication Services,False
+ITW.N,Industrials,Industrials,Capital Goods,Industrials,False
+ITX.MC,Consumer Cyclical,Consumer Discretionary,Consumer Discretionary Distribution & Retail,Consumer Discretionary,False
+IVG.MI,Industrials,Industrials,Capital Goods,Industrials,False
+IVZ.N,Financial Services,Financials,Financial Services,Financials,False
+J.N,Industrials,Industrials,Commercial  & Professional Services,Industrials,False
+JBHT.OQ,Industrials,Industrials,Transportation,Industrials,False
+JBL.N,Technology,Information Technology,Technology Hardware & Equipment,Information Technology,False
+JCI.N,Industrials,Industrials,Capital Goods,Industrials,False
+JD.L,Consumer Cyclical,Consumer Discretionary,Consumer Discretionary Distribution & Retail,Consumer Discretionary,False
+JKHY.OQ,Technology,Financials,Financial Services,Information Technology,True
+JMAT.L,Basic Materials,Materials,Materials,Materials,False
+JMT.LS,Consumer Defensive,Consumer Staples,Consumer Staples Distribution & Retail,Consumer Staples,False
+JNJ.N,Healthcare,Health Care,"Pharmaceuticals, Biotechnology & Life Sciences",Health Care,False
+JPM.N,Financial Services,Financials,Banks,Financials,False
+JYSK.CO,Financial Services,Financials,Banks,Financials,False
+KBC.BR,Financial Services,Financials,Banks,Financials,False
+KBCA.BR,Financial Services,Financials,Banks,Financials,False
+KBX.DE,Consumer Cyclical,Industrials,Capital Goods,Consumer Discretionary,True
+KCRA.HE,Industrials,Industrials,Capital Goods,Industrials,False
+KDP.OQ,Consumer Defensive,Consumer Staples,"Food, Beverage & Tobacco",Consumer Staples,False
+KEMIRA.HE,Basic Materials,Materials,Materials,Materials,False
+KESKOB.HE,Consumer Defensive,Consumer Staples,Consumer Staples Distribution & Retail,Consumer Staples,False
+KEY.N,Financial Services,Financials,Banks,Financials,False
+KEYS.N,Technology,Information Technology,Technology Hardware & Equipment,Information Technology,False
+KGF.L,Consumer Cyclical,Consumer Discretionary,Consumer Discretionary Distribution & Retail,Consumer Discretionary,False
+KGH.WA,Basic Materials,Materials,Materials,Materials,False
+KGX.DE,Industrials,Industrials,Capital Goods,Industrials,False
+KHC.OQ,Consumer Defensive,Consumer Staples,"Food, Beverage & Tobacco",Consumer Staples,False
+KIM.N,Real Estate,Real Estate,Equity Real Estate Investment Trusts (REITs),Real Estate,False
+KKR.N,Financial Services,Financials,Financial Services,Financials,False
+KLAC.OQ,Technology,Information Technology,Semiconductors & Semiconductor Equipment,Information Technology,False
+KMB.OQ,Consumer Defensive,Consumer Staples,Household & Personal Products,Consumer Staples,False
+KMI.N,Energy,Energy,Energy,Energy,False
+KNEBV.HE,Industrials,Industrials,Capital Goods,Industrials,False
+KNIN.S,Industrials,Industrials,Transportation,Industrials,False
+KO.N,Consumer Defensive,Consumer Staples,"Food, Beverage & Tobacco",Consumer Staples,False
+KOG.OL,Industrials,Industrials,Capital Goods,Industrials,False
+KPN.AS,Communication Services,Communication Services,Telecommunication Services,Communication Services,False
+KR.N,Consumer Defensive,Consumer Staples,Consumer Staples Distribution & Retail,Consumer Staples,False
+KSP.I,Consumer Defensive,Industrials,Capital Goods,Consumer Staples,True
+KVUE.N,Consumer Defensive,Consumer Staples,Household & Personal Products,Consumer Staples,False
+KYGa.I,Industrials,Consumer Staples,"Food, Beverage & Tobacco",Industrials,True
+L.N,Financial Services,Financials,Insurance,Financials,False
+LAGRb.ST,Industrials,Information Technology,Technology Hardware & Equipment,Industrials,True
+LAND.L,Real Estate,Real Estate,Equity Real Estate Investment Trusts (REITs),Real Estate,False
+LATOb.ST,Industrials,Industrials,Capital Goods,Industrials,False
+LDOF.MI,Industrials,Industrials,Capital Goods,Industrials,False
+LDOS.N,Technology,Industrials,Commercial  & Professional Services,Information Technology,True
+LEGD.PA,Industrials,Industrials,Capital Goods,Industrials,False
+LEGn.DE,Real Estate,Real Estate,Real Estate Management & Development,Real Estate,False
+LEN.N,Consumer Cyclical,Consumer Discretionary,Consumer Durables & Apparel,Consumer Discretionary,False
+LGEN.L,Financial Services,Financials,Insurance,Financials,False
+LH.N,Healthcare,Health Care,Health Care Equipment & Services,Health Care,False
+LHAG.DE,Industrials,Industrials,Transportation,Industrials,False
+LHX.N,Industrials,Industrials,Capital Goods,Industrials,False
+LIFCOb.ST,Industrials,Industrials,Capital Goods,Industrials,False
+LIGHT.AS,Industrials,Industrials,Capital Goods,Industrials,False
+LII.N,Industrials,Industrials,Capital Goods,Industrials,False
+LIN.OQ,Basic Materials,Materials,Materials,Materials,False
+LISP.S,Consumer Defensive,Consumer Staples,"Food, Beverage & Tobacco",Consumer Staples,False
+LITE.OQ,Technology,Information Technology,Technology Hardware & Equipment,Information Technology,False
+LLOY.L,Financial Services,Financials,Banks,Financials,False
+LLY.N,Healthcare,Health Care,"Pharmaceuticals, Biotechnology & Life Sciences",Health Care,False
+LMPL.L,Real Estate,Real Estate,Equity Real Estate Investment Trusts (REITs),Real Estate,False
+LMT.N,Industrials,Industrials,Capital Goods,Industrials,False
+LNT.OQ,Utilities,Utilities,Utilities,Utilities,False
+LOGN.S,Technology,Information Technology,Technology Hardware & Equipment,Information Technology,False
+LOIM.PA,Industrials,Real Estate,Equity Real Estate Investment Trusts (REITs),Industrials,True
+LONN.S,Healthcare,Health Care,"Pharmaceuticals, Biotechnology & Life Sciences",Health Care,False
+LOOMIS.ST,Industrials,Industrials,Commercial  & Professional Services,Industrials,False
+LOTB.BR,Consumer Defensive,Consumer Staples,"Food, Beverage & Tobacco",Consumer Staples,False
+LOW.N,Consumer Cyclical,Consumer Discretionary,Consumer Discretionary Distribution & Retail,Consumer Discretionary,False
+LPPP.WA,Consumer Cyclical,Consumer Discretionary,Consumer Durables & Apparel,Consumer Discretionary,False
+LRCX.OQ,Technology,Information Technology,Semiconductors & Semiconductor Equipment,Information Technology,False
+LSEG.L,Financial Services,Financials,Financial Services,Financials,False
+LTMC.MI,Consumer Cyclical,Consumer Discretionary,Consumer Services,Consumer Discretionary,False
+LULU.OQ,Consumer Cyclical,Consumer Discretionary,Consumer Durables & Apparel,Consumer Discretionary,False
+LUNDb.ST,Industrials,Financials,Financial Services,Industrials,True
+LUV.N,Industrials,Industrials,Transportation,Industrials,False
+LVMH.PA,Consumer Cyclical,Consumer Discretionary,Consumer Durables & Apparel,Consumer Discretionary,False
+LVS.N,Consumer Cyclical,Consumer Discretionary,Consumer Services,Consumer Discretionary,False
+LYB.N,Basic Materials,Materials,Materials,Materials,False
+LYV.N,Communication Services,Communication Services,Media & Entertainment,Communication Services,False
+MA.N,Financial Services,Financials,Financial Services,Financials,False
+MAA.N,Real Estate,Real Estate,Equity Real Estate Investment Trusts (REITs),Real Estate,False
+MAERSKb.CO,Industrials,Industrials,Transportation,Industrials,False
+MANTA.HE,Financial Services,Financials,Insurance,Financials,False
+MAP.MC,Financial Services,Financials,Insurance,Financials,False
+MAR.OQ,Consumer Cyclical,Consumer Discretionary,Consumer Services,Consumer Discretionary,False
+MAS.N,Industrials,Industrials,Capital Goods,Industrials,False
+MBGn.DE,Consumer Cyclical,Consumer Discretionary,Automobiles & Components,Consumer Discretionary,False
+MBK.WA,Financial Services,Financials,Banks,Financials,False
+MCD.N,Consumer Cyclical,Consumer Discretionary,Consumer Services,Consumer Discretionary,False
+MCHP.OQ,Technology,Information Technology,Semiconductors & Semiconductor Equipment,Information Technology,False
+MCK.N,Healthcare,Health Care,Health Care Equipment & Services,Health Care,False
+MCO.N,Financial Services,Financials,Financial Services,Financials,False
+MDLZ.OQ,Consumer Defensive,Consumer Staples,"Food, Beverage & Tobacco",Consumer Staples,False
+MDT.N,Healthcare,Health Care,Health Care Equipment & Services,Health Care,False
+MET.N,Financial Services,Financials,Insurance,Financials,False
+META.OQ,Communication Services,Communication Services,Media & Entertainment,Communication Services,False
+METSO.HE,Industrials,Industrials,Capital Goods,Industrials,False
+MGM.N,Consumer Cyclical,Consumer Discretionary,Consumer Services,Consumer Discretionary,False
+MICP.PA,Consumer Cyclical,Consumer Discretionary,Automobiles & Components,Consumer Discretionary,False
+MKC.N,Consumer Defensive,Consumer Staples,"Food, Beverage & Tobacco",Consumer Staples,False
+MKS.L,Consumer Cyclical,Consumer Staples,Consumer Staples Distribution & Retail,Consumer Discretionary,True
+MLM.N,Basic Materials,Materials,Materials,Materials,False
+MMM.N,Industrials,Industrials,Capital Goods,Industrials,False
+MNDI.L,Basic Materials,Materials,Materials,Materials,False
+MNG.L,Financial Services,Financials,Financial Services,Financials,False
+MNST.OQ,Consumer Defensive,Consumer Staples,"Food, Beverage & Tobacco",Consumer Staples,False
+MO.N,Consumer Defensive,Consumer Staples,"Food, Beverage & Tobacco",Consumer Staples,False
+MOBN.S,Real Estate,Real Estate,Real Estate Management & Development,Real Estate,False
+MONC.MI,Consumer Cyclical,Consumer Discretionary,Consumer Durables & Apparel,Consumer Discretionary,False
+MOS.N,Basic Materials,Materials,Materials,Materials,False
+MOWI.OL,Consumer Defensive,Consumer Staples,"Food, Beverage & Tobacco",Consumer Staples,False
+MPC.N,Energy,Energy,Energy,Energy,False
+MPWR.OQ,Technology,Information Technology,Semiconductors & Semiconductor Equipment,Information Technology,False
+MRCG.DE,Healthcare,Health Care,"Pharmaceuticals, Biotechnology & Life Sciences",Health Care,False
+MRK.N,Healthcare,Health Care,"Pharmaceuticals, Biotechnology & Life Sciences",Health Care,False
+MRL.MC,Real Estate,Real Estate,Equity Real Estate Investment Trusts (REITs),Real Estate,False
+MRNA.OQ,Healthcare,Health Care,"Pharmaceuticals, Biotechnology & Life Sciences",Health Care,False
+MRON.L,Industrials,Industrials,Capital Goods,Industrials,False
+MRSH.N,Financial Services,Financials,Insurance,Financials,False
+MS.N,Financial Services,Financials,Financial Services,Financials,False
+MSCI.N,Financial Services,Financials,Financial Services,Financials,False
+MSFT.OQ,Technology,Information Technology,Software & Services,Information Technology,False
+MSI.N,Technology,Information Technology,Technology Hardware & Equipment,Information Technology,False
+MT.AS,Basic Materials,Materials,Materials,Materials,False
+MTB.N,Financial Services,Financials,Banks,Financials,False
+MTD.N,Healthcare,Health Care,"Pharmaceuticals, Biotechnology & Life Sciences",Health Care,False
+MTO.L,Industrials,Industrials,Commercial  & Professional Services,Industrials,False
+MTXGn.DE,Industrials,Industrials,Capital Goods,Industrials,False
+MU.OQ,Technology,Information Technology,Semiconductors & Semiconductor Equipment,Information Technology,False
+MUVGn.DE,Financial Services,Financials,Insurance,Financials,False
+MWDP.PA,Financial Services,Financials,Financial Services,Financials,False
+MYCR.ST,Industrials,Information Technology,Technology Hardware & Equipment,Industrials,True
+NAFG.DE,Industrials,Materials,Materials,Industrials,True
+NCLH.N,Consumer Cyclical,Consumer Discretionary,Consumer Services,Consumer Discretionary,False
+NDAFI.HE,Financial Services,Financials,Banks,Financials,False
+NDAQ.OQ,Financial Services,Financials,Financial Services,Financials,False
+NDSN.OQ,Industrials,Industrials,Capital Goods,Industrials,False
+NDXG.DE,Industrials,Industrials,Capital Goods,Industrials,False
+NEE.N,Utilities,Utilities,Utilities,Utilities,False
+NEKG.DE,Technology,Information Technology,Software & Services,Information Technology,False
+NEM.N,Basic Materials,Materials,Materials,Materials,False
+NESN.S,Consumer Defensive,Consumer Staples,"Food, Beverage & Tobacco",Consumer Staples,False
+NESTE.HE,Energy,Energy,Energy,Energy,False
+NEXII.MI,Technology,Financials,Financial Services,Information Technology,True
+NEXS.PA,Industrials,Industrials,Capital Goods,Industrials,False
+NFLX.OQ,Communication Services,Communication Services,Media & Entertainment,Communication Services,False
+NG.L,Utilities,Utilities,Utilities,Utilities,False
+NHY.OL,Basic Materials,Materials,Materials,Materials,False
+NI.N,Utilities,Utilities,Utilities,Utilities,False
+NIBEb.ST,Industrials,Industrials,Capital Goods,Industrials,False
+NKE.N,Consumer Cyclical,Consumer Discretionary,Consumer Durables & Apparel,Consumer Discretionary,False
+NKT.CO,Industrials,Industrials,Capital Goods,Industrials,False
+NN.AS,Financial Services,Financials,Insurance,Financials,False
+NOC.N,Industrials,Industrials,Capital Goods,Industrials,False
+NOD.OL,Technology,Information Technology,Semiconductors & Semiconductor Equipment,Information Technology,False
+NOKIA.HE,Technology,Information Technology,Technology Hardware & Equipment,Information Technology,False
+NOVN.S,Healthcare,Health Care,"Pharmaceuticals, Biotechnology & Life Sciences",Health Care,False
+NOVOb.CO,Healthcare,Health Care,"Pharmaceuticals, Biotechnology & Life Sciences",Health Care,False
+NOW.N,Technology,Information Technology,Software & Services,Information Technology,False
+NRG.N,Utilities,Utilities,Utilities,Utilities,False
+NSC.N,Industrials,Industrials,Transportation,Industrials,False
+NSISb.CO,Basic Materials,Materials,Materials,Materials,False
+NTAP.OQ,Technology,Information Technology,Technology Hardware & Equipment,Information Technology,False
+NTGY.MC,Utilities,Utilities,Utilities,Utilities,False
+NTRS.OQ,Financial Services,Financials,Financial Services,Financials,False
+NUE.N,Basic Materials,Materials,Materials,Materials,False
+NVDA.OQ,Technology,Information Technology,Semiconductors & Semiconductor Equipment,Information Technology,False
+NVR.N,Consumer Cyclical,Consumer Discretionary,Consumer Durables & Apparel,Consumer Discretionary,False
+NWG.L,Financial Services,Financials,Banks,Financials,False
+NWS.OQ,Communication Services,Communication Services,Media & Entertainment,Communication Services,False
+NWSA.OQ,Communication Services,Communication Services,Media & Entertainment,Communication Services,False
+NXPI.OQ,Technology,Information Technology,Semiconductors & Semiconductor Equipment,Information Technology,False
+NXT.L,Consumer Cyclical,Consumer Discretionary,Consumer Discretionary Distribution & Retail,Consumer Discretionary,False
+O.N,Real Estate,Real Estate,Equity Real Estate Investment Trusts (REITs),Real Estate,False
+ODFL.OQ,Industrials,Industrials,Transportation,Industrials,False
+OKE.N,Energy,Energy,Energy,Energy,False
+OMC.N,Communication Services,Communication Services,Media & Entertainment,Communication Services,False
+OMVV.VI,Energy,Energy,Energy,Energy,False
+ON.OQ,Technology,Information Technology,Semiconductors & Semiconductor Equipment,Information Technology,False
+ORAN.PA,Communication Services,Communication Services,Telecommunication Services,Communication Services,False
+ORCL.N,Technology,Information Technology,Software & Services,Information Technology,False
+OREP.PA,Consumer Defensive,Consumer Staples,Household & Personal Products,Consumer Staples,False
+ORK.OL,Consumer Defensive,Consumer Staples,"Food, Beverage & Tobacco",Consumer Staples,False
+ORLY.OQ,Consumer Cyclical,Consumer Discretionary,Consumer Discretionary Distribution & Retail,Consumer Discretionary,False
+ORNBV.HE,Healthcare,Health Care,"Pharmaceuticals, Biotechnology & Life Sciences",Health Care,False
+ORSTED.CO,Utilities,Utilities,Utilities,Utilities,False
+OTIS.N,Industrials,Industrials,Capital Goods,Industrials,False
+OXY.N,Energy,Energy,Energy,Energy,False
+P911_p.DE,Consumer Cyclical,Consumer Discretionary,Automobiles & Components,Consumer Discretionary,False
+PAFR.L,Basic Materials,Materials,Materials,Materials,False
+PANW.OQ,Technology,Information Technology,Software & Services,Information Technology,False
+PAYX.OQ,Technology,Industrials,Commercial  & Professional Services,Information Technology,True
+PCAR.OQ,Industrials,Industrials,Capital Goods,Industrials,False
+PCG.N,Utilities,Utilities,Utilities,Utilities,False
+PEG.N,Utilities,Utilities,Utilities,Utilities,False
+PEO.WA,Financial Services,Financials,Banks,Financials,False
+PEP.OQ,Consumer Defensive,Consumer Staples,"Food, Beverage & Tobacco",Consumer Staples,False
+PERP.PA,Consumer Defensive,Consumer Staples,"Food, Beverage & Tobacco",Consumer Staples,False
+PFE.N,Healthcare,Health Care,"Pharmaceuticals, Biotechnology & Life Sciences",Health Care,False
+PFG.OQ,Financial Services,Financials,Insurance,Financials,False
+PG.N,Consumer Defensive,Consumer Staples,Household & Personal Products,Consumer Staples,False
+PGHN.S,Financial Services,Financials,Financial Services,Financials,False
+PGR.N,Financial Services,Financials,Insurance,Financials,False
+PH.N,Industrials,Industrials,Capital Goods,Industrials,False
+PHG.AS,Healthcare,Health Care,Health Care Equipment & Services,Health Care,False
+PHM.N,Consumer Cyclical,Consumer Discretionary,Consumer Durables & Apparel,Consumer Discretionary,False
+PHP.L,Real Estate,Real Estate,Equity Real Estate Investment Trusts (REITs),Real Estate,False
+PIRC.MI,Consumer Cyclical,Consumer Discretionary,Automobiles & Components,Consumer Discretionary,False
+PKG.N,Consumer Cyclical,Materials,Materials,Consumer Discretionary,True
+PKN.WA,Energy,Energy,Energy,Energy,False
+PKO.WA,Financial Services,Financials,Banks,Financials,False
+PLD.N,Real Estate,Real Estate,Equity Real Estate Investment Trusts (REITs),Real Estate,False
+PLTR.OQ,Technology,Information Technology,Software & Services,Information Technology,False
+PLUSP.L,Financial Services,Financials,Financial Services,Financials,False
+PM.N,Consumer Defensive,Consumer Staples,"Food, Beverage & Tobacco",Consumer Staples,False
+PNC.N,Financial Services,Financials,Banks,Financials,False
+PNDORA.CO,Consumer Cyclical,Consumer Discretionary,Consumer Durables & Apparel,Consumer Discretionary,False
+PNN.L,Utilities,Utilities,Utilities,Utilities,False
+PNR.N,Industrials,Industrials,Capital Goods,Industrials,False
+PNW.N,Utilities,Utilities,Utilities,Utilities,False
+PODD.OQ,Healthcare,Health Care,Health Care Equipment & Services,Health Care,False
+POOL.OQ,Industrials,Consumer Discretionary,Consumer Discretionary Distribution & Retail,Industrials,True
+PPG.N,Basic Materials,Materials,Materials,Materials,False
+PPL.N,Utilities,Utilities,Utilities,Utilities,False
+PRTP.PA,Consumer Cyclical,Consumer Discretionary,Consumer Durables & Apparel,Consumer Discretionary,False
+PRU.L,Financial Services,Financials,Insurance,Financials,False
+PRU.N,Financial Services,Financials,Insurance,Financials,False
+PRX.AS,Consumer Cyclical,Consumer Discretionary,Consumer Discretionary Distribution & Retail,Consumer Discretionary,False
+PRY.MI,Industrials,Industrials,Capital Goods,Industrials,False
+PSA.N,Real Estate,Real Estate,Equity Real Estate Investment Trusts (REITs),Real Estate,False
+PSHG_p.DE,Consumer Cyclical,Consumer Discretionary,Automobiles & Components,Consumer Discretionary,False
+PSKY.OQ,Communication Services,Communication Services,Media & Entertainment,Communication Services,False
+PSN.L,Consumer Cyclical,Consumer Discretionary,Consumer Durables & Apparel,Consumer Discretionary,False
+PSON.L,Communication Services,Consumer Discretionary,Consumer Services,Communication Services,True
+PSPN.S,Real Estate,Real Estate,Real Estate Management & Development,Real Estate,False
+PST.MI,Industrials,Financials,Financial Services,Industrials,True
+PSX.N,Energy,Energy,Energy,Energy,False
+PTC.OQ,Technology,Information Technology,Software & Services,Information Technology,False
+PUBP.PA,Communication Services,Communication Services,Media & Entertainment,Communication Services,False
+PUIGb.MC,Consumer Defensive,Consumer Staples,Household & Personal Products,Consumer Staples,False
+PUMG.DE,Consumer Cyclical,Consumer Discretionary,Consumer Durables & Apparel,Consumer Discretionary,False
+PWR.N,Industrials,Industrials,Capital Goods,Industrials,False
+PYPL.OQ,Financial Services,Financials,Financial Services,Financials,False
+PZU.WA,Financial Services,Financials,Insurance,Financials,False
+QCOM.OQ,Technology,Information Technology,Semiconductors & Semiconductor Equipment,Information Technology,False
+QIA.DE,Healthcare,Health Care,"Pharmaceuticals, Biotechnology & Life Sciences",Health Care,False
+QLT.L,Financial Services,Financials,Financial Services,Financials,False
+QQ.L,Industrials,Industrials,Capital Goods,Industrials,False
+R3NK.DE,Industrials,Industrials,Capital Goods,Industrials,False
+RAAG.DE,Industrials,Industrials,Capital Goods,Industrials,False
+RACE.MI,Consumer Cyclical,Consumer Discretionary,Automobiles & Components,Consumer Discretionary,False
+RAND.AS,Industrials,Industrials,Commercial  & Professional Services,Industrials,False
+RBIV.VI,Financial Services,Financials,Banks,Financials,False
+RBREW.CO,Consumer Defensive,Consumer Staples,"Food, Beverage & Tobacco",Consumer Staples,False
+RCL.N,Consumer Cyclical,Consumer Discretionary,Consumer Services,Consumer Discretionary,False
+RECI.MI,Healthcare,Health Care,"Pharmaceuticals, Biotechnology & Life Sciences",Health Care,False
+REDE.MC,Utilities,Utilities,Utilities,Utilities,False
+REG.OQ,Real Estate,Real Estate,Equity Real Estate Investment Trusts (REITs),Real Estate,False
+REGN.OQ,Healthcare,Health Care,"Pharmaceuticals, Biotechnology & Life Sciences",Health Care,False
+REL.L,Industrials,Industrials,Commercial  & Professional Services,Industrials,False
+RENA.PA,Consumer Cyclical,Consumer Discretionary,Automobiles & Components,Consumer Discretionary,False
+REP.MC,Energy,Energy,Energy,Energy,False
+REY.MI,Technology,Information Technology,Software & Services,Information Technology,False
+RF.N,Financial Services,Financials,Banks,Financials,False
+RHMG.DE,Industrials,Industrials,Capital Goods,Industrials,False
+RILBA.CO,Financial Services,Financials,Banks,Financials,False
+RIO.L,Basic Materials,Materials,Materials,Materials,False
+RJF.N,Financial Services,Financials,Financial Services,Financials,False
+RKT.L,Consumer Defensive,Consumer Staples,Household & Personal Products,Consumer Staples,False
+RL.N,Consumer Cyclical,Consumer Discretionary,Consumer Durables & Apparel,Consumer Discretionary,False
+RMD.N,Healthcare,Health Care,Health Care Equipment & Services,Health Care,False
+RMV.L,Communication Services,Communication Services,Media & Entertainment,Communication Services,False
+ROCKb.CO,Industrials,Industrials,Capital Goods,Industrials,False
+ROK.N,Industrials,Industrials,Capital Goods,Industrials,False
+ROL.N,Consumer Cyclical,Industrials,Commercial  & Professional Services,Consumer Discretionary,True
+ROP.OQ,Technology,Information Technology,Software & Services,Information Technology,False
+ROPC.S,Healthcare,Health Care,"Pharmaceuticals, Biotechnology & Life Sciences",Health Care,False
+ROR.L,Industrials,Industrials,Capital Goods,Industrials,False
+ROST.OQ,Consumer Cyclical,Consumer Discretionary,Consumer Discretionary Distribution & Retail,Consumer Discretionary,False
+RR.L,Industrials,Industrials,Capital Goods,Industrials,False
+RS1R.L,Industrials,Industrials,Capital Goods,Industrials,False
+RSG.N,Industrials,Industrials,Commercial  & Professional Services,Industrials,False
+RTO.L,Industrials,Industrials,Commercial  & Professional Services,Industrials,False
+RTX.N,Industrials,Industrials,Capital Goods,Industrials,False
+RUBF.PA,Energy,Utilities,Utilities,Energy,True
+RVTY.N,Healthcare,Health Care,"Pharmaceuticals, Biotechnology & Life Sciences",Health Care,False
+RWEG.DE,Utilities,Utilities,Utilities,Utilities,False
+RXL.PA,Technology,Industrials,Capital Goods,Information Technology,True
+RYA.I,Industrials,Industrials,Transportation,Industrials,False
+SAABb.ST,Industrials,Industrials,Capital Goods,Industrials,False
+SABE.MC,Financial Services,Financials,Banks,Financials,False
+SAF.PA,Industrials,Industrials,Capital Goods,Industrials,False
+SAGAb.ST,Real Estate,Real Estate,Real Estate Management & Development,Real Estate,False
+SALM.OL,Consumer Defensive,Consumer Staples,"Food, Beverage & Tobacco",Consumer Staples,False
+SAMPO.HE,Financial Services,Financials,Insurance,Financials,False
+SAN.MC,Financial Services,Financials,Banks,Financials,False
+SAND.ST,Industrials,Industrials,Capital Goods,Industrials,False
+SAPG.DE,Technology,Information Technology,Software & Services,Information Technology,False
+SASY.PA,Healthcare,Health Care,"Pharmaceuticals, Biotechnology & Life Sciences",Health Care,False
+SATG_p.DE,Basic Materials,Health Care,"Pharmaceuticals, Biotechnology & Life Sciences",Materials,True
+SATS.OQ,Communication Services,Communication Services,Media & Entertainment,Communication Services,False
+SAVE.ST,Financial Services,Financials,Financial Services,Financials,False
+SB1NO.OL,Financial Services,Financials,Banks,Financials,False
+SBAC.OQ,Real Estate,Real Estate,Equity Real Estate Investment Trusts (REITs),Real Estate,False
+SBMO.AS,Energy,Energy,Energy,Energy,False
+SBNOR.OL,Financial Services,Financials,Banks,Financials,False
+SBRY.L,Consumer Defensive,Consumer Staples,Consumer Staples Distribution & Retail,Consumer Staples,False
+SBUX.OQ,Consumer Cyclical,Consumer Discretionary,Consumer Services,Consumer Discretionary,False
+SCAb.ST,Basic Materials,Materials,Materials,Materials,False
+SCHN.PA,Industrials,Industrials,Capital Goods,Industrials,False
+SCHP.S,Industrials,Industrials,Capital Goods,Industrials,False
+SCHW.N,Financial Services,Financials,Financial Services,Financials,False
+SCMN.S,Communication Services,Communication Services,Telecommunication Services,Communication Services,False
+SCOR.PA,Financial Services,Financials,Insurance,Financials,False
+SCYR.MC,Industrials,Industrials,Capital Goods,Industrials,False
+SDFGn.DE,Basic Materials,Materials,Materials,Materials,False
+SDLF.L,Financial Services,Financials,Insurance,Financials,False
+SDR.L,Financial Services,Financials,Financial Services,Financials,False
+SDZ.S,Healthcare,Health Care,"Pharmaceuticals, Biotechnology & Life Sciences",Health Care,False
+SEBa.ST,Financial Services,Financials,Banks,Financials,False
+SECTb.ST,Healthcare,Health Care,Health Care Equipment & Services,Health Care,False
+SECUb.ST,Industrials,Industrials,Commercial  & Professional Services,Industrials,False
+SFSN.S,Industrials,Industrials,Capital Goods,Industrials,False
+SFZN.S,Healthcare,Health Care,"Pharmaceuticals, Biotechnology & Life Sciences",Health Care,False
+SGE.L,Technology,Information Technology,Software & Services,Information Technology,False
+SGEF.PA,Financial Services,Industrials,Capital Goods,Financials,True
+SGOB.PA,Industrials,Industrials,Capital Goods,Industrials,False
+SGRO.L,Real Estate,Real Estate,Equity Real Estate Investment Trusts (REITs),Real Estate,False
+SGSN.S,Industrials,Industrials,Commercial  & Professional Services,Industrials,False
+SHBa.ST,Financial Services,Financials,Banks,Financials,False
+SHCS.L,Real Estate,Real Estate,Equity Real Estate Investment Trusts (REITs),Real Estate,False
+SHEL.AS,Energy,Energy,Energy,Energy,False
+SHLG.DE,Healthcare,Health Care,Health Care Equipment & Services,Health Care,False
+SHW.N,Basic Materials,Materials,Materials,Materials,False
+SIEGn.DE,Industrials,Industrials,Capital Goods,Industrials,False
+SIGNC.S,Consumer Cyclical,Materials,Materials,Consumer Discretionary,True
+SIKA.S,Basic Materials,Materials,Materials,Materials,False
+SJM.N,Consumer Defensive,Consumer Staples,"Food, Beverage & Tobacco",Consumer Staples,False
+SJP.L,Financial Services,Financials,Financial Services,Financials,False
+SKAb.ST,Industrials,Industrials,Capital Goods,Industrials,False
+SKFb.ST,Industrials,Industrials,Capital Goods,Industrials,False
+SLB.N,Energy,Energy,Energy,Energy,False
+SLHN.S,Financial Services,Financials,Insurance,Financials,False
+SMCI.OQ,Technology,Information Technology,Technology Hardware & Equipment,Information Technology,False
+SMIN.L,Industrials,Industrials,Capital Goods,Industrials,False
+SN.L,Healthcare,Health Care,Health Care Equipment & Services,Health Care,False
+SNA.N,Industrials,Industrials,Capital Goods,Industrials,False
+SNPS.OQ,Technology,Information Technology,Software & Services,Information Technology,False
+SO.N,Utilities,Utilities,Utilities,Utilities,False
+SOBIV.ST,Healthcare,Health Care,"Pharmaceuticals, Biotechnology & Life Sciences",Health Care,False
+SOF.BR,Financial Services,Financials,Financial Services,Financials,False
+SOGN.PA,Financial Services,Financials,Banks,Financials,False
+SOLV.N,Healthcare,Health Care,Health Care Equipment & Services,Health Care,False
+SOON.S,Healthcare,Health Care,Health Care Equipment & Services,Health Care,False
+SOPR.PA,Technology,Information Technology,Software & Services,Information Technology,False
+SPG.N,Real Estate,Real Estate,Equity Real Estate Investment Trusts (REITs),Real Estate,False
+SPGI.N,Financial Services,Financials,Financial Services,Financials,False
+SPIE.PA,Industrials,Industrials,Commercial  & Professional Services,Industrials,False
+SPMI.MI,Energy,Energy,Energy,Energy,False
+SPSN.S,Real Estate,Real Estate,Real Estate Management & Development,Real Estate,False
+SPX.L,Industrials,Industrials,Capital Goods,Industrials,False
+SQN.S,Financial Services,Financials,Financial Services,Financials,False
+SRE.N,Utilities,Utilities,Utilities,Utilities,False
+SRENH.S,Financial Services,Financials,Insurance,Financials,False
+SRG.MI,Utilities,Utilities,Utilities,Utilities,False
+SRP.L,Industrials,Industrials,Commercial  & Professional Services,Industrials,False
+SSABb.ST,Basic Materials,Materials,Materials,Materials,False
+SSE.L,Utilities,Utilities,Utilities,Utilities,False
+STAN.L,Financial Services,Financials,Banks,Financials,False
+STB.OL,Financial Services,Financials,Insurance,Financials,False
+STDM.PA,Technology,Health Care,"Pharmaceuticals, Biotechnology & Life Sciences",Information Technology,True
+STE.N,Healthcare,Health Care,Health Care Equipment & Services,Health Care,False
+STERV.HE,Consumer Cyclical,Materials,Materials,Consumer Discretionary,True
+STLAM.MI,Consumer Cyclical,Consumer Discretionary,Automobiles & Components,Consumer Discretionary,False
+STLD.OQ,Basic Materials,Materials,Materials,Materials,False
+STMMI.MI,Technology,Information Technology,Semiconductors & Semiconductor Equipment,Information Technology,False
+STMN.S,Healthcare,Health Care,Health Care Equipment & Services,Health Care,False
+STT.N,Financial Services,Financials,Financial Services,Financials,False
+STX.OQ,Technology,Information Technology,Technology Hardware & Equipment,Information Technology,False
+STZ.N,Consumer Defensive,Consumer Staples,"Food, Beverage & Tobacco",Consumer Staples,False
+SUBC.OL,Energy,Energy,Energy,Energy,False
+SUN.S,Industrials,Industrials,Capital Goods,Industrials,False
+SUNN.S,Communication Services,Communication Services,Telecommunication Services,Communication Services,False
+SVT.L,Utilities,Utilities,Utilities,Utilities,False
+SW.N,Consumer Cyclical,Materials,Materials,Consumer Discretionary,True
+SWECb.ST,Industrials,Industrials,Capital Goods,Industrials,False
+SWEDa.ST,Financial Services,Financials,Banks,Financials,False
+SWK.N,Industrials,Industrials,Capital Goods,Industrials,False
+SWKS.OQ,Technology,Information Technology,Semiconductors & Semiconductor Equipment,Information Technology,False
+SY1G.DE,Basic Materials,Materials,Materials,Materials,False
+SYENS.BR,Basic Materials,Materials,Materials,Materials,False
+SYF.N,Financial Services,Financials,Financial Services,Financials,False
+SYK.N,Healthcare,Health Care,Health Care Equipment & Services,Health Care,False
+SYY.N,Consumer Defensive,Consumer Staples,Consumer Staples Distribution & Retail,Consumer Staples,False
+T.N,Communication Services,Communication Services,Telecommunication Services,Communication Services,False
+TAP.N,Consumer Defensive,Consumer Staples,"Food, Beverage & Tobacco",Consumer Staples,False
+TBCG.L,Financial Services,Financials,Banks,Financials,False
+TCAPI.L,Financial Services,Financials,Financial Services,Financials,False
+TCFP.PA,Energy,Industrials,Capital Goods,Energy,True
+TDG.N,Industrials,Industrials,Capital Goods,Industrials,False
+TDY.N,Technology,Information Technology,Technology Hardware & Equipment,Information Technology,False
+TE.PA,Energy,Energy,Energy,Energy,False
+TECH.OQ,Healthcare,Health Care,"Pharmaceuticals, Biotechnology & Life Sciences",Health Care,False
+TEF.MC,Communication Services,Communication Services,Telecommunication Services,Communication Services,False
+TEGG.DE,Real Estate,Real Estate,Real Estate Management & Development,Real Estate,False
+TEL.N,Technology,Information Technology,Technology Hardware & Equipment,Information Technology,False
+TEL.OL,Communication Services,Communication Services,Telecommunication Services,Communication Services,False
+TEL2b.ST,Communication Services,Communication Services,Telecommunication Services,Communication Services,False
+TELIA.ST,Communication Services,Communication Services,Telecommunication Services,Communication Services,False
+TEMN.S,Technology,Information Technology,Software & Services,Information Technology,False
+TENR.MI,Energy,Energy,Energy,Energy,False
+TEPRF.PA,Industrials,Industrials,Commercial  & Professional Services,Industrials,False
+TER.OQ,Technology,Information Technology,Semiconductors & Semiconductor Equipment,Information Technology,False
+TFC.N,Financial Services,Financials,Banks,Financials,False
+TGT.N,Consumer Defensive,Consumer Staples,Consumer Staples Distribution & Retail,Consumer Staples,False
+THULE.ST,Consumer Cyclical,Consumer Discretionary,Consumer Durables & Apparel,Consumer Discretionary,False
+TJX.N,Consumer Cyclical,Consumer Discretionary,Consumer Discretionary Distribution & Retail,Consumer Discretionary,False
+TKAG.DE,Industrials,Materials,Materials,Industrials,True
+TKO.N,Communication Services,Communication Services,Media & Entertainment,Communication Services,False
+TLIT.MI,Communication Services,Communication Services,Telecommunication Services,Communication Services,False
+TLXGn.DE,Financial Services,Financials,Insurance,Financials,False
+TMO.N,Healthcare,Health Care,"Pharmaceuticals, Biotechnology & Life Sciences",Health Care,False
+TMUS.OQ,Communication Services,Communication Services,Telecommunication Services,Communication Services,False
+TOM.OL,Industrials,Industrials,Capital Goods,Industrials,False
+TPE.WA,Utilities,Utilities,Utilities,Utilities,False
+TPL.N,Energy,Energy,Energy,Energy,False
+TPR.N,Consumer Cyclical,Consumer Discretionary,Consumer Durables & Apparel,Consumer Discretionary,False
+TPRO.MI,Technology,Information Technology,Semiconductors & Semiconductor Equipment,Information Technology,False
+TRELb.ST,Industrials,Industrials,Capital Goods,Industrials,False
+TRGP.N,Energy,Energy,Energy,Energy,False
+TRMB.OQ,Technology,Information Technology,Software & Services,Information Technology,False
+TRN.MI,Utilities,Utilities,Utilities,Utilities,False
+TROW.OQ,Financial Services,Financials,Financial Services,Financials,False
+TRV.N,Financial Services,Financials,Insurance,Financials,False
+TRYG.CO,Financial Services,Financials,Insurance,Financials,False
+TSCO.L,Consumer Defensive,Consumer Staples,Consumer Staples Distribution & Retail,Consumer Staples,False
+TSCO.OQ,Consumer Cyclical,Consumer Discretionary,Consumer Discretionary Distribution & Retail,Consumer Discretionary,False
+TSLA.OQ,Consumer Cyclical,Consumer Discretionary,Automobiles & Components,Consumer Discretionary,False
+TSN.N,Consumer Defensive,Consumer Staples,"Food, Beverage & Tobacco",Consumer Staples,False
+TT.N,Industrials,Industrials,Capital Goods,Industrials,False
+TTD.OQ,Communication Services,Communication Services,Media & Entertainment,Communication Services,False
+TTEF.PA,Energy,Energy,Energy,Energy,False
+TTWO.OQ,Communication Services,Communication Services,Media & Entertainment,Communication Services,False
+TUB.BR,Healthcare,Health Care,"Pharmaceuticals, Biotechnology & Life Sciences",Health Care,False
+TUI1n.DE,Consumer Cyclical,Consumer Discretionary,Consumer Services,Consumer Discretionary,False
+TW.L,Consumer Cyclical,Consumer Discretionary,Consumer Durables & Apparel,Consumer Discretionary,False
+TXN.OQ,Technology,Information Technology,Semiconductors & Semiconductor Equipment,Information Technology,False
+TXT.N,Industrials,Industrials,Capital Goods,Industrials,False
+TYL.N,Technology,Information Technology,Software & Services,Information Technology,False
+UAL.OQ,Industrials,Industrials,Transportation,Industrials,False
+UBER.N,Technology,Industrials,Transportation,Information Technology,True
+UBSG.S,Financial Services,Financials,Financial Services,Financials,False
+UCB.BR,Healthcare,Health Care,"Pharmaceuticals, Biotechnology & Life Sciences",Health Care,False
+UDR.N,Real Estate,Real Estate,Equity Real Estate Investment Trusts (REITs),Real Estate,False
+UHR.S,Consumer Cyclical,Consumer Discretionary,Consumer Durables & Apparel,Consumer Discretionary,False
+UHS.N,Healthcare,Health Care,Health Care Equipment & Services,Health Care,False
+ULTA.OQ,Consumer Cyclical,Consumer Discretionary,Consumer Discretionary Distribution & Retail,Consumer Discretionary,False
+ULVR.L,Consumer Defensive,Consumer Staples,Household & Personal Products,Consumer Staples,False
+UMG.AS,Communication Services,Communication Services,Media & Entertainment,Communication Services,False
+UMI.BR,Industrials,Materials,Materials,Industrials,True
+UNH.N,Healthcare,Health Care,Health Care Equipment & Services,Health Care,False
+UNI.MC,Financial Services,Financials,Banks,Financials,False
+UNP.N,Industrials,Industrials,Transportation,Industrials,False
+UNPI.MI,Financial Services,Financials,Insurance,Financials,False
+UPM.HE,Basic Materials,Materials,Materials,Materials,False
+UPS.N,Industrials,Industrials,Transportation,Industrials,False
+URI.N,Industrials,Industrials,Capital Goods,Industrials,False
+URW.PA,Real Estate,Real Estate,Equity Real Estate Investment Trusts (REITs),Real Estate,False
+USB.N,Financial Services,Financials,Banks,Financials,False
+UTG.L,Real Estate,Real Estate,Equity Real Estate Investment Trusts (REITs),Real Estate,False
+UU.L,Utilities,Utilities,Utilities,Utilities,False
+V.N,Financial Services,Financials,Financial Services,Financials,False
+VACN.S,Industrials,Industrials,Capital Goods,Industrials,False
+VALMT.HE,Industrials,Industrials,Capital Goods,Industrials,False
+VAR.OL,Energy,Energy,Energy,Energy,False
+VATN.S,Financial Services,Financials,Banks,Financials,False
+VEEV.N,Healthcare,Health Care,Health Care Equipment & Services,Health Care,False
+VEND.OL,Communication Services,Communication Services,Media & Entertainment,Communication Services,False
+VERB.VI,Utilities,Utilities,Utilities,Utilities,False
+VICI.N,Real Estate,Real Estate,Equity Real Estate Investment Trusts (REITs),Real Estate,False
+VID.MC,Consumer Cyclical,Materials,Materials,Consumer Discretionary,True
+VIE.PA,Industrials,Utilities,Utilities,Industrials,True
+VIS.MC,Consumer Cyclical,Consumer Staples,"Food, Beverage & Tobacco",Consumer Discretionary,True
+VLLP.PA,Basic Materials,Energy,Energy,Materials,True
+VLO.N,Energy,Energy,Energy,Energy,False
+VLOF.PA,Consumer Cyclical,Consumer Discretionary,Automobiles & Components,Consumer Discretionary,False
+VLTO.N,Industrials,Industrials,Commercial  & Professional Services,Industrials,False
+VMC.N,Basic Materials,Materials,Materials,Materials,False
+VNAn.DE,Real Estate,Real Estate,Real Estate Management & Development,Real Estate,False
+VOD.L,Communication Services,Communication Services,Telecommunication Services,Communication Services,False
+VOES.VI,Basic Materials,Materials,Materials,Materials,False
+VOLVb.ST,Industrials,Industrials,Capital Goods,Industrials,False
+VOPA.AS,Energy,Energy,Energy,Energy,False
+VOWG_p.DE,Consumer Cyclical,Consumer Discretionary,Automobiles & Components,Consumer Discretionary,False
+VRSK.OQ,Industrials,Industrials,Commercial  & Professional Services,Industrials,False
+VRSN.OQ,Technology,Information Technology,Software & Services,Information Technology,False
+VRT.N,Industrials,Industrials,Capital Goods,Industrials,False
+VRTX.OQ,Healthcare,Health Care,"Pharmaceuticals, Biotechnology & Life Sciences",Health Care,False
+VST.N,Utilities,Utilities,Utilities,Utilities,False
+VTR.N,Real Estate,Real Estate,Equity Real Estate Investment Trusts (REITs),Real Estate,False
+VTRS.OQ,Healthcare,Health Care,"Pharmaceuticals, Biotechnology & Life Sciences",Health Care,False
+VWS.CO,Industrials,Industrials,Capital Goods,Industrials,False
+VZ.N,Communication Services,Communication Services,Telecommunication Services,Communication Services,False
+VZN.S,Financial Services,Financials,Financial Services,Financials,False
+WAB.N,Industrials,Industrials,Capital Goods,Industrials,False
+WALLb.ST,Real Estate,Real Estate,Real Estate Management & Development,Real Estate,False
+WAT.N,Healthcare,Health Care,"Pharmaceuticals, Biotechnology & Life Sciences",Health Care,False
+WBD.OQ,Communication Services,Communication Services,Media & Entertainment,Communication Services,False
+WBSV.VI,Basic Materials,Materials,Materials,Materials,False
+WDAY.OQ,Technology,Information Technology,Software & Services,Information Technology,False
+WDC.OQ,Technology,Information Technology,Technology Hardware & Equipment,Information Technology,False
+WDPP.BR,Real Estate,Real Estate,Equity Real Estate Investment Trusts (REITs),Real Estate,False
+WEC.N,Utilities,Utilities,Utilities,Utilities,False
+WEIR.L,Industrials,Industrials,Capital Goods,Industrials,False
+WELL.N,Real Estate,Real Estate,Equity Real Estate Investment Trusts (REITs),Real Estate,False
+WFC.N,Financial Services,Financials,Banks,Financials,False
+WIHL.ST,Real Estate,Real Estate,Real Estate Management & Development,Real Estate,False
+WISEa.L,Technology,Financials,Financial Services,Information Technology,True
+WLSNc.AS,Industrials,Industrials,Commercial  & Professional Services,Industrials,False
+WM.N,Industrials,Industrials,Commercial  & Professional Services,Industrials,False
+WMB.N,Energy,Energy,Energy,Energy,False
+WMT.OQ,Consumer Defensive,Consumer Staples,Consumer Staples Distribution & Retail,Consumer Staples,False
+WPP.L,Communication Services,Communication Services,Media & Entertainment,Communication Services,False
+WRB.N,Financial Services,Financials,Insurance,Financials,False
+WRT1V.HE,Industrials,Industrials,Capital Goods,Industrials,False
+WSM.N,Consumer Cyclical,Consumer Discretionary,Consumer Discretionary Distribution & Retail,Consumer Discretionary,False
+WST.N,Healthcare,Health Care,"Pharmaceuticals, Biotechnology & Life Sciences",Health Care,False
+WTB.L,Consumer Cyclical,Consumer Discretionary,Consumer Services,Consumer Discretionary,False
+WTW.OQ,Financial Services,Financials,Insurance,Financials,False
+WY.N,Real Estate,Real Estate,Equity Real Estate Investment Trusts (REITs),Real Estate,False
+WYNN.OQ,Consumer Cyclical,Consumer Discretionary,Consumer Services,Consumer Discretionary,False
+XEL.OQ,Utilities,Utilities,Utilities,Utilities,False
+XOM.N,Energy,Energy,Energy,Energy,False
+XYL.N,Industrials,Industrials,Capital Goods,Industrials,False
+XYZ.N,Technology,Financials,Financial Services,Information Technology,True
+YAR.OL,Basic Materials,Materials,Materials,Materials,False
+YUM.N,Consumer Cyclical,Consumer Discretionary,Consumer Services,Consumer Discretionary,False
+ZAB.WA,Consumer Defensive,Consumer Staples,Consumer Staples Distribution & Retail,Consumer Staples,False
+ZALG.DE,Consumer Cyclical,Consumer Discretionary,Consumer Discretionary Distribution & Retail,Consumer Discretionary,False
+ZBH.N,Healthcare,Health Care,Health Care Equipment & Services,Health Care,False
+ZBRA.OQ,Technology,Information Technology,Technology Hardware & Equipment,Information Technology,False
+ZEG.L,Communication Services,Communication Services,Telecommunication Services,Communication Services,False
+ZELA.CO,Healthcare,Health Care,"Pharmaceuticals, Biotechnology & Life Sciences",Health Care,False
+ZTS.N,Healthcare,Health Care,"Pharmaceuticals, Biotechnology & Life Sciences",Health Care,False
+ZURN.S,Financial Services,Financials,Insurance,Financials,False

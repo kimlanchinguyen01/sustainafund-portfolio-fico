@@ -118,6 +118,11 @@ Each is reproducible from the script named. Re-deriving them wastes a session.
 | Mandate anchors on the noisiest estimate available | out of sample the max-return corner comes from an unshrunk 3y sample mean: 45.85% predicted return at the first rebalance | `26` |
 | Option B (2-3 rebalance points) contradicts itself here | mandate20 "beats 1/N" (+0.087) on one split and "loses" (-0.244) on another; spread 0.331 vs the 31-rebalance +0.010 | `26b` |
 | B also overstates the min-variance loss 4-8x | -0.173 / -0.319 / -0.201 by split, against -0.038 over 31 rebalances | `26b` |
+| The LSEG ESG/sector update barely moves the book | Neutral 14.300/10.622/1.346 -> 14.230/10.585/1.344 with both changes; -0.069pp return | `27` |
+| GICS sectors are worth exactly nothing here | +0.005pp at Neutral, 0.000 at Risk Prone: the 71 reclassified stocks are not where the 30% cap binds | `27` |
+| Our ESG imputation was individually wrong by 14 points | sector medians vs LSEG actuals: mean abs 14.07, max 45.92 (BFT.WA 62.03 -> 31.46) - and the portfolio did not notice | `27` |
+| The new ESG column mixes fiscal years | FY2024 556, FY2025 529, plus FY2026 4 / FY2023 1 / FY2022 1 / missing 2 | `27` |
+| It also revises the 1044 scores we already had | mean abs 1.86, max 17.31, only 17 of 1044 unchanged - a new vintage, not a gap-fill | `27` |
 
 ---
 
@@ -153,11 +158,23 @@ Each is reproducible from the script named. Re-deriving them wastes a session.
 3. **Dashboard.** Not started. A separate requirement in the brief and the
    largest remaining piece of work. Streamlit was the intended choice; port 8501
    is already forwarded in the devcontainer.
-4. **Six missing price series** in Chloe's total-return export — `URW.PA`,
+4. **Adopt the LSEG ESG/sector update, or not.** Parsed and measured in
+   `results_lseg_update/`; the delivered inputs are untouched and ready-to-use
+   inputs sit in `data_lseg_update/`. Recommendation in that README: adopt the
+   GICS sectors unconditionally (zero measurable effect, standard taxonomy, and
+   it brings 25 industry groups), and adopt the ESG column WHOLE rather than
+   blending our vintage with their gap-fills. The trade is
+   consistent-but-partly-invented against real-but-mixed-vintage.
+   If ESG is adopted, re-run `23`, `24`, `stress_test/`, `backtest_profiles/`
+   and `dashboard_data/build_dashboard_data.py` - about 30 min of compute, and
+   the published numbers shift by under 0.1pp. It is a provenance decision, not
+   a results decision.
+
+5. **Six missing price series** in Chloe's total-return export — `URW.PA`,
    `AVB.N`, `EQR.N` (REITs), `HOLN.S`, `EA.OQ`, `HWM.N`. 2870 of 2870 values
    absent where the previous file had a full history. Dropped rather than
    back-filled (an unadjusted series would cost them ~3pp). Worth re-extracting.
-5. **`build_deck.py` is not reproducible as documented — three missing inputs.**
+6. **`build_deck.py` is not reproducible as documented — three missing inputs.**
    `backtest_subperiods.csv` and `backtest_diagnostics.csv` are read from
    `results_chloe/backtest/` and **nothing in the repo writes either**;
    `backtest_profiles/results/` now generates regenerable replacements in the
@@ -170,7 +187,7 @@ Each is reproducible from the script named. Re-deriving them wastes a session.
    `portfolio_summary.csv` at line 74) is dead — every scenario number on the
    slides comes from `SC`, i.e. from that /tmp file.
 
-6. **`results_chloe/portfolio_summary.csv` disagrees with every other artefact
+7. **`results_chloe/portfolio_summary.csv` disagrees with every other artefact
    about Risk Prone.** Its risk-prone row is frontier point **11** (15.97% /
    12.77% / ratio 1.250); the deck, `risk_profile_scenarios_summary.csv`,
    `23_scenario_matrix.py` and this document all use point **14** (17.63% /
@@ -179,7 +196,7 @@ Each is reproducible from the script named. Re-deriving them wastes a session.
    The deck is unaffected (it never reads `S`). Decide which one is intended and
    regenerate the odd one out.
 
-7. Not done and worth saying so: factor-level return attribution, transaction
+8. Not done and worth saying so: factor-level return attribution, transaction
    costs inside the optimiser.
 
 ---
@@ -199,7 +216,10 @@ Each is reproducible from the script named. Re-deriving them wastes a session.
 | `25_crisis_stress_test.py` | crisis-window stress test of the DELIVERED books, ~7 min |
 | `stress_test/` | crisis-window stress test: code, 6 CSVs, README. Panel A in-sample, Panel B point-in-time |
 | `backtest_profiles/` | walk-forward of the RECOMMENDED profile, 4 books, code + 6 CSVs + README |
-| `dashboard_data/` | 37 CSVs, 660 KB, one place with stable names; rebuilt by its own script |
+| `dashboard_data/` | 38 CSVs, 662 KB, one place with stable names; rebuilt by its own script |
+| `27_lseg_esg_sector_update.py` | parses and measures the LSEG ESG/GICS export, ~5 min |
+| `results_lseg_update/` | its output: 5 CSVs + a README with the adopt/don't recommendation |
+| `data_lseg_update/` | the parsed inputs, unused until the update is adopted |
 
 The backtest slide was **deliberately removed** from the deck at Tamara's
 request. The overall Sharpe result now appears only in the scenario-coverage
