@@ -39,7 +39,9 @@ today's index constituents (survivorship bias), no transaction costs.
 Outputs (stress_test/results/):
     panelA_windows.csv      delivered books through each window
     panelB_windows.csv      point-in-time books through each window
-    panelB_portfolios.csv   what the point-in-time solves actually held
+    panelB_portfolios.csv   one row per point-in-time book: solstatus, solve time, top country
+    panelB_holdings.csv     window x book x cap x stock x weight - the full point-in-time
+                            allocations, decimals, renormalised to sum to 1
     drawdown_attribution.csv  who caused the COVID drawdown, by country
     worst_windows.csv       the 5 worst 60-day stretches, found empirically
 
@@ -316,7 +318,7 @@ def main():
     print("PANEL B - point-in-time: estimate before the window, hold through it")
     print("=" * 78)
 
-    rowsB, held_rows, skipped = [], [], []
+    rowsB, held_rows, weight_rows, skipped = [], [], [], []
     # Two windows can share a start date ("2020 COVID crash" and "2020 crash +
     # recovery" both begin 2020-02-19). The estimate and every solve are then
     # identical, so they are computed once and reused.
@@ -363,6 +365,17 @@ def main():
                                   "top_country_%": (res.get("max_country_weight") or 0) * 100,
                                   "holdings": "|".join(w.sort_values(ascending=False)
                                                         .head(8).index)})
+                # Full weights, one row per position. The `holdings` column above
+                # is a pipe-joined string of the top 8 names and cannot drive an
+                # allocation chart; this can. Weights are DECIMALS and are
+                # renormalised the same way hold_value() does, so they sum to 1.
+                wn = w / w.sum()
+                for stock, wt in wn.sort_values(ascending=False).items():
+                    weight_rows.append({
+                        "window": label, "book": pname, "cap": cap_label,
+                        "from": a.date(), "to": b.date(),
+                        "stock": str(stock), "weight": float(wt),
+                        "solstatus": res["solstatus"]})
                 print(f"  {pname:12s} {cap_label:8s} predicted {res['portfolio_risk']*100:5.2f}% risk "
                       f"-> realised {st['vol_%']:6.2f}%, window return {st['ret_%']:7.2f}%, "
                       f"maxDD {st['maxDD_%']:7.2f}%")
@@ -374,6 +387,19 @@ def main():
         rowsB.append({"window": label, "book": "equal_weight", "cap": "n/a",
                       "from": a.date(), "to": b.date(),
                       "pred_ret_%": np.nan, "pred_risk_%": np.nan, **st})
+        # 1/N holds too many names to chart individually, but its allocation by
+        # country/sector is exactly what a comparison wants, so it is dumped
+        # alongside the optimised books rather than left implicit.
+        # NOT "n/a": pandas reads that string back as a MISSING VALUE, and a NaN
+        # group key makes groupby silently drop the rows - which hid these 3,979
+        # benchmark positions from a weights-sum check that was supposed to cover
+        # them. Any token here must survive a round trip through read_csv.
+        for stock, wt in w_eq.items():
+            weight_rows.append({"window": label, "book": "equal_weight",
+                                "cap": "not applicable",
+                                "from": a.date(), "to": b.date(),
+                                "stock": str(stock), "weight": float(wt),
+                                "solstatus": "benchmark"})
         print(f"  {'1/N':12s} {'':8s} {'':22s} -> realised {st['vol_%']:6.2f}%, "
               f"window return {st['ret_%']:7.2f}%, maxDD {st['maxDD_%']:7.2f}%")
 
@@ -385,6 +411,13 @@ def main():
         for r in skipped:
             print(f"  {r['window']}: {r['reason']}")
     pd.DataFrame(held_rows).to_csv(f"{OUTDIR}/panelB_portfolios.csv", index=False)
+    WH = pd.DataFrame(weight_rows)
+    WH.to_csv(f"{OUTDIR}/panelB_holdings.csv", index=False)
+    chk = WH.groupby(["window", "book", "cap"])["weight"].sum()
+    bad = chk[(chk - 1.0).abs() > 1e-6]
+    assert not len(bad), f"point-in-time weights do not sum to 1: {bad.to_dict()}"
+    print(f"\npanelB_holdings.csv: {len(WH)} position rows across "
+          f"{WH.groupby(['window','book','cap']).ngroups} books, all summing to 1")
 
     print("\n--- Panel B summary: predicted vs realised risk ---")
     q = B[B.book.isin(["neutral", "equal_weight"])].copy()
@@ -393,7 +426,7 @@ def main():
              "ret_%", "maxDD_%"]].to_string(index=False, float_format=lambda v: f"{v:.2f}"))
 
     m2.ENABLE_COUNTRY_CAP = False
-    print(f"\nWrote 5 CSVs to {OUTDIR}/")
+    print(f"\nWrote 6 CSVs to {OUTDIR}/")
 
 
 if __name__ == "__main__":

@@ -253,21 +253,28 @@ def build_stress(out):
     B = to_decimal(B, pct_cols(B))
     B.to_csv(f"{out}/panelB_windows.csv", index=False)
 
-    # panelB holdings: the source file stores the top names as a pipe-joined
-    # STRING, which cannot drive an allocation visual. Exploded to long here;
-    # full weights need 25b (see README).
+    # panelB holdings: the real point-in-time allocations, one row per position.
+    # Script 25 dumps these with weights already decimal and renormalised to sum
+    # to 1. Earlier this layer could only explode the pipe-joined top-8 NAMES out
+    # of panelB_portfolios.csv with weight = NaN, which cannot drive an
+    # allocation chart; that placeholder is gone.
+    fh = os.path.join(src, "panelB_holdings.csv")
+    if os.path.exists(fh):
+        # keep_default_na=False on the label columns: a legacy run wrote "n/a"
+        # for the benchmark's cap, which read_csv would otherwise turn into NaN
+        H = pd.read_csv(fh, keep_default_na=False,
+                        na_values=[""])          # only a truly empty cell is null
+        H["weight"] = pd.to_numeric(H["weight"], errors="coerce")
+        H["cap"] = H["cap"].replace({"n/a": "not applicable", "": "not applicable"})
+        H["solstatus"] = H["solstatus"].replace({"n/a": "benchmark", "": "benchmark"})
+        H["profile"] = H["book"].map(lambda b: PROFILE_NAMES.get(b, STRATEGY_NAMES.get(b, b)))
+        H["profile_rule"] = H["profile"].map(PROFILE_RULES).fillna("benchmark")
+        H["panel"] = "B (point-in-time, the actual test)"
+        H = H[["window", "profile", "profile_rule", "panel", "cap", "from", "to",
+               "stock", "weight", "solstatus"]]
+        H.to_csv(f"{out}/panelB_holdings.csv", index=False)
+
     P = pd.read_csv(os.path.join(src, "panelB_portfolios.csv"))
-    rows = []
-    for _, r in P.iterrows():
-        names = str(r.get("holdings", "")).split("|") if pd.notna(r.get("holdings")) else []
-        for rank, s in enumerate([x for x in names if x], start=1):
-            rows.append({"window": r["window"],
-                         "profile": PROFILE_NAMES.get(r["book"], r["book"]),
-                         "cap": r["cap"], "stock": s, "rank": rank,
-                         "solstatus": r.get("solstatus"),
-                         "weight": np.nan,
-                         "note": "top-8 names only; weights not in the source file"})
-    pd.DataFrame(rows).to_csv(f"{out}/panelB_top_names.csv", index=False)
     Pd_ = to_decimal(P, pct_cols(P))
     Pd_["profile"] = Pd_["book"].map(lambda b: PROFILE_NAMES.get(b, b))
     Pd_.to_csv(f"{out}/panelB_portfolios.csv", index=False)
@@ -362,12 +369,12 @@ def validate(u, have_industry):
         bad = set(H["profile"]) - set(PROFILE_RULES)
         if bad:
             fails.append(f"non-canonical profile names in holdings: {bad}")
-        sums = H.groupby(["scenario_id", "profile"])["weight"].sum()
+        sums = H.groupby(["scenario_id", "profile"], dropna=False)["weight"].sum()
         off = sums[(sums - 1.0).abs() > 1e-3]
         if len(off):
             fails.append(f"{len(off)} portfolio(s) whose weights do not sum to 1: "
                          f"{off.round(4).to_dict()}")
-        fws = FW.groupby(["scenario_id", "frontier_point"])["weight"].sum()
+        fws = FW.groupby(["scenario_id", "frontier_point"], dropna=False)["weight"].sum()
         offf = fws[(fws - 1.0).abs() > 1e-3]
         if len(offf):
             fails.append(f"{len(offf)} frontier point(s) whose weights do not sum to 1")
@@ -401,7 +408,7 @@ def validate(u, have_industry):
         bad = set(RH["profile"]) - set(PROFILE_RULES)
         if bad:
             fails.append(f"non-canonical profile names in window_holdings: {bad}")
-        sums = RH.groupby(["window_years", "profile"])["weight"].sum()
+        sums = RH.groupby(["window_years", "profile"], dropna=False)["weight"].sum()
         off = sums[(sums - 1.0).abs() > 1e-3]
         if len(off):
             fails.append(f"{len(off)} window portfolio(s) whose weights do not sum to 1: "
@@ -442,6 +449,36 @@ def validate(u, have_industry):
                                      f"scenario's {int(B.loc[prof, 'frontier_point'])}")
     else:
         warns.append("robustness/ not built yet - run 32_robustness_windows.py")
+
+    # the point-in-time stress allocations
+    ph = os.path.join(HERE, "stress_standard", "panelB_holdings.csv")
+    if os.path.exists(ph):
+        PH = pd.read_csv(ph, keep_default_na=False, na_values=[""])
+        PH["weight"] = pd.to_numeric(PH["weight"], errors="coerce")
+        bad = set(PH["profile"]) - set(PROFILE_RULES) - {"1/N Equal Weight"}
+        if bad:
+            fails.append(f"unmapped profile names in panelB_holdings: {bad}")
+        # A null in ANY group key makes groupby drop those rows, so the check
+        # would pass by not looking. Guard the keys, then group with dropna=False.
+        for k in ("window", "profile", "cap"):
+            if PH[k].isna().any():
+                fails.append(f"panelB_holdings: {int(PH[k].isna().sum())} null "
+                             f"values in group key '{k}' - rows would be skipped silently")
+        sums = PH.groupby(["window", "profile", "cap"], dropna=False)["weight"].sum()
+        off = sums[(sums - 1.0).abs() > 1e-6]
+        if len(off):
+            fails.append(f"{len(off)} point-in-time book(s) whose weights do not "
+                         f"sum to 1: {off.round(6).to_dict()}")
+        if PH.duplicated(["window", "profile", "cap", "stock"]).any():
+            fails.append("duplicate (window, profile, cap, stock) keys in panelB_holdings")
+        unknown = set(PH["stock"]) - set(u.index)
+        if unknown:
+            fails.append(f"{len(unknown)} stress-held stocks missing from the universe")
+        if PH["weight"].isna().any():
+            fails.append(f"{int(PH['weight'].isna().sum())} null weights in panelB_holdings")
+    else:
+        warns.append("stress_standard/panelB_holdings.csv absent - re-run "
+                     "stress_test/25_crisis_stress_test.py")
 
     # units: nothing in this layer may be a percentage string or a _% column
     for dp, _, fs in os.walk(HERE):

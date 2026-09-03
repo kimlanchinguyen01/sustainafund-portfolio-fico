@@ -146,6 +146,7 @@ Each is reproducible from the script named. Re-deriving them wastes a session.
 | Risk understated out of sample | predicted 8.78% vs 13.21% realised, 50.4% | `21` |
 | Turnover | 20.8% per rebalance, ~83% a year, 0.18pp of CAGR at 10bp | `21` |
 | Two data defects found | ZEG.L (reverse takeover) and BMPS.MI (recapitalisation) truncated, not dropped | `10`, `13` |
+| `n/a` in a CSV is a pandas MISSING VALUE, and a null group key makes `groupby` drop rows silently | 3,979 benchmark positions were invisible to the weights-sum check that was meant to cover them - it passed by not looking. Any label written to CSV must survive a `read_csv` round trip | `25`, `build_powerbi_layer` |
 | A position "at a bound" needs a 1e-5 tolerance, not 1e-6 | MIP_GAP 0.001 leaves the smallest min-risk holding at 0.010005, five parts per million above the 1% floor | `28` |
 | Country concentration is real | Switzerland 46.98% of the risk-averse book, largest country at 14 of 15 frontier points; Switzerland + US = 92.2% of that book | `24` |
 | A 25% country cap is cheap | +0.112pp risk at Neutral at matched return, or -0.067pp return at matched risk; Neutral ratio 1.346 -> 1.338, still 30 holdings, ESG still 70.00 | `24` |

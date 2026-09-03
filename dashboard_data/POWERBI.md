@@ -250,10 +250,27 @@ describes the delivered book and had hindsight.**
 `profile_rule` and `window` / `lookback_trading_days` columns — previously you
 had to know the filename to know what a row meant.
 
-`panelB_top_names.csv` explodes the pipe-joined holdings string into rows, but
-**`weight` is `NaN`**: the source file only stored the top-8 *names*. Real
-point-in-time weights need the stress test re-run with a weight dump — see
-"Still to do".
+**`panelB_holdings.csv` — the real point-in-time allocations.** 4,565 position
+rows: `window × profile × cap × stock × weight`, weights decimal and
+renormalised to sum to exactly 1. Sixteen optimised books plus four 1/N
+benchmark books, covering the four testable windows. This is what an allocation
+chart needs; the earlier placeholder held only the top-8 *names* with a null
+weight and is gone.
+
+Join it to `universe/stocks.csv` on `stock` to get country, sector, industry and
+ESG, so a crisis-period allocation can be sliced the same way the static
+portfolios can.
+
+<em>A trap worth knowing about, since it bit this layer.</em> The benchmark rows
+originally wrote <code>n/a</code> for `cap` and `solstatus`. <code>n/a</code> is
+one of pandas' default missing-value tokens, so <code>read_csv</code> turned it
+into <code>NaN</code>, and a <code>NaN</code> group key makes
+<code>groupby</code> drop those rows — which hid 3,979 benchmark positions from
+the weights-sum check that was supposed to cover them. The check passed by not
+looking. Fixed on both sides: the source now writes `not applicable` and
+`benchmark`, the reader treats only a genuinely empty cell as null, every
+weights-sum check runs with `dropna=False`, and the validator now fails outright
+if any group key contains a null.
 
 ### `benchmark_standard/` — the 1/N benchmark, 2015–2025
 
@@ -306,12 +323,18 @@ requiring the covariance, the frontier or the solver is precomputed here.
 
 Honestly listed rather than implied as done:
 
-1. **`stress/panelB_holdings.csv` with real weights.** Needs
-   `stress_test/25_crisis_stress_test.py` re-run with a weight dump (~7 min).
-2. **A Neutral walk-forward backtest.** Partly answered already:
+1. **A Neutral walk-forward backtest.** Partly answered already:
    `backtest_profiles/` runs a return-seeking mandate out of sample over 31
-   rebalances. A literal max-return/risk-per-rebalance version would need a
-   frontier at each of the 31 rebalances rather than two solves.
-3. **`sensitivity/tier2_comparison.csv`** in the raw mirror still contains
-   percentage strings. It is outside this layer (the scenario tables supersede
-   it) and the validator only guards this layer, but it should be regenerated.
+   rebalances, which is the nearest thing to testing the recommended profile.
+   A literal max-return/risk-per-rebalance version would need a whole frontier
+   at each of the 31 rebalance dates rather than two solves. Meanwhile the
+   script-21 backtest is labelled `Optimised Minimum Variance` and must not be
+   presented as validation of Neutral.
+2. **`sensitivity/tier2_comparison.csv`** in the raw mirror still contains
+   percentage strings. It sits outside this layer — the scenario tables
+   supersede it — and the validator only guards this layer, but it should be
+   regenerated.
+
+Completed since the first version of this document: the canonical Risk Prone
+rule (section above), the 10Y/5Y/3Y robustness layer, and
+`stress_standard/panelB_holdings.csv` with real point-in-time weights.
