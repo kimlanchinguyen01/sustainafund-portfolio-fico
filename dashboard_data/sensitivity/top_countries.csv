@@ -1,0 +1,19 @@
+profile,country,weight_%
+risk_averse,Switzerland,46.979107983021464
+risk_averse,United States,45.262812798986886
+risk_averse,United Kingdom,2.0916527302629433
+risk_averse,Germany,2.061141807874008
+risk_averse,Belgium,1.3055946148639703
+risk_averse,Netherlands,1.2991555877755043
+neutral,United States,48.28838759553476
+neutral,Switzerland,36.743550584442715
+neutral,Belgium,4.373653219561424
+neutral,United Kingdom,3.944923769667836
+neutral,Norway,2.7840192994022983
+neutral,Italy,1.6933603916712707
+risk_prone,United States,59.999999223933976
+risk_prone,Belgium,20.999999981751653
+risk_prone,United Kingdom,11.757280690508367
+risk_prone,Switzerland,4.242720364191603
+risk_prone,Italy,1.0000000130232232
+risk_prone,Netherlands,1.000000010332424

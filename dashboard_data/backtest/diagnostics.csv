@@ -1,0 +1,14 @@
+metric,value
+Sharpe optimised (rf=0),0.835
+Sharpe 1/N (rf=0),0.866
+Sharpe difference,-0.031
+t-stat on daily return difference,-0.85
+significant at 5%?,0.0
+mean predicted risk at rebalances_%,8.78
+realised volatility_%,13.21
+risk understatement_%,50.4
+turnover per rebalance mean_%,20.8
+turnover annualised_%,83.0
+CAGR cost of 10bp turnover_pp,0.18
+rebalances,31.0
+test years,7.7
