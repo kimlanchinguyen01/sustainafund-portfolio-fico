@@ -57,14 +57,32 @@ if frontier.empty:
 
 frontier["sharpe"] = frontier["portfolio_return"] / frontier["portfolio_risk"]
 
-idx_risk_averse = frontier["portfolio_risk"].idxmin()
-idx_risk_prone = frontier["portfolio_return"].idxmax()
-idx_neutral = frontier["sharpe"].idxmax()
+# CANONICAL SELECTION. This used to be a plain idxmax(return) for Risk Prone,
+# which lands on the max-return CORNER of the feasible set - three positions at
+# the 20% cap, 23 of 30 on the 1% floor, ratio 0.779, worse than the risk-averse
+# book. The frozen rule in profile_rule.py filters those degenerate points out.
+# That disagreement meant the repo shipped two different portfolios both called
+# "Risk Prone"; this file was the one that was wrong.
+import profile_rule as pr
 
+_rows = []
+for _pos, (_i, _r) in enumerate(frontier.iterrows()):
+    _w = weights[f"beta_{_i}"]
+    _rows.append({"frontier_point": _i,
+                  "expected_return": float(_r["portfolio_return"]),
+                  "risk": float(_r["portfolio_risk"]),
+                  **pr.degeneracy(_w)})
+_picks = pr.pick_profiles(_rows)
+
+idx_risk_averse = _picks["Risk Averse"]
+idx_neutral = _picks["Neutral"]
+idx_risk_prone = _picks["Risk Prone"]
+
+# Names carry the rule, so a reader cannot mistake which definition produced them
 scenarios = {
-    "Risk Averse (min risk)": idx_risk_averse,
-    "Neutral (max Sharpe = return/risk)": idx_neutral,
-    "Risk Prone (max return)": idx_risk_prone,
+    "Risk Averse (minimum variance)": idx_risk_averse,
+    "Neutral (maximum return/risk ratio)": idx_neutral,
+    "Risk Prone (highest non-degenerate return)": idx_risk_prone,
 }
 
 print("=" * 70)

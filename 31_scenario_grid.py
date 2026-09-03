@@ -58,16 +58,11 @@ OUTDIR = "dashboard_data/scenarios"
 BUDGET = 100_000_000
 N_POINTS = 15
 
-# non-degeneracy thresholds, from 19_freeze_v4.py
-DEG_TOP3 = 0.40
-DEG_FLOOR_N = 15
-FLOOR_TOL = 1e-5      # see 28_scenarios_for_deck.py: MIP gap leaves 0.010005
-
-PROFILE_RULES = {
-    "Risk Averse": "Minimum variance",
-    "Neutral": "Maximum return/risk ratio",
-    "Risk Prone": "Highest non-degenerate return",
-}
+# The rule lives in profile_rule.py and nowhere else - it used to exist in three
+# places with two different answers. Verified: the module reproduces all 45
+# committed picks in this script's own output without re-solving.
+from profile_rule import (DEG_TOP3, DEG_FLOOR_N, FLOOR_TOL, PROFILE_RULES,
+                          pick_profiles)
 
 # ---------------------------------------------------------------------------
 # The grid. Every entry is (scenario_id, overrides on Model2_ori's constants).
@@ -119,18 +114,6 @@ def degeneracy(w):
     h = w[w > 1e-9].sort_values(ascending=False)
     return {"top3": float(h.head(3).sum()),
             "n_at_floor": int((h < m2.W_MIN + FLOOR_TOL).sum())}
-
-
-def pick_profiles(front):
-    """The frozen rule. Returns {profile: frontier_point}."""
-    F = pd.DataFrame(front)
-    deg = (F["top3_weight"] > DEG_TOP3) | (F["n_at_floor"] > DEG_FLOOR_N)
-    ok = F[~deg]
-    if not len(ok):                      # cannot happen on this data; fail loudly
-        raise RuntimeError("every frontier point is degenerate")
-    return {"Risk Averse": int(F.loc[F["risk"].idxmin(), "frontier_point"]),
-            "Neutral": int(F.loc[F["return_risk_ratio"].idxmax(), "frontier_point"]),
-            "Risk Prone": int(ok.loc[ok["expected_return"].idxmax(), "frontier_point"])}
 
 
 def solve_scenario(sid, overrides, shares, sectors):

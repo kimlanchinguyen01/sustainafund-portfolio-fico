@@ -110,12 +110,21 @@ exactly 100.
 `top_sector` / `top_sector_%`, `top_country` / `top_country_%`, `wEurope_%`,
 `max_pos_%` and `RHMG_%` (Rheinmetall, 0 everywhere — the Tier 1 screen).
 
-⚠ **`summary.csv` and `profile_definitions.csv` disagree about risk-prone.**
-`summary.csv` uses frontier point **11** (15.97% at 12.77%, ratio 1.250);
-`profile_definitions.csv`, the deck, and every other artefact use point **14**
-(17.63% at 22.62%, ratio 0.779), which is what "maximum return" means. This is
-open item 6 in `HANDOFF.md`. **Use `profile_definitions.csv` for risk-prone**
-until it is resolved; risk-averse and neutral agree in both files.
+**Risk Prone — resolved. Every file here now uses frontier point 11**
+(15.97% at 12.77%, ratio 1.250).
+
+These two files used to disagree, and the guidance that stood here was
+**wrong**: it said to prefer `profile_definitions.csv`, which was the
+point-**14** file. Point 14 is the unconstrained max-return *corner* — three
+positions pinned at the 20% cap, 23 of 30 on the 1% floor, 60% of the budget in
+three stocks, and a return/risk ratio of 0.779, worse than the risk-averse
+book's 1.067. It is a dominated portfolio, not a scenario.
+
+The canonical rule (`profile_rule.py`, taken from the frozen
+`19_freeze_v4.py`) filters those degenerate points out, and it is now the only
+definition in the repository — `analyze_risk.py`, `23_scenario_matrix.py` and
+`31_scenario_grid.py` all import it rather than each carrying a copy. Both files
+here agree, on all three profiles.
 
 ---
 

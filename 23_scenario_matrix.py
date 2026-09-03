@@ -8,7 +8,7 @@ For every configuration the three risk profiles are extracted with Chloe's
 definitions from analyze_risk.py: minimum risk, maximum return/risk ratio,
 maximum return.
 """
-import numpy as np, pandas as pd, Model2_ori as m2
+import numpy as np, pandas as pd, Model2_ori as m2, profile_rule as pr
 
 BASE=dict(ENABLE_ESG_CONSTRAINT=True, ENABLE_ESG_FLOOR=True, ESG_FLOOR=30.0,
           ENABLE_SECTOR_CAP=True, ENABLE_TIER1_EXCLUSION=True, ENABLE_TIER2_EXCLUSION=False)
@@ -44,9 +44,9 @@ for label,over in CONFIGS:
                                        target_return=b,**kw) for b in grid) if r["feasible"]]
     F=pd.DataFrame([{k:v for k,v in r.items() if k!="weights"} for r in front])
     F["sharpe"]=F.portfolio_return/F.portfolio_risk
-    PROF={"Risk Averse":int(F.portfolio_risk.idxmin()),
-          "Neutral":int(F.sharpe.idxmax()),
-          "Risk Prone":int(F.portfolio_return.idxmax())}
+    # canonical rule - see profile_rule.py. Was idxmax(return), which picks the
+    # degenerate max-return corner rather than a portfolio.
+    PROF=pr.pick_profiles(pr.rows_from_results(front))
     print(f"\n{label}  (universe {len(mu)})")
     for p,i in PROF.items():
         r=front[i]; w=r["weights"]; w=w[w>1e-9]

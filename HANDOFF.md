@@ -229,24 +229,7 @@ Each is reproducible from the script named. Re-deriving them wastes a session.
    `AVB.N`, `EQR.N` (REITs), `HOLN.S`, `EA.OQ`, `HWM.N`. 2870 of 2870 values
    absent where the previous file had a full history. Dropped rather than
    back-filled (an unadjusted series would cost them ~3pp). Worth re-extracting.
-6. **`build_deck.py` — FIXED, and the deck is now reproducible from a clean
-   clone.** It read `/tmp/scen.json`, which nothing in the repo wrote, so the
-   documented `python3 build_deck.py` crashed anywhere /tmp had been cleared.
-   `28_scenarios_for_deck.py` regenerates that file into
-   `results_chloe/scenarios_for_deck.json` from committed artefacts only, and
-   verifies itself field-by-field against the original (ALL FIELDS MATCH).
-   Rebuilt with /tmp/scen.json deleted, the PDF is text-identical to the one
-   that shipped. Every other input build_deck.py reads is in git. The only
-   remaining /tmp use is the debug PNG *write*, which is intentional.
-   Also removed there: a dead `portfolio_summary.csv` load, see item 7.
-   **Still not regenerable, though committed and therefore working:**
-   `results_chloe/backtest/backtest_subperiods.csv` and
-   `backtest_diagnostics.csv`. `backtest_profiles/results/` now produces
-   equivalents in the same regime windows, but wiring them in would change the
-   slides from the min-variance book to a four-book comparison, so that is a
-   deliberate decision rather than a fix.
-
-7. **Risk Prone — RESOLVED. The canonical rule is the frozen one, and the
+6. **Risk Prone — FULLY RESOLVED AND PROPAGATED. The canonical rule is the frozen one, and the
    holdings files were right.** `archive/our_model_frozen/19_freeze_v4.py:101`
    defines it: degenerate = top-3 weight > 40% OR more than 15 positions on the
    1% floor; Risk Prone = max return among NON-degenerate points. On the
@@ -256,16 +239,22 @@ Each is reproducible from the script named. Re-deriving them wastes a session.
    So `analyze_risk.py`'s plain `idxmax(return)` is the outlier, not the
    holdings. `31_scenario_grid.py` derives all three per scenario; nothing is
    hard-coded, and the rule re-selects when a constraint changes.
-   **STILL TO FIX, because it changes a slide:** the deck shows point 14
-   (17.63% / 22.62% / 0.779) as Risk Prone with a caveat box. Under the
-   canonical rule it should show point **11** (15.97% / 12.77% / 1.250) and the
-   caveat box becomes unnecessary. `28_scenarios_for_deck.py` faithfully
-   reproduced the legacy file, so it reproduces the wrong pick too - it needs
-   the frozen rule, then rebuild the deck. Also stale for the same reason:
-   `analyze_risk.py`, `risk_profile_scenarios_summary.csv`,
-   `23_scenario_matrix.py`.
+   The rule now lives in **`profile_rule.py` and nowhere else**. It used to
+   exist in three places with two different answers. `analyze_risk.py`,
+   `23_scenario_matrix.py` and `31_scenario_grid.py` all import it. Gated: the
+   module reproduces all 45 committed picks in `31`'s output without re-solving.
+   `risk_profile_scenarios_summary.csv` and `scenario_matrix.csv` were
+   regenerated, and their `results_chloe/` copies refreshed - the builder reads
+   those, so updating only the root files silently changed nothing.
+   Every dashboard file now agrees: Risk Prone is point 11, 15.97% / 12.77% /
+   ratio 1.250.
+   The presentation is **retired** at Tamara's instruction, so the deck's own
+   point-14 slide is no longer an open item. `build_deck.py` and
+   `28_scenarios_for_deck.py` are left in place but superseded; if the deck is
+   ever revived, `28` still reproduces the legacy pick and would need
+   `profile_rule` wired in.
 
-8. **Old note, kept for the record: `results_chloe/portfolio_summary.csv`
+7. **Old note, kept for the record: `results_chloe/portfolio_summary.csv`
    disagrees with every other artefact about Risk Prone.** Its risk-prone row is frontier point **11** (15.97% /
    12.77% / ratio 1.250); the deck, `risk_profile_scenarios_summary.csv`,
    `23_scenario_matrix.py` and this document all use point **14** (17.63% /
@@ -274,7 +263,7 @@ Each is reproducible from the script named. Re-deriving them wastes a session.
    The deck is unaffected (it never reads `S`). Decide which one is intended and
    regenerate the odd one out.
 
-9. Not done and worth saying so: factor-level return attribution, transaction
+8. Not done and worth saying so: factor-level return attribution, transaction
    costs inside the optimiser.
 
 ---
