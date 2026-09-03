@@ -1,6 +1,6 @@
 # dashboard_data — everything a dashboard needs, in one place
 
-660 KB, 37 CSVs, no solver required to read any of them. Rebuilt by
+661 KB, 38 CSVs, no solver required to read any of them. Rebuilt by
 `build_dashboard_data.py` (~5 s) from result files elsewhere in the repo, so
 this folder can always be regenerated and can never disagree with the model.
 
@@ -178,6 +178,7 @@ but **four books instead of one**: `minvar`, `mandate20`, `mandate10`,
 | `rebalances.csv` | 31 rebalances × 4 books: held, predicted risk, ESG, turnover, solstatus |
 | `diagnostics.csv` | Sharpe vs 1/N with t-tests, risk understatement, turnover |
 | `gate.csv` | reproduction check against `pipeline/21_backtest_walkforward.py` |
+| `option_b_comparison.csv` | what a 2–3 rebalance-point protocol concludes under three different splits — methodology evidence, not a chart |
 
 ⚠ **Do not present any Sharpe difference here as an edge.** All three t-stats
 are inside ±1.96 (−0.87, +0.60, +1.12), so the whole spread 0.829 → 0.914 is

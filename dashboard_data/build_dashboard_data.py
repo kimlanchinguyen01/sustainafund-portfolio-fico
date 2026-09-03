@@ -68,6 +68,8 @@ COPIES = [
     ("backtest_profiles/rebalances.csv",    "backtest_profiles/results/rebalances.csv"),
     ("backtest_profiles/diagnostics.csv",   "backtest_profiles/results/diagnostics.csv"),
     ("backtest_profiles/gate.csv",          "backtest_profiles/results/gate.csv"),
+    ("backtest_profiles/option_b_comparison.csv",
+     "backtest_profiles/results/option_b_comparison.csv"),
 
     # crisis stress test
     ("stress/panelA_windows.csv",           "stress_test/results/panelA_windows.csv"),
