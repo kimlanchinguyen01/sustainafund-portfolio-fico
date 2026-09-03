@@ -77,7 +77,12 @@ Each is reproducible from the script named. Re-deriving them wastes a session.
 | FX is a real covariance factor | same holdings realised 8.04% local vs 8.99% USD; `var(fx)` = 17.6% of total | `12_fx_model_free.py` |
 | Dividends matter | median mu 7.80% -> 10.39%; rise ordered by dividend yield by sector | `20` |
 | Complete-case rule excluded 96 stocks | factor model retains all; recovered names take 11.2% of capital at min-risk | `04a`, `20` |
-| 20 factors, not 1–2 | 1 factor understates risk 39.9% at min-risk end; 20 is the smallest with none anywhere | `05d_factor_count.py` |
+| 20 factors, not 1–2 | 1 factor understates risk 39.9% at min-risk end; 20 is the smallest with none anywhere | `05d_factor_count.py` (OLD data) |
+| That was measured on SUPERSEDED inputs | `05d` reads non-dividend-adjusted prices and the pre-v4 mu, against the old `Model2`; `20`'s `K = 20` is inherited, not re-derived | `05d` vs `20` |
+| Re-validated on v4: the cliff survives | 1–2 factors still understate ~38% at min-risk (was ~40%) | `29` |
+| But the minimum k moved and the criterion is fragile | smallest sufficient k is now 5 (+0.31% margin) while k=10 FAILS at -1.56%; 20 is the smallest with a non-marginal margin (+1.54% worst) | `29` |
+| More factors is not better | mean overstatement +4.3% at k=5 -> +11.8% at k=50, R2 median 0.436 -> 0.586, condition 2957 -> 4389 | `29` |
+| The factors are PCA components, and interpretable after the fact | f1 = market (corr 0.996 with an equal-weight index, 27.8% of variance), f2 = Europe vs US (beta +1.43 vs -1.73, 7.5%), f3 = Energy vs Tech, f4 = Tech vs Utilities | `29` |
 | Quadratic beats linear | linear carries +19.2% more true risk; its objective/actual gap is 1.64x | `15_model1_linear.py` (archive) |
 | Binaries required | semi-continuous alone returns 26 positions while reporting 30 | tested inline |
 | ESG cost decomposition | average >=70 costs -0.151pp at Neutral; the per-stock floor costs +0.008pp, i.e. zero | `23_scenario_matrix.py` |
@@ -225,6 +230,8 @@ Each is reproducible from the script named. Re-deriving them wastes a session.
 | `dashboard_data/` | 38 CSVs, 662 KB, one place with stable names; rebuilt by its own script |
 | `27_lseg_esg_sector_update.py` | parses and measures the LSEG ESG/GICS export, ~5 min |
 | `28_scenarios_for_deck.py` | regenerates the deck's scenario JSON; run before `build_deck.py` |
+| `29_factor_count_v4.py` | re-validates the 20-factor choice on the current data, ~9 min |
+| `results_factor_count/` | its output: 3 CSVs + a README with the verdict and what the factors are |
 | `results_lseg_update/` | its output: 5 CSVs + a README with the adopt/don't recommendation |
 | `data_lseg_update/` | the parsed inputs, unused until the update is adopted |
 
