@@ -46,3 +46,6 @@ package.json
 # write-ups delivered to the team as HTWSS_v3.zip, deliberately out of git
 # (they describe the archived country-cap model as the deliverable)
 HTWSS_summary_v*.docx
+
+# deck build scratch (charts are regenerated; the PPTX/PDF are deliverables)
+deck/charts/
