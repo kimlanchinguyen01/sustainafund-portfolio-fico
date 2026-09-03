@@ -391,6 +391,58 @@ def validate(u, have_industry):
     else:
         warns.append("scenarios/ not built yet - run 31_scenario_grid.py")
 
+    # the robustness layer
+    rb = os.path.join(HERE, "robustness")
+    fh = os.path.join(rb, "window_holdings.csv")
+    if os.path.exists(fh):
+        RH = pd.read_csv(fh)
+        RS = pd.read_csv(os.path.join(rb, "window_summary.csv"))
+        RF = pd.read_csv(os.path.join(rb, "window_frontiers.csv"))
+        bad = set(RH["profile"]) - set(PROFILE_RULES)
+        if bad:
+            fails.append(f"non-canonical profile names in window_holdings: {bad}")
+        sums = RH.groupby(["window_years", "profile"])["weight"].sum()
+        off = sums[(sums - 1.0).abs() > 1e-3]
+        if len(off):
+            fails.append(f"{len(off)} window portfolio(s) whose weights do not sum to 1: "
+                         f"{off.round(4).to_dict()}")
+        if RH.duplicated(["window_years", "profile", "stock"]).any():
+            fails.append("duplicate (window, profile, stock) keys in window_holdings")
+        unknown = set(RH["stock"]) - set(u.index)
+        if unknown:
+            fails.append(f"{len(unknown)} window-held stocks missing from the universe")
+        key = set(zip(RF.window_years, RF.frontier_point))
+        orphan = [(r.window_years, r.frontier_point) for r in RS.itertuples()
+                  if (r.window_years, r.frontier_point) not in key]
+        if orphan:
+            fails.append(f"{len(orphan)} window summary rows point at a "
+                         f"nonexistent frontier point")
+        # the 10-year window must agree with the base scenario, or the shorter
+        # windows are measuring the rebuild rather than the window
+        base = os.path.join(HERE, "scenarios", "portfolio_summary.csv")
+        if os.path.exists(base):
+            B = pd.read_csv(base).query("scenario_id == 'base'").set_index("profile")
+            R10 = RS.query("window_years == 10").set_index("profile")
+            for prof in PROFILE_RULES:
+                if prof in B.index and prof in R10.index:
+                    d = abs(float(B.loc[prof, "expected_return"])
+                            - float(R10.loc[prof, "expected_return"]))
+                    # 1e-3 (0.1pp), not 1e-6: MIP_GAP = 0.001 admits alternative
+                    # optima on the flat min-risk end, so the same solve can
+                    # return 9.87% or 9.92% with 42 or 43 holdings. Documented in
+                    # results_country_cap/README.md. The frontier POINT must
+                    # still match exactly - that is the selection rule, not the
+                    # solver's tie-breaking.
+                    if d > 1e-3:
+                        fails.append(f"10y {prof} differs from the base scenario by "
+                                     f"{d:.2e} of expected return, beyond the MIP gap")
+                    if int(B.loc[prof, "frontier_point"]) != int(R10.loc[prof, "frontier_point"]):
+                        fails.append(f"10y {prof} selects frontier point "
+                                     f"{int(R10.loc[prof, 'frontier_point'])} against the base "
+                                     f"scenario's {int(B.loc[prof, 'frontier_point'])}")
+    else:
+        warns.append("robustness/ not built yet - run 32_robustness_windows.py")
+
     # units: nothing in this layer may be a percentage string or a _% column
     for dp, _, fs in os.walk(HERE):
         if os.path.basename(dp) in ("scenarios", *OWNED):

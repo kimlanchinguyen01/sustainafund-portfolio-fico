@@ -152,6 +152,69 @@ reached the model** — 6 lost price series, 10 below the ESG floor.
 `esg_band` is a pre-cut label (`<30`, `30-50`, `50-60`, `60-70`, `70-80`, `80+`)
 so ESG banding does not have to be re-derived in DAX.
 
+### `robustness/` — 10Y / 5Y / 3Y, with holdings and stability
+
+Built by `32_robustness_windows.py`. **μ and Σ are RE-ESTIMATED per window**,
+not just re-solved — the window is the input being varied, so shortening it
+changes both the expected returns and the covariance. Estimation mirrors
+`20_dividend_adjusted_pipeline.py` exactly (20-factor PCA Σ, James-Stein μ),
+and the gate proves it: at 10 years the rebuild reproduces the shipped
+`expected_return_v4.csv` and `covariance_matrix_v4.csv` to **1.7e-16** and
+**1.8e-15**. The shorter windows therefore measure the window, not the rebuild.
+
+| Table | Rows | Grain |
+|---|---|---|
+| `window_summary.csv` | 9 | window × profile |
+| `window_holdings.csv` | 338 | window × profile × stock |
+| `window_frontiers.csv` | 45 | window × frontier_point |
+| `stability.csv` | 9 | window × profile, against the 10-year book |
+| `estimation.csv` | 3 | what each window's estimation actually saw |
+| `gate.csv` | 1 | the 10-year reproduction check |
+
+Profiles are re-selected per window with the canonical rule, not carried over —
+which matters: on 3 years Neutral moves to frontier point 6 and Risk Prone to
+point 12, because the degenerate set moves with the estimate.
+
+| Window | Profile | Return | Risk | Ratio | Held |
+|---|---|---|---|---|---|
+| 10 | Risk Averse | 9.92% | 9.26% | 1.072 | 43 |
+| 10 | **Neutral** | **14.30%** | **10.63%** | **1.346** | 30 |
+| 10 | Risk Prone | 15.97% | 12.78% | 1.249 | 30 |
+| 5 | Neutral | 17.47% | 9.32% | 1.874 | 38 |
+| 3 | Neutral | **25.73%** | **7.93%** | **3.244** | 38 |
+| 3 | Risk Prone | **35.93%** | 13.66% | 2.630 | 30 |
+
+⚠ **Shorter windows look better and are worse.** A 3-year estimate claims
+Neutral earns 25.73% at 7.93% risk, a return/risk ratio of 3.24 against the
+10-year 1.35. Nothing improved: μ's range widens from 2.7%–19.1% on 10 years to
+**−9.8%–46.1%** on 3, and the optimiser buys whatever that noise flattered.
+`04a` recorded the same mechanism (max return 38.8% on 10y → 85.6% on 3y). If a
+dashboard shows these side by side, the short windows must be labelled as
+estimation error, not as an alternative recommendation.
+
+`stability.csv` is the point of the exercise:
+
+| Window | Profile | Names shared with 10Y | Jaccard | Active share | Weight corr |
+|---|---|---|---|---|---|
+| 5 | Risk Averse | 30 of 50 | 0.476 | 0.466 | 0.425 |
+| 5 | Neutral | **15 of 38** | 0.283 | 0.645 | 0.164 |
+| 5 | Risk Prone | 9 of 30 | 0.176 | 0.723 | 0.055 |
+| 3 | Risk Averse | 20 of 49 | 0.278 | 0.643 | 0.084 |
+| 3 | Neutral | **11 of 38** | 0.193 | 0.755 | **−0.019** |
+| 3 | Risk Prone | **7 of 30** | 0.132 | **0.910** | **−0.225** |
+
+`active_share` is half the sum of absolute weight differences: the fraction of
+capital placed differently. So the 3-year Risk Prone book puts **91% of the
+budget somewhere else** than the 10-year one, and its weights correlate
+**−0.225** with it — no relationship at all.
+
+Two things worth carrying to the defence. The 3-year Risk Averse row (Jaccard
+0.278, active share 0.643) reproduces `03e`'s previously reported "Jaccard 0.27,
+64% of capital placed differently" almost exactly, which cross-checks both.
+And **Risk Averse is the most stable profile at every window while Risk Prone
+is the least** — the third independent analysis to land on the min-variance end
+being the robust one, after `stress_test/` and `backtest_profiles/`.
+
 ### `backtest_standard/` — walk-forward, standardised
 
 Both runs in one set of tables, distinguished by `run`:
@@ -243,18 +306,12 @@ requiring the covariance, the frontier or the solver is precomputed here.
 
 Honestly listed rather than implied as done:
 
-1. **`robustness/window_summary.csv` and `window_holdings.csv`** (10Y / 5Y / 3Y).
-   Not built. It needs μ and Σ **re-estimated per window** — the 20-factor
-   pipeline re-run three times — not just re-solved, so it is a separate job
-   from the scenario grid. `pipeline/03e` and `06a` already measured the
-   instability (Jaccard 0.27, 64% of capital placed differently, 5y vs 10y);
-   this would put the composition into the dashboard.
-2. **`stress/panelB_holdings.csv` with real weights.** Needs
+1. **`stress/panelB_holdings.csv` with real weights.** Needs
    `stress_test/25_crisis_stress_test.py` re-run with a weight dump (~7 min).
-3. **A Neutral walk-forward backtest.** Partly answered already:
+2. **A Neutral walk-forward backtest.** Partly answered already:
    `backtest_profiles/` runs a return-seeking mandate out of sample over 31
    rebalances. A literal max-return/risk-per-rebalance version would need a
    frontier at each of the 31 rebalances rather than two solves.
-4. **`sensitivity/tier2_comparison.csv`** in the raw mirror still contains
+3. **`sensitivity/tier2_comparison.csv`** in the raw mirror still contains
    percentage strings. It is outside this layer (the scenario tables supersede
    it) and the validator only guards this layer, but it should be regenerated.

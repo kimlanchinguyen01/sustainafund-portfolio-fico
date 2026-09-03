@@ -122,6 +122,12 @@ Each is reproducible from the script named. Re-deriving them wastes a session.
 | A 20% sector cap starts to cost | Neutral -0.160pp of return, ratio -0.0058; it binds at every profile | `31` |
 | The sector cap also moves WHICH point is Risk Prone | uncapped and at 20% the non-degenerate boundary shifts to point 12, at 25/30% it is point 11 | `31` |
 | ESG threshold sweep, Neutral return | unconstrained 14.48%, 50 -> 14.47%, 60 -> 14.45%, 65 -> 14.43%, 70 -> 14.30%, 75 -> 14.07%, 80 -> 13.11% | `31` |
+| Window gate | re-estimating on 10y reproduces the shipped v4 files to 1.7e-16 (mu) and 1.8e-15 (Sigma) | `32` |
+| Short windows look better and are worse | Neutral 14.30%/10.63% ratio 1.35 on 10y -> 17.47%/9.32% ratio 1.87 on 5y -> 25.73%/7.93% ratio **3.24** on 3y, while mu's range widens 2.7-19.1% -> -9.8-46.1% | `32` |
+| The recommended book barely survives a window change | 5y Neutral shares 15 of 38 names with the 10y one, 3y shares 11 of 38 with weight correlation -0.019 | `32` |
+| Risk Prone is the least stable profile | 3y: 7 of 30 names shared, active share 0.910, weight correlation -0.225 | `32` |
+| Risk Averse is the most stable at every window | Jaccard 0.476 (5y) and 0.278 (3y) against Neutral's 0.283 / 0.193 - the THIRD independent analysis pointing at the min-variance end | `32`, `25`, `26` |
+| 03e's instability figure cross-checks | its "Jaccard 0.27, 64% of capital placed differently" matches 3y-vs-10y Risk Averse: 0.278 and 0.643 | `32`, `03e` |
 | ESG 80 is where it starts to hurt | Neutral ratio 1.346 -> 1.216 and the Risk Averse book shrinks to 31 holdings | `31` |
 | The factors are PCA components, and interpretable after the fact | f1 = market (corr 0.996 with an equal-weight index, 27.8% of variance), f2 = Europe vs US (beta +1.43 vs -1.73, 7.5%), f3 = Energy vs Tech, f4 = Tech vs Utilities | `29` |
 | Quadratic beats linear | linear carries +19.2% more true risk; its objective/actual gap is 1.64x | `15_model1_linear.py` (archive) |
@@ -295,6 +301,7 @@ Each is reproducible from the script named. Re-deriving them wastes a session.
 | `31_scenario_grid.py` | solves 15 scenarios into long-format normalised tables, ~20 min |
 | `dashboard_data/build_powerbi_layer.py` | the clean Power BI layer + validation, ~10 s |
 | `dashboard_data/POWERBI.md` | its contract: conventions, schemas, what is still to do |
+| `32_robustness_windows.py` | 10Y/5Y/3Y with mu and Sigma re-estimated per window, ~12 min |
 | `results_factor_count/` | its output: 3 CSVs + a README with the verdict and what the factors are |
 | `results_lseg_update/` | its output: 5 CSVs + a README with the adopt/don't recommendation |
 | `data_lseg_update/` | the parsed inputs, unused until the update is adopted |
