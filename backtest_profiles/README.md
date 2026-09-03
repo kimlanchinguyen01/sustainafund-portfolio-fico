@@ -37,6 +37,40 @@ cost treatment are identical to script 21. Only the objective differs. All
 solving goes through `Model2_ori.solve_model2`, so the constraint set cannot
 drift from the model. Country cap off, as delivered.
 
+### And B is not just smaller, it is unstable — measured, not asserted
+
+`26b_why_not_option_b.py` runs B properly, twice with different split dates,
+both defensible a priori and neither cherry-picked, plus a variant with three
+rebalance points. Everything else identical.
+
+| Scheme | Book | Sharpe | 1/N | Δ Sharpe | t | Verdict |
+|---|---|---|---|---|---|---|
+| split 2019-12 / 2022-12 | `minvar` | 0.656 | 0.829 | −0.173 | −1.42 | loses |
+| split 2019-12 / 2022-12 | `mandate20` | 0.915 | 0.829 | **+0.087** | +0.70 | **beats** |
+| split 2020-06 / 2023-06 | `minvar` | 0.940 | 1.258 | −0.319 | −1.87 | loses |
+| split 2020-06 / 2023-06 | `mandate20` | 1.014 | 1.258 | **−0.244** | +0.10 | **loses** |
+| 3 points, yearly-ish | `minvar` | 0.645 | 0.846 | −0.201 | −1.48 | loses |
+| 3 points, yearly-ish | `mandate20` | 0.716 | 0.846 | −0.130 | +0.28 | loses |
+
+**For the recommended profile B contradicts itself.** `mandate20` "beats 1/N"
+on one split and "loses to 1/N" on another — a Δ Sharpe spread of **0.331**
+decided by nothing but where the boundary falls. The 31-rebalance answer is
++0.010 with t = +0.60, i.e. indistinguishable. B would have handed us a
+confident-looking result, in either direction, from the same data and the same
+code.
+
+For `minvar` B agrees on direction but not on size: −0.173 to −0.319 against
+the 31-rebalance −0.038, overstating the loss four- to eightfold.
+
+One honest qualification: with two rebalance points the test WINDOW also moves
+with the split — the 2020-06 scheme begins after the COVID crash, which is why
+its 1/N Sharpe is 1.258 rather than 0.829. So the spread is sample size and
+window choice together, not sample size alone. That does not rescue B; it is a
+second reason the protocol is fragile here, because with so few points the
+window and the sample are not separable.
+
+---
+
 ## The gate
 
 `minvar` here must reproduce script 21, or nothing else is trustworthy:
@@ -149,6 +183,7 @@ separate the two, costs no extra solve time, and is the obvious next run — see
 | `rebalances.csv` | per rebalance per book: held, predicted risk, ESG, turnover, `solstatus` |
 | `diagnostics.csv` | Sharpe vs 1/N with t-tests, risk understatement, turnover |
 | `gate.csv` | the reproduction check against script 21 |
+| `option_b_comparison.csv` | what option B concludes under three different splits |
 
 `subperiods.csv` and `diagnostics.csv` also close a reproducibility hole:
 `build_deck.py` reads `results_chloe/backtest/backtest_subperiods.csv` and
@@ -177,7 +212,8 @@ was written from an earlier run.
 
 ```bash
 export XPAUTH_PATH=~/Documents/FICO-case-study/xpauth.xpr
-python3 backtest_profiles/26_backtest_profiles.py
+python3 backtest_profiles/26_backtest_profiles.py      # ~13 min, the deliverable
+python3 backtest_profiles/26b_why_not_option_b.py      # ~3 min, the option-B check
 ```
 
 Needs `pipeline/prices_div_usd.csv` (52 MB, gitignored). Rebuild with

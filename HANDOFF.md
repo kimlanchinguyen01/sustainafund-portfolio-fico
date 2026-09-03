@@ -116,6 +116,8 @@ Each is reproducible from the script named. Re-deriving them wastes a session.
 | Risk is the robust, monotone result | realised vol 13.20 / 16.91 / 20.08 / 23.30% and maxDD -33.8 / -37.7 / -42.3 / -46.0% for minvar / 1/N / mandate20 / mandate10 | `26` |
 | Mandates are a bull-market bet | win 2020 rebound (+56% vs +18%) and the AI rally (+33% vs +21%), lose 2022 by 22pp (-34.3% vs -12.6%) | `26` |
 | Mandate anchors on the noisiest estimate available | out of sample the max-return corner comes from an unshrunk 3y sample mean: 45.85% predicted return at the first rebalance | `26` |
+| Option B (2-3 rebalance points) contradicts itself here | mandate20 "beats 1/N" (+0.087) on one split and "loses" (-0.244) on another; spread 0.331 vs the 31-rebalance +0.010 | `26b` |
+| B also overstates the min-variance loss 4-8x | -0.173 / -0.319 / -0.201 by split, against -0.038 over 31 rebalances | `26b` |
 
 ---
 
