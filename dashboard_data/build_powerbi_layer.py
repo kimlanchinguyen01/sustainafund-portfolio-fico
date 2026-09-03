@@ -341,6 +341,63 @@ def build_benchmark(out):
 
 
 # ===========================================================================
+# 4a. derived: reconcile the runs that overlap
+# ===========================================================================
+def build_run_reconciliation(out):
+    """The minimum-variance walk-forward exists in THREE independent runs.
+
+    Scripts 21, 26 and 33 all solve it, on the identical protocol, for different
+    reasons - 21 was the original, 26 added return-seeking books alongside it,
+    33 added the canonical profiles and gets it as "Risk Averse". Their numbers
+    differ slightly, and without this table a dashboard would show three
+    unexplained Sharpe ratios for the same strategy and invite the question of
+    which one is right.
+
+    They are all right. The spread is MIP-gap tie-breaking: at a 0.1% gap the
+    minimum-variance solve has many near-equally-good answers at each rebalance,
+    so an independent run lands on a different one. That is the same effect
+    documented for the static frontier's flat left-hand end.
+    """
+    rows = []
+    SRC = [
+        ("script 21 — the original walk-forward",
+         "results_chloe/backtest/backtest_summary.csv", "Model 2 (min-variance)", 100),
+        ("script 26 — four books on the same protocol",
+         "backtest_profiles/results/summary.csv", "minvar", 100),
+        ("script 33 — canonical profiles",
+         "walkforward/summary.csv", "Risk Averse", 1),
+    ]
+    for run, rel, key, scale in SRC:
+        f = os.path.join(ROOT, rel) if not rel.startswith("walkforward")             else os.path.join(HERE, rel)
+        if not os.path.exists(f):
+            continue
+        D = pd.read_csv(f, index_col=0)
+        if key not in D.index:
+            continue
+        r = D.loc[key]
+        cg = "CAGR_%" if "CAGR_%" in D.columns else "cagr"
+        vl = "vol_%" if "vol_%" in D.columns else "volatility"
+        sh = "Sharpe" if "Sharpe" in D.columns else "sharpe"
+        dd = "maxDD_%" if "maxDD_%" in D.columns else "max_drawdown"
+        rows.append({"run": run, "label_in_source": key,
+                     "strategy": "Optimised Minimum Variance",
+                     "same_protocol": True,
+                     "cagr": float(r[cg]) / scale,
+                     "volatility": float(r[vl]) / scale,
+                     "sharpe": float(r[sh]),
+                     "max_drawdown": float(r[dd]) / scale})
+    if not rows:
+        return 0
+    T = pd.DataFrame(rows)
+    for c in ("cagr", "volatility", "sharpe", "max_drawdown"):
+        T[f"{c}_spread"] = T[c].max() - T[c].min()
+    T["note"] = ("identical protocol; the spread is MIP-gap tie-breaking between "
+                 "near-equally-good minimum-variance solutions, not disagreement")
+    T.to_csv(f"{out}/minvar_reconciliation.csv", index=False)
+    return len(T)
+
+
+# ===========================================================================
 # 4b. derived: the Tier 2 comparison, rebuilt with proper types
 # ===========================================================================
 def build_tier2_comparison(out):
@@ -588,6 +645,8 @@ def main():
     print(f"backtest_standard/    {n_sum} summary rows | {n_curve} curve rows")
     print(f"stress_standard/      {build_stress(os.path.join(HERE, 'stress_standard'))} tables")
     print(f"benchmark_standard/   {build_benchmark(os.path.join(HERE, 'benchmark_standard'))} tables")
+    print(f"backtest_standard/    minvar_reconciliation "
+          f"{build_run_reconciliation(os.path.join(HERE, 'backtest_standard'))} runs")
     print(f"sensitivity_standard/ tier2_comparison "
           f"{build_tier2_comparison(os.path.join(HERE, 'sensitivity_standard'))} risk levels")
 

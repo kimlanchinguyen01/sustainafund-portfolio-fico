@@ -84,6 +84,7 @@ COPIES = [
     ("stress/panelA_windows.csv",           "stress_test/results/panelA_windows.csv"),
     ("stress/panelB_windows.csv",           "stress_test/results/panelB_windows.csv"),
     ("stress/panelB_portfolios.csv",        "stress_test/results/panelB_portfolios.csv"),
+    ("stress/panelB_holdings.csv",          "stress_test/results/panelB_holdings.csv"),
     ("stress/panelB_not_testable.csv",      "stress_test/results/panelB_not_testable.csv"),
     ("stress/covid_attribution.csv",        "stress_test/results/drawdown_attribution.csv"),
     ("stress/worst_windows.csv",            "stress_test/results/worst_windows.csv"),

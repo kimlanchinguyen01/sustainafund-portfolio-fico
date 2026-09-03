@@ -317,6 +317,29 @@ What is robust here is the same thing every other test found: Risk Averse has
 the lowest volatility, the shallowest drawdown and half the turnover, while
 Neutral and Risk Prone buy their extra return with proportionally more of both.
 
+### `backtest_standard/minvar_reconciliation.csv` — read this before quoting a Sharpe
+
+The minimum-variance walk-forward exists in **three independent runs**, because
+three scripts needed it for different reasons: script 21 was the original,
+script 26 ran it alongside return-seeking books, and script 33 gets it as
+`Risk Averse` while picking the canonical profiles. Same protocol every time.
+
+| Run | Label in source | CAGR | Volatility | Sharpe |
+|---|---|---|---|---|
+| script 21 — the original | `Model 2 (min-variance)` | 11.034% | 13.209% | 0.8353 |
+| script 26 — four books | `minvar` | 10.939% | 13.197% | 0.8290 |
+| script 33 — canonical profiles | `Risk Averse` | 11.041% | 13.204% | 0.8362 |
+
+⚠ **All three are correct.** The Sharpe spread is **0.0073** and the CAGR spread
+0.10 pp — MIP-gap tie-breaking, not disagreement: at a 0.1% gap the
+minimum-variance solve has many near-equally-good answers at each rebalance, so
+an independent run lands on a different one. Same effect as the static
+frontier's flat left-hand end.
+
+Without this table a dashboard would show three unexplained Sharpe ratios for
+one strategy. Quote whichever run the surrounding chart comes from, and cite
+this table if anyone spots the difference.
+
 ### `sensitivity_standard/tier2_comparison.csv` — rebuilt with real numbers
 
 The committed `results_chloe/comparison_tier2.csv` is a stale artefact no live
