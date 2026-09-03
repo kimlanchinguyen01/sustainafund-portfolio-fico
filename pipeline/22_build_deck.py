@@ -1,4 +1,5 @@
 """Interim-review deck for the SustainaFund case study, built with matplotlib."""
+import os
 import numpy as np, pandas as pd, matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
@@ -71,8 +72,10 @@ def bullets(fig,x,y,items,dy=0.052,fs=12,wrap=95):
     return y
 
 # ---------------------------------------------------------------- data
-S=pd.read_csv("results_chloe/portfolio_summary.csv")
-S=S[S.run=="tier2off"].set_index("profile")
+# portfolio_summary.csv was loaded here and never used - every scenario number
+# on the slides comes from SC below. Removed rather than left in place, because
+# that file disagrees with the rest of the repo about which frontier point
+# risk-prone is (point 11 vs point 14); see HANDOFF.md.
 FR=pd.read_csv("results_chloe/efficient_frontier_model2_sec30_tier1_tier2off_esgfloor30.csv")
 BT=pd.read_csv("results_chloe/backtest/backtest_summary.csv",index_col=0)
 SUB=pd.read_csv("results_chloe/backtest/backtest_subperiods.csv")
@@ -82,7 +85,14 @@ EQ=pd.read_csv("results_chloe/backtest/backtest_equity_curves.csv",index_col=0,p
 mu=pd.read_csv("expected_return_v4.csv",index_col=0)["expected_return"]
 NEU=pd.read_csv("results_chloe/portfolio_tier2off_neutral.csv",index_col=0)
 import json as _json
-SC=_json.load(open("/tmp/scen.json"))
+# Was: _json.load(open("/tmp/scen.json")) - a file NOTHING in the repo wrote, so
+# this line made the deck unrebuildable on any machine where /tmp had been
+# cleared. Regenerated into the repo by 28_scenarios_for_deck.py, which was
+# verified field-by-field against the original /tmp copy.
+SCEN_JSON="results_chloe/scenarios_for_deck.json"
+if not os.path.exists(SCEN_JSON):
+    raise SystemExit(f"missing {SCEN_JSON}\n  run: python3 28_scenarios_for_deck.py")
+SC=_json.load(open(SCEN_JSON))
 ESGD=SC.pop("esg")
 MX=pd.read_csv("scenario_matrix.csv")
 def mx(cfg,prof,col): return float(MX[(MX.config==cfg)&(MX.profile==prof)][col].iloc[0])

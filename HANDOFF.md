@@ -57,7 +57,8 @@ python3 20_dividend_adjusted_pipeline.py      # the whole chain     ~3 min
 cd .. && python3 Model2_ori.py                # the frontier        ~15 s
 python3 23_scenario_matrix.py                 # 24 scenarios        ~2 min
 cd pipeline && python3 21_backtest_walkforward.py   # backtest      ~10 min
-cd .. && python3 build_deck.py                # the PDF deck        ~20 s
+cd .. && python3 28_scenarios_for_deck.py     # the deck's scenarios ~2 s
+python3 build_deck.py                         # the PDF deck        ~20 s
 ```
 
 `20_dividend_adjusted_pipeline.py` does cleaning, USD conversion, discontinuity
@@ -93,6 +94,7 @@ Each is reproducible from the script named. Re-deriving them wastes a session.
 | Risk understated out of sample | predicted 8.78% vs 13.21% realised, 50.4% | `21` |
 | Turnover | 20.8% per rebalance, ~83% a year, 0.18pp of CAGR at 10bp | `21` |
 | Two data defects found | ZEG.L (reverse takeover) and BMPS.MI (recapitalisation) truncated, not dropped | `10`, `13` |
+| A position "at a bound" needs a 1e-5 tolerance, not 1e-6 | MIP_GAP 0.001 leaves the smallest min-risk holding at 0.010005, five parts per million above the 1% floor | `28` |
 | Country concentration is real | Switzerland 46.98% of the risk-averse book, largest country at 14 of 15 frontier points; Switzerland + US = 92.2% of that book | `24` |
 | A 25% country cap is cheap | +0.112pp risk at Neutral at matched return, or -0.067pp return at matched risk; Neutral ratio 1.346 -> 1.338, still 30 holdings, ESG still 70.00 | `24` |
 | The cap is expensive only at the left end | +0.146pp risk at min-risk = -1.39pp return at matched risk, because the frontier is ~10x steeper there | `24` |
@@ -174,18 +176,22 @@ Each is reproducible from the script named. Re-deriving them wastes a session.
    `AVB.N`, `EQR.N` (REITs), `HOLN.S`, `EA.OQ`, `HWM.N`. 2870 of 2870 values
    absent where the previous file had a full history. Dropped rather than
    back-filled (an unadjusted series would cost them ~3pp). Worth re-extracting.
-6. **`build_deck.py` is not reproducible as documented — three missing inputs.**
-   `backtest_subperiods.csv` and `backtest_diagnostics.csv` are read from
-   `results_chloe/backtest/` and **nothing in the repo writes either**;
-   `backtest_profiles/results/` now generates regenerable replacements in the
-   same regime windows. The third is worse: line 85 reads
-   `/tmp/scen.json`, and **nothing in the repository writes that file** — it was
-   produced by an ad-hoc snippet in an earlier session. It happens to exist on
-   this machine (3 Sep 09:50), but macOS clears `/tmp` on reboot, so the rebuild
-   recipe above would crash on a clean checkout. Either emit it from
-   `analyze_risk.py` or inline the three scenario dicts. Note `S` (loaded from
-   `portfolio_summary.csv` at line 74) is dead — every scenario number on the
-   slides comes from `SC`, i.e. from that /tmp file.
+6. **`build_deck.py` — FIXED, and the deck is now reproducible from a clean
+   clone.** It read `/tmp/scen.json`, which nothing in the repo wrote, so the
+   documented `python3 build_deck.py` crashed anywhere /tmp had been cleared.
+   `28_scenarios_for_deck.py` regenerates that file into
+   `results_chloe/scenarios_for_deck.json` from committed artefacts only, and
+   verifies itself field-by-field against the original (ALL FIELDS MATCH).
+   Rebuilt with /tmp/scen.json deleted, the PDF is text-identical to the one
+   that shipped. Every other input build_deck.py reads is in git. The only
+   remaining /tmp use is the debug PNG *write*, which is intentional.
+   Also removed there: a dead `portfolio_summary.csv` load, see item 7.
+   **Still not regenerable, though committed and therefore working:**
+   `results_chloe/backtest/backtest_subperiods.csv` and
+   `backtest_diagnostics.csv`. `backtest_profiles/results/` now produces
+   equivalents in the same regime windows, but wiring them in would change the
+   slides from the min-variance book to a four-book comparison, so that is a
+   deliberate decision rather than a fix.
 
 7. **`results_chloe/portfolio_summary.csv` disagrees with every other artefact
    about Risk Prone.** Its risk-prone row is frontier point **11** (15.97% /
@@ -218,6 +224,7 @@ Each is reproducible from the script named. Re-deriving them wastes a session.
 | `backtest_profiles/` | walk-forward of the RECOMMENDED profile, 4 books, code + 6 CSVs + README |
 | `dashboard_data/` | 38 CSVs, 662 KB, one place with stable names; rebuilt by its own script |
 | `27_lseg_esg_sector_update.py` | parses and measures the LSEG ESG/GICS export, ~5 min |
+| `28_scenarios_for_deck.py` | regenerates the deck's scenario JSON; run before `build_deck.py` |
 | `results_lseg_update/` | its output: 5 CSVs + a README with the adopt/don't recommendation |
 | `data_lseg_update/` | the parsed inputs, unused until the update is adopted |
 
