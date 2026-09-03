@@ -110,6 +110,12 @@ Each is reproducible from the script named. Re-deriving them wastes a session.
 | Country cap is free in a crisis too | Neutral cap off vs 25%: -0.12 / +0.16 / -0.28pp across the three windows | `25` |
 | The 36.7% Swiss position is an estimator artefact | point-in-time Ledoit-Wolf books hold at most 9.7-19.9% per country, so a 25% cap barely binds | `25` |
 | 2015 and 2016 crises cannot be tested point-in-time | 156 and 384 trading days of history exist before them; 500 needed | `25` |
+| Harness gate: min-variance reproduces script 21 | Sharpe 0.829 vs 0.835, vol 13.197 vs 13.210, maxDD -33.81 vs -33.89 | `26` |
+| **No book beats 1/N significantly, in either direction** | t = -0.87 (minvar), +0.60 (mandate20), +1.12 (mandate10); the whole Sharpe spread 0.829-0.914 is noise | `26` |
+| Return-seeking profiles turn over twice as much | 170% p.a. (mandate20) vs 83% (minvar); at 10bp mandate20's Sharpe falls to 0.857, BELOW 1/N's 0.866 | `26` |
+| Risk is the robust, monotone result | realised vol 13.20 / 16.91 / 20.08 / 23.30% and maxDD -33.8 / -37.7 / -42.3 / -46.0% for minvar / 1/N / mandate20 / mandate10 | `26` |
+| Mandates are a bull-market bet | win 2020 rebound (+56% vs +18%) and the AI rally (+33% vs +21%), lose 2022 by 22pp (-34.3% vs -12.6%) | `26` |
+| Mandate anchors on the noisiest estimate available | out of sample the max-return corner comes from an unshrunk 3y sample mean: 45.85% predicted return at the first rebalance | `26` |
 
 ---
 
@@ -124,15 +130,24 @@ Each is reproducible from the script named. Re-deriving them wastes a session.
    at which level (25% is the recommendation — 40% barely binds, 20% costs 44%
    more for 5pp less concentration), then re-run `23_scenario_matrix.py` and the
    deck. Nothing else depends on it.
-2. **The recommendation itself is now open.** `results_stress/` shows that out
-   of sample the Neutral book beats 1/N in only one of three crises and loses
-   2022 by 6.8pp, while the minimum-variance book beats 1/N in all three. The
-   existing backtest's -22% volatility edge was measured on min-variance, and
-   that now looks like the reason it exists. Neutral is still the best
-   risk-adjusted profile on the *estimated* frontier — the question is whether
-   to recommend a book whose advantage does not survive out of sample, or to
-   move the recommendation toward the risk-averse end and say why. Decide before
-   the final deck; `QA_prep.md` will need a Q on it either way.
+2. **The recommendation itself is now open, and script 26 sharpens the choice.**
+   Two independent tests point the same way. `stress_test/` (crisis windows):
+   out of sample Neutral beats 1/N in one crisis of three and loses 2022 by
+   6.8pp, while min-variance beats it in all three. `backtest_profiles/` (31
+   rebalances, 7.7 years): **no book beats 1/N significantly** — every t is
+   inside ±1.96 — so no Sharpe claim is available to anyone, in either
+   direction. What is robust is risk: min-variance is the only book materially
+   below the benchmark on both volatility and drawdown, and the return-seeking
+   mandates turn over twice as much, which at 10bp puts mandate20 under the
+   benchmark.
+   **The defensible position is therefore risk, not return:** recommend on
+   measured volatility and drawdown reduction and say plainly that no
+   risk-adjusted edge is statistically demonstrable over 7.7 years. Decide
+   before the final deck; `QA_prep.md` needs a Q on it either way.
+   Cheap next run that would sharpen it further: shrink mu at each rebalance
+   before solving the mandate, which separates "the profile fails out of sample"
+   from "an unshrunk 3-year sample mean fails out of sample". No extra solve
+   cost. See the last section of `backtest_profiles/README.md`.
 3. **Dashboard.** Not started. A separate requirement in the brief and the
    largest remaining piece of work. Streamlit was the intended choice; port 8501
    is already forwarded in the devcontainer.
@@ -140,7 +155,11 @@ Each is reproducible from the script named. Re-deriving them wastes a session.
    `AVB.N`, `EQR.N` (REITs), `HOLN.S`, `EA.OQ`, `HWM.N`. 2870 of 2870 values
    absent where the previous file had a full history. Dropped rather than
    back-filled (an unadjusted series would cost them ~3pp). Worth re-extracting.
-5. **`build_deck.py` is not reproducible as documented.** Line 85 reads
+5. **`build_deck.py` is not reproducible as documented — three missing inputs.**
+   `backtest_subperiods.csv` and `backtest_diagnostics.csv` are read from
+   `results_chloe/backtest/` and **nothing in the repo writes either**;
+   `backtest_profiles/results/` now generates regenerable replacements in the
+   same regime windows. The third is worse: line 85 reads
    `/tmp/scen.json`, and **nothing in the repository writes that file** — it was
    produced by an ad-hoc snippet in an earlier session. It happens to exist on
    this machine (3 Sep 09:50), but macOS clears `/tmp` on reboot, so the rebuild
@@ -176,7 +195,9 @@ Each is reproducible from the script named. Re-deriving them wastes a session.
 | `24_country_cap_and_mandate.py` | produces every number in the two additions below, ~6 min |
 | `results_country_cap/` | its output: 5 CSVs + a README with the tables ready for slides |
 | `25_crisis_stress_test.py` | crisis-window stress test of the DELIVERED books, ~7 min |
-| `results_stress/` | its output: 6 CSVs + a README. Panel A in-sample, Panel B point-in-time |
+| `stress_test/` | crisis-window stress test: code, 6 CSVs, README. Panel A in-sample, Panel B point-in-time |
+| `backtest_profiles/` | walk-forward of the RECOMMENDED profile, 4 books, code + 6 CSVs + README |
+| `dashboard_data/` | 37 CSVs, 660 KB, one place with stable names; rebuilt by its own script |
 
 The backtest slide was **deliberately removed** from the deck at Tamara's
 request. The overall Sharpe result now appears only in the scenario-coverage

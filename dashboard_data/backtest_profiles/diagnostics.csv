@@ -1,0 +1,31 @@
+metric,value
+Sharpe minvar (rf=0),0.829
+Sharpe difference minvar - 1/N,-0.038
+t-stat daily diff minvar - 1/N,-0.87
+significant at 5% minvar,0.0
+turnover per rebalance mean_% minvar,20.8
+turnover annualised_% minvar,83.2
+mean predicted risk_% minvar,8.78
+realised volatility_% minvar,13.2
+risk understatement_% minvar,50.3
+Sharpe mandate20 (rf=0),0.876
+Sharpe difference mandate20 - 1/N,0.01
+t-stat daily diff mandate20 - 1/N,0.6
+significant at 5% mandate20,0.0
+turnover per rebalance mean_% mandate20,42.4
+turnover annualised_% mandate20,169.8
+mean predicted risk_% mandate20,16.76
+realised volatility_% mandate20,20.08
+risk understatement_% mandate20,19.8
+Sharpe mandate10 (rf=0),0.914
+Sharpe difference mandate10 - 1/N,0.047
+t-stat daily diff mandate10 - 1/N,1.12
+significant at 5% mandate10,0.0
+turnover per rebalance mean_% mandate10,39.7
+turnover annualised_% mandate10,158.6
+mean predicted risk_% mandate10,20.29
+realised volatility_% mandate10,23.3
+risk understatement_% mandate10,14.8
+Sharpe 1/N (rf=0),0.866
+rebalances,31.0
+test years,7.7

@@ -61,6 +61,14 @@ COPIES = [
     ("backtest/rebalances.csv",             "results_chloe/backtest/backtest_rebalances.csv"),
     ("backtest/diagnostics.csv",            "results_chloe/backtest/backtest_diagnostics.csv"),
 
+    # walk-forward backtest of the recommended profile (script 26)
+    ("backtest_profiles/summary.csv",       "backtest_profiles/results/summary.csv"),
+    ("backtest_profiles/equity_curves.csv", "backtest_profiles/results/equity_curves.csv"),
+    ("backtest_profiles/subperiods.csv",    "backtest_profiles/results/subperiods.csv"),
+    ("backtest_profiles/rebalances.csv",    "backtest_profiles/results/rebalances.csv"),
+    ("backtest_profiles/diagnostics.csv",   "backtest_profiles/results/diagnostics.csv"),
+    ("backtest_profiles/gate.csv",          "backtest_profiles/results/gate.csv"),
+
     # crisis stress test
     ("stress/panelA_windows.csv",           "stress_test/results/panelA_windows.csv"),
     ("stress/panelB_windows.csv",           "stress_test/results/panelB_windows.csv"),

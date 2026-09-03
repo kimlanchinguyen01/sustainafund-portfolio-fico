@@ -1,6 +1,6 @@
 # dashboard_data — everything a dashboard needs, in one place
 
-465 KB, 31 CSVs, no solver required to read any of them. Rebuilt by
+660 KB, 37 CSVs, no solver required to read any of them. Rebuilt by
 `build_dashboard_data.py` (~5 s) from result files elsewhere in the repo, so
 this folder can always be regenerated and can never disagree with the model.
 
@@ -25,7 +25,8 @@ says `tier2on`. That is the delivered configuration.
 | `frontier/frontier_points.csv` | 15 | the efficient-frontier chart |
 | `portfolios/summary.csv` | 6 | the three-profile comparison cards |
 | `portfolios/neutral.csv` | 30 | the recommended book's composition |
-| `backtest/equity_curves.csv` | 2023 | the out-of-sample equity chart |
+| `backtest/equity_curves.csv` | 2023 | the out-of-sample equity chart (min-variance) |
+| `backtest_profiles/summary.csv` | 7 | four books vs 1/N — the profile comparison |
 | `stress/panelB_windows.csv` | 20 | the crisis-window table |
 
 ---
@@ -159,6 +160,35 @@ the neutral recommendation** — rolling 3-year window, quarterly rebalance,
 
 The headline is honest and negative: Sharpe 0.835 against 1/N's 0.866. The real
 edge is volatility, −22% overall.
+
+---
+
+## backtest_profiles/  (walk-forward, the recommended profile)
+
+Source: `backtest_profiles/results/`, produced by
+`backtest_profiles/26_backtest_profiles.py`. Same protocol as `backtest/` above,
+but **four books instead of one**: `minvar`, `mandate20`, `mandate10`,
+`equal_weight`. This is the one that tests something close to the recommendation.
+
+| File | Contents |
+|---|---|
+| `summary.csv` | CAGR / vol / Sharpe / maxDD / final per book, plus 10bp cost rows |
+| `equity_curves.csv` | daily curves, all four books, indexed to 1.0 |
+| `subperiods.csv` | six regimes plus FULL, per book |
+| `rebalances.csv` | 31 rebalances × 4 books: held, predicted risk, ESG, turnover, solstatus |
+| `diagnostics.csv` | Sharpe vs 1/N with t-tests, risk understatement, turnover |
+| `gate.csv` | reproduction check against `pipeline/21_backtest_walkforward.py` |
+
+⚠ **Do not present any Sharpe difference here as an edge.** All three t-stats
+are inside ±1.96 (−0.87, +0.60, +1.12), so the whole spread 0.829 → 0.914 is
+noise. What is robust is volatility and drawdown, which rise monotonically as
+the mandate loosens, and turnover: `mandate20` runs 170% a year against
+min-variance's 83%, and at 10bp its Sharpe drops below the benchmark. Read
+`backtest_profiles/README.md` before charting any of it.
+
+`subperiods.csv` and `diagnostics.csv` here are regenerable replacements for
+`backtest/subperiods.csv` and `backtest/diagnostics.csv`, which nothing in the
+repo writes.
 
 ---
 
