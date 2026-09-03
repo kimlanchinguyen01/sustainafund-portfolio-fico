@@ -302,29 +302,10 @@ Each is reproducible from the script named. Re-deriving them wastes a session.
 | `results_factor_count/` | its output: 3 CSVs + a README with the verdict and what the factors are |
 | `results_lseg_update/` | its output: 5 CSVs + a README with the adopt/don't recommendation |
 | `data_lseg_update/` | the parsed inputs, unused until the update is adopted |
-| `deck/` | **the final presentation**: 29 slides as PPTX and PDF, 16 chart PNGs, code + README |
-| `deck/36_slides.py` | the single slide spec both renderers read, so PPTX and PDF cannot drift |
-| `deck/38_checklist.py` | the brief's 10 quality checks; all 10 pass |
-| `SustainaFund_Method_Record.pdf` | the long-form method write-up: every data and modelling decision, justified |
 
-The backtest slide was **deliberately removed** from the *interim* deck
-(`SustainaFund_interim_review.pdf`) at Tamara's request; there the overall Sharpe
-result appears only in the scenario-coverage table, and `QA_prep.md` Q13/Q14
-carry the verbal answer if asked.
-
-The **final** deck (`deck/`) restores it and goes further: S15-S17 are the
-out-of-sample record, the Jobson-Korkie significance test, and the finding that
-the expected-return model forecasts backwards. That is not a reversal - the
-interim deck had no room for a result that needs three slides to state honestly,
-and `presentation_structure_EN.md.docx` asks for all three. Where that docx and
-`deck/BRIEF_build_deck.md` disagree, the docx wins by decision; the differences
-are tabulated in `deck/README.md`.
-
-One figure the docx asks for is **not** in the deck: its recovery-day statistics
-do not reproduce under any definition tried, so they are flagged
-`_UNREPRODUCIBLE_DO_NOT_PRINT` in `deck/data/derived_metrics.json` and appear on
-no slide. `recovery_alternatives` in that file holds figures that do trace, if a
-recovery statistic is ever wanted there.
+The backtest slide was **deliberately removed** from the deck at Tamara's
+request. The overall Sharpe result now appears only in the scenario-coverage
+table. `QA_prep.md` Q13/Q14 carry the verbal answer if asked.
 
 ---
 
