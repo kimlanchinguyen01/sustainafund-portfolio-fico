@@ -1,0 +1,16 @@
+scenario_id,solved,sector_cap,sector_cap_active,esg_min,esg_constraint_active,esg_floor,country_cap,country_cap_active,region_cap,min_holdings,weight_min,weight_max,tier1_excluded,tier2_excluded,window_years
+base,True,0.3,True,70.0,True,30.0,,False,0.6,30,0.01,0.2,True,False,10
+tier2_on,True,0.3,True,70.0,True,30.0,,False,0.6,30,0.01,0.2,True,True,10
+sector_cap_none,True,,False,70.0,True,30.0,,False,0.6,30,0.01,0.2,True,False,10
+sector_cap_20,True,0.2,True,70.0,True,30.0,,False,0.6,30,0.01,0.2,True,False,10
+sector_cap_25,True,0.25,True,70.0,True,30.0,,False,0.6,30,0.01,0.2,True,False,10
+esg_unconstrained,True,0.3,True,,False,30.0,,False,0.6,30,0.01,0.2,True,False,10
+esg_min_50,True,0.3,True,50.0,True,30.0,,False,0.6,30,0.01,0.2,True,False,10
+esg_min_60,True,0.3,True,60.0,True,30.0,,False,0.6,30,0.01,0.2,True,False,10
+esg_min_65,True,0.3,True,65.0,True,30.0,,False,0.6,30,0.01,0.2,True,False,10
+esg_min_75,True,0.3,True,75.0,True,30.0,,False,0.6,30,0.01,0.2,True,False,10
+esg_min_80,True,0.3,True,80.0,True,30.0,,False,0.6,30,0.01,0.2,True,False,10
+country_cap_20,True,0.3,True,70.0,True,30.0,0.2,True,0.6,30,0.01,0.2,True,False,10
+country_cap_25,True,0.3,True,70.0,True,30.0,0.25,True,0.6,30,0.01,0.2,True,False,10
+country_cap_30,True,0.3,True,70.0,True,30.0,0.3,True,0.6,30,0.01,0.2,True,False,10
+country_cap_40,True,0.3,True,70.0,True,30.0,0.4,True,0.6,30,0.01,0.2,True,False,10

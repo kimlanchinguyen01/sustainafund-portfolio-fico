@@ -1,0 +1,43 @@
+run,book,strategy,period,regime,cagr,volatility,max_drawdown
+walk-forward min-variance (script 21),optimised,Optimised Minimum Variance,2018-04..2019-12,calm market,0.2408,0.1388,-0.106
+walk-forward min-variance (script 21),equal_weight,1/N Equal Weight,2018-04..2019-12,calm market,0.12990000000000002,0.11869999999999999,-0.175
+walk-forward min-variance (script 21),optimised,Optimised Minimum Variance,2020 full year,crash and rebound,0.0397,0.235,-0.33899999999999997
+walk-forward min-variance (script 21),equal_weight,1/N Equal Weight,2020 full year,crash and rebound,0.183,0.3074,-0.376
+walk-forward min-variance (script 21),optimised,Optimised Minimum Variance,2020-02..2020-03,the crash itself,-0.8637999999999999,0.6098,-0.33899999999999997
+walk-forward min-variance (script 21),equal_weight,1/N Equal Weight,2020-02..2020-03,the crash itself,-0.9327,0.6476999999999999,-0.376
+walk-forward min-variance (script 21),optimised,Optimised Minimum Variance,2021,boom,0.1117,0.0803,-0.066
+walk-forward min-variance (script 21),equal_weight,1/N Equal Weight,2021,boom,0.2443,0.11470000000000001,-0.055999999999999994
+walk-forward min-variance (script 21),optimised,Optimised Minimum Variance,2022,inflation shock,-0.12240000000000001,0.1363,-0.23
+walk-forward min-variance (script 21),equal_weight,1/N Equal Weight,2022,inflation shock,-0.1285,0.21280000000000002,-0.27
+walk-forward min-variance (script 21),optimised,Optimised Minimum Variance,2023-2025,AI rally,0.1467,0.0823,-0.085
+walk-forward min-variance (script 21),equal_weight,1/N Equal Weight,2023-2025,AI rally,0.21899999999999997,0.1222,-0.129
+walk-forward min-variance (script 21),optimised,Optimised Minimum Variance,FULL,whole test period,0.1093,0.1315,-0.33899999999999997
+walk-forward min-variance (script 21),equal_weight,1/N Equal Weight,FULL,whole test period,0.1477,0.16920000000000002,-0.376
+walk-forward profiles (script 26),minvar,Optimised Minimum Variance,2018-04..2019-12,calm market,0.24719999999999998,0.14150000000000001,-0.10529999999999999
+walk-forward profiles (script 26),mandate20,Optimised Mandate (give up <=20% of max return),2018-04..2019-12,calm market,0.13470000000000001,0.1723,-0.2902
+walk-forward profiles (script 26),mandate10,Optimised Mandate (give up <=10% of max return),2018-04..2019-12,calm market,0.1484,0.2024,-0.3187
+walk-forward profiles (script 26),equal_weight,1/N Equal Weight,2018-04..2019-12,calm market,0.1304,0.11869999999999999,-0.1751
+walk-forward profiles (script 26),minvar,Optimised Minimum Variance,2020 full year,crash and rebound,0.0382,0.23440000000000003,-0.3381
+walk-forward profiles (script 26),mandate20,Optimised Mandate (give up <=20% of max return),2020 full year,crash and rebound,0.5603,0.2762,-0.3161
+walk-forward profiles (script 26),mandate10,Optimised Mandate (give up <=10% of max return),2020 full year,crash and rebound,0.6065999999999999,0.2923,-0.34159999999999996
+walk-forward profiles (script 26),equal_weight,1/N Equal Weight,2020 full year,crash and rebound,0.1809,0.3078,-0.3768
+walk-forward profiles (script 26),minvar,Optimised Minimum Variance,2020-02..2020-03,the crash itself,-0.8748,0.6309,-0.337
+walk-forward profiles (script 26),mandate20,Optimised Mandate (give up <=20% of max return),2020-02..2020-03,the crash itself,-0.8603000000000001,0.6164000000000001,-0.3161
+walk-forward profiles (script 26),mandate10,Optimised Mandate (give up <=10% of max return),2020-02..2020-03,the crash itself,-0.8973,0.6031,-0.34159999999999996
+walk-forward profiles (script 26),equal_weight,1/N Equal Weight,2020-02..2020-03,the crash itself,-0.9420000000000001,0.6690999999999999,-0.3768
+walk-forward profiles (script 26),minvar,Optimised Minimum Variance,2021,boom,0.1125,0.0802,-0.0664
+walk-forward profiles (script 26),mandate20,Optimised Mandate (give up <=20% of max return),2021,boom,0.158,0.19140000000000001,-0.1548
+walk-forward profiles (script 26),mandate10,Optimised Mandate (give up <=10% of max return),2021,boom,0.2548,0.2104,-0.1578
+walk-forward profiles (script 26),equal_weight,1/N Equal Weight,2021,boom,0.245,0.11470000000000001,-0.0556
+walk-forward profiles (script 26),minvar,Optimised Minimum Variance,2022,inflation shock,-0.1206,0.1361,-0.22920000000000001
+walk-forward profiles (script 26),mandate20,Optimised Mandate (give up <=20% of max return),2022,inflation shock,-0.3432,0.2539,-0.38670000000000004
+walk-forward profiles (script 26),mandate10,Optimised Mandate (give up <=10% of max return),2022,inflation shock,-0.3812,0.3005,-0.4202
+walk-forward profiles (script 26),equal_weight,1/N Equal Weight,2022,inflation shock,-0.126,0.2125,-0.2695
+walk-forward profiles (script 26),minvar,Optimised Minimum Variance,2023-2025,AI rally,0.14300000000000002,0.08220000000000001,-0.08470000000000001
+walk-forward profiles (script 26),mandate20,Optimised Mandate (give up <=20% of max return),2023-2025,AI rally,0.3331,0.16620000000000001,-0.1341
+walk-forward profiles (script 26),mandate10,Optimised Mandate (give up <=10% of max return),2023-2025,AI rally,0.40700000000000003,0.2071,-0.1638
+walk-forward profiles (script 26),equal_weight,1/N Equal Weight,2023-2025,AI rally,0.2148,0.1219,-0.1285
+walk-forward profiles (script 26),minvar,Optimised Minimum Variance,FULL,whole test period,0.1094,0.132,-0.3381
+walk-forward profiles (script 26),mandate20,Optimised Mandate (give up <=20% of max return),FULL,whole test period,0.17600000000000002,0.20079999999999998,-0.42310000000000003
+walk-forward profiles (script 26),mandate10,Optimised Mandate (give up <=10% of max return),FULL,whole test period,0.21289999999999998,0.233,-0.46
+walk-forward profiles (script 26),equal_weight,1/N Equal Weight,FULL,whole test period,0.1465,0.1691,-0.3768

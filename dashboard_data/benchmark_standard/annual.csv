@@ -1,0 +1,56 @@
+year,strategy,series_id,calendar_return
+2015,"1/N Equal Weight (all stocks, monthly)",1N_all_monthly,0.07073357485983212
+2016,"1/N Equal Weight (all stocks, monthly)",1N_all_monthly,0.1222143774311486
+2017,"1/N Equal Weight (all stocks, monthly)",1N_all_monthly,0.32429552948927864
+2018,"1/N Equal Weight (all stocks, monthly)",1N_all_monthly,-0.06928133900844524
+2019,"1/N Equal Weight (all stocks, monthly)",1N_all_monthly,0.335367946608347
+2020,"1/N Equal Weight (all stocks, monthly)",1N_all_monthly,0.1835855600518763
+2021,"1/N Equal Weight (all stocks, monthly)",1N_all_monthly,0.24501206347040694
+2022,"1/N Equal Weight (all stocks, monthly)",1N_all_monthly,-0.13457028327108125
+2023,"1/N Equal Weight (all stocks, monthly)",1N_all_monthly,0.2428174054928356
+2024,"1/N Equal Weight (all stocks, monthly)",1N_all_monthly,0.1243562332772903
+2025,"1/N Equal Weight (all stocks, monthly)",1N_all_monthly,0.298589736869757
+2015,"1/N Equal Weight (model universe, monthly)",1N_model_monthly,0.07085893878610894
+2016,"1/N Equal Weight (model universe, monthly)",1N_model_monthly,0.12230006751571665
+2017,"1/N Equal Weight (model universe, monthly)",1N_model_monthly,0.32236352291790915
+2018,"1/N Equal Weight (model universe, monthly)",1N_model_monthly,-0.0707954050766032
+2019,"1/N Equal Weight (model universe, monthly)",1N_model_monthly,0.33434403363853593
+2020,"1/N Equal Weight (model universe, monthly)",1N_model_monthly,0.17832871214165144
+2021,"1/N Equal Weight (model universe, monthly)",1N_model_monthly,0.24588497429170686
+2022,"1/N Equal Weight (model universe, monthly)",1N_model_monthly,-0.13107130020132018
+2023,"1/N Equal Weight (model universe, monthly)",1N_model_monthly,0.23625190645864724
+2024,"1/N Equal Weight (model universe, monthly)",1N_model_monthly,0.1194397445276132
+2025,"1/N Equal Weight (model universe, monthly)",1N_model_monthly,0.29616786702491527
+2015,"1/N Equal Weight (ESG>=70, monthly)",1N_esg70_monthly,0.04962504667030099
+2016,"1/N Equal Weight (ESG>=70, monthly)",1N_esg70_monthly,0.11044062233256981
+2017,"1/N Equal Weight (ESG>=70, monthly)",1N_esg70_monthly,0.31151539260808997
+2018,"1/N Equal Weight (ESG>=70, monthly)",1N_esg70_monthly,-0.09903600452473359
+2019,"1/N Equal Weight (ESG>=70, monthly)",1N_esg70_monthly,0.3234190993801589
+2020,"1/N Equal Weight (ESG>=70, monthly)",1N_esg70_monthly,0.14515592433970229
+2021,"1/N Equal Weight (ESG>=70, monthly)",1N_esg70_monthly,0.22114939875812964
+2022,"1/N Equal Weight (ESG>=70, monthly)",1N_esg70_monthly,-0.12362786004004178
+2023,"1/N Equal Weight (ESG>=70, monthly)",1N_esg70_monthly,0.2118785744487759
+2024,"1/N Equal Weight (ESG>=70, monthly)",1N_esg70_monthly,0.09446776473325859
+2025,"1/N Equal Weight (ESG>=70, monthly)",1N_esg70_monthly,0.31562587957353405
+2015,"1/N Equal Weight (all stocks, daily)",1N_all_daily,0.07571030783743549
+2016,"1/N Equal Weight (all stocks, daily)",1N_all_daily,0.1278665752626389
+2017,"1/N Equal Weight (all stocks, daily)",1N_all_daily,0.32620067718550994
+2018,"1/N Equal Weight (all stocks, daily)",1N_all_daily,-0.06605891239203598
+2019,"1/N Equal Weight (all stocks, daily)",1N_all_daily,0.33742406277479103
+2020,"1/N Equal Weight (all stocks, daily)",1N_all_daily,0.2098581936701971
+2021,"1/N Equal Weight (all stocks, daily)",1N_all_daily,0.25104312103195103
+2022,"1/N Equal Weight (all stocks, daily)",1N_all_daily,-0.12336320992683458
+2023,"1/N Equal Weight (all stocks, daily)",1N_all_daily,0.24497363598071978
+2024,"1/N Equal Weight (all stocks, daily)",1N_all_daily,0.1289373638951068
+2025,"1/N Equal Weight (all stocks, daily)",1N_all_daily,0.30717321222553595
+2015,"1/N Equal Weight (model universe, buy and hold)",1N_model_buyhold,0.07151025722772641
+2016,"1/N Equal Weight (model universe, buy and hold)",1N_model_buyhold,0.10126833216563025
+2017,"1/N Equal Weight (model universe, buy and hold)",1N_model_buyhold,0.3225113765799597
+2018,"1/N Equal Weight (model universe, buy and hold)",1N_model_buyhold,-0.05478170593820309
+2019,"1/N Equal Weight (model universe, buy and hold)",1N_model_buyhold,0.35374115281347107
+2020,"1/N Equal Weight (model universe, buy and hold)",1N_model_buyhold,0.2338456017897419
+2021,"1/N Equal Weight (model universe, buy and hold)",1N_model_buyhold,0.2702945626491191
+2022,"1/N Equal Weight (model universe, buy and hold)",1N_model_buyhold,-0.19523443070229932
+2023,"1/N Equal Weight (model universe, buy and hold)",1N_model_buyhold,0.2637766009965925
+2024,"1/N Equal Weight (model universe, buy and hold)",1N_model_buyhold,0.19854527379521936
+2025,"1/N Equal Weight (model universe, buy and hold)",1N_model_buyhold,0.25158047219932556

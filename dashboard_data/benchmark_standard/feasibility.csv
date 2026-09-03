@@ -1,0 +1,6 @@
+series,strategy,n_stocks,weight_each,min_weight_ok,max_weight_ok,min_stocks_ok,region_ok,region_max,weighted_esg,esg_ok,sector_max,admissible
+1N_all_monthly,"1/N Equal Weight (all stocks, monthly)",1087,0.000919963201471941,False,True,True,True,0.5436982520699172,67.00849176632936,False,0.18859245630174792,False
+1N_model_monthly,"1/N Equal Weight (model universe, monthly)",1077,0.000928505106778087,False,True,True,True,0.5459610027855153,67.46561239554318,False,0.1903435468895079,False
+1N_esg70_monthly,"1/N Equal Weight (ESG>=70, monthly)",506,0.001976284584980237,False,True,True,False,0.6324110671936759,78.07160731225297,True,0.18774703557312258,False
+1N_all_daily,"1/N Equal Weight (all stocks, daily)",1087,0.000919963201471941,False,True,True,True,0.5436982520699172,67.00849176632936,False,0.18859245630174792,False
+1N_model_buyhold,"1/N Equal Weight (model universe, buy and hold)",1077,0.000928505106778087,False,True,True,True,0.5459610027855153,67.46561239554318,False,0.1903435468895079,False

@@ -117,6 +117,12 @@ Each is reproducible from the script named. Re-deriving them wastes a session.
 | "The 1/N benchmark" is not one number | rebalancing frequency moves it 0.9pp of CAGR: daily 15.67%, buy-and-hold 15.35%, monthly 14.80%. Always name which one | `30` |
 | ESG as a constraint beats ESG as a screen, but modestly ex ante | naive ESG>=70 screen costs -0.263pp of expected return vs the constraint's -0.151pp (1.7x). The realised 11y gap is -1.471pp, i.e. 5.6x the ex-ante gap - mostly the screen's imposed exposures (63% Europe), not lower-mu stocks | `30`, `23` |
 | Benchmark gate | this 1/N and script 21's independent one agree to 0.001 of Sharpe on script 21's window (0.867 vs 0.866) | `30` |
+| Sector cap costs nothing at Neutral because it does not bind there | no cap -> Neutral top sector 27.10%, under the 30% limit; return +0.020pp, ratio +0.0001 | `31` |
+| Where the sector cap DOES bind is the min-risk end | uncapped Risk Averse puts 33.95% in Consumer Defensive; the cap pulls it to 30.00% for -0.016pp of return | `31` |
+| A 20% sector cap starts to cost | Neutral -0.160pp of return, ratio -0.0058; it binds at every profile | `31` |
+| The sector cap also moves WHICH point is Risk Prone | uncapped and at 20% the non-degenerate boundary shifts to point 12, at 25/30% it is point 11 | `31` |
+| ESG threshold sweep, Neutral return | unconstrained 14.48%, 50 -> 14.47%, 60 -> 14.45%, 65 -> 14.43%, 70 -> 14.30%, 75 -> 14.07%, 80 -> 13.11% | `31` |
+| ESG 80 is where it starts to hurt | Neutral ratio 1.346 -> 1.216 and the Risk Averse book shrinks to 31 holdings | `31` |
 | The factors are PCA components, and interpretable after the fact | f1 = market (corr 0.996 with an equal-weight index, 27.8% of variance), f2 = Europe vs US (beta +1.43 vs -1.73, 7.5%), f3 = Energy vs Tech, f4 = Tech vs Utilities | `29` |
 | Quadratic beats linear | linear carries +19.2% more true risk; its objective/actual gap is 1.64x | `15_model1_linear.py` (archive) |
 | Binaries required | semi-continuous alone returns 26 positions while reporting 30 | tested inline |
@@ -233,8 +239,27 @@ Each is reproducible from the script named. Re-deriving them wastes a session.
    slides from the min-variance book to a four-book comparison, so that is a
    deliberate decision rather than a fix.
 
-7. **`results_chloe/portfolio_summary.csv` disagrees with every other artefact
-   about Risk Prone.** Its risk-prone row is frontier point **11** (15.97% /
+7. **Risk Prone — RESOLVED. The canonical rule is the frozen one, and the
+   holdings files were right.** `archive/our_model_frozen/19_freeze_v4.py:101`
+   defines it: degenerate = top-3 weight > 40% OR more than 15 positions on the
+   1% floor; Risk Prone = max return among NON-degenerate points. On the
+   delivered frontier that gives 0 / 8 / **11**, which is what
+   `portfolio_summary.csv` and the holdings CSVs contain. Points 12/13/14 are
+   degenerate (16/21/23 positions on the floor; top-3 34%/40%/60%).
+   So `analyze_risk.py`'s plain `idxmax(return)` is the outlier, not the
+   holdings. `31_scenario_grid.py` derives all three per scenario; nothing is
+   hard-coded, and the rule re-selects when a constraint changes.
+   **STILL TO FIX, because it changes a slide:** the deck shows point 14
+   (17.63% / 22.62% / 0.779) as Risk Prone with a caveat box. Under the
+   canonical rule it should show point **11** (15.97% / 12.77% / 1.250) and the
+   caveat box becomes unnecessary. `28_scenarios_for_deck.py` faithfully
+   reproduced the legacy file, so it reproduces the wrong pick too - it needs
+   the frozen rule, then rebuild the deck. Also stale for the same reason:
+   `analyze_risk.py`, `risk_profile_scenarios_summary.csv`,
+   `23_scenario_matrix.py`.
+
+8. **Old note, kept for the record: `results_chloe/portfolio_summary.csv`
+   disagrees with every other artefact about Risk Prone.** Its risk-prone row is frontier point **11** (15.97% /
    12.77% / ratio 1.250); the deck, `risk_profile_scenarios_summary.csv`,
    `23_scenario_matrix.py` and this document all use point **14** (17.63% /
    22.62% / 0.779), which is what `idxmax(return)` gives. The table at the top of
@@ -242,7 +267,7 @@ Each is reproducible from the script named. Re-deriving them wastes a session.
    The deck is unaffected (it never reads `S`). Decide which one is intended and
    regenerate the odd one out.
 
-8. Not done and worth saying so: factor-level return attribution, transaction
+9. Not done and worth saying so: factor-level return attribution, transaction
    costs inside the optimiser.
 
 ---
@@ -267,6 +292,9 @@ Each is reproducible from the script named. Re-deriving them wastes a session.
 | `28_scenarios_for_deck.py` | regenerates the deck's scenario JSON; run before `build_deck.py` |
 | `29_factor_count_v4.py` | re-validates the 20-factor choice on the current data, ~9 min |
 | `benchmark_1n/` | the 1/N reference series over all 11 years: code + 7 CSVs + README, no solver |
+| `31_scenario_grid.py` | solves 15 scenarios into long-format normalised tables, ~20 min |
+| `dashboard_data/build_powerbi_layer.py` | the clean Power BI layer + validation, ~10 s |
+| `dashboard_data/POWERBI.md` | its contract: conventions, schemas, what is still to do |
 | `results_factor_count/` | its output: 3 CSVs + a README with the verdict and what the factors are |
 | `results_lseg_update/` | its output: 5 CSVs + a README with the adopt/don't recommendation |
 | `data_lseg_update/` | the parsed inputs, unused until the update is adopted |

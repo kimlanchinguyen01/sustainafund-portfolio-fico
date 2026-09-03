@@ -1,0 +1,6 @@
+profile,profile_rule,lookback_trading_days,window_start,window_end,ret_60d
+Neutral,Maximum return/risk ratio,60,2019-12-30,2020-03-23,-0.1366274064742371
+Neutral,Maximum return/risk ratio,60,2022-03-24,2022-06-16,-0.10236527545149432
+Neutral,Maximum return/risk ratio,60,2021-11-04,2022-01-27,-0.08668765222993013
+Neutral,Maximum return/risk ratio,60,2018-10-01,2018-12-24,-0.08151580376806411
+Neutral,Maximum return/risk ratio,60,2022-07-22,2022-10-14,-0.05080214048490673

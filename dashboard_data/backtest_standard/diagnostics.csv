@@ -1,0 +1,44 @@
+run,metric,value,is_decimal_fraction
+walk-forward min-variance (script 21),Sharpe optimised (rf=0),0.835,False
+walk-forward min-variance (script 21),Sharpe 1/N (rf=0),0.866,False
+walk-forward min-variance (script 21),Sharpe difference,-0.031,False
+walk-forward min-variance (script 21),t-stat on daily return difference,-0.85,False
+walk-forward min-variance (script 21),significant at 5%?,0.0,False
+walk-forward min-variance (script 21),mean predicted risk at rebalances,0.08779999999999999,True
+walk-forward min-variance (script 21),realised volatility,0.1321,True
+walk-forward min-variance (script 21),risk understatement,0.504,True
+walk-forward min-variance (script 21),turnover per rebalance mean,0.20800000000000002,True
+walk-forward min-variance (script 21),turnover annualised,0.83,True
+walk-forward min-variance (script 21),CAGR cost of 10bp turnover_pp,0.18,False
+walk-forward min-variance (script 21),rebalances,31.0,False
+walk-forward min-variance (script 21),test years,7.7,False
+walk-forward profiles (script 26),Sharpe minvar (rf=0),0.829,False
+walk-forward profiles (script 26),Sharpe difference minvar - 1/N,-0.038,False
+walk-forward profiles (script 26),t-stat daily diff minvar - 1/N,-0.87,False
+walk-forward profiles (script 26),significant at 5% minvar,0.0,False
+walk-forward profiles (script 26),turnover per rebalance mean minvar,0.20800000000000002,True
+walk-forward profiles (script 26),turnover annualised minvar,0.8320000000000001,True
+walk-forward profiles (script 26),mean predicted risk minvar,0.08779999999999999,True
+walk-forward profiles (script 26),realised volatility minvar,0.132,True
+walk-forward profiles (script 26),risk understatement minvar,0.503,True
+walk-forward profiles (script 26),Sharpe mandate20 (rf=0),0.876,False
+walk-forward profiles (script 26),Sharpe difference mandate20 - 1/N,0.01,False
+walk-forward profiles (script 26),t-stat daily diff mandate20 - 1/N,0.6,False
+walk-forward profiles (script 26),significant at 5% mandate20,0.0,False
+walk-forward profiles (script 26),turnover per rebalance mean mandate20,0.424,True
+walk-forward profiles (script 26),turnover annualised mandate20,1.6980000000000002,True
+walk-forward profiles (script 26),mean predicted risk mandate20,0.16760000000000003,True
+walk-forward profiles (script 26),realised volatility mandate20,0.20079999999999998,True
+walk-forward profiles (script 26),risk understatement mandate20,0.198,True
+walk-forward profiles (script 26),Sharpe mandate10 (rf=0),0.914,False
+walk-forward profiles (script 26),Sharpe difference mandate10 - 1/N,0.047,False
+walk-forward profiles (script 26),t-stat daily diff mandate10 - 1/N,1.12,False
+walk-forward profiles (script 26),significant at 5% mandate10,0.0,False
+walk-forward profiles (script 26),turnover per rebalance mean mandate10,0.397,True
+walk-forward profiles (script 26),turnover annualised mandate10,1.5859999999999999,True
+walk-forward profiles (script 26),mean predicted risk mandate10,0.2029,True
+walk-forward profiles (script 26),realised volatility mandate10,0.233,True
+walk-forward profiles (script 26),risk understatement mandate10,0.14800000000000002,True
+walk-forward profiles (script 26),Sharpe 1/N (rf=0),0.866,False
+walk-forward profiles (script 26),rebalances,31.0,False
+walk-forward profiles (script 26),test years,7.7,False

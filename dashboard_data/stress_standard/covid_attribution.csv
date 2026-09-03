@@ -1,0 +1,31 @@
+stock,profile,profile_rule,window,weight,stock_ret,contribution,country,sector
+MOBN.S,Neutral,Maximum return/risk ratio,2020 COVID crash,0.1013910139101391,-0.25217332773878665,-0.025568109380529384,Switzerland,Real Estate
+BKWB.S,Neutral,Maximum return/risk ratio,2020 COVID crash,0.062150621506215066,-0.21850823548521017,-0.013580422639632208,Switzerland,Utilities
+SBNOR.OL,Neutral,Maximum return/risk ratio,2020 COVID crash,0.027840278402784028,-0.46731073667274003,-0.013010061009579178,Norway,Financial Services
+GALE.S,Neutral,Maximum return/risk ratio,2020 COVID crash,0.10213102131021308,-0.12133277898285033,-0.012391840635924863,Switzerland,Healthcare
+RSG.N,Neutral,Maximum return/risk ratio,2020 COVID crash,0.03525035250352503,-0.3376648734215585,-0.011902805816168099,United States,Industrials
+PGR.N,Neutral,Maximum return/risk ratio,2020 COVID crash,0.05912059120591206,-0.18263327211102354,-0.010797387021073922,United States,Financial Services
+COST.OQ,Neutral,Maximum return/risk ratio,2020 COVID crash,0.08230082300823009,-0.11606077012791871,-0.009551896900496716,United States,Consumer Defensive
+LLY.N,Neutral,Maximum return/risk ratio,2020 COVID crash,0.04741047410474104,-0.1546546371890738,-0.007332249671630704,United States,Healthcare
+WM.N,Neutral,Maximum return/risk ratio,2020 COVID crash,0.022980229802298028,-0.29513757902300275,-0.006782329389242496,United States,Industrials
+GAW.L,Neutral,Maximum return/risk ratio,2020 COVID crash,0.01002010020100201,-0.4586823302456299,-0.004596042909490306,United Kingdom,Consumer Cyclical
+HLT.N,Neutral,Maximum return/risk ratio,2020 COVID crash,0.01009010090100901,-0.43705351267877096,-0.0044099140420692205,United States,Consumer Cyclical
+ABBV.N,Neutral,Maximum return/risk ratio,2020 COVID crash,0.013880138801388012,-0.31485025728817784,-0.004370165272812636,United States,Healthcare
+ARGX.BR,Neutral,Maximum return/risk ratio,2020 COVID crash,0.016200162001620017,-0.24887869750942715,-0.004031875218404904,Belgium,Healthcare
+BCVN.S,Neutral,Maximum return/risk ratio,2020 COVID crash,0.02285022850228503,-0.17010254170195982,-0.003886881946709249,Switzerland,Financial Services
+CBOE.Z,Neutral,Maximum return/risk ratio,2020 COVID crash,0.01028010280102801,-0.36260392076795356,-0.003727605581550378,United States,Financial Services
+BFT.WA,Neutral,Maximum return/risk ratio,2020 COVID crash,0.010010100101001009,-0.3693245237850283,-0.0036969754528426617,Poland,Consumer Cyclical
+LOTB.BR,Neutral,Maximum return/risk ratio,2020 COVID crash,0.02753027530275303,-0.13180366582646522,-0.003628591206114648,Belgium,Consumer Defensive
+APH.N,Neutral,Maximum return/risk ratio,2020 COVID crash,0.010150101501015009,-0.3287032970672715,-0.003336371828951095,United States,Technology
+WMT.OQ,Neutral,Maximum return/risk ratio,2020 COVID crash,0.12856128561285612,-0.024594790170637704,-0.00316193784371562,United States,Consumer Defensive
+NEM.N,Neutral,Maximum return/risk ratio,2020 COVID crash,0.031070310703107035,-0.09513528189556152,-0.00295588276732277,United States,Basic Materials
+BEAN.S,Neutral,Maximum return/risk ratio,2020 COVID crash,0.010010100101001009,-0.23798049765911078,-0.002382208603653735,Switzerland,Industrials
+TKO.N,Neutral,Maximum return/risk ratio,2020 COVID crash,0.010080100801008011,-0.18664546763817835,-0.001881405127844116,United States,Communication Services
+AD.AS,Neutral,Maximum return/risk ratio,2020 COVID crash,0.011710117101171013,-0.15897713182625073,-0.001861640830093697,Netherlands,Consumer Defensive
+PLUSP.L,Neutral,Maximum return/risk ratio,2020 COVID crash,0.019290192901929026,-0.026643658452056185,-0.000513961311153275,United Kingdom,Financial Services
+KR.N,Neutral,Maximum return/risk ratio,2020 COVID crash,0.021710217102171022,0.05213260788391594,0.001131810235262167,United States,Consumer Defensive
+ACLN.S,Neutral,Maximum return/risk ratio,2020 COVID crash,0.033480334803348034,,,Switzerland,Industrials
+SDZ.S,Neutral,Maximum return/risk ratio,2020 COVID crash,0.01842018420184202,,,Switzerland,Healthcare
+GALD.S,Neutral,Maximum return/risk ratio,2020 COVID crash,0.017010170101701017,,,Switzerland,Healthcare
+LTMC.MI,Neutral,Maximum return/risk ratio,2020 COVID crash,0.01693016930169302,,,Italy,Consumer Cyclical
+ZEG.L,Neutral,Maximum return/risk ratio,2020 COVID crash,0.01014010140101401,,,United Kingdom,Communication Services
