@@ -1,31 +1,31 @@
 ,weight_%,amount_USD,Sector,Country,Region,ESG,exp_return_%
-LLY.N,12.285,12285374.0,Healthcare,United States,United States,67.0,17.15
-WMT.OQ,11.116,11115655.0,Consumer Defensive,United States,United States,77.2,14.88
-ACLN.S,10.458,10458262.0,Industrials,Switzerland,Europe,54.7,17.84
-PGR.N,9.661,9661029.0,Financial Services,United States,United States,69.4,16.1
-ARGX.BR,8.787,8786855.0,Healthcare,Belgium,Europe,70.9,18.09
-PWR.N,6.054,6054209.0,Industrials,United States,United States,76.5,17.45
-APH.N,5.124,5123726.0,Technology,United States,United States,77.6,16.75
-MSFT.OQ,5.023,5022701.0,Technology,United States,United States,87.5,15.95
-GAW.L,5.006,5005609.0,Consumer Cyclical,United Kingdom,Europe,41.8,18.84
-IBE.MC,4.588,4587887.0,Utilities,Spain,Europe,80.1,14.83
-SDZ.S,1.788,1787619.0,Healthcare,Switzerland,Europe,74.4,15.22
-ZEG.L,1.504,1503915.0,Communication Services,United Kingdom,Europe,62.0,16.3
-NVDA.OQ,1.482,1481648.0,Technology,United States,United States,75.2,19.06
-COST.OQ,1.117,1116892.0,Consumer Defensive,United States,United States,75.1,15.11
-NEM.N,1.006,1005975.0,Basic Materials,United States,United States,87.4,13.33
-PLUSP.L,1.002,1001992.0,Financial Services,United Kingdom,Europe,58.2,15.73
-BKWB.S,1.0,1000139.0,Utilities,Switzerland,Europe,58.0,15.16
-LTMC.MI,1.0,1000136.0,Consumer Cyclical,Italy,Europe,55.3,16.45
-CDNS.OQ,1.0,1000102.0,Technology,United States,United States,86.8,16.24
-AVGO.OQ,1.0,1000090.0,Technology,United States,United States,75.8,17.16
-RSG.N,1.0,1000059.0,Industrials,United States,United States,76.0,14.48
-AAPL.OQ,1.0,1000031.0,Technology,United States,United States,72.0,16.06
-TT.N,1.0,1000021.0,Industrials,United States,United States,72.3,16.17
-WM.N,1.0,1000017.0,Industrials,United States,United States,79.7,13.6
-GALD.S,1.0,1000015.0,Healthcare,Switzerland,Europe,58.5,15.45
-SQN.S,1.0,1000014.0,Financial Services,Switzerland,Europe,56.8,17.12
-GOOG.OQ,1.0,1000012.0,Communication Services,United States,United States,79.1,14.79
-KOG.OL,1.0,1000007.0,Industrials,Norway,Europe,63.4,15.43
-ABBN.S,1.0,1000004.0,Industrials,Switzerland,Europe,89.8,13.97
-ZURN.S,1.0,1000003.0,Financial Services,Switzerland,Europe,84.1,13.76
+WMT.OQ,15.1,15100425.0,Consumer Defensive,United States,United States,77.2,14.88
+PGR.N,9.593,9593002.0,Financial Services,United States,United States,69.4,16.1
+LLY.N,9.063,9062843.0,Healthcare,United States,United States,67.0,17.15
+COST.OQ,7.866,7866110.0,Consumer Defensive,United States,United States,75.1,15.11
+ACLN.S,7.576,7576260.0,Industrials,Switzerland,Europe,54.7,17.84
+IBE.MC,5.891,5891107.0,Utilities,Spain,Europe,80.1,14.83
+ARGX.BR,5.323,5323347.0,Healthcare,Belgium,Europe,70.9,18.09
+BKWB.S,5.063,5062825.0,Utilities,Switzerland,Europe,58.0,15.16
+SDZ.S,3.459,3459412.0,Healthcare,Switzerland,Europe,74.4,15.22
+GAW.L,3.305,3304616.0,Consumer Cyclical,United Kingdom,Europe,41.8,18.84
+APH.N,3.022,3021924.0,Technology,United States,United States,77.6,16.75
+NEM.N,2.719,2718776.0,Basic Materials,United States,United States,87.4,13.33
+PWR.N,2.284,2283902.0,Industrials,United States,United States,76.5,17.45
+PLUSP.L,1.973,1972848.0,Financial Services,United Kingdom,Europe,58.2,15.73
+LTMC.MI,1.954,1953887.0,Consumer Cyclical,Italy,Europe,55.3,16.45
+ZEG.L,1.601,1600605.0,Communication Services,United Kingdom,Europe,62.0,16.3
+MSFT.OQ,1.165,1165252.0,Technology,United States,United States,87.5,15.95
+RSG.N,1.024,1024031.0,Industrials,United States,United States,76.0,14.48
+GALD.S,1.012,1012205.0,Healthcare,Switzerland,Europe,58.5,15.45
+GALE.S,1.005,1004682.0,Healthcare,Switzerland,Europe,69.1,12.74
+WM.N,1.001,1000541.0,Industrials,United States,United States,79.7,13.6
+BEAN.S,1.0,1000342.0,Industrials,Switzerland,Europe,58.6,15.32
+ZURN.S,1.0,1000310.0,Financial Services,Switzerland,Europe,84.1,13.76
+AAPL.OQ,1.0,1000138.0,Technology,United States,United States,72.0,16.06
+SQN.S,1.0,1000132.0,Financial Services,Switzerland,Europe,56.8,17.12
+ABBN.S,1.0,1000118.0,Industrials,Switzerland,Europe,89.8,13.97
+KOG.OL,1.0,1000104.0,Industrials,Norway,Europe,63.4,15.43
+TT.N,1.0,1000103.0,Industrials,United States,United States,72.3,16.17
+AVGO.OQ,1.0,1000086.0,Technology,United States,United States,75.8,17.16
+CDNS.OQ,1.0,1000069.0,Technology,United States,United States,86.8,16.24

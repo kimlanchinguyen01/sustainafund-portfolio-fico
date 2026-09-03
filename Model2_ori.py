@@ -96,6 +96,8 @@ ESG_MIN = 70.0
 ENABLE_ESG_CONSTRAINT = True  # False when test "impact of ESG constraint on returns"
 SECTOR_CAP = 0.30            # guard-rail cap per sector — see reasoning above, adjust if it binds oddly
 ENABLE_SECTOR_CAP = True
+ESG_FLOOR = 30.0
+ENABLE_ESG_FLOOR = True
 
 # Manually-flagged controversial-industry tickers (weapons/defense).
 # NOT derived from the sector file - "Industrials" is too broad to isolate
@@ -133,6 +135,8 @@ def scenario_tag():
     parts.append("tier2on" if ENABLE_TIER2_EXCLUSION else "tier2off")
     if not ENABLE_ESG_CONSTRAINT:
         parts.append("noesg")
+    if ENABLE_ESG_FLOOR:
+        parts.append("esgfloor%d" % int(ESG_FLOOR))
     return "_".join(parts)
 
 TIME_LIMIT_SEC = 300
@@ -143,7 +147,7 @@ N_FRONTIER_POINTS = 15
 
 os.environ.setdefault("XPAUTH_PATH", os.path.join(os.path.dirname(os.path.abspath(__file__)), "xpauth.xpr"))
 
-
+# %%
 # ============================================================
 # 1. LOAD & MERGE DATA
 # ============================================================
@@ -174,6 +178,7 @@ def load_data():
     region = shares.loc[common, COL_REGION]
     esg = shares.loc[common, COL_ESG]
 
+#%%
     # sector is optional/supplementary: don't shrink the universe over it,
     # just bucket anything missing as "Unknown" (which then also falls under the cap)
     sector = sectors.reindex(common)
@@ -185,6 +190,19 @@ def load_data():
     assert not mu.isna().any(), "NaN found in expected return!"
     assert not esg.isna().any(), "NaN found in ESG - check you're using the imputed file!"
     assert not Sigma.isna().any().any(), "NaN found in covariance matrix!"
+
+    if ENABLE_ESG_FLOOR:
+        low_esg_mask = esg < ESG_FLOOR
+        n_low_esg = int(low_esg_mask.sum())
+        if n_low_esg > 0:
+            print(f"ESG FLOOR: excluding {n_low_esg} stocks with individual ESG < {ESG_FLOOR} "
+                  f"(e.g. {list(esg[low_esg_mask].index[:5])})")
+            keep = ~low_esg_mask
+            mu = mu[keep]
+            Sigma = Sigma.loc[keep, keep]
+            region = region[keep]
+            sector = sector[keep]
+            esg = esg[keep]
 
         # Check which controversial/defense candidate tickers are actually
     # present in the cleaned universe (informational only -- the real
@@ -200,7 +218,7 @@ def load_data():
         
     return mu, Sigma, region, esg, sector
 
-
+# %%
 # ============================================================
 # 2. BUILD & SOLVE MODEL 2
 # ============================================================

@@ -1,5 +1,8 @@
 """
 21 — Walk-forward backtest of Model 2 (option A, tightly scoped)
+
+Constraint set matches Model2_ori.py as of 3 Sep, including the per-stock
+ESG floor of 30 that Chloe added.
 ================================================================
 Protocol
 --------
@@ -51,6 +54,7 @@ import xpress as xp
 TD = 252
 WINDOW_Y = 3
 W_MIN, W_MAX, REGION_CAP, MIN_STOCKS, ESG_MIN, SECTOR_CAP = 0.01, 0.20, 0.60, 30, 70.0, 0.30
+ESG_FLOOR = 30.0        # per-stock floor added by Chloe: no single holding below this
 MIP_GAP, TIME_LIMIT = 0.001, 120
 COST_BPS = 10          # one-way transaction cost applied in the sensitivity
 
@@ -99,6 +103,8 @@ for i, t in enumerate(rebal):
     win = rets.loc[:, (rets.columns >= w_start) & (rets.columns < t)]     # strictly before t
     ok = win.notna().all(axis=1)
     elig = [s for s in win.index[ok]]
+    # per-stock ESG floor, applied to the eligible set exactly as load_data does
+    elig = [s for s in elig if sh.loc[s, "ESG score"] >= ESG_FLOOR]
     if len(elig) < MIN_STOCKS + 20:
         print(f"  {t.date()}  only {len(elig)} eligible - skipped")
         continue
