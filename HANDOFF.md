@@ -122,6 +122,11 @@ Each is reproducible from the script named. Re-deriving them wastes a session.
 | A 20% sector cap starts to cost | Neutral -0.160pp of return, ratio -0.0058; it binds at every profile | `31` |
 | The sector cap also moves WHICH point is Risk Prone | uncapped and at 20% the non-degenerate boundary shifts to point 12, at 25/30% it is point 11 | `31` |
 | ESG threshold sweep, Neutral return | unconstrained 14.48%, 50 -> 14.47%, 60 -> 14.45%, 65 -> 14.43%, 70 -> 14.30%, 75 -> 14.07%, 80 -> 13.11% | `31` |
+| Walk-forward gate is exact | the 1/N benchmark in `33` reproduces script 21 to 0.000 on CAGR, volatility and Sharpe | `33` |
+| **Canonical Neutral tested out of sample at last** | max return/risk picked from a 7-point frontier at each of 31 rebalances: CAGR 15.38%, vol 16.93%, Sharpe 0.909, maxDD -34.41% | `33` |
+| And it still has no significant edge - weaker than the proxy | Neutral t = **0.139** vs the mandate proxy's +0.60; Risk Prone t = 0.472; Risk Averse t = -0.847. Script 26's proxy was slightly GENEROUS, not conservative | `33`, `26` |
+| Two more independent harness cross-checks | Risk Averse t = -0.847 matches script 21's -0.85, and its risk understatement 50.35% matches script 21's 50.4% | `33`, `21` |
+| Return costs turnover roughly proportionally | 21.2% per rebalance at Risk Averse, 43.2% at Neutral, 45.5% at Risk Prone, against 1/N's 0.3% | `33` |
 | Window gate | re-estimating on 10y reproduces the shipped v4 files to 1.7e-16 (mu) and 1.8e-15 (Sigma) | `32` |
 | Short windows look better and are worse | Neutral 14.30%/10.63% ratio 1.35 on 10y -> 17.47%/9.32% ratio 1.87 on 5y -> 25.73%/7.93% ratio **3.24** on 3y, while mu's range widens 2.7-19.1% -> -9.8-46.1% | `32` |
 | The recommended book barely survives a window change | 5y Neutral shares 15 of 38 names with the 10y one, 3y shares 11 of 38 with weight correlation -0.019 | `32` |
@@ -292,6 +297,8 @@ Each is reproducible from the script named. Re-deriving them wastes a session.
 | `dashboard_data/build_powerbi_layer.py` | the clean Power BI layer + validation, ~10 s |
 | `dashboard_data/POWERBI.md` | its contract: conventions, schemas, what is still to do |
 | `32_robustness_windows.py` | 10Y/5Y/3Y with mu and Sigma re-estimated per window, ~12 min |
+| `33_walkforward_profiles.py` | walk-forward with the CANONICAL profiles, ~280 solves, ~19 min |
+| `profile_rule.py` | the canonical profile-selection rule; the only definition in the repo |
 | `results_factor_count/` | its output: 3 CSVs + a README with the verdict and what the factors are |
 | `results_lseg_update/` | its output: 5 CSVs + a README with the adopt/don't recommendation |
 | `data_lseg_update/` | the parsed inputs, unused until the update is adopted |

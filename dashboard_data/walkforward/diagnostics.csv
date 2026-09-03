@@ -1,0 +1,26 @@
+profile,metric,value
+Risk Averse,sharpe,0.8362
+Risk Averse,sharpe_minus_1N,-0.0302
+Risk Averse,t_stat_vs_1N,-0.847
+Risk Averse,significant_at_5pct,0.0
+Risk Averse,mean_predicted_risk,0.0878
+Risk Averse,realised_volatility,0.132
+Risk Averse,risk_understatement,0.5035
+Risk Averse,turnover_per_rebalance,0.2118
+Neutral,sharpe,0.9085
+Neutral,sharpe_minus_1N,0.0421
+Neutral,t_stat_vs_1N,0.139
+Neutral,significant_at_5pct,0.0
+Neutral,mean_predicted_risk,0.1351
+Neutral,realised_volatility,0.1693
+Neutral,risk_understatement,0.2535
+Neutral,turnover_per_rebalance,0.4324
+Risk Prone,sharpe,0.9037
+Risk Prone,sharpe_minus_1N,0.0373
+Risk Prone,t_stat_vs_1N,0.472
+Risk Prone,significant_at_5pct,0.0
+Risk Prone,mean_predicted_risk,0.1562
+Risk Prone,realised_volatility,0.1879
+Risk Prone,risk_understatement,0.2034
+Risk Prone,turnover_per_rebalance,0.4547
+1/N Equal Weight,sharpe,0.8665

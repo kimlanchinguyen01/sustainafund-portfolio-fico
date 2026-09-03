@@ -272,6 +272,64 @@ looking. Fixed on both sides: the source now writes `not applicable` and
 weights-sum check runs with `dropna=False`, and the validator now fails outright
 if any group key contains a null.
 
+### `walkforward/` — the canonical profiles, out of sample
+
+Built by `33_walkforward_profiles.py` (~19 min, ~280 solves). This is the one
+that tests **Neutral as it is actually defined** — maximum return/risk on the
+frontier — rather than a proxy for it. A 7-point frontier is solved at each of
+the 31 rebalances and `profile_rule.py` picks all three profiles from it, so the
+selection rule is applied out of sample rather than assumed.
+
+**Gate: the 1/N benchmark reproduces script 21 exactly** — CAGR 14.652%,
+volatility 16.911%, Sharpe 0.866, difference 0.000 on all three. Same protocol,
+same eligible universe.
+
+| Profile | CAGR | Volatility | Sharpe | Max DD | Final | Turnover / rebalance |
+|---|---|---|---|---|---|---|
+| Risk Averse | 11.04% | **13.20%** | 0.836 | **−33.66%** | 2.25× | **21.2%** |
+| **Neutral** | 15.38% | 16.93% | **0.909** | −34.41% | 3.03× | 43.2% |
+| Risk Prone | 16.98% | 18.79% | 0.904 | −36.68% | 3.37× | 45.5% |
+| 1/N Equal Weight | 14.65% | 16.91% | 0.866 | −37.68% | 2.88× | 0.3% |
+
+⚠ **Still no significant edge, and the canonical test is weaker than the proxy.**
+
+| Profile | Sharpe − 1/N | t | Significant? |
+|---|---|---|---|
+| Neutral | +0.0421 | **0.139** | no |
+| Risk Prone | +0.0373 | 0.472 | no |
+| Risk Averse | −0.0302 | −0.847 | no |
+
+Script 26's mandate proxy gave Neutral t = +0.60; the canonical definition gives
+**t = 0.139**. So the proxy was, if anything, slightly *generous* to the
+return-seeking profile — it did not understate the case. The conclusion is
+unchanged and now rests on the real definition: over 7.7 years and 31
+rebalances, no profile is distinguishable from the naive benchmark.
+
+Two cross-checks fall out. Risk Averse's t of −0.847 matches script 21's
+published −0.85, and its risk understatement of 50.35% matches script 21's
+50.4%. Both confirm the harness independently of the gate.
+
+`rebalances.csv` records the **frontier point each profile selected at each
+date** — 124 rows — so the selection is auditable rather than a black box. The
+benchmark rows carry no frontier point, and the validator enforces that.
+
+What is robust here is the same thing every other test found: Risk Averse has
+the lowest volatility, the shallowest drawdown and half the turnover, while
+Neutral and Risk Prone buy their extra return with proportionally more of both.
+
+### `sensitivity_standard/tier2_comparison.csv` — rebuilt with real numbers
+
+The committed `results_chloe/comparison_tier2.csv` is a stale artefact no live
+script writes, and its `risk` column held percentage **strings** (`"9.26%"`)
+while its return columns held percent-as-number. Rather than hand-patch a
+generated file, this derives the same comparison from the canonical `base` and
+`tier2_on` scenario frontiers, decimals throughout.
+
+Matched **risk**, not matched frontier point: the two frontiers have different
+corners, so point *k* on one is not the same risk level as point *k* on the
+other. Each frontier's return is interpolated onto a shared 15-level risk grid
+spanning the overlap.
+
 ### `benchmark_standard/` — the 1/N benchmark, 2015–2025
 
 `summary.csv`, `curves.csv` (long), `annual.csv` (long), `windows.csv`,
@@ -321,20 +379,14 @@ requiring the covariance, the frontier or the solver is precomputed here.
 
 ## Still to do
 
-Honestly listed rather than implied as done:
+Nothing from the original dashboard request is outstanding.
 
-1. **A Neutral walk-forward backtest.** Partly answered already:
-   `backtest_profiles/` runs a return-seeking mandate out of sample over 31
-   rebalances, which is the nearest thing to testing the recommended profile.
-   A literal max-return/risk-per-rebalance version would need a whole frontier
-   at each of the 31 rebalance dates rather than two solves. Meanwhile the
-   script-21 backtest is labelled `Optimised Minimum Variance` and must not be
-   presented as validation of Neutral.
-2. **`sensitivity/tier2_comparison.csv`** in the raw mirror still contains
-   percentage strings. It sits outside this layer — the scenario tables
-   supersede it — and the validator only guards this layer, but it should be
-   regenerated.
+Completed, in the order they were done: the canonical Risk Prone rule and its
+propagation to every consumer, the normalised scenario grid, the stock dimension
+with industry, standardised backtest / stress / benchmark tables, the 10Y/5Y/3Y
+robustness layer, `panelB_holdings` with real point-in-time weights, the
+canonical walk-forward, and this rebuilt Tier 2 comparison.
 
-Completed since the first version of this document: the canonical Risk Prone
-rule (section above), the 10Y/5Y/3Y robustness layer, and
-`stress_standard/panelB_holdings.csv` with real point-in-time weights.
+Open decisions that are not dashboard work: whether to switch the country cap
+on, and whether to adopt the second LSEG data export. Both are measured; see
+`HANDOFF.md`.

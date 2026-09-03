@@ -45,7 +45,8 @@ PCT_TOL = 1e-6
 
 # folders this script owns and therefore clears before rebuilding, so a source
 # that disappears cannot leave a stale destination behind (issue 17)
-OWNED = ["universe", "backtest_standard", "stress_standard", "benchmark_standard"]
+OWNED = ["universe", "backtest_standard", "stress_standard", "benchmark_standard",
+         "sensitivity_standard"]
 
 STRATEGY_NAMES = {
     "minvar": "Optimised Minimum Variance",
@@ -340,6 +341,47 @@ def build_benchmark(out):
 
 
 # ===========================================================================
+# 4b. derived: the Tier 2 comparison, rebuilt with proper types
+# ===========================================================================
+def build_tier2_comparison(out):
+    """At matched risk, what does excluding conventional defence cost?
+
+    The committed results_chloe/comparison_tier2.csv is a stale artefact no live
+    script writes, and its `risk` column holds percentage STRINGS ("9.26%") while
+    its return columns hold percent-as-number. Rather than hand-patch a generated
+    file, this derives the same comparison from the canonical scenario frontiers
+    (`base` vs `tier2_on`) with decimals throughout.
+
+    Matched RISK, not matched frontier point: the two frontiers have different
+    corners, so point k on one is not the same risk level as point k on the other.
+    Each frontier's return is interpolated onto a shared risk grid spanning the
+    overlap of the two.
+    """
+    fp = os.path.join(HERE, "scenarios", "frontier_points.csv")
+    if not os.path.exists(fp):
+        return 0
+    F = pd.read_csv(fp)
+    off = F[F.scenario_id == "base"].sort_values("risk")
+    on = F[F.scenario_id == "tier2_on"].sort_values("risk")
+    if not len(off) or not len(on):
+        return 0
+
+    lo = max(off["risk"].min(), on["risk"].min())
+    hi = min(off["risk"].max(), on["risk"].max())
+    grid = np.linspace(lo, hi, 15)
+    rows = []
+    for r in grid:
+        a = float(np.interp(r, off["risk"], off["expected_return"]))
+        b = float(np.interp(r, on["risk"], on["expected_return"]))
+        rows.append({"risk": float(r),
+                     "return_tier2_off": a, "return_tier2_on": b,
+                     "cost_of_excluding_tier2": b - a})
+    T = pd.DataFrame(rows)
+    T.to_csv(f"{out}/tier2_comparison.csv", index=False)
+    return len(T)
+
+
+# ===========================================================================
 # 5. validation (issue 17)
 # ===========================================================================
 def validate(u, have_industry):
@@ -450,6 +492,33 @@ def validate(u, have_industry):
     else:
         warns.append("robustness/ not built yet - run 32_robustness_windows.py")
 
+    # the canonical walk-forward (script 33)
+    wf = os.path.join(HERE, "walkforward")
+    fs = os.path.join(wf, "summary.csv")
+    if os.path.exists(fs):
+        WS = pd.read_csv(fs)
+        WR = pd.read_csv(os.path.join(wf, "rebalances.csv"))
+        bad = set(WR["profile"]) - set(PROFILE_RULES) - {"1/N Equal Weight"}
+        if bad:
+            fails.append(f"unmapped profile names in walkforward/rebalances: {bad}")
+        # a profile must trace to a real frontier point at every rebalance;
+        # the benchmark has none, and that must be explicit rather than blank
+        opt = WR[WR.profile != "1/N Equal Weight"]
+        if opt["frontier_point"].isna().any():
+            fails.append(f"{int(opt['frontier_point'].isna().sum())} optimised "
+                         f"rebalances with no frontier point recorded")
+        bench = WR[WR.profile == "1/N Equal Weight"]
+        if len(bench) and bench["frontier_point"].notna().any():
+            fails.append("the 1/N benchmark should have no frontier point")
+        # every profile must appear at every rebalance that was solved
+        n_dates = WR["date"].nunique()
+        counts = WR.groupby("profile")["date"].nunique()
+        if (counts != n_dates).any():
+            warns.append(f"walkforward: profiles present at different numbers of "
+                         f"rebalances {counts.to_dict()}")
+    else:
+        warns.append("walkforward/ not built yet - run 33_walkforward_profiles.py")
+
     # the point-in-time stress allocations
     ph = os.path.join(HERE, "stress_standard", "panelB_holdings.csv")
     if os.path.exists(ph):
@@ -519,6 +588,8 @@ def main():
     print(f"backtest_standard/    {n_sum} summary rows | {n_curve} curve rows")
     print(f"stress_standard/      {build_stress(os.path.join(HERE, 'stress_standard'))} tables")
     print(f"benchmark_standard/   {build_benchmark(os.path.join(HERE, 'benchmark_standard'))} tables")
+    print(f"sensitivity_standard/ tier2_comparison "
+          f"{build_tier2_comparison(os.path.join(HERE, 'sensitivity_standard'))} risk levels")
 
     fails, warns = validate(u, have_industry)
     print("\n--- validation ---")

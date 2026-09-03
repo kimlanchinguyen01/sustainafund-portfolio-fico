@@ -1,0 +1,29 @@
+period,regime,profile,cagr,volatility,max_drawdown
+2018-04..2019-12,calm market,Risk Averse,0.2448,0.1426,-0.106
+2018-04..2019-12,calm market,Neutral,0.1491,0.1273,-0.2269
+2018-04..2019-12,calm market,Risk Prone,0.1389,0.1845,-0.3123
+2018-04..2019-12,calm market,1/N Equal Weight,0.1304,0.1187,-0.1751
+2020 full year,crash and rebound,Risk Averse,0.0384,0.2336,-0.3366
+2020 full year,crash and rebound,Neutral,0.4811,0.2732,-0.3161
+2020 full year,crash and rebound,Risk Prone,0.4581,0.2726,-0.3288
+2020 full year,crash and rebound,1/N Equal Weight,0.1809,0.3078,-0.3768
+2020-02..2020-03,the crash itself,Risk Averse,-0.8724,0.6276,-0.3354
+2020-02..2020-03,the crash itself,Neutral,-0.8243,0.649,-0.3153
+2020-02..2020-03,the crash itself,Risk Prone,-0.8858,0.6097,-0.3288
+2020-02..2020-03,the crash itself,1/N Equal Weight,-0.942,0.6691,-0.3768
+2021,boom,Risk Averse,0.1111,0.08,-0.0664
+2021,boom,Neutral,0.1364,0.1751,-0.1531
+2021,boom,Risk Prone,0.1364,0.1751,-0.1531
+2021,boom,1/N Equal Weight,0.245,0.1147,-0.0556
+2022,inflation shock,Risk Averse,-0.1189,0.136,-0.2277
+2022,inflation shock,Neutral,-0.2447,0.1941,-0.3097
+2022,inflation shock,Risk Prone,-0.2728,0.2087,-0.335
+2022,inflation shock,1/N Equal Weight,-0.126,0.2125,-0.2695
+2023-2025,AI rally,Risk Averse,0.1467,0.0823,-0.0859
+2023-2025,AI rally,Neutral,0.2335,0.1302,-0.0983
+2023-2025,AI rally,Risk Prone,0.307,0.1478,-0.1317
+2023-2025,AI rally,1/N Equal Weight,0.2148,0.1219,-0.1285
+FULL,whole test period,Risk Averse,0.1104,0.132,-0.3366
+FULL,whole test period,Neutral,0.1538,0.1693,-0.3441
+FULL,whole test period,Risk Prone,0.1698,0.1879,-0.3668
+FULL,whole test period,1/N Equal Weight,0.1465,0.1691,-0.3768
