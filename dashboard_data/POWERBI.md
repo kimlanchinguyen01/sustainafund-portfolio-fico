@@ -154,10 +154,10 @@ so ESG banding does not have to be re-derived in DAX.
 
 ### `robustness/` — 10Y / 5Y / 3Y, with holdings and stability
 
-Built by `32_robustness_windows.py`. **μ and Σ are RE-ESTIMATED per window**,
+Built by `3_sensitivity_studies/code/32_robustness_windows.py`. **μ and Σ are RE-ESTIMATED per window**,
 not just re-solved — the window is the input being varied, so shortening it
 changes both the expected returns and the covariance. Estimation mirrors
-`20_dividend_adjusted_pipeline.py` exactly (20-factor PCA Σ, James-Stein μ),
+`1_data_preparation/code/20_dividend_adjusted_pipeline.py` exactly (20-factor PCA Σ, James-Stein μ),
 and the gate proves it: at 10 years the rebuild reproduces the shipped
 `expected_return_v4.csv` and `covariance_matrix_v4.csv` to **1.7e-16** and
 **1.8e-15**. The shorter windows therefore measure the window, not the rebuild.
@@ -213,7 +213,7 @@ Two things worth carrying to the defence. The 3-year Risk Averse row (Jaccard
 64% of capital placed differently" almost exactly, which cross-checks both.
 And **Risk Averse is the most stable profile at every window while Risk Prone
 is the least** — the third independent analysis to land on the min-variance end
-being the robust one, after `stress_test/` and `backtest_profiles/`.
+being the robust one, after `6_stress_test/` and `4_backtest/`.
 
 ### `backtest_standard/` — walk-forward, standardised
 
@@ -236,7 +236,7 @@ plain ratios.
 labelled `Optimised Minimum Variance` and must not be presented as validation
 of the recommended book. The nearest out-of-sample test of a return-seeking
 profile is `Optimised Mandate (give up <=20% of max return)` in the script-26
-run — see `backtest_profiles/README.md`, whose headline is that **no book beats
+run — see `4_backtest/README.md`, whose headline is that **no book beats
 1/N significantly** (t = −0.87, +0.60, +1.12).
 
 ### `stress_standard/` — crisis windows
@@ -274,7 +274,7 @@ if any group key contains a null.
 
 ### `walkforward/` — the canonical profiles, out of sample
 
-Built by `33_walkforward_profiles.py` (~19 min, ~280 solves). This is the one
+Built by `4_backtest/code/33_walkforward_profiles.py` (~19 min, ~280 solves). This is the one
 that tests **Neutral as it is actually defined** — maximum return/risk on the
 frontier — rather than a proxy for it. A 7-point frontier is solved at each of
 the 31 rebalances and `profile_rule.py` picks all three profiles from it, so the
@@ -342,7 +342,7 @@ this table if anyone spots the difference.
 
 ### `sensitivity_standard/tier2_comparison.csv` — rebuilt with real numbers
 
-The committed `results_chloe/comparison_tier2.csv` is a stale artefact no live
+The committed `2_optimisation_model/results/comparison_tier2.csv` is a stale artefact no live
 script writes, and its `risk` column held percentage **strings** (`"9.26%"`)
 while its return columns held percent-as-number. Rather than hand-patch a
 generated file, this derives the same comparison from the canonical `base` and

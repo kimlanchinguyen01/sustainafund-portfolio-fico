@@ -1,0 +1,1500 @@
+scenario_id,profile,profile_rule,frontier_point,stock,weight,amount_usd
+base,Risk Averse,Minimum variance,0,AD.AS,0.012991555877755044,1299155.5877755044
+base,Risk Averse,Minimum variance,0,ALLN.S,0.07578867298026391,7578867.298026391
+base,Risk Averse,Minimum variance,0,BARN.S,0.011223522221212558,1122352.222121256
+base,Risk Averse,Minimum variance,0,BCVN.S,0.0629387913888717,6293879.138887171
+base,Risk Averse,Minimum variance,0,BMY.N,0.017143654392555104,1714365.4392555105
+base,Risk Averse,Minimum variance,0,CBOE.Z,0.014210804912923211,1421080.4912923211
+base,Risk Averse,Minimum variance,0,CHD.N,0.010082189391609639,1008218.9391609639
+base,Risk Averse,Minimum variance,0,CHRW.OQ,0.017513460526856334,1751346.0526856335
+base,Risk Averse,Minimum variance,0,CLX.N,0.04066738349113908,4066738.349113908
+base,Risk Averse,Minimum variance,0,CMG.N,0.010032152137983625,1003215.2137983625
+base,Risk Averse,Minimum variance,0,COST.OQ,0.018438204630858063,1843820.4630858062
+base,Risk Averse,Minimum variance,0,CPB.OQ,0.024669257657169284,2466925.7657169285
+base,Risk Averse,Minimum variance,0,DKSH.S,0.012980437257566799,1298043.72575668
+base,Risk Averse,Minimum variance,0,DPZ.OQ,0.014023207047171414,1402320.7047171413
+base,Risk Averse,Minimum variance,0,GALE.S,0.06356938597001179,6356938.597001178
+base,Risk Averse,Minimum variance,0,GILD.OQ,0.019124194755163436,1912419.4755163435
+base,Risk Averse,Minimum variance,0,GIS.N,0.02138919896832241,2138919.896832241
+base,Risk Averse,Minimum variance,0,HLN.L,0.010849541448863798,1084954.1448863798
+base,Risk Averse,Minimum variance,0,HLT.N,0.013426120153891927,1342612.0153891926
+base,Risk Averse,Minimum variance,0,HRL.N,0.010045394085181463,1004539.4085181464
+base,Risk Averse,Minimum variance,0,HUBN.S,0.01133236962781136,1133236.962781136
+base,Risk Averse,Minimum variance,0,JNJ.N,0.027062585899085636,2706258.5899085635
+base,Risk Averse,Minimum variance,0,KR.N,0.04025122443093038,4025122.4430930377
+base,Risk Averse,Minimum variance,0,LISP.S,0.01595205610399112,1595205.610399112
+base,Risk Averse,Minimum variance,0,LMT.N,0.010063970745384482,1006397.0745384481
+base,Risk Averse,Minimum variance,0,LOTB.BR,0.013055946148639704,1305594.6148639703
+base,Risk Averse,Minimum variance,0,MO.N,0.010086182806819138,1008618.2806819138
+base,Risk Averse,Minimum variance,0,MOBN.S,0.09719694496381351,9719694.496381352
+base,Risk Averse,Minimum variance,0,MRK.N,0.010079562877655381,1007956.2877655381
+base,Risk Averse,Minimum variance,0,NEM.N,0.015989205389951737,1598920.5389951738
+base,Risk Averse,Minimum variance,0,NOC.N,0.010359497415050191,1035949.7415050191
+base,Risk Averse,Minimum variance,0,ORNBV.HE,0.0100053447721524,1000534.47721524
+base,Risk Averse,Minimum variance,0,PSPN.S,0.03247258522098512,3247258.522098512
+base,Risk Averse,Minimum variance,0,QIA.DE,0.020611418078740076,2061141.8078740076
+base,Risk Averse,Minimum variance,0,QQ.L,0.010066985853765633,1006698.5853765634
+base,Risk Averse,Minimum variance,0,ROPC.S,0.010068576257576452,1006857.6257576452
+base,Risk Averse,Minimum variance,0,SCMN.S,0.023240120972586292,2324012.0972586293
+base,Risk Averse,Minimum variance,0,SJM.N,0.021474946610842406,2147494.661084241
+base,Risk Averse,Minimum variance,0,SPSN.S,0.010569215297225655,1056921.5297225656
+base,Risk Averse,Minimum variance,0,VATN.S,0.04245840156829841,4245840.1568298405
+base,Risk Averse,Minimum variance,0,VZ.N,0.026823987763709523,2682398.7763709524
+base,Risk Averse,Minimum variance,0,WMT.OQ,0.049671741899614985,4967174.189961499
+base,Neutral,Maximum return/risk ratio,8,ABBV.N,0.013883620667013813,1388362.0667013812
+base,Neutral,Maximum return/risk ratio,8,ACLN.S,0.03348068916231398,3348068.9162313985
+base,Neutral,Maximum return/risk ratio,8,AD.AS,0.011707195303585029,1170719.5303585029
+base,Neutral,Maximum return/risk ratio,8,APH.N,0.010152327041943512,1015232.7041943512
+base,Neutral,Maximum return/risk ratio,8,ARGX.BR,0.01620288700406707,1620288.700406707
+base,Neutral,Maximum return/risk ratio,8,BCVN.S,0.02285154353287272,2285154.353287272
+base,Neutral,Maximum return/risk ratio,8,BEAN.S,0.010011766313477177,1001176.6313477176
+base,Neutral,Maximum return/risk ratio,8,BFT.WA,0.010013856093611863,1001385.6093611863
+base,Neutral,Maximum return/risk ratio,8,BKWB.S,0.06214910608197178,6214910.608197178
+base,Neutral,Maximum return/risk ratio,8,CBOE.Z,0.010276994066538307,1027699.4066538307
+base,Neutral,Maximum return/risk ratio,8,COST.OQ,0.08229510750182267,8229510.750182267
+base,Neutral,Maximum return/risk ratio,8,GALD.S,0.017006189589564544,1700618.9589564544
+base,Neutral,Maximum return/risk ratio,8,GALE.S,0.10212635486515269,10212635.486515269
+base,Neutral,Maximum return/risk ratio,8,GAW.L,0.010024929535662133,1002492.9535662133
+base,Neutral,Maximum return/risk ratio,8,HLT.N,0.010090441816163592,1009044.1816163592
+base,Neutral,Maximum return/risk ratio,8,KR.N,0.021712355889331906,2171235.588933191
+base,Neutral,Maximum return/risk ratio,8,LLY.N,0.04741257427094707,4741257.427094707
+base,Neutral,Maximum return/risk ratio,8,LOTB.BR,0.027533645191547176,2753364.5191547177
+base,Neutral,Maximum return/risk ratio,8,LTMC.MI,0.016933603916712708,1693360.3916712708
+base,Neutral,Maximum return/risk ratio,8,MOBN.S,0.10139415544026228,10139415.544026228
+base,Neutral,Maximum return/risk ratio,8,NEM.N,0.03107366206209119,3107366.206209119
+base,Neutral,Maximum return/risk ratio,8,PGR.N,0.05912029644013444,5912029.644013444
+base,Neutral,Maximum return/risk ratio,8,PLUSP.L,0.01928863689232094,1928863.689232094
+base,Neutral,Maximum return/risk ratio,8,RSG.N,0.03524999837193624,3524999.837193624
+base,Neutral,Maximum return/risk ratio,8,SBNOR.OL,0.02784019299402298,2784019.299402298
+base,Neutral,Maximum return/risk ratio,8,SDZ.S,0.018415700858811952,1841570.0858811953
+base,Neutral,Maximum return/risk ratio,8,TKO.N,0.010082428859707206,1008242.8859707206
+base,Neutral,Maximum return/risk ratio,8,WM.N,0.02297847510835907,2297847.510835907
+base,Neutral,Maximum return/risk ratio,8,WMT.OQ,0.12855559385935858,12855559.385935858
+base,Neutral,Maximum return/risk ratio,8,ZEG.L,0.010135671268695285,1013567.1268695286
+base,Risk Prone,Highest non-degenerate return,11,AAPL.OQ,0.010001380901393733,1000138.0901393733
+base,Risk Prone,Highest non-degenerate return,11,ABBN.S,0.010001175142545716,1000117.5142545716
+base,Risk Prone,Highest non-degenerate return,11,ACLN.S,0.07576259998098532,7576259.998098532
+base,Risk Prone,Highest non-degenerate return,11,APH.N,0.0302192403432914,3021924.03432914
+base,Risk Prone,Highest non-degenerate return,11,ARGX.BR,0.053233466622697706,5323346.66226977
+base,Risk Prone,Highest non-degenerate return,11,AVGO.OQ,0.010000863215024622,1000086.3215024621
+base,Risk Prone,Highest non-degenerate return,11,BEAN.S,0.010003422292941598,1000342.2292941598
+base,Risk Prone,Highest non-degenerate return,11,BKWB.S,0.05062824729116951,5062824.729116951
+base,Risk Prone,Highest non-degenerate return,11,CDNS.OQ,0.010000690845293161,1000069.0845293162
+base,Risk Prone,Highest non-degenerate return,11,COST.OQ,0.07866109557174493,7866109.557174493
+base,Risk Prone,Highest non-degenerate return,11,GALD.S,0.010122048090003992,1012204.8090003992
+base,Risk Prone,Highest non-degenerate return,11,GALE.S,0.010046821811320992,1004682.1811320992
+base,Risk Prone,Highest non-degenerate return,11,GAW.L,0.03304616310240301,3304616.3102403013
+base,Risk Prone,Highest non-degenerate return,11,IBE.MC,0.05891106712217484,5891106.712217484
+base,Risk Prone,Highest non-degenerate return,11,KOG.OL,0.010001038311396955,1000103.8311396955
+base,Risk Prone,Highest non-degenerate return,11,LLY.N,0.09062843288442136,9062843.288442137
+base,Risk Prone,Highest non-degenerate return,11,LTMC.MI,0.019538871422151723,1953887.1422151723
+base,Risk Prone,Highest non-degenerate return,11,MSFT.OQ,0.01165251793642235,1165251.793642235
+base,Risk Prone,Highest non-degenerate return,11,NEM.N,0.027187757729419133,2718775.7729419135
+base,Risk Prone,Highest non-degenerate return,11,PGR.N,0.09593001998982276,9593001.998982275
+base,Risk Prone,Highest non-degenerate return,11,PLUSP.L,0.019728483313773033,1972848.3313773032
+base,Risk Prone,Highest non-degenerate return,11,PWR.N,0.022839017919137693,2283901.791913769
+base,Risk Prone,Highest non-degenerate return,11,RSG.N,0.010240307412449402,1024030.7412449402
+base,Risk Prone,Highest non-degenerate return,11,SDZ.S,0.034594122426702976,3459412.2426702976
+base,Risk Prone,Highest non-degenerate return,11,SQN.S,0.010001319540899913,1000131.9540899913
+base,Risk Prone,Highest non-degenerate return,11,TT.N,0.010001026417562817,1000102.6417562817
+base,Risk Prone,Highest non-degenerate return,11,WM.N,0.010005407462103105,1000540.7462103105
+base,Risk Prone,Highest non-degenerate return,11,WMT.OQ,0.15100424880669416,15100424.880669417
+base,Risk Prone,Highest non-degenerate return,11,ZEG.L,0.01600605055859105,1600605.055859105
+base,Risk Prone,Highest non-degenerate return,11,ZURN.S,0.010003095535461116,1000309.5535461117
+tier2_on,Risk Averse,Minimum variance,0,AD.AS,0.012926033378294727,1292603.3378294727
+tier2_on,Risk Averse,Minimum variance,0,ALLN.S,0.0734878504002619,7348785.04002619
+tier2_on,Risk Averse,Minimum variance,0,AMZN.OQ,0.010015583332197603,1001558.3332197602
+tier2_on,Risk Averse,Minimum variance,0,BARN.S,0.010584468406084542,1058446.8406084543
+tier2_on,Risk Averse,Minimum variance,0,BCVN.S,0.06434841312595299,6434841.312595299
+tier2_on,Risk Averse,Minimum variance,0,BMY.N,0.018042705359697812,1804270.5359697812
+tier2_on,Risk Averse,Minimum variance,0,CBOE.Z,0.015922457689022798,1592245.76890228
+tier2_on,Risk Averse,Minimum variance,0,CHD.N,0.010093412603897067,1009341.2603897067
+tier2_on,Risk Averse,Minimum variance,0,CHRW.OQ,0.01702695680842312,1702695.680842312
+tier2_on,Risk Averse,Minimum variance,0,CLX.N,0.04013327329084263,4013327.329084263
+tier2_on,Risk Averse,Minimum variance,0,CMG.N,0.010017126027987325,1001712.6027987326
+tier2_on,Risk Averse,Minimum variance,0,COST.OQ,0.016588897189826677,1658889.7189826677
+tier2_on,Risk Averse,Minimum variance,0,CPB.OQ,0.025048988076033087,2504898.807603309
+tier2_on,Risk Averse,Minimum variance,0,DKSH.S,0.012452609030593361,1245260.9030593361
+tier2_on,Risk Averse,Minimum variance,0,DPZ.OQ,0.012522023842174514,1252202.3842174513
+tier2_on,Risk Averse,Minimum variance,0,GALE.S,0.06397104196149218,6397104.196149219
+tier2_on,Risk Averse,Minimum variance,0,GILD.OQ,0.01962510444444962,1962510.444444962
+tier2_on,Risk Averse,Minimum variance,0,GIS.N,0.02303554930013022,2303554.9300130224
+tier2_on,Risk Averse,Minimum variance,0,HLN.L,0.010670511375839522,1067051.1375839522
+tier2_on,Risk Averse,Minimum variance,0,HLT.N,0.012696843907355006,1269684.3907355007
+tier2_on,Risk Averse,Minimum variance,0,HRL.N,0.010039751838064017,1003975.1838064017
+tier2_on,Risk Averse,Minimum variance,0,HUBN.S,0.011289939554035774,1128993.9554035775
+tier2_on,Risk Averse,Minimum variance,0,JNJ.N,0.032193685342111304,3219368.5342111303
+tier2_on,Risk Averse,Minimum variance,0,KR.N,0.04105367732443588,4105367.732443588
+tier2_on,Risk Averse,Minimum variance,0,LISP.S,0.014855665460667945,1485566.5460667945
+tier2_on,Risk Averse,Minimum variance,0,LOTB.BR,0.012727506837265791,1272750.6837265792
+tier2_on,Risk Averse,Minimum variance,0,MO.N,0.010438700318557134,1043870.0318557135
+tier2_on,Risk Averse,Minimum variance,0,MOBN.S,0.098383846570654,9838384.657065399
+tier2_on,Risk Averse,Minimum variance,0,MRK.N,0.010273055761107132,1027305.5761107132
+tier2_on,Risk Averse,Minimum variance,0,NEM.N,0.016239791526930128,1623979.1526930127
+tier2_on,Risk Averse,Minimum variance,0,ORNBV.HE,0.010006471990948377,1000647.1990948376
+tier2_on,Risk Averse,Minimum variance,0,PSPN.S,0.03253390786550686,3253390.786550686
+tier2_on,Risk Averse,Minimum variance,0,QIA.DE,0.01911736226192159,1911736.226192159
+tier2_on,Risk Averse,Minimum variance,0,QQ.L,0.010269792444676839,1026979.2444676838
+tier2_on,Risk Averse,Minimum variance,0,ROPC.S,0.010108167828027582,1010816.7828027582
+tier2_on,Risk Averse,Minimum variance,0,SCMN.S,0.025690766896144326,2569076.6896144324
+tier2_on,Risk Averse,Minimum variance,0,SJM.N,0.022735913528172818,2273591.3528172816
+tier2_on,Risk Averse,Minimum variance,0,SPSN.S,0.010712171364128263,1071217.1364128264
+tier2_on,Risk Averse,Minimum variance,0,VATN.S,0.04318587021952805,4318587.021952805
+tier2_on,Risk Averse,Minimum variance,0,VZ.N,0.02919951497531375,2919951.497531375
+tier2_on,Risk Averse,Minimum variance,0,WMT.OQ,0.04973459054124571,4973459.054124571
+tier2_on,Neutral,Maximum return/risk ratio,8,ABBV.N,0.013922770248781054,1392277.0248781054
+tier2_on,Neutral,Maximum return/risk ratio,8,ACLN.S,0.03337034951041903,3337034.951041903
+tier2_on,Neutral,Maximum return/risk ratio,8,AD.AS,0.011789313703219815,1178931.3703219814
+tier2_on,Neutral,Maximum return/risk ratio,8,APH.N,0.010156223857803902,1015622.3857803901
+tier2_on,Neutral,Maximum return/risk ratio,8,ARGX.BR,0.016131079345841084,1613107.9345841084
+tier2_on,Neutral,Maximum return/risk ratio,8,BCVN.S,0.023098091603861084,2309809.1603861083
+tier2_on,Neutral,Maximum return/risk ratio,8,BEAN.S,0.01001240197656681,1001240.1976566811
+tier2_on,Neutral,Maximum return/risk ratio,8,BFT.WA,0.010014634621552552,1001463.4621552553
+tier2_on,Neutral,Maximum return/risk ratio,8,BKWB.S,0.06210689058892128,6210689.058892128
+tier2_on,Neutral,Maximum return/risk ratio,8,CBOE.Z,0.010300887127017015,1030088.7127017014
+tier2_on,Neutral,Maximum return/risk ratio,8,COST.OQ,0.08221540730056308,8221540.730056308
+tier2_on,Neutral,Maximum return/risk ratio,8,GALD.S,0.016994104422234094,1699410.4422234094
+tier2_on,Neutral,Maximum return/risk ratio,8,GALE.S,0.1021781309532712,10217813.09532712
+tier2_on,Neutral,Maximum return/risk ratio,8,GAW.L,0.01002526844326836,1002526.8443268359
+tier2_on,Neutral,Maximum return/risk ratio,8,HLT.N,0.010094423770145529,1009442.3770145529
+tier2_on,Neutral,Maximum return/risk ratio,8,KR.N,0.02187223401526541,2187223.401526541
+tier2_on,Neutral,Maximum return/risk ratio,8,LLY.N,0.04734217906307411,4734217.90630741
+tier2_on,Neutral,Maximum return/risk ratio,8,LOTB.BR,0.02756236646101164,2756236.646101164
+tier2_on,Neutral,Maximum return/risk ratio,8,LTMC.MI,0.01686984811528216,1686984.8115282159
+tier2_on,Neutral,Maximum return/risk ratio,8,MOBN.S,0.10148458688178424,10148458.688178424
+tier2_on,Neutral,Maximum return/risk ratio,8,NEM.N,0.031044565801320086,3104456.5801320085
+tier2_on,Neutral,Maximum return/risk ratio,8,PGR.N,0.05902768848482911,5902768.848482911
+tier2_on,Neutral,Maximum return/risk ratio,8,PLUSP.L,0.019272162838117585,1927216.2838117585
+tier2_on,Neutral,Maximum return/risk ratio,8,RSG.N,0.03517408159554544,3517408.1595545444
+tier2_on,Neutral,Maximum return/risk ratio,8,SBNOR.OL,0.027949653012083693,2794965.3012083694
+tier2_on,Neutral,Maximum return/risk ratio,8,SDZ.S,0.018341228668380595,1834122.8668380594
+tier2_on,Neutral,Maximum return/risk ratio,8,TKO.N,0.010086090646123497,1008609.0646123497
+tier2_on,Neutral,Maximum return/risk ratio,8,WM.N,0.02298058984793691,2298058.984793691
+tier2_on,Neutral,Maximum return/risk ratio,8,WMT.OQ,0.12844502215628964,12844502.215628965
+tier2_on,Neutral,Maximum return/risk ratio,8,ZEG.L,0.010137724939490068,1013772.4939490068
+tier2_on,Risk Prone,Highest non-degenerate return,11,AAPL.OQ,0.010000450070928353,1000045.0070928353
+tier2_on,Risk Prone,Highest non-degenerate return,11,ABBN.S,0.010000550822500688,1000055.0822500688
+tier2_on,Risk Prone,Highest non-degenerate return,11,ABBV.N,0.010000351856319017,1000035.1856319017
+tier2_on,Risk Prone,Highest non-degenerate return,11,ACLN.S,0.07803166637900028,7803166.637900027
+tier2_on,Risk Prone,Highest non-degenerate return,11,APH.N,0.03026390557320842,3026390.557320842
+tier2_on,Risk Prone,Highest non-degenerate return,11,ARGX.BR,0.0540204434324021,5402044.34324021
+tier2_on,Risk Prone,Highest non-degenerate return,11,AVGO.OQ,0.0100005742820674,1000057.4282067401
+tier2_on,Risk Prone,Highest non-degenerate return,11,BEAN.S,0.010000747619002699,1000074.7619002699
+tier2_on,Risk Prone,Highest non-degenerate return,11,BKWB.S,0.05037007678656394,5037007.678656394
+tier2_on,Risk Prone,Highest non-degenerate return,11,CDNS.OQ,0.01000046154134714,1000046.1541347139
+tier2_on,Risk Prone,Highest non-degenerate return,11,COST.OQ,0.0767297529602797,7672975.2960279705
+tier2_on,Risk Prone,Highest non-degenerate return,11,GALD.S,0.010045820918879423,1004582.0918879423
+tier2_on,Risk Prone,Highest non-degenerate return,11,GALE.S,0.010011251556556088,1001125.1556556089
+tier2_on,Risk Prone,Highest non-degenerate return,11,GAW.L,0.03420242291847333,3420242.291847333
+tier2_on,Risk Prone,Highest non-degenerate return,11,IBE.MC,0.059260144569217105,5926014.456921711
+tier2_on,Risk Prone,Highest non-degenerate return,11,LLY.N,0.08976008000497908,8976008.000497907
+tier2_on,Risk Prone,Highest non-degenerate return,11,LTMC.MI,0.02011168945281363,2011168.9452813629
+tier2_on,Risk Prone,Highest non-degenerate return,11,MSFT.OQ,0.011375385192136258,1137538.519213626
+tier2_on,Risk Prone,Highest non-degenerate return,11,NEM.N,0.02647021427201994,2647021.427201994
+tier2_on,Risk Prone,Highest non-degenerate return,11,PGR.N,0.09462108553627306,9462108.553627307
+tier2_on,Risk Prone,Highest non-degenerate return,11,PLUSP.L,0.01982947904180738,1982947.9041807381
+tier2_on,Risk Prone,Highest non-degenerate return,11,PWR.N,0.024430937840911635,2443093.7840911634
+tier2_on,Risk Prone,Highest non-degenerate return,11,RSG.N,0.010056769169920553,1005676.9169920554
+tier2_on,Risk Prone,Highest non-degenerate return,11,SDZ.S,0.0347736177104159,3477361.77104159
+tier2_on,Risk Prone,Highest non-degenerate return,11,SQN.S,0.010000399977577054,1000039.9977577054
+tier2_on,Risk Prone,Highest non-degenerate return,11,TT.N,0.010000220358191862,1000022.0358191862
+tier2_on,Risk Prone,Highest non-degenerate return,11,WM.N,0.010001225497515191,1000122.5497515191
+tier2_on,Risk Prone,Highest non-degenerate return,11,WMT.OQ,0.14939851239014382,14939851.239014382
+tier2_on,Risk Prone,Highest non-degenerate return,11,ZEG.L,0.016230553093888232,1623055.3093888233
+tier2_on,Risk Prone,Highest non-degenerate return,11,ZURN.S,0.010001209174660608,1000120.9174660607
+sector_cap_none,Risk Averse,Minimum variance,0,AD.AS,0.018429015766278464,1842901.5766278463
+sector_cap_none,Risk Averse,Minimum variance,0,ALLN.S,0.06851698943591557,6851698.9435915565
+sector_cap_none,Risk Averse,Minimum variance,0,BARN.S,0.013671425551352591,1367142.5551352592
+sector_cap_none,Risk Averse,Minimum variance,0,BCVN.S,0.06275292649659958,6275292.649659958
+sector_cap_none,Risk Averse,Minimum variance,0,BMY.N,0.0179343392405713,1793433.92405713
+sector_cap_none,Risk Averse,Minimum variance,0,CBOE.Z,0.014053890879820338,1405389.0879820338
+sector_cap_none,Risk Averse,Minimum variance,0,CHD.N,0.010509800382020122,1050980.0382020122
+sector_cap_none,Risk Averse,Minimum variance,0,CHRW.OQ,0.014985478203706543,1498547.8203706543
+sector_cap_none,Risk Averse,Minimum variance,0,CLX.N,0.04267520486423858,4267520.4864238575
+sector_cap_none,Risk Averse,Minimum variance,0,CMG.N,0.010000420204018198,1000042.0204018197
+sector_cap_none,Risk Averse,Minimum variance,0,COST.OQ,0.02278736119294071,2278736.119294071
+sector_cap_none,Risk Averse,Minimum variance,0,CPB.OQ,0.026214512638169745,2621451.2638169746
+sector_cap_none,Risk Averse,Minimum variance,0,DKSH.S,0.012317996002175586,1231799.6002175584
+sector_cap_none,Risk Averse,Minimum variance,0,DPZ.OQ,0.012284043325038047,1228404.3325038047
+sector_cap_none,Risk Averse,Minimum variance,0,GALE.S,0.06238498725013228,6238498.725013228
+sector_cap_none,Risk Averse,Minimum variance,0,GILD.OQ,0.020501199031666757,2050119.9031666757
+sector_cap_none,Risk Averse,Minimum variance,0,GIS.N,0.02578354408276218,2578354.408276218
+sector_cap_none,Risk Averse,Minimum variance,0,HLN.L,0.010042802482094479,1004280.2482094478
+sector_cap_none,Risk Averse,Minimum variance,0,HLT.N,0.014407804723347064,1440780.4723347065
+sector_cap_none,Risk Averse,Minimum variance,0,HRL.N,0.010049860258209057,1004986.0258209057
+sector_cap_none,Risk Averse,Minimum variance,0,HUBN.S,0.010198074033549652,1019807.4033549653
+sector_cap_none,Risk Averse,Minimum variance,0,JNJ.N,0.02989166980421162,2989166.980421162
+sector_cap_none,Risk Averse,Minimum variance,0,KR.N,0.04235567800276669,4235567.800276669
+sector_cap_none,Risk Averse,Minimum variance,0,LISP.S,0.021472589526798105,2147258.9526798106
+sector_cap_none,Risk Averse,Minimum variance,0,LOTB.BR,0.01588814450006115,1588814.4500061148
+sector_cap_none,Risk Averse,Minimum variance,0,MO.N,0.01204424831734967,1204424.831734967
+sector_cap_none,Risk Averse,Minimum variance,0,MOBN.S,0.09850324624761725,9850324.624761725
+sector_cap_none,Risk Averse,Minimum variance,0,NEM.N,0.01642230214292632,1642230.214292632
+sector_cap_none,Risk Averse,Minimum variance,0,NOC.N,0.010225245300516135,1022524.5300516136
+sector_cap_none,Risk Averse,Minimum variance,0,ORNBV.HE,0.010000416888032783,1000041.6888032783
+sector_cap_none,Risk Averse,Minimum variance,0,PSPN.S,0.03079960408493449,3079960.408493449
+sector_cap_none,Risk Averse,Minimum variance,0,QIA.DE,0.020596406602850073,2059640.6602850072
+sector_cap_none,Risk Averse,Minimum variance,0,QQ.L,0.010009215351698936,1000921.5351698935
+sector_cap_none,Risk Averse,Minimum variance,0,SCMN.S,0.020326344927872258,2032634.4927872259
+sector_cap_none,Risk Averse,Minimum variance,0,SJM.N,0.023731321129679992,2373132.112967999
+sector_cap_none,Risk Averse,Minimum variance,0,SPSN.S,0.010026186527519403,1002618.6527519403
+sector_cap_none,Risk Averse,Minimum variance,0,VATN.S,0.03849304695761286,3849304.695761286
+sector_cap_none,Risk Averse,Minimum variance,0,VZ.N,0.02477980427469484,2477980.427469484
+sector_cap_none,Risk Averse,Minimum variance,0,VZN.S,0.010001004270296309,1000100.4270296309
+sector_cap_none,Risk Averse,Minimum variance,0,WMT.OQ,0.05393184909795442,5393184.909795442
+sector_cap_none,Neutral,Maximum return/risk ratio,8,ABBV.N,0.013575209392138124,1357520.9392138124
+sector_cap_none,Neutral,Maximum return/risk ratio,8,ACLN.S,0.034052585970910036,3405258.597091004
+sector_cap_none,Neutral,Maximum return/risk ratio,8,AD.AS,0.010524881059412808,1052488.1059412807
+sector_cap_none,Neutral,Maximum return/risk ratio,8,APH.N,0.010000251374782092,1000025.1374782092
+sector_cap_none,Neutral,Maximum return/risk ratio,8,ARGX.BR,0.016567272588432,1656727.2588431998
+sector_cap_none,Neutral,Maximum return/risk ratio,8,BCVN.S,0.021876502708030494,2187650.2708030497
+sector_cap_none,Neutral,Maximum return/risk ratio,8,BEAN.S,0.010000029868683492,1000002.9868683493
+sector_cap_none,Neutral,Maximum return/risk ratio,8,BFT.WA,0.010000084982035534,1000008.4982035534
+sector_cap_none,Neutral,Maximum return/risk ratio,8,BKWB.S,0.06238329062481671,6238329.062481672
+sector_cap_none,Neutral,Maximum return/risk ratio,8,CBOE.Z,0.010012601690598465,1001260.1690598466
+sector_cap_none,Neutral,Maximum return/risk ratio,8,COST.OQ,0.08277439870678842,8277439.870678842
+sector_cap_none,Neutral,Maximum return/risk ratio,8,GALD.S,0.017094012687429532,1709401.2687429532
+sector_cap_none,Neutral,Maximum return/risk ratio,8,GALE.S,0.10200115106679988,10200115.106679989
+sector_cap_none,Neutral,Maximum return/risk ratio,8,GAW.L,0.010000052944857122,1000005.2944857122
+sector_cap_none,Neutral,Maximum return/risk ratio,8,HLT.N,0.010000478734005308,1000047.8734005308
+sector_cap_none,Neutral,Maximum return/risk ratio,8,KR.N,0.02102770660895135,2102770.6608951353
+sector_cap_none,Neutral,Maximum return/risk ratio,8,LLY.N,0.04777526021084064,4777526.021084064
+sector_cap_none,Neutral,Maximum return/risk ratio,8,LOTB.BR,0.027462419510009165,2746241.9510009163
+sector_cap_none,Neutral,Maximum return/risk ratio,8,LTMC.MI,0.01730780139320411,1730780.139320411
+sector_cap_none,Neutral,Maximum return/risk ratio,8,MOBN.S,0.1012056152526486,10120561.52526486
+sector_cap_none,Neutral,Maximum return/risk ratio,8,NEM.N,0.031229192331688412,3122919.2331688413
+sector_cap_none,Neutral,Maximum return/risk ratio,8,PGR.N,0.05959257645179661,5959257.645179661
+sector_cap_none,Neutral,Maximum return/risk ratio,8,PLUSP.L,0.019383055438644554,1938305.5438644555
+sector_cap_none,Neutral,Maximum return/risk ratio,8,RSG.N,0.035735325461553724,3573532.5461553726
+sector_cap_none,Neutral,Maximum return/risk ratio,8,SBNOR.OL,0.027310359421228798,2731035.94212288
+sector_cap_none,Neutral,Maximum return/risk ratio,8,SDZ.S,0.01882118648204272,1882118.648204272
+sector_cap_none,Neutral,Maximum return/risk ratio,8,TKO.N,0.010000362875432798,1000036.2875432798
+sector_cap_none,Neutral,Maximum return/risk ratio,8,WM.N,0.023108721773028224,2310872.1773028225
+sector_cap_none,Neutral,Maximum return/risk ratio,8,WMT.OQ,0.1291762591930011,12917625.919300111
+sector_cap_none,Neutral,Maximum return/risk ratio,8,ZEG.L,0.010001353196209149,1000135.3196209149
+sector_cap_none,Risk Prone,Highest non-degenerate return,12,AAPL.OQ,0.010000162194720729,1000016.2194720729
+sector_cap_none,Risk Prone,Highest non-degenerate return,12,ABBN.S,0.010000015218927844,1000001.5218927844
+sector_cap_none,Risk Prone,Highest non-degenerate return,12,ACLN.S,0.10478996743876055,10478996.743876055
+sector_cap_none,Risk Prone,Highest non-degenerate return,12,APH.N,0.051301663301594094,5130166.330159409
+sector_cap_none,Risk Prone,Highest non-degenerate return,12,ARGX.BR,0.08846487943244467,8846487.943244467
+sector_cap_none,Risk Prone,Highest non-degenerate return,12,AVGO.OQ,0.010000379071137945,1000037.9071137945
+sector_cap_none,Risk Prone,Highest non-degenerate return,12,BKWB.S,0.010001168587116315,1000116.8587116315
+sector_cap_none,Risk Prone,Highest non-degenerate return,12,CDNS.OQ,0.01000023319701316,1000023.319701316
+sector_cap_none,Risk Prone,Highest non-degenerate return,12,COST.OQ,0.010741890509221346,1074189.0509221347
+sector_cap_none,Risk Prone,Highest non-degenerate return,12,GALD.S,0.010000094461606103,1000009.4461606103
+sector_cap_none,Risk Prone,Highest non-degenerate return,12,GAW.L,0.05001382477363422,5001382.477363422
+sector_cap_none,Risk Prone,Highest non-degenerate return,12,GOOG.OQ,0.010000054617333904,1000005.4617333903
+sector_cap_none,Risk Prone,Highest non-degenerate return,12,IBE.MC,0.04546355607686357,4546355.607686358
+sector_cap_none,Risk Prone,Highest non-degenerate return,12,KOG.OL,0.010000029392499239,1000002.9392499238
+sector_cap_none,Risk Prone,Highest non-degenerate return,12,LLY.N,0.12316552469023408,12316552.469023408
+sector_cap_none,Risk Prone,Highest non-degenerate return,12,LTMC.MI,0.010000884462655475,1000088.4462655474
+sector_cap_none,Risk Prone,Highest non-degenerate return,12,MSFT.OQ,0.05087928967673785,5087928.967673785
+sector_cap_none,Risk Prone,Highest non-degenerate return,12,NEM.N,0.01000634672415104,1000634.672415104
+sector_cap_none,Risk Prone,Highest non-degenerate return,12,NVDA.OQ,0.015305077953494218,1530507.7953494217
+sector_cap_none,Risk Prone,Highest non-degenerate return,12,PGR.N,0.09622832630350579,9622832.630350579
+sector_cap_none,Risk Prone,Highest non-degenerate return,12,PLUSP.L,0.010010463029491328,1001046.3029491329
+sector_cap_none,Risk Prone,Highest non-degenerate return,12,PWR.N,0.06118131631465307,6118131.6314653065
+sector_cap_none,Risk Prone,Highest non-degenerate return,12,RSG.N,0.01000025438319845,1000025.438319845
+sector_cap_none,Risk Prone,Highest non-degenerate return,12,SDZ.S,0.017488291885076102,1748829.1885076102
+sector_cap_none,Risk Prone,Highest non-degenerate return,12,SQN.S,0.010000088846186923,1000008.8846186923
+sector_cap_none,Risk Prone,Highest non-degenerate return,12,TT.N,0.010000106636638384,1000010.6636638384
+sector_cap_none,Risk Prone,Highest non-degenerate return,12,WM.N,0.010000059789601926,1000005.9789601926
+sector_cap_none,Risk Prone,Highest non-degenerate return,12,WMT.OQ,0.11000283129620753,11000283.129620753
+sector_cap_none,Risk Prone,Highest non-degenerate return,12,ZEG.L,0.01495320286041093,1495320.286041093
+sector_cap_none,Risk Prone,Highest non-degenerate return,12,ZURN.S,0.01000001687488344,1000001.687488344
+sector_cap_20,Risk Averse,Minimum variance,0,AD.AS,0.010039017258417562,1003901.7258417562
+sector_cap_20,Risk Averse,Minimum variance,0,ALLN.S,0.06807976102903009,6807976.102903008
+sector_cap_20,Risk Averse,Minimum variance,0,AMZN.OQ,0.010029400043803535,1002940.0043803535
+sector_cap_20,Risk Averse,Minimum variance,0,BCVN.S,0.06802530844826751,6802530.844826751
+sector_cap_20,Risk Averse,Minimum variance,0,BFT.WA,0.01000247064223227,1000247.064223227
+sector_cap_20,Risk Averse,Minimum variance,0,BMY.N,0.018999377008084507,1899937.7008084506
+sector_cap_20,Risk Averse,Minimum variance,0,CBOE.Z,0.01933852218201401,1933852.218201401
+sector_cap_20,Risk Averse,Minimum variance,0,CHRW.OQ,0.020066910217177075,2006691.0217177076
+sector_cap_20,Risk Averse,Minimum variance,0,CLX.N,0.03928117724499355,3928117.7244993546
+sector_cap_20,Risk Averse,Minimum variance,0,CMG.N,0.010029554472717276,1002955.4472717276
+sector_cap_20,Risk Averse,Minimum variance,0,COST.OQ,0.010073135345027788,1007313.5345027788
+sector_cap_20,Risk Averse,Minimum variance,0,CPB.OQ,0.023178297025809605,2317829.7025809605
+sector_cap_20,Risk Averse,Minimum variance,0,DKSH.S,0.015295910947681445,1529591.0947681444
+sector_cap_20,Risk Averse,Minimum variance,0,DPZ.OQ,0.016128279841682764,1612827.9841682764
+sector_cap_20,Risk Averse,Minimum variance,0,GALE.S,0.0683587571247104,6835875.71247104
+sector_cap_20,Risk Averse,Minimum variance,0,GILD.OQ,0.021099711352405428,2109971.1352405427
+sector_cap_20,Risk Averse,Minimum variance,0,GIS.N,0.01841408049767813,1841408.0497678132
+sector_cap_20,Risk Averse,Minimum variance,0,HLN.L,0.012057973415460705,1205797.3415460705
+sector_cap_20,Risk Averse,Minimum variance,0,HLT.N,0.010958919734174002,1095891.9734174001
+sector_cap_20,Risk Averse,Minimum variance,0,HUBN.S,0.011140152345677369,1114015.234567737
+sector_cap_20,Risk Averse,Minimum variance,0,JNJ.N,0.038269591963017074,3826959.1963017075
+sector_cap_20,Risk Averse,Minimum variance,0,KR.N,0.03822754376210114,3822754.376210114
+sector_cap_20,Risk Averse,Minimum variance,0,LMT.N,0.011860035961093156,1186003.5961093155
+sector_cap_20,Risk Averse,Minimum variance,0,MOBN.S,0.09343776348135434,9343776.348135434
+sector_cap_20,Risk Averse,Minimum variance,0,MRK.N,0.010827560036114597,1082756.0036114596
+sector_cap_20,Risk Averse,Minimum variance,0,NEM.N,0.017885431171856012,1788543.1171856013
+sector_cap_20,Risk Averse,Minimum variance,0,NOC.N,0.015453434101035031,1545343.4101035031
+sector_cap_20,Risk Averse,Minimum variance,0,PSPN.S,0.02840556965443641,2840556.965443641
+sector_cap_20,Risk Averse,Minimum variance,0,QIA.DE,0.0197824422320356,1978244.2232035599
+sector_cap_20,Risk Averse,Minimum variance,0,QQ.L,0.010080250948715792,1008025.0948715792
+sector_cap_20,Risk Averse,Minimum variance,0,ROPC.S,0.010600236603809142,1060023.6603809143
+sector_cap_20,Risk Averse,Minimum variance,0,SCMN.S,0.039898121246777725,3989812.1246777726
+sector_cap_20,Risk Averse,Minimum variance,0,SIGNC.S,0.010179523081088061,1017952.3081088061
+sector_cap_20,Risk Averse,Minimum variance,0,SJM.N,0.01885581004815807,1885581.0048158069
+sector_cap_20,Risk Averse,Minimum variance,0,SPSN.S,0.010074737481641182,1007473.7481641182
+sector_cap_20,Risk Averse,Minimum variance,0,VATN.S,0.04351601202756856,4351601.202756856
+sector_cap_20,Risk Averse,Minimum variance,0,VIS.MC,0.010109536304137835,1010953.6304137835
+sector_cap_20,Risk Averse,Minimum variance,0,VZ.N,0.039931048083786044,3993104.8083786042
+sector_cap_20,Risk Averse,Minimum variance,0,VZN.S,0.010078620793538249,1007862.0793538248
+sector_cap_20,Risk Averse,Minimum variance,0,WMT.OQ,0.04193001484069096,4193001.4840690964
+sector_cap_20,Neutral,Maximum return/risk ratio,8,ABBV.N,0.011556428801165643,1155642.8801165642
+sector_cap_20,Neutral,Maximum return/risk ratio,8,ACLN.S,0.03495285554459809,3495285.554459809
+sector_cap_20,Neutral,Maximum return/risk ratio,8,ALLN.S,0.010000204071977747,1000020.4071977747
+sector_cap_20,Neutral,Maximum return/risk ratio,8,APH.N,0.010242987000244076,1024298.7000244076
+sector_cap_20,Neutral,Maximum return/risk ratio,8,ARGX.BR,0.015463244156704664,1546324.4156704664
+sector_cap_20,Neutral,Maximum return/risk ratio,8,BCVN.S,0.0392283786428843,3922837.86428843
+sector_cap_20,Neutral,Maximum return/risk ratio,8,BFT.WA,0.010001004925630115,1000100.4925630115
+sector_cap_20,Neutral,Maximum return/risk ratio,8,BKWB.S,0.06403649631070162,6403649.631070161
+sector_cap_20,Neutral,Maximum return/risk ratio,8,CBOE.Z,0.012913729912923035,1291372.9912923034
+sector_cap_20,Neutral,Maximum return/risk ratio,8,COST.OQ,0.05997758587465234,5997758.587465234
+sector_cap_20,Neutral,Maximum return/risk ratio,8,DPZ.OQ,0.010000732043356308,1000073.2043356309
+sector_cap_20,Neutral,Maximum return/risk ratio,8,GALD.S,0.014280569827073769,1428056.9827073768
+sector_cap_20,Neutral,Maximum return/risk ratio,8,GALE.S,0.09924894724834699,9924894.7248347
+sector_cap_20,Neutral,Maximum return/risk ratio,8,GAW.L,0.010000112095948534,1000011.2095948535
+sector_cap_20,Neutral,Maximum return/risk ratio,8,HLT.N,0.01000941937879357,1000941.937879357
+sector_cap_20,Neutral,Maximum return/risk ratio,8,KR.N,0.01728992942576626,1728992.942576626
+sector_cap_20,Neutral,Maximum return/risk ratio,8,LLY.N,0.04429719296377728,4429719.296377728
+sector_cap_20,Neutral,Maximum return/risk ratio,8,LOTB.BR,0.014467121042324277,1446712.1042324277
+sector_cap_20,Neutral,Maximum return/risk ratio,8,LTMC.MI,0.01764924107135562,1764924.107135562
+sector_cap_20,Neutral,Maximum return/risk ratio,8,MOBN.S,0.12128794447828851,12128794.447828852
+sector_cap_20,Neutral,Maximum return/risk ratio,8,NEM.N,0.033381005535555563,3338100.5535555566
+sector_cap_20,Neutral,Maximum return/risk ratio,8,PGR.N,0.06234344261664874,6234344.261664874
+sector_cap_20,Neutral,Maximum return/risk ratio,8,PLUSP.L,0.019379136190923386,1937913.6190923387
+sector_cap_20,Neutral,Maximum return/risk ratio,8,RSG.N,0.04859209579634816,4859209.579634816
+sector_cap_20,Neutral,Maximum return/risk ratio,8,SBNOR.OL,0.026002274582579702,2600227.4582579704
+sector_cap_20,Neutral,Maximum return/risk ratio,8,SDZ.S,0.015153566473619075,1515356.6473619074
+sector_cap_20,Neutral,Maximum return/risk ratio,8,TKO.N,0.010011134454521422,1001113.4454521422
+sector_cap_20,Neutral,Maximum return/risk ratio,8,WM.N,0.03995701597874822,3995701.597874822
+sector_cap_20,Neutral,Maximum return/risk ratio,8,WMT.OQ,0.10826534395744114,10826534.395744113
+sector_cap_20,Neutral,Maximum return/risk ratio,8,ZEG.L,0.010010859597101887,1001085.9597101888
+sector_cap_20,Risk Prone,Highest non-degenerate return,12,AAPL.OQ,0.01,1000000.0
+sector_cap_20,Risk Prone,Highest non-degenerate return,12,ABBN.S,0.01,1000000.0
+sector_cap_20,Risk Prone,Highest non-degenerate return,12,ACLN.S,0.09408230217692178,9408230.217692178
+sector_cap_20,Risk Prone,Highest non-degenerate return,12,APH.N,0.040862854213818696,4086285.42138187
+sector_cap_20,Risk Prone,Highest non-degenerate return,12,ARGX.BR,0.06672874994595578,6672874.994595578
+sector_cap_20,Risk Prone,Highest non-degenerate return,12,AVGO.OQ,0.01,1000000.0
+sector_cap_20,Risk Prone,Highest non-degenerate return,12,BEAN.S,0.01,1000000.0
+sector_cap_20,Risk Prone,Highest non-degenerate return,12,BKWB.S,0.01798976642650521,1798976.6426505211
+sector_cap_20,Risk Prone,Highest non-degenerate return,12,CDNS.OQ,0.01,1000000.0
+sector_cap_20,Risk Prone,Highest non-degenerate return,12,COST.OQ,0.052879028891575024,5287902.889157502
+sector_cap_20,Risk Prone,Highest non-degenerate return,12,GALD.S,0.01,1000000.0
+sector_cap_20,Risk Prone,Highest non-degenerate return,12,GAW.L,0.045474770733242034,4547477.0733242035
+sector_cap_20,Risk Prone,Highest non-degenerate return,12,IBE.MC,0.06294269382082714,6294269.382082714
+sector_cap_20,Risk Prone,Highest non-degenerate return,12,KOG.OL,0.010000000000000002,1000000.0000000002
+sector_cap_20,Risk Prone,Highest non-degenerate return,12,LLY.N,0.10038477484184735,10038477.484184735
+sector_cap_20,Risk Prone,Highest non-degenerate return,12,LTMC.MI,0.01,1000000.0
+sector_cap_20,Risk Prone,Highest non-degenerate return,12,MSFT.OQ,0.026396756511202622,2639675.651120262
+sector_cap_20,Risk Prone,Highest non-degenerate return,12,NEM.N,0.015186312302617608,1518631.2302617608
+sector_cap_20,Risk Prone,Highest non-degenerate return,12,NVDA.OQ,0.01,1000000.0
+sector_cap_20,Risk Prone,Highest non-degenerate return,12,PGR.N,0.10332774603103914,10332774.603103913
+sector_cap_20,Risk Prone,Highest non-degenerate return,12,PLUSP.L,0.01471374343129633,1471374.343129633
+sector_cap_20,Risk Prone,Highest non-degenerate return,12,PWR.N,0.03973225190803403,3973225.1908034035
+sector_cap_20,Risk Prone,Highest non-degenerate return,12,RSG.N,0.01,1000000.0
+sector_cap_20,Risk Prone,Highest non-degenerate return,12,SDZ.S,0.022886475212196868,2288647.5212196866
+sector_cap_20,Risk Prone,Highest non-degenerate return,12,SQN.S,0.01,1000000.0
+sector_cap_20,Risk Prone,Highest non-degenerate return,12,TT.N,0.01,1000000.0
+sector_cap_20,Risk Prone,Highest non-degenerate return,12,WM.N,0.01,1000000.0
+sector_cap_20,Risk Prone,Highest non-degenerate return,12,WMT.OQ,0.1391269306340098,13912693.06340098
+sector_cap_20,Risk Prone,Highest non-degenerate return,12,ZEG.L,0.01728484291891057,1728484.291891057
+sector_cap_20,Risk Prone,Highest non-degenerate return,12,ZURN.S,0.01,1000000.0
+sector_cap_25,Risk Averse,Minimum variance,0,AD.AS,0.01012014963676487,1012014.963676487
+sector_cap_25,Risk Averse,Minimum variance,0,ALLN.S,0.07649371408886729,7649371.40888673
+sector_cap_25,Risk Averse,Minimum variance,0,BARN.S,0.010072358213965918,1007235.8213965918
+sector_cap_25,Risk Averse,Minimum variance,0,BCVN.S,0.06197627032771968,6197627.032771967
+sector_cap_25,Risk Averse,Minimum variance,0,BMY.N,0.019021733790795182,1902173.3790795181
+sector_cap_25,Risk Averse,Minimum variance,0,CBOE.Z,0.016753196875095182,1675319.6875095181
+sector_cap_25,Risk Averse,Minimum variance,0,CHRW.OQ,0.020085850676143154,2008585.0676143153
+sector_cap_25,Risk Averse,Minimum variance,0,CLX.N,0.04071894173514314,4071894.1735143145
+sector_cap_25,Risk Averse,Minimum variance,0,CMG.N,0.010048669033164235,1004866.9033164235
+sector_cap_25,Risk Averse,Minimum variance,0,COST.OQ,0.015072014624366638,1507201.462436664
+sector_cap_25,Risk Averse,Minimum variance,0,CPB.OQ,0.02468798628766432,2468798.628766432
+sector_cap_25,Risk Averse,Minimum variance,0,DKSH.S,0.0117726767295132,1177267.6729513202
+sector_cap_25,Risk Averse,Minimum variance,0,DPZ.OQ,0.015796188882984903,1579618.8882984903
+sector_cap_25,Risk Averse,Minimum variance,0,GALE.S,0.06422840594245068,6422840.594245068
+sector_cap_25,Risk Averse,Minimum variance,0,GILD.OQ,0.021488411168261213,2148841.116826121
+sector_cap_25,Risk Averse,Minimum variance,0,GIS.N,0.02080329478749151,2080329.4787491509
+sector_cap_25,Risk Averse,Minimum variance,0,HLN.L,0.011286442161605601,1128644.21616056
+sector_cap_25,Risk Averse,Minimum variance,0,HLT.N,0.012427109647985395,1242710.9647985394
+sector_cap_25,Risk Averse,Minimum variance,0,HUBN.S,0.010492051047970678,1049205.1047970678
+sector_cap_25,Risk Averse,Minimum variance,0,JNJ.N,0.03542107008222437,3542107.008222437
+sector_cap_25,Risk Averse,Minimum variance,0,KR.N,0.039458989893122375,3945898.9893122376
+sector_cap_25,Risk Averse,Minimum variance,0,LISP.S,0.010246320791628042,1024632.0791628043
+sector_cap_25,Risk Averse,Minimum variance,0,LMT.N,0.010424735373447836,1042473.5373447837
+sector_cap_25,Risk Averse,Minimum variance,0,LOTB.BR,0.010058114869515961,1005811.4869515961
+sector_cap_25,Risk Averse,Minimum variance,0,MOBN.S,0.09620288796389645,9620288.796389645
+sector_cap_25,Risk Averse,Minimum variance,0,MRK.N,0.010529833156140114,1052983.3156140114
+sector_cap_25,Risk Averse,Minimum variance,0,NEM.N,0.016573161292555965,1657316.1292555965
+sector_cap_25,Risk Averse,Minimum variance,0,NOC.N,0.0131360145813262,1313601.45813262
+sector_cap_25,Risk Averse,Minimum variance,0,ORNBV.HE,0.010006556595667635,1000655.6595667634
+sector_cap_25,Risk Averse,Minimum variance,0,PSPN.S,0.03165693688981943,3165693.688981943
+sector_cap_25,Risk Averse,Minimum variance,0,QIA.DE,0.018516225829422046,1851622.5829422045
+sector_cap_25,Risk Averse,Minimum variance,0,QQ.L,0.010032225777617003,1003222.5777617003
+sector_cap_25,Risk Averse,Minimum variance,0,ROPC.S,0.010080982989900398,1008098.2989900399
+sector_cap_25,Risk Averse,Minimum variance,0,SCMN.S,0.028298674573080964,2829867.4573080963
+sector_cap_25,Risk Averse,Minimum variance,0,SIGNC.S,0.010040026504375604,1004002.6504375604
+sector_cap_25,Risk Averse,Minimum variance,0,SJM.N,0.02138289036874904,2138289.036874904
+sector_cap_25,Risk Averse,Minimum variance,0,SPSN.S,0.010891145919109576,1089114.5919109576
+sector_cap_25,Risk Averse,Minimum variance,0,VATN.S,0.04251344640634632,4251344.640634632
+sector_cap_25,Risk Averse,Minimum variance,0,VZ.N,0.033780233272969036,3378023.327296904
+sector_cap_25,Risk Averse,Minimum variance,0,VZN.S,0.010026620823208782,1002662.0823208783
+sector_cap_25,Risk Averse,Minimum variance,0,WMT.OQ,0.047377440387924165,4737744.038792416
+sector_cap_25,Neutral,Maximum return/risk ratio,8,ABBV.N,0.01525795363006051,1525795.363006051
+sector_cap_25,Neutral,Maximum return/risk ratio,8,ACLN.S,0.033617778643650856,3361777.8643650855
+sector_cap_25,Neutral,Maximum return/risk ratio,8,AD.AS,0.010001563893363655,1000156.3893363655
+sector_cap_25,Neutral,Maximum return/risk ratio,8,APH.N,0.010001704840208238,1000170.4840208238
+sector_cap_25,Neutral,Maximum return/risk ratio,8,ARGX.BR,0.016247573701437094,1624757.3701437095
+sector_cap_25,Neutral,Maximum return/risk ratio,8,BCVN.S,0.02592994706148032,2592994.706148032
+sector_cap_25,Neutral,Maximum return/risk ratio,8,BEAN.S,0.010000030650931467,1000003.0650931466
+sector_cap_25,Neutral,Maximum return/risk ratio,8,BFT.WA,0.010000055257196506,1000005.5257196507
+sector_cap_25,Neutral,Maximum return/risk ratio,8,BKWB.S,0.06273955314904656,6273955.314904655
+sector_cap_25,Neutral,Maximum return/risk ratio,8,CBOE.Z,0.010188922572025715,1018892.2572025715
+sector_cap_25,Neutral,Maximum return/risk ratio,8,COST.OQ,0.07537169522485919,7537169.522485919
+sector_cap_25,Neutral,Maximum return/risk ratio,8,GALD.S,0.017060563727834915,1706056.3727834914
+sector_cap_25,Neutral,Maximum return/risk ratio,8,GALE.S,0.10476981936943902,10476981.936943902
+sector_cap_25,Neutral,Maximum return/risk ratio,8,GAW.L,0.01000005482727101,1000005.482727101
+sector_cap_25,Neutral,Maximum return/risk ratio,8,HLT.N,0.010000629987485793,1000062.9987485793
+sector_cap_25,Neutral,Maximum return/risk ratio,8,KR.N,0.019809761944070955,1980976.1944070954
+sector_cap_25,Neutral,Maximum return/risk ratio,8,LLY.N,0.04843430841243084,4843430.8412430845
+sector_cap_25,Neutral,Maximum return/risk ratio,8,LOTB.BR,0.022750399084702565,2275039.9084702567
+sector_cap_25,Neutral,Maximum return/risk ratio,8,LTMC.MI,0.016920127920155986,1692012.7920155986
+sector_cap_25,Neutral,Maximum return/risk ratio,8,MOBN.S,0.10477214871041948,10477214.871041948
+sector_cap_25,Neutral,Maximum return/risk ratio,8,NEM.N,0.03158084140689262,3158084.140689262
+sector_cap_25,Neutral,Maximum return/risk ratio,8,PGR.N,0.06037429114067944,6037429.114067944
+sector_cap_25,Neutral,Maximum return/risk ratio,8,PLUSP.L,0.019443984188094014,1944398.4188094013
+sector_cap_25,Neutral,Maximum return/risk ratio,8,RSG.N,0.03906581941879294,3906581.941879294
+sector_cap_25,Neutral,Maximum return/risk ratio,8,SBNOR.OL,0.02830666843227386,2830666.843227386
+sector_cap_25,Neutral,Maximum return/risk ratio,8,SDZ.S,0.01831412617756429,1831412.617756429
+sector_cap_25,Neutral,Maximum return/risk ratio,8,TKO.N,0.010001873346580427,1000187.3346580428
+sector_cap_25,Neutral,Maximum return/risk ratio,8,WM.N,0.026970118900471133,2697011.8900471134
+sector_cap_25,Neutral,Maximum return/risk ratio,8,WMT.OQ,0.12206655048591444,12206655.048591444
+sector_cap_25,Neutral,Maximum return/risk ratio,8,ZEG.L,0.010001133894665924,1000113.3894665923
+sector_cap_25,Risk Prone,Highest non-degenerate return,11,AAPL.OQ,0.010001065702336075,1000106.5702336074
+sector_cap_25,Risk Prone,Highest non-degenerate return,11,ABBN.S,0.010001176877089301,1000117.6877089301
+sector_cap_25,Risk Prone,Highest non-degenerate return,11,ACLN.S,0.07411406426331964,7411406.426331963
+sector_cap_25,Risk Prone,Highest non-degenerate return,11,APH.N,0.027973792528201903,2797379.2528201905
+sector_cap_25,Risk Prone,Highest non-degenerate return,11,ARGX.BR,0.05155650262104596,5155650.262104596
+sector_cap_25,Risk Prone,Highest non-degenerate return,11,AVGO.OQ,0.01000090681648653,1000090.681648653
+sector_cap_25,Risk Prone,Highest non-degenerate return,11,BEAN.S,0.010002465883650684,1000246.5883650684
+sector_cap_25,Risk Prone,Highest non-degenerate return,11,BKWB.S,0.054405089262070855,5440508.926207085
+sector_cap_25,Risk Prone,Highest non-degenerate return,11,CDNS.OQ,0.010000708792105096,1000070.8792105096
+sector_cap_25,Risk Prone,Highest non-degenerate return,11,COST.OQ,0.0809538045873556,8095380.45873556
+sector_cap_25,Risk Prone,Highest non-degenerate return,11,GALD.S,0.010162513284214065,1016251.3284214066
+sector_cap_25,Risk Prone,Highest non-degenerate return,11,GALE.S,0.010104657138306649,1010465.7138306649
+sector_cap_25,Risk Prone,Highest non-degenerate return,11,GAW.L,0.03185787324813673,3185787.324813673
+sector_cap_25,Risk Prone,Highest non-degenerate return,11,IBE.MC,0.05888235887747087,5888235.887747087
+sector_cap_25,Risk Prone,Highest non-degenerate return,11,KOG.OL,0.010000597460432609,1000059.7460432609
+sector_cap_25,Risk Prone,Highest non-degenerate return,11,LLY.N,0.08882410958527671,8882410.958527671
+sector_cap_25,Risk Prone,Highest non-degenerate return,11,LTMC.MI,0.020937316299031637,2093731.6299031638
+sector_cap_25,Risk Prone,Highest non-degenerate return,11,MSFT.OQ,0.011128264475546499,1112826.4475546498
+sector_cap_25,Risk Prone,Highest non-degenerate return,11,NEM.N,0.02857477801939684,2857477.801939684
+sector_cap_25,Risk Prone,Highest non-degenerate return,11,PGR.N,0.09550500507753243,9550500.507753244
+sector_cap_25,Risk Prone,Highest non-degenerate return,11,PLUSP.L,0.020258766623923338,2025876.6623923338
+sector_cap_25,Risk Prone,Highest non-degenerate return,11,PWR.N,0.02089746861126679,2089746.861126679
+sector_cap_25,Risk Prone,Highest non-degenerate return,11,RSG.N,0.010386209465909183,1038620.9465909183
+sector_cap_25,Risk Prone,Highest non-degenerate return,11,SDZ.S,0.03513317323484438,3513317.3234844375
+sector_cap_25,Risk Prone,Highest non-degenerate return,11,SQN.S,0.010000913174912925,1000091.3174912925
+sector_cap_25,Risk Prone,Highest non-degenerate return,11,TT.N,0.010000647611766963,1000064.7611766963
+sector_cap_25,Risk Prone,Highest non-degenerate return,11,WM.N,0.010004281368592195,1000428.1368592195
+sector_cap_25,Risk Prone,Highest non-degenerate return,11,WMT.OQ,0.15233602626843398,15233602.626843398
+sector_cap_25,Risk Prone,Highest non-degenerate return,11,ZEG.L,0.015992354492369777,1599235.4492369776
+sector_cap_25,Risk Prone,Highest non-degenerate return,11,ZURN.S,0.01000310834897396,1000310.8348973959
+esg_unconstrained,Risk Averse,Minimum variance,0,AD.AS,0.010003643283246438,1000364.3283246438
+esg_unconstrained,Risk Averse,Minimum variance,0,ALLN.S,0.10047417822012956,10047417.822012957
+esg_unconstrained,Risk Averse,Minimum variance,0,BARN.S,0.010562496681866408,1056249.6681866408
+esg_unconstrained,Risk Averse,Minimum variance,0,BCVN.S,0.058337035670051725,5833703.567005172
+esg_unconstrained,Risk Averse,Minimum variance,0,BMY.N,0.019703050770793516,1970305.0770793515
+esg_unconstrained,Risk Averse,Minimum variance,0,CBOE.Z,0.017151746828470954,1715174.6828470954
+esg_unconstrained,Risk Averse,Minimum variance,0,CHD.N,0.012726636348823895,1272663.6348823896
+esg_unconstrained,Risk Averse,Minimum variance,0,CHRW.OQ,0.02669505655884178,2669505.655884178
+esg_unconstrained,Risk Averse,Minimum variance,0,CLX.N,0.03987137529662077,3987137.529662077
+esg_unconstrained,Risk Averse,Minimum variance,0,COST.OQ,0.02058310651613719,2058310.6516137188
+esg_unconstrained,Risk Averse,Minimum variance,0,CPB.OQ,0.029419785785723587,2941978.578572359
+esg_unconstrained,Risk Averse,Minimum variance,0,DPZ.OQ,0.020366223190619717,2036622.3190619717
+esg_unconstrained,Risk Averse,Minimum variance,0,GALE.S,0.06509502270817358,6509502.270817358
+esg_unconstrained,Risk Averse,Minimum variance,0,GILD.OQ,0.01667461200903577,1667461.200903577
+esg_unconstrained,Risk Averse,Minimum variance,0,GIS.N,0.020608004414559865,2060800.4414559866
+esg_unconstrained,Risk Averse,Minimum variance,0,HLN.L,0.01452282441082188,1452282.441082188
+esg_unconstrained,Risk Averse,Minimum variance,0,HLT.N,0.011267361646141531,1126736.164614153
+esg_unconstrained,Risk Averse,Minimum variance,0,HRL.N,0.015874067402073175,1587406.7402073175
+esg_unconstrained,Risk Averse,Minimum variance,0,HUBN.S,0.013753249138687716,1375324.9138687716
+esg_unconstrained,Risk Averse,Minimum variance,0,JNJ.N,0.013670952012626261,1367095.201262626
+esg_unconstrained,Risk Averse,Minimum variance,0,KR.N,0.03953814625152202,3953814.6251522023
+esg_unconstrained,Risk Averse,Minimum variance,0,LISP.S,0.012158102588265633,1215810.2588265634
+esg_unconstrained,Risk Averse,Minimum variance,0,LOTB.BR,0.013743234446909102,1374323.4446909102
+esg_unconstrained,Risk Averse,Minimum variance,0,MOBN.S,0.07772655751048486,7772655.751048487
+esg_unconstrained,Risk Averse,Minimum variance,0,MRK.N,0.010000403577700451,1000040.3577700452
+esg_unconstrained,Risk Averse,Minimum variance,0,NEM.N,0.013514725953368105,1351472.5953368105
+esg_unconstrained,Risk Averse,Minimum variance,0,NOC.N,0.012592969630668105,1259296.9630668105
+esg_unconstrained,Risk Averse,Minimum variance,0,PSPN.S,0.03571014885562388,3571014.885562388
+esg_unconstrained,Risk Averse,Minimum variance,0,QIA.DE,0.017099441059090743,1709944.1059090742
+esg_unconstrained,Risk Averse,Minimum variance,0,QQ.L,0.010007173222742069,1000717.3222742069
+esg_unconstrained,Risk Averse,Minimum variance,0,SBNOR.OL,0.015831745789661976,1583174.5789661976
+esg_unconstrained,Risk Averse,Minimum variance,0,SCMN.S,0.02277653918564955,2277653.918564955
+esg_unconstrained,Risk Averse,Minimum variance,0,SJM.N,0.02635550540645945,2635550.540645945
+esg_unconstrained,Risk Averse,Minimum variance,0,SPSN.S,0.010441394931028023,1044139.4931028023
+esg_unconstrained,Risk Averse,Minimum variance,0,VATN.S,0.05617181396230147,5617181.396230147
+esg_unconstrained,Risk Averse,Minimum variance,0,VZ.N,0.02830038522910319,2830038.522910319
+esg_unconstrained,Risk Averse,Minimum variance,0,VZN.S,0.01211575352103747,1211575.352103747
+esg_unconstrained,Risk Averse,Minimum variance,0,WMT.OQ,0.048555529984938436,4855552.998493844
+esg_unconstrained,Neutral,Maximum return/risk ratio,8,ABBV.N,0.012859521882801187,1285952.1882801186
+esg_unconstrained,Neutral,Maximum return/risk ratio,8,ACLN.S,0.04109890406912186,4109890.406912186
+esg_unconstrained,Neutral,Maximum return/risk ratio,8,ALLN.S,0.034026967962111014,3402696.7962111016
+esg_unconstrained,Neutral,Maximum return/risk ratio,8,ARGX.BR,0.014663570061564768,1466357.0061564767
+esg_unconstrained,Neutral,Maximum return/risk ratio,8,BCVN.S,0.010318538425162673,1031853.8425162673
+esg_unconstrained,Neutral,Maximum return/risk ratio,8,BFT.WA,0.010004825059721393,1000482.5059721393
+esg_unconstrained,Neutral,Maximum return/risk ratio,8,BKWB.S,0.07284721329716054,7284721.329716054
+esg_unconstrained,Neutral,Maximum return/risk ratio,8,CBOE.Z,0.011207590539340267,1120759.0539340267
+esg_unconstrained,Neutral,Maximum return/risk ratio,8,CHRW.OQ,0.010908004624873211,1090800.462487321
+esg_unconstrained,Neutral,Maximum return/risk ratio,8,COST.OQ,0.0828194800026454,8281948.00026454
+esg_unconstrained,Neutral,Maximum return/risk ratio,8,DPZ.OQ,0.010306728080906977,1030672.8080906976
+esg_unconstrained,Neutral,Maximum return/risk ratio,8,GALD.S,0.0187485860754227,1874858.60754227
+esg_unconstrained,Neutral,Maximum return/risk ratio,8,GALE.S,0.09653850988369247,9653850.988369247
+esg_unconstrained,Neutral,Maximum return/risk ratio,8,GAW.L,0.014957786770231286,1495778.6770231286
+esg_unconstrained,Neutral,Maximum return/risk ratio,8,KR.N,0.015323769003044486,1532376.9003044486
+esg_unconstrained,Neutral,Maximum return/risk ratio,8,LLY.N,0.05437861074078799,5437861.074078798
+esg_unconstrained,Neutral,Maximum return/risk ratio,8,LOTB.BR,0.026332383784758294,2633238.3784758295
+esg_unconstrained,Neutral,Maximum return/risk ratio,8,LTMC.MI,0.022533421494698218,2253342.1494698217
+esg_unconstrained,Neutral,Maximum return/risk ratio,8,MOBN.S,0.05922092599980535,5922092.599980535
+esg_unconstrained,Neutral,Maximum return/risk ratio,8,NEM.N,0.025272708108294146,2527270.8108294145
+esg_unconstrained,Neutral,Maximum return/risk ratio,8,PGR.N,0.06642355945666983,6642355.945666984
+esg_unconstrained,Neutral,Maximum return/risk ratio,8,PLUSP.L,0.02169139446081907,2169139.446081907
+esg_unconstrained,Neutral,Maximum return/risk ratio,8,RILBA.CO,0.013065546572571491,1306554.657257149
+esg_unconstrained,Neutral,Maximum return/risk ratio,8,RSG.N,0.029814662800532153,2981466.280053215
+esg_unconstrained,Neutral,Maximum return/risk ratio,8,SBNOR.OL,0.05384376151811732,5384376.151811732
+esg_unconstrained,Neutral,Maximum return/risk ratio,8,SDZ.S,0.012885529075032499,1288552.9075032498
+esg_unconstrained,Neutral,Maximum return/risk ratio,8,TKO.N,0.011930466248581502,1193046.6248581503
+esg_unconstrained,Neutral,Maximum return/risk ratio,8,WM.N,0.011219383494039527,1121938.3494039527
+esg_unconstrained,Neutral,Maximum return/risk ratio,8,WMT.OQ,0.1247221958083219,12472219.58083219
+esg_unconstrained,Neutral,Maximum return/risk ratio,8,ZEG.L,0.010035454699170557,1003545.4699170558
+esg_unconstrained,Risk Prone,Highest non-degenerate return,11,AAPL.OQ,0.010000047857296341,1000004.7857296341
+esg_unconstrained,Risk Prone,Highest non-degenerate return,11,ACLN.S,0.09651344681115248,9651344.681115247
+esg_unconstrained,Risk Prone,Highest non-degenerate return,11,AJG.N,0.01000008881579244,1000008.8815792439
+esg_unconstrained,Risk Prone,Highest non-degenerate return,11,APH.N,0.010000388784417249,1000038.8784417249
+esg_unconstrained,Risk Prone,Highest non-degenerate return,11,ARGX.BR,0.03941300424513107,3941300.424513107
+esg_unconstrained,Risk Prone,Highest non-degenerate return,11,AVGO.OQ,0.010000023478178854,1000002.3478178855
+esg_unconstrained,Risk Prone,Highest non-degenerate return,11,BEAN.S,0.010000494239157356,1000049.4239157356
+esg_unconstrained,Risk Prone,Highest non-degenerate return,11,BKWB.S,0.09089702005829978,9089702.005829977
+esg_unconstrained,Risk Prone,Highest non-degenerate return,11,COST.OQ,0.0647926746562152,6479267.46562152
+esg_unconstrained,Risk Prone,Highest non-degenerate return,11,GALD.S,0.01084219863363541,1084219.863363541
+esg_unconstrained,Risk Prone,Highest non-degenerate return,11,GALE.S,0.01000287182150048,1000287.1821500481
+esg_unconstrained,Risk Prone,Highest non-degenerate return,11,GAW.L,0.06264548457712006,6264548.457712006
+esg_unconstrained,Risk Prone,Highest non-degenerate return,11,IBE.MC,0.01000024106074059,1000024.1060740589
+esg_unconstrained,Risk Prone,Highest non-degenerate return,11,LLY.N,0.10183239944370506,10183239.944370506
+esg_unconstrained,Risk Prone,Highest non-degenerate return,11,LOTB.BR,0.01000017806965891,1000017.806965891
+esg_unconstrained,Risk Prone,Highest non-degenerate return,11,LTMC.MI,0.04174370016013727,4174370.0160137275
+esg_unconstrained,Risk Prone,Highest non-degenerate return,11,NEM.N,0.010020390524450164,1002039.0524450165
+esg_unconstrained,Risk Prone,Highest non-degenerate return,11,NVDA.OQ,0.01000001327214046,1000001.327214046
+esg_unconstrained,Risk Prone,Highest non-degenerate return,11,PGR.N,0.10302496077450937,10302496.077450937
+esg_unconstrained,Risk Prone,Highest non-degenerate return,11,PLUSP.L,0.027091271820011153,2709127.1820011153
+esg_unconstrained,Risk Prone,Highest non-degenerate return,11,PWR.N,0.010000426652126401,1000042.6652126401
+esg_unconstrained,Risk Prone,Highest non-degenerate return,11,RILBA.CO,0.010000142705517742,1000014.2705517742
+esg_unconstrained,Risk Prone,Highest non-degenerate return,11,RSG.N,0.010000524716361382,1000052.4716361382
+esg_unconstrained,Risk Prone,Highest non-degenerate return,11,SBNOR.OL,0.053078452133309244,5307845.2133309245
+esg_unconstrained,Risk Prone,Highest non-degenerate return,11,SDZ.S,0.010327963191065473,1032796.3191065473
+esg_unconstrained,Risk Prone,Highest non-degenerate return,11,SQN.S,0.010000045212129723,1000004.5212129722
+esg_unconstrained,Risk Prone,Highest non-degenerate return,11,TKO.N,0.010006641527081195,1000664.1527081195
+esg_unconstrained,Risk Prone,Highest non-degenerate return,11,TT.N,0.010000031504389655,1000003.1504389654
+esg_unconstrained,Risk Prone,Highest non-degenerate return,11,WMT.OQ,0.12324249306612481,12324249.30661248
+esg_unconstrained,Risk Prone,Highest non-degenerate return,11,ZEG.L,0.014522380188644601,1452238.01886446
+esg_min_50,Risk Averse,Minimum variance,0,AD.AS,0.010062965078676081,1006296.5078676081
+esg_min_50,Risk Averse,Minimum variance,0,ALLN.S,0.10031532738373135,10031532.738373134
+esg_min_50,Risk Averse,Minimum variance,0,BARN.S,0.010686783412250092,1068678.3412250092
+esg_min_50,Risk Averse,Minimum variance,0,BCVN.S,0.05861219627850954,5861219.627850954
+esg_min_50,Risk Averse,Minimum variance,0,BMY.N,0.02094752223391967,2094752.2233919671
+esg_min_50,Risk Averse,Minimum variance,0,CBOE.Z,0.017865298647921343,1786529.8647921344
+esg_min_50,Risk Averse,Minimum variance,0,CHD.N,0.012903444492205129,1290344.449220513
+esg_min_50,Risk Averse,Minimum variance,0,CHRW.OQ,0.026895425392076715,2689542.539207672
+esg_min_50,Risk Averse,Minimum variance,0,CLX.N,0.039907012875369394,3990701.287536939
+esg_min_50,Risk Averse,Minimum variance,0,COST.OQ,0.020292595263142237,2029259.5263142237
+esg_min_50,Risk Averse,Minimum variance,0,CPB.OQ,0.029636770839845894,2963677.083984589
+esg_min_50,Risk Averse,Minimum variance,0,DPZ.OQ,0.020651976603346743,2065197.6603346744
+esg_min_50,Risk Averse,Minimum variance,0,GALE.S,0.06556397336501152,6556397.336501152
+esg_min_50,Risk Averse,Minimum variance,0,GILD.OQ,0.017791261216404237,1779126.1216404238
+esg_min_50,Risk Averse,Minimum variance,0,GIS.N,0.02091571416029334,2091571.416029334
+esg_min_50,Risk Averse,Minimum variance,0,HLN.L,0.014972546801498747,1497254.6801498746
+esg_min_50,Risk Averse,Minimum variance,0,HLT.N,0.011933339106623718,1193333.910662372
+esg_min_50,Risk Averse,Minimum variance,0,HRL.N,0.016028066652151292,1602806.6652151293
+esg_min_50,Risk Averse,Minimum variance,0,HUBN.S,0.01366872232066705,1366872.232066705
+esg_min_50,Risk Averse,Minimum variance,0,JNJ.N,0.01591198704661201,1591198.7046612008
+esg_min_50,Risk Averse,Minimum variance,0,KR.N,0.039508125876831,3950812.5876831003
+esg_min_50,Risk Averse,Minimum variance,0,LISP.S,0.011811225239351023,1181122.5239351024
+esg_min_50,Risk Averse,Minimum variance,0,LOTB.BR,0.01350195841584447,1350195.841584447
+esg_min_50,Risk Averse,Minimum variance,0,MOBN.S,0.07750394150479954,7750394.150479955
+esg_min_50,Risk Averse,Minimum variance,0,NEM.N,0.013639111912720894,1363911.1912720895
+esg_min_50,Risk Averse,Minimum variance,0,NOC.N,0.01335605327965309,1335605.3279653091
+esg_min_50,Risk Averse,Minimum variance,0,PSPN.S,0.03554574288021637,3554574.288021637
+esg_min_50,Risk Averse,Minimum variance,0,QIA.DE,0.017542356307084023,1754235.6307084023
+esg_min_50,Risk Averse,Minimum variance,0,QQ.L,0.01012250383132718,1012250.383132718
+esg_min_50,Risk Averse,Minimum variance,0,SBNOR.OL,0.015588806145625713,1558880.6145625713
+esg_min_50,Risk Averse,Minimum variance,0,SCMN.S,0.02309653153014065,2309653.153014065
+esg_min_50,Risk Averse,Minimum variance,0,SJM.N,0.026467611120906374,2646761.1120906374
+esg_min_50,Risk Averse,Minimum variance,0,SPSN.S,0.01086903743466913,1086903.743466913
+esg_min_50,Risk Averse,Minimum variance,0,VATN.S,0.05623853924062157,5623853.924062157
+esg_min_50,Risk Averse,Minimum variance,0,VZ.N,0.029269690700907753,2926969.0700907754
+esg_min_50,Risk Averse,Minimum variance,0,VZN.S,0.012102320874594386,1210232.0874594387
+esg_min_50,Risk Averse,Minimum variance,0,WMT.OQ,0.04827351453445082,4827351.453445082
+esg_min_50,Neutral,Maximum return/risk ratio,8,ABBV.N,0.01300814315454936,1300814.315454936
+esg_min_50,Neutral,Maximum return/risk ratio,8,ACLN.S,0.04077483311423813,4077483.311423813
+esg_min_50,Neutral,Maximum return/risk ratio,8,ALLN.S,0.03506793512167798,3506793.5121677984
+esg_min_50,Neutral,Maximum return/risk ratio,8,ARGX.BR,0.014541991360541727,1454199.1360541726
+esg_min_50,Neutral,Maximum return/risk ratio,8,BCVN.S,0.010592851071908726,1059285.1071908725
+esg_min_50,Neutral,Maximum return/risk ratio,8,BFT.WA,0.010007004731698053,1000700.4731698052
+esg_min_50,Neutral,Maximum return/risk ratio,8,BKWB.S,0.07252606973642166,7252606.973642166
+esg_min_50,Neutral,Maximum return/risk ratio,8,CBOE.Z,0.0109917177823433,1099171.77823433
+esg_min_50,Neutral,Maximum return/risk ratio,8,CHRW.OQ,0.010914866949927847,1091486.6949927846
+esg_min_50,Neutral,Maximum return/risk ratio,8,COST.OQ,0.08274557115829258,8274557.115829257
+esg_min_50,Neutral,Maximum return/risk ratio,8,DPZ.OQ,0.0102999250258681,1029992.50258681
+esg_min_50,Neutral,Maximum return/risk ratio,8,GALD.S,0.018689016633916426,1868901.6633916425
+esg_min_50,Neutral,Maximum return/risk ratio,8,GALE.S,0.09664141307252999,9664141.307253
+esg_min_50,Neutral,Maximum return/risk ratio,8,GAW.L,0.014715318131068671,1471531.813106867
+esg_min_50,Neutral,Maximum return/risk ratio,8,KR.N,0.015771198027908963,1577119.8027908963
+esg_min_50,Neutral,Maximum return/risk ratio,8,LLY.N,0.05418309113287245,5418309.113287245
+esg_min_50,Neutral,Maximum return/risk ratio,8,LOTB.BR,0.02639472790315012,2639472.790315012
+esg_min_50,Neutral,Maximum return/risk ratio,8,LTMC.MI,0.022341607504937983,2234160.7504937984
+esg_min_50,Neutral,Maximum return/risk ratio,8,MOBN.S,0.05977543450410923,5977543.450410923
+esg_min_50,Neutral,Maximum return/risk ratio,8,NEM.N,0.025266923506518595,2526692.3506518593
+esg_min_50,Neutral,Maximum return/risk ratio,8,PGR.N,0.0662513391261346,6625133.91261346
+esg_min_50,Neutral,Maximum return/risk ratio,8,PLUSP.L,0.0216173758792719,2161737.58792719
+esg_min_50,Neutral,Maximum return/risk ratio,8,RILBA.CO,0.013093005152615167,1309300.5152615167
+esg_min_50,Neutral,Maximum return/risk ratio,8,RSG.N,0.03005272221863209,3005272.221863209
+esg_min_50,Neutral,Maximum return/risk ratio,8,SBNOR.OL,0.05369821523696854,5369821.523696855
+esg_min_50,Neutral,Maximum return/risk ratio,8,SDZ.S,0.012831271136843438,1283127.1136843439
+esg_min_50,Neutral,Maximum return/risk ratio,8,TKO.N,0.011842369811565405,1184236.9811565406
+esg_min_50,Neutral,Maximum return/risk ratio,8,WM.N,0.010744745849784645,1074474.5849784645
+esg_min_50,Neutral,Maximum return/risk ratio,8,WMT.OQ,0.1245850633720792,12458506.337207919
+esg_min_50,Neutral,Maximum return/risk ratio,8,ZEG.L,0.010034252591625183,1003425.2591625183
+esg_min_50,Risk Prone,Highest non-degenerate return,10,AAPL.OQ,0.01000001468320432,1000001.4683204319
+esg_min_50,Risk Prone,Highest non-degenerate return,10,ABBV.N,0.010000044100381899,1000004.4100381898
+esg_min_50,Risk Prone,Highest non-degenerate return,10,ACLN.S,0.0723343245314461,7233432.45314461
+esg_min_50,Risk Prone,Highest non-degenerate return,10,AJG.N,0.0100000181627319,1000001.8162731901
+esg_min_50,Risk Prone,Highest non-degenerate return,10,APH.N,0.010001362703312847,1000136.2703312847
+esg_min_50,Risk Prone,Highest non-degenerate return,10,ARGX.BR,0.0268022669788701,2680226.69788701
+esg_min_50,Risk Prone,Highest non-degenerate return,10,BEAN.S,0.010000473933548583,1000047.3933548583
+esg_min_50,Risk Prone,Highest non-degenerate return,10,BKWB.S,0.09252215962538674,9252215.962538673
+esg_min_50,Risk Prone,Highest non-degenerate return,10,COST.OQ,0.0821431782702172,8214317.827021719
+esg_min_50,Risk Prone,Highest non-degenerate return,10,GALD.S,0.01976471051372553,1976471.0513725528
+esg_min_50,Risk Prone,Highest non-degenerate return,10,GALE.S,0.05758347233940743,5758347.233940743
+esg_min_50,Risk Prone,Highest non-degenerate return,10,GAW.L,0.03912364176290888,3912364.1762908883
+esg_min_50,Risk Prone,Highest non-degenerate return,10,IBE.MC,0.010000015262367884,1000001.5262367884
+esg_min_50,Risk Prone,Highest non-degenerate return,10,KDP.OQ,0.010000003482120021,1000000.3482120021
+esg_min_50,Risk Prone,Highest non-degenerate return,10,LLY.N,0.07865127973702761,7865127.973702761
+esg_min_50,Risk Prone,Highest non-degenerate return,10,LOTB.BR,0.010013302006435394,1001330.2006435394
+esg_min_50,Risk Prone,Highest non-degenerate return,10,LTMC.MI,0.03693112376480953,3693112.3764809533
+esg_min_50,Risk Prone,Highest non-degenerate return,10,MOBN.S,0.010000036681828972,1000003.6681828973
+esg_min_50,Risk Prone,Highest non-degenerate return,10,NEM.N,0.020816260544554193,2081626.0544554193
+esg_min_50,Risk Prone,Highest non-degenerate return,10,PGR.N,0.0883003083084486,8830030.830844859
+esg_min_50,Risk Prone,Highest non-degenerate return,10,PLUSP.L,0.027202219292157267,2720221.929215727
+esg_min_50,Risk Prone,Highest non-degenerate return,10,PWR.N,0.010000324705920082,1000032.4705920082
+esg_min_50,Risk Prone,Highest non-degenerate return,10,RILBA.CO,0.010000132285807786,1000013.2285807786
+esg_min_50,Risk Prone,Highest non-degenerate return,10,RSG.N,0.010021542675033976,1002154.2675033977
+esg_min_50,Risk Prone,Highest non-degenerate return,10,SBNOR.OL,0.058324662885541056,5832466.288554106
+esg_min_50,Risk Prone,Highest non-degenerate return,10,SDZ.S,0.016095778630063402,1609577.8630063403
+esg_min_50,Risk Prone,Highest non-degenerate return,10,TKO.N,0.01079285846559428,1079285.8465594281
+esg_min_50,Risk Prone,Highest non-degenerate return,10,WM.N,0.010000025523584324,1000002.5523584324
+esg_min_50,Risk Prone,Highest non-degenerate return,10,WMT.OQ,0.13084030458342108,13084030.458342109
+esg_min_50,Risk Prone,Highest non-degenerate return,10,ZEG.L,0.011734153560143226,1173415.3560143225
+esg_min_60,Risk Averse,Minimum variance,0,AD.AS,0.01008947181617985,1008947.181617985
+esg_min_60,Risk Averse,Minimum variance,0,ALLN.S,0.09993523361113073,9993523.361113073
+esg_min_60,Risk Averse,Minimum variance,0,BARN.S,0.010850337984757413,1085033.7984757412
+esg_min_60,Risk Averse,Minimum variance,0,BCVN.S,0.05832259744517133,5832259.744517133
+esg_min_60,Risk Averse,Minimum variance,0,BMY.N,0.020546015017517686,2054601.5017517686
+esg_min_60,Risk Averse,Minimum variance,0,CBOE.Z,0.016481477161140522,1648147.7161140523
+esg_min_60,Risk Averse,Minimum variance,0,CHD.N,0.012738536681471953,1273853.6681471954
+esg_min_60,Risk Averse,Minimum variance,0,CHRW.OQ,0.025968005555083978,2596800.555508398
+esg_min_60,Risk Averse,Minimum variance,0,CLX.N,0.039896090136263135,3989609.0136263133
+esg_min_60,Risk Averse,Minimum variance,0,CMG.N,0.010049048179909576,1004904.8179909576
+esg_min_60,Risk Averse,Minimum variance,0,COST.OQ,0.01803261245502277,1803261.245502277
+esg_min_60,Risk Averse,Minimum variance,0,CPB.OQ,0.03019609616159103,3019609.616159103
+esg_min_60,Risk Averse,Minimum variance,0,DPZ.OQ,0.019042372837507152,1904237.2837507152
+esg_min_60,Risk Averse,Minimum variance,0,GALE.S,0.06514594660328873,6514594.660328873
+esg_min_60,Risk Averse,Minimum variance,0,GILD.OQ,0.017467927543973343,1746792.7543973343
+esg_min_60,Risk Averse,Minimum variance,0,GIS.N,0.021877517796807567,2187751.779680757
+esg_min_60,Risk Averse,Minimum variance,0,HLN.L,0.01494814115893544,1494814.115893544
+esg_min_60,Risk Averse,Minimum variance,0,HLT.N,0.010416467265147994,1041646.7265147994
+esg_min_60,Risk Averse,Minimum variance,0,HRL.N,0.016471900261973527,1647190.0261973527
+esg_min_60,Risk Averse,Minimum variance,0,HUBN.S,0.01341111668409148,1341111.668409148
+esg_min_60,Risk Averse,Minimum variance,0,JNJ.N,0.015724375070056598,1572437.5070056599
+esg_min_60,Risk Averse,Minimum variance,0,KR.N,0.03959923616434454,3959923.616434454
+esg_min_60,Risk Averse,Minimum variance,0,LISP.S,0.011667196938490804,1166719.6938490805
+esg_min_60,Risk Averse,Minimum variance,0,LOTB.BR,0.013648309547781292,1364830.9547781292
+esg_min_60,Risk Averse,Minimum variance,0,MOBN.S,0.07697052338485084,7697052.3384850845
+esg_min_60,Risk Averse,Minimum variance,0,NEM.N,0.013287619752840492,1328761.9752840493
+esg_min_60,Risk Averse,Minimum variance,0,NOC.N,0.012977196886262875,1297719.6886262875
+esg_min_60,Risk Averse,Minimum variance,0,PSPN.S,0.03452736525105739,3452736.5251057385
+esg_min_60,Risk Averse,Minimum variance,0,QIA.DE,0.016944521004665713,1694452.1004665713
+esg_min_60,Risk Averse,Minimum variance,0,QQ.L,0.010106608336885972,1010660.8336885972
+esg_min_60,Risk Averse,Minimum variance,0,SBNOR.OL,0.015608679352933797,1560867.9352933797
+esg_min_60,Risk Averse,Minimum variance,0,SCMN.S,0.024150877818244144,2415087.781824414
+esg_min_60,Risk Averse,Minimum variance,0,SJM.N,0.02734980357184326,2734980.357184326
+esg_min_60,Risk Averse,Minimum variance,0,SPSN.S,0.010876771913727353,1087677.1913727352
+esg_min_60,Risk Averse,Minimum variance,0,VATN.S,0.056291178195326835,5629117.819532683
+esg_min_60,Risk Averse,Minimum variance,0,VZ.N,0.02920889879189018,2920889.8791890177
+esg_min_60,Risk Averse,Minimum variance,0,VZN.S,0.011598620468635404,1159862.0468635403
+esg_min_60,Risk Averse,Minimum variance,0,WMT.OQ,0.04757530519319735,4757530.5193197355
+esg_min_60,Neutral,Maximum return/risk ratio,8,ABBV.N,0.013230575882257371,1323057.588225737
+esg_min_60,Neutral,Maximum return/risk ratio,8,ACLN.S,0.04023663366742071,4023663.3667420708
+esg_min_60,Neutral,Maximum return/risk ratio,8,ALLN.S,0.037237440233747934,3723744.0233747936
+esg_min_60,Neutral,Maximum return/risk ratio,8,ARGX.BR,0.014336219856348045,1433621.9856348045
+esg_min_60,Neutral,Maximum return/risk ratio,8,BCVN.S,0.010223916343169555,1022391.6343169555
+esg_min_60,Neutral,Maximum return/risk ratio,8,BFT.WA,0.010000117702200188,1000011.7702200188
+esg_min_60,Neutral,Maximum return/risk ratio,8,BKWB.S,0.0719693911030229,7196939.11030229
+esg_min_60,Neutral,Maximum return/risk ratio,8,CBOE.Z,0.010908746302835498,1090874.63028355
+esg_min_60,Neutral,Maximum return/risk ratio,8,CHRW.OQ,0.010708079752371539,1070807.975237154
+esg_min_60,Neutral,Maximum return/risk ratio,8,COST.OQ,0.08265232040633028,8265232.040633027
+esg_min_60,Neutral,Maximum return/risk ratio,8,DPZ.OQ,0.010044559506500293,1004455.9506500292
+esg_min_60,Neutral,Maximum return/risk ratio,8,GALD.S,0.018624793963495197,1862479.3963495197
+esg_min_60,Neutral,Maximum return/risk ratio,8,GALE.S,0.0969331553378084,9693315.53378084
+esg_min_60,Neutral,Maximum return/risk ratio,8,GAW.L,0.014296168859590357,1429616.8859590357
+esg_min_60,Neutral,Maximum return/risk ratio,8,KR.N,0.016653114740540816,1665311.4740540816
+esg_min_60,Neutral,Maximum return/risk ratio,8,LLY.N,0.05382250653697607,5382250.653697607
+esg_min_60,Neutral,Maximum return/risk ratio,8,LOTB.BR,0.02657245779560324,2657245.779560324
+esg_min_60,Neutral,Maximum return/risk ratio,8,LTMC.MI,0.02206032773158343,2206032.773158343
+esg_min_60,Neutral,Maximum return/risk ratio,8,MOBN.S,0.06096262070486972,6096262.070486972
+esg_min_60,Neutral,Maximum return/risk ratio,8,NEM.N,0.02527430163260484,2527430.163260484
+esg_min_60,Neutral,Maximum return/risk ratio,8,PGR.N,0.06591739766942226,6591739.766942225
+esg_min_60,Neutral,Maximum return/risk ratio,8,PLUSP.L,0.021498994981486188,2149899.4981486187
+esg_min_60,Neutral,Maximum return/risk ratio,8,RILBA.CO,0.013092334799088631,1309233.479908863
+esg_min_60,Neutral,Maximum return/risk ratio,8,RSG.N,0.03037791217317661,3037791.217317661
+esg_min_60,Neutral,Maximum return/risk ratio,8,SBNOR.OL,0.053494267135823774,5349426.713582377
+esg_min_60,Neutral,Maximum return/risk ratio,8,SDZ.S,0.012574061861517164,1257406.1861517164
+esg_min_60,Neutral,Maximum return/risk ratio,8,TKO.N,0.011609259340151128,1160925.9340151127
+esg_min_60,Neutral,Maximum return/risk ratio,8,WM.N,0.01033232567963613,1033232.567963613
+esg_min_60,Neutral,Maximum return/risk ratio,8,WMT.OQ,0.12435584390043156,12435584.390043156
+esg_min_60,Neutral,Maximum return/risk ratio,8,ZEG.L,0.010000154399990191,1000015.4399990191
+esg_min_60,Risk Prone,Highest non-degenerate return,10,AAPL.OQ,0.01,1000000.0
+esg_min_60,Risk Prone,Highest non-degenerate return,10,ABBV.N,0.010000000000000009,1000000.0000000009
+esg_min_60,Risk Prone,Highest non-degenerate return,10,ACLN.S,0.07012603112523151,7012603.112523152
+esg_min_60,Risk Prone,Highest non-degenerate return,10,AJG.N,0.010000000000000009,1000000.0000000009
+esg_min_60,Risk Prone,Highest non-degenerate return,10,APH.N,0.01,1000000.0
+esg_min_60,Risk Prone,Highest non-degenerate return,10,ARGX.BR,0.02711838182203109,2711838.182203109
+esg_min_60,Risk Prone,Highest non-degenerate return,10,BEAN.S,0.010000000000000009,1000000.0000000009
+esg_min_60,Risk Prone,Highest non-degenerate return,10,BKWB.S,0.09233113169843303,9233113.169843303
+esg_min_60,Risk Prone,Highest non-degenerate return,10,CBOE.Z,0.01,1000000.0
+esg_min_60,Risk Prone,Highest non-degenerate return,10,COST.OQ,0.0847833834775776,8478338.34775776
+esg_min_60,Risk Prone,Highest non-degenerate return,10,GALD.S,0.01852920883961536,1852920.8839615358
+esg_min_60,Risk Prone,Highest non-degenerate return,10,GALE.S,0.06011049419299337,6011049.419299337
+esg_min_60,Risk Prone,Highest non-degenerate return,10,GAW.L,0.03897140914943578,3897140.914943578
+esg_min_60,Risk Prone,Highest non-degenerate return,10,IBE.MC,0.010000000000000009,1000000.0000000009
+esg_min_60,Risk Prone,Highest non-degenerate return,10,LLY.N,0.07725702994279085,7725702.994279085
+esg_min_60,Risk Prone,Highest non-degenerate return,10,LOTB.BR,0.01,1000000.0
+esg_min_60,Risk Prone,Highest non-degenerate return,10,LTMC.MI,0.03621944096798677,3621944.0967986775
+esg_min_60,Risk Prone,Highest non-degenerate return,10,MOBN.S,0.010000000000000009,1000000.0000000009
+esg_min_60,Risk Prone,Highest non-degenerate return,10,NEM.N,0.019693689751764512,1969368.9751764513
+esg_min_60,Risk Prone,Highest non-degenerate return,10,PGR.N,0.08615857540307732,8615857.540307732
+esg_min_60,Risk Prone,Highest non-degenerate return,10,PLUSP.L,0.02658126313143679,2658126.313143679
+esg_min_60,Risk Prone,Highest non-degenerate return,10,PWR.N,0.010000000000000009,1000000.0000000009
+esg_min_60,Risk Prone,Highest non-degenerate return,10,RILBA.CO,0.010000000000000009,1000000.0000000009
+esg_min_60,Risk Prone,Highest non-degenerate return,10,RSG.N,0.01,1000000.0
+esg_min_60,Risk Prone,Highest non-degenerate return,10,SBNOR.OL,0.06108278216188937,6108278.216188937
+esg_min_60,Risk Prone,Highest non-degenerate return,10,SDZ.S,0.01544275552750911,1544275.552750911
+esg_min_60,Risk Prone,Highest non-degenerate return,10,TKO.N,0.010635108153727311,1063510.815372731
+esg_min_60,Risk Prone,Highest non-degenerate return,10,WM.N,0.010000000000000009,1000000.0000000009
+esg_min_60,Risk Prone,Highest non-degenerate return,10,WMT.OQ,0.1331364078324167,13313640.78324167
+esg_min_60,Risk Prone,Highest non-degenerate return,10,ZEG.L,0.011822906822083345,1182290.6822083346
+esg_min_65,Risk Averse,Minimum variance,0,AD.AS,0.010077453499806821,1007745.3499806821
+esg_min_65,Risk Averse,Minimum variance,0,ALLN.S,0.1003489150212201,10034891.502122011
+esg_min_65,Risk Averse,Minimum variance,0,BARN.S,0.010833559881217899,1083355.9881217899
+esg_min_65,Risk Averse,Minimum variance,0,BCVN.S,0.05825616349355873,5825616.349355873
+esg_min_65,Risk Averse,Minimum variance,0,BMY.N,0.019676485205618467,1967648.5205618467
+esg_min_65,Risk Averse,Minimum variance,0,CBOE.Z,0.01707441459705479,1707441.459705479
+esg_min_65,Risk Averse,Minimum variance,0,CHD.N,0.01270328944844075,1270328.944844075
+esg_min_65,Risk Averse,Minimum variance,0,CHRW.OQ,0.026628301612526085,2662830.1612526085
+esg_min_65,Risk Averse,Minimum variance,0,CLX.N,0.039916206712900325,3991620.6712900326
+esg_min_65,Risk Averse,Minimum variance,0,COST.OQ,0.02038943065210966,2038943.0652109662
+esg_min_65,Risk Averse,Minimum variance,0,CPB.OQ,0.029459920567827234,2945992.0567827234
+esg_min_65,Risk Averse,Minimum variance,0,DPZ.OQ,0.020330167707789986,2033016.7707789985
+esg_min_65,Risk Averse,Minimum variance,0,GALE.S,0.06501611630268778,6501611.630268778
+esg_min_65,Risk Averse,Minimum variance,0,GILD.OQ,0.016652072056222232,1665207.2056222232
+esg_min_65,Risk Averse,Minimum variance,0,GIS.N,0.020630811013139606,2063081.1013139607
+esg_min_65,Risk Averse,Minimum variance,0,HLN.L,0.01447452101690547,1447452.101690547
+esg_min_65,Risk Averse,Minimum variance,0,HLT.N,0.01162272091071186,1162272.091071186
+esg_min_65,Risk Averse,Minimum variance,0,HRL.N,0.015911896526652952,1591189.6526652952
+esg_min_65,Risk Averse,Minimum variance,0,HUBN.S,0.013682846008100645,1368284.6008100645
+esg_min_65,Risk Averse,Minimum variance,0,JNJ.N,0.013678258716062914,1367825.8716062915
+esg_min_65,Risk Averse,Minimum variance,0,KR.N,0.039534131314568045,3953413.1314568045
+esg_min_65,Risk Averse,Minimum variance,0,LISP.S,0.012129764285501329,1212976.4285501328
+esg_min_65,Risk Averse,Minimum variance,0,LOTB.BR,0.01366369014717245,1366369.014717245
+esg_min_65,Risk Averse,Minimum variance,0,MOBN.S,0.07757463197021129,7757463.19702113
+esg_min_65,Risk Averse,Minimum variance,0,MRK.N,0.010094363435745747,1009436.3435745747
+esg_min_65,Risk Averse,Minimum variance,0,NEM.N,0.013554780136209692,1355478.0136209691
+esg_min_65,Risk Averse,Minimum variance,0,NOC.N,0.012594970507853801,1259497.0507853802
+esg_min_65,Risk Averse,Minimum variance,0,PSPN.S,0.03554482940649352,3554482.940649352
+esg_min_65,Risk Averse,Minimum variance,0,QIA.DE,0.01711038843472883,1711038.843472883
+esg_min_65,Risk Averse,Minimum variance,0,QQ.L,0.010117394714327673,1011739.4714327673
+esg_min_65,Risk Averse,Minimum variance,0,SBNOR.OL,0.015715029462771105,1571502.9462771104
+esg_min_65,Risk Averse,Minimum variance,0,SCMN.S,0.022767854115394857,2276785.4115394857
+esg_min_65,Risk Averse,Minimum variance,0,SJM.N,0.026346574749864175,2634657.4749864177
+esg_min_65,Risk Averse,Minimum variance,0,SPSN.S,0.010997259641787115,1099725.9641787116
+esg_min_65,Risk Averse,Minimum variance,0,VATN.S,0.056093594443160644,5609359.444316064
+esg_min_65,Risk Averse,Minimum variance,0,VZ.N,0.028298436461035508,2829843.6461035507
+esg_min_65,Risk Averse,Minimum variance,0,VZN.S,0.012101191376178287,1210119.1376178288
+esg_min_65,Risk Averse,Minimum variance,0,WMT.OQ,0.04839756444644153,4839756.444644153
+esg_min_65,Neutral,Maximum return/risk ratio,8,ABBV.N,0.013279826965076418,1327982.6965076418
+esg_min_65,Neutral,Maximum return/risk ratio,8,ACLN.S,0.040020194083965316,4002019.4083965314
+esg_min_65,Neutral,Maximum return/risk ratio,8,ALLN.S,0.03788075535127564,3788075.5351275643
+esg_min_65,Neutral,Maximum return/risk ratio,8,ARGX.BR,0.01426035784927839,1426035.784927839
+esg_min_65,Neutral,Maximum return/risk ratio,8,BCVN.S,0.010367262493905939,1036726.249390594
+esg_min_65,Neutral,Maximum return/risk ratio,8,BFT.WA,0.010000167664398596,1000016.7664398596
+esg_min_65,Neutral,Maximum return/risk ratio,8,BKWB.S,0.07174919295644294,7174919.2956442945
+esg_min_65,Neutral,Maximum return/risk ratio,8,CBOE.Z,0.011049829991985083,1104982.9991985082
+esg_min_65,Neutral,Maximum return/risk ratio,8,CHRW.OQ,0.010859169638436104,1085916.9638436104
+esg_min_65,Neutral,Maximum return/risk ratio,8,COST.OQ,0.08250189297583677,8250189.297583677
+esg_min_65,Neutral,Maximum return/risk ratio,8,DPZ.OQ,0.010070221361463577,1007022.1361463576
+esg_min_65,Neutral,Maximum return/risk ratio,8,GALD.S,0.018589429250344028,1858942.9250344029
+esg_min_65,Neutral,Maximum return/risk ratio,8,GALE.S,0.09698448394413375,9698448.394413376
+esg_min_65,Neutral,Maximum return/risk ratio,8,GAW.L,0.014138511773530408,1413851.1773530408
+esg_min_65,Neutral,Maximum return/risk ratio,8,KR.N,0.016912707437381724,1691270.7437381723
+esg_min_65,Neutral,Maximum return/risk ratio,8,LLY.N,0.053653253870206724,5365325.387020673
+esg_min_65,Neutral,Maximum return/risk ratio,8,LOTB.BR,0.02660115249999916,2660115.249999916
+esg_min_65,Neutral,Maximum return/risk ratio,8,LTMC.MI,0.021918727862377592,2191872.786237759
+esg_min_65,Neutral,Maximum return/risk ratio,8,MOBN.S,0.06128383943279951,6128383.943279951
+esg_min_65,Neutral,Maximum return/risk ratio,8,NEM.N,0.025252695948238618,2525269.594823862
+esg_min_65,Neutral,Maximum return/risk ratio,8,PGR.N,0.06570387466515881,6570387.466515881
+esg_min_65,Neutral,Maximum return/risk ratio,8,PLUSP.L,0.0214478015738004,2144780.15738004
+esg_min_65,Neutral,Maximum return/risk ratio,8,RILBA.CO,0.01311016812589738,1311016.812589738
+esg_min_65,Neutral,Maximum return/risk ratio,8,RSG.N,0.030274101395871906,3027410.1395871905
+esg_min_65,Neutral,Maximum return/risk ratio,8,SBNOR.OL,0.05338175930304811,5338175.93030481
+esg_min_65,Neutral,Maximum return/risk ratio,8,SDZ.S,0.01251455891161925,1251455.8911619252
+esg_min_65,Neutral,Maximum return/risk ratio,8,TKO.N,0.011578728095858486,1157872.8095858486
+esg_min_65,Neutral,Maximum return/risk ratio,8,WM.N,0.010429752726754369,1042975.2726754369
+esg_min_65,Neutral,Maximum return/risk ratio,8,WMT.OQ,0.12418536837781366,12418536.837781366
+esg_min_65,Neutral,Maximum return/risk ratio,8,ZEG.L,0.010000213473101378,1000021.3473101378
+esg_min_65,Risk Prone,Highest non-degenerate return,12,AAPL.OQ,0.010000007173491707,1000000.7173491707
+esg_min_65,Risk Prone,Highest non-degenerate return,12,ACLN.S,0.13479201825213089,13479201.825213088
+esg_min_65,Risk Prone,Highest non-degenerate return,12,AJG.N,0.010000001686867065,1000000.1686867065
+esg_min_65,Risk Prone,Highest non-degenerate return,12,APH.N,0.018713236771677362,1871323.6771677362
+esg_min_65,Risk Prone,Highest non-degenerate return,12,ARGX.BR,0.07084140745598153,7084140.745598152
+esg_min_65,Risk Prone,Highest non-degenerate return,12,AVGO.OQ,0.010000034559720535,1000003.4559720536
+esg_min_65,Risk Prone,Highest non-degenerate return,12,BEAN.S,0.010000003308291726,1000000.3308291726
+esg_min_65,Risk Prone,Highest non-degenerate return,12,BKWB.S,0.031506301131436085,3150630.1131436084
+esg_min_65,Risk Prone,Highest non-degenerate return,12,CDNS.OQ,0.01000001021343136,1000001.021343136
+esg_min_65,Risk Prone,Highest non-degenerate return,12,COST.OQ,0.025395724905620334,2539572.4905620334
+esg_min_65,Risk Prone,Highest non-degenerate return,12,GALD.S,0.010000008712599075,1000000.8712599075
+esg_min_65,Risk Prone,Highest non-degenerate return,12,GAW.L,0.08757471264576612,8757471.264576612
+esg_min_65,Risk Prone,Highest non-degenerate return,12,IBE.MC,0.010000184570102991,1000018.4570102991
+esg_min_65,Risk Prone,Highest non-degenerate return,12,KOG.OL,0.01000000261624038,1000000.2616240381
+esg_min_65,Risk Prone,Highest non-degenerate return,12,LLY.N,0.13224222926425572,13224222.926425572
+esg_min_65,Risk Prone,Highest non-degenerate return,12,LTMC.MI,0.030087263017441565,3008726.3017441565
+esg_min_65,Risk Prone,Highest non-degenerate return,12,MSFT.OQ,0.010000096505455436,1000009.6505455436
+esg_min_65,Risk Prone,Highest non-degenerate return,12,NEM.N,0.010000029661248354,1000002.9661248353
+esg_min_65,Risk Prone,Highest non-degenerate return,12,NVDA.OQ,0.017294610429987357,1729461.0429987356
+esg_min_65,Risk Prone,Highest non-degenerate return,12,PGR.N,0.11437204655876894,11437204.655876894
+esg_min_65,Risk Prone,Highest non-degenerate return,12,PLUSP.L,0.01860567864966858,1860567.864966858
+esg_min_65,Risk Prone,Highest non-degenerate return,12,PWR.N,0.03924804534943003,3924804.5349430027
+esg_min_65,Risk Prone,Highest non-degenerate return,12,RSG.N,0.010000005851258736,1000000.5851258737
+esg_min_65,Risk Prone,Highest non-degenerate return,12,SBNOR.OL,0.010000001323121377,1000000.1323121376
+esg_min_65,Risk Prone,Highest non-degenerate return,12,SDZ.S,0.01001666716687768,1001666.716687768
+esg_min_65,Risk Prone,Highest non-degenerate return,12,SQN.S,0.010000021964818962,1000002.1964818962
+esg_min_65,Risk Prone,Highest non-degenerate return,12,TKO.N,0.010000001557894262,1000000.1557894262
+esg_min_65,Risk Prone,Highest non-degenerate return,12,TT.N,0.010000004039395216,1000000.4039395216
+esg_min_65,Risk Prone,Highest non-degenerate return,12,WMT.OQ,0.1019567912875055,10195679.12875055
+esg_min_65,Risk Prone,Highest non-degenerate return,12,ZEG.L,0.01735285336951506,1735285.3369515059
+esg_min_75,Risk Averse,Minimum variance,0,AD.AS,0.02182374390557003,2182374.3905570027
+esg_min_75,Risk Averse,Minimum variance,0,ALLN.S,0.03953605244774459,3953605.2447744585
+esg_min_75,Risk Averse,Minimum variance,0,AMZN.OQ,0.01001078973753218,1001078.9737532181
+esg_min_75,Risk Averse,Minimum variance,0,BARN.S,0.01151954560435705,1151954.560435705
+esg_min_75,Risk Averse,Minimum variance,0,BCVN.S,0.06952508034722193,6952508.034722193
+esg_min_75,Risk Averse,Minimum variance,0,BMY.N,0.015867791615827815,1586779.1615827815
+esg_min_75,Risk Averse,Minimum variance,0,CBOE.Z,0.013057668868397494,1305766.8868397495
+esg_min_75,Risk Averse,Minimum variance,0,CLX.N,0.04302668188937631,4302668.188937631
+esg_min_75,Risk Averse,Minimum variance,0,COST.OQ,0.01793028398035871,1793028.3980358709
+esg_min_75,Risk Averse,Minimum variance,0,CPB.OQ,0.018749465980870766,1874946.5980870766
+esg_min_75,Risk Averse,Minimum variance,0,DKSH.S,0.020936465044354965,2093646.5044354966
+esg_min_75,Risk Averse,Minimum variance,0,DPZ.OQ,0.010060588085299,1006058.8085298999
+esg_min_75,Risk Averse,Minimum variance,0,GALE.S,0.06268760146845018,6268760.146845018
+esg_min_75,Risk Averse,Minimum variance,0,GILD.OQ,0.024102068857352898,2410206.8857352897
+esg_min_75,Risk Averse,Minimum variance,0,GIS.N,0.024590185449314666,2459018.5449314667
+esg_min_75,Risk Averse,Minimum variance,0,HLT.N,0.02106800351580215,2106800.351580215
+esg_min_75,Risk Averse,Minimum variance,0,JNJ.N,0.05129765677927937,5129765.677927936
+esg_min_75,Risk Averse,Minimum variance,0,KR.N,0.042139645039064644,4213964.503906464
+esg_min_75,Risk Averse,Minimum variance,0,LISP.S,0.021806920304394007,2180692.0304394006
+esg_min_75,Risk Averse,Minimum variance,0,LMT.N,0.01591063959711488,1591063.9597114879
+esg_min_75,Risk Averse,Minimum variance,0,LOTB.BR,0.011712300107584558,1171230.0107584558
+esg_min_75,Risk Averse,Minimum variance,0,MO.N,0.018114424753810036,1811442.4753810035
+esg_min_75,Risk Averse,Minimum variance,0,MOBN.S,0.12569894698612843,12569894.698612843
+esg_min_75,Risk Averse,Minimum variance,0,MRK.N,0.010803350134457598,1080335.0134457597
+esg_min_75,Risk Averse,Minimum variance,0,NEM.N,0.020495663494299415,2049566.3494299415
+esg_min_75,Risk Averse,Minimum variance,0,NOC.N,0.010274023748950997,1027402.3748950997
+esg_min_75,Risk Averse,Minimum variance,0,ORNBV.HE,0.010020258600809222,1002025.8600809223
+esg_min_75,Risk Averse,Minimum variance,0,PSPN.S,0.030511209735521534,3051120.9735521534
+esg_min_75,Risk Averse,Minimum variance,0,QIA.DE,0.02463352044166449,2463352.044166449
+esg_min_75,Risk Averse,Minimum variance,0,ROPC.S,0.0288244731288548,2882447.31288548
+esg_min_75,Risk Averse,Minimum variance,0,SCMN.S,0.02408478745278512,2408478.7452785117
+esg_min_75,Risk Averse,Minimum variance,0,SIGNC.S,0.013458952144654144,1345895.2144654144
+esg_min_75,Risk Averse,Minimum variance,0,SJM.N,0.015871006092028413,1587100.6092028413
+esg_min_75,Risk Averse,Minimum variance,0,VATN.S,0.020931278095091307,2093127.8095091307
+esg_min_75,Risk Averse,Minimum variance,0,VZ.N,0.0262039325872632,2620393.2587263198
+esg_min_75,Risk Averse,Minimum variance,0,WMT.OQ,0.052714993978413095,5271499.397841309
+esg_min_75,Neutral,Maximum return/risk ratio,8,ABBN.S,0.02026543884745393,2026543.884745393
+esg_min_75,Neutral,Maximum return/risk ratio,8,ABBV.N,0.010060938006663482,1006093.8006663482
+esg_min_75,Neutral,Maximum return/risk ratio,8,ACLN.S,0.019356085329350972,1935608.532935097
+esg_min_75,Neutral,Maximum return/risk ratio,8,AD.AS,0.012970748680118473,1297074.8680118474
+esg_min_75,Neutral,Maximum return/risk ratio,8,APH.N,0.0109414394957605,1094143.94957605
+esg_min_75,Neutral,Maximum return/risk ratio,8,ARGX.BR,0.022928796948971857,2292879.6948971855
+esg_min_75,Neutral,Maximum return/risk ratio,8,AZN.L,0.01170376760981962,1170376.760981962
+esg_min_75,Neutral,Maximum return/risk ratio,8,BCVN.S,0.010424040027823215,1042404.0027823215
+esg_min_75,Neutral,Maximum return/risk ratio,8,BKWB.S,0.03623315087992142,3623315.087992142
+esg_min_75,Neutral,Maximum return/risk ratio,8,COST.OQ,0.08464429363300992,8464429.363300992
+esg_min_75,Neutral,Maximum return/risk ratio,8,GALD.S,0.010288049465586303,1028804.9465586302
+esg_min_75,Neutral,Maximum return/risk ratio,8,GALE.S,0.09248195284431371,9248195.28443137
+esg_min_75,Neutral,Maximum return/risk ratio,8,HLT.N,0.011231555528070007,1123155.5528070007
+esg_min_75,Neutral,Maximum return/risk ratio,8,IBE.MC,0.015856492463809446,1585649.2463809445
+esg_min_75,Neutral,Maximum return/risk ratio,8,JNJ.N,0.014648868523809939,1464886.8523809938
+esg_min_75,Neutral,Maximum return/risk ratio,8,KR.N,0.013695315272005832,1369531.5272005831
+esg_min_75,Neutral,Maximum return/risk ratio,8,LLY.N,0.04135512157061287,4135512.157061287
+esg_min_75,Neutral,Maximum return/risk ratio,8,LOTB.BR,0.01916896133745109,1916896.133745109
+esg_min_75,Neutral,Maximum return/risk ratio,8,LTMC.MI,0.010000357438996129,1000035.7438996129
+esg_min_75,Neutral,Maximum return/risk ratio,8,MOBN.S,0.13423972205548357,13423972.205548357
+esg_min_75,Neutral,Maximum return/risk ratio,8,MSFT.OQ,0.0101114976383691,1011149.7638369099
+esg_min_75,Neutral,Maximum return/risk ratio,8,NEM.N,0.04038002141802695,4038002.1418026946
+esg_min_75,Neutral,Maximum return/risk ratio,8,PGR.N,0.04970966563500499,4970966.563500499
+esg_min_75,Neutral,Maximum return/risk ratio,8,PLUSP.L,0.013564471249696258,1356447.1249696258
+esg_min_75,Neutral,Maximum return/risk ratio,8,PWR.N,0.010001062672985098,1000106.2672985098
+esg_min_75,Neutral,Maximum return/risk ratio,8,RSG.N,0.03860741153726891,3860741.153726891
+esg_min_75,Neutral,Maximum return/risk ratio,8,SDZ.S,0.027223697389123752,2722369.738912375
+esg_min_75,Neutral,Maximum return/risk ratio,8,WM.N,0.03907922429166667,3907922.429166667
+esg_min_75,Neutral,Maximum return/risk ratio,8,WMT.OQ,0.1382807747471595,13828077.47471595
+esg_min_75,Neutral,Maximum return/risk ratio,8,ZEG.L,0.01000032340153504,1000032.3401535039
+esg_min_75,Neutral,Maximum return/risk ratio,8,ZURN.S,0.02054675406013135,2054675.406013135
+esg_min_75,Risk Prone,Highest non-degenerate return,11,ABBN.S,0.0350254080461055,3502540.8046105504
+esg_min_75,Risk Prone,Highest non-degenerate return,11,ACLN.S,0.04028150272174066,4028150.272174066
+esg_min_75,Risk Prone,Highest non-degenerate return,11,APH.N,0.034770738835562344,3477073.883556234
+esg_min_75,Risk Prone,Highest non-degenerate return,11,ARGX.BR,0.059538837118982384,5953883.711898238
+esg_min_75,Risk Prone,Highest non-degenerate return,11,AVGO.OQ,0.010000061832100551,1000006.1832100551
+esg_min_75,Risk Prone,Highest non-degenerate return,11,AZN.L,0.010001153802314715,1000115.3802314715
+esg_min_75,Risk Prone,Highest non-degenerate return,11,BKWB.S,0.01001851346155565,1001851.3461555649
+esg_min_75,Risk Prone,Highest non-degenerate return,11,CDNS.OQ,0.010000212334534818,1000021.2334534818
+esg_min_75,Risk Prone,Highest non-degenerate return,11,COST.OQ,0.060992750816224156,6099275.081622415
+esg_min_75,Risk Prone,Highest non-degenerate return,11,GALD.S,0.010001022809256487,1000102.2809256486
+esg_min_75,Risk Prone,Highest non-degenerate return,11,GALE.S,0.010002430363451458,1000243.0363451458
+esg_min_75,Risk Prone,Highest non-degenerate return,11,GAW.L,0.010001323529031016,1000132.3529031016
+esg_min_75,Risk Prone,Highest non-degenerate return,11,GOOG.OQ,0.010000261478966415,1000026.1478966415
+esg_min_75,Risk Prone,Highest non-degenerate return,11,IBE.MC,0.11170780459351748,11170780.459351748
+esg_min_75,Risk Prone,Highest non-degenerate return,11,KOG.OL,0.010000223272928394,1000022.3272928394
+esg_min_75,Risk Prone,Highest non-degenerate return,11,LLY.N,0.07541311817599015,7541311.817599015
+esg_min_75,Risk Prone,Highest non-degenerate return,11,LTMC.MI,0.010001693248196247,1000169.3248196248
+esg_min_75,Risk Prone,Highest non-degenerate return,11,MOBN.S,0.010001947749446785,1000194.7749446785
+esg_min_75,Risk Prone,Highest non-degenerate return,11,MSFT.OQ,0.06841774795441187,6841774.795441187
+esg_min_75,Risk Prone,Highest non-degenerate return,11,NEM.N,0.04061186628266564,4061186.6282665636
+esg_min_75,Risk Prone,Highest non-degenerate return,11,PGR.N,0.07507931669251408,7507931.669251408
+esg_min_75,Risk Prone,Highest non-degenerate return,11,PLUSP.L,0.0100361058962003,1003610.58962003
+esg_min_75,Risk Prone,Highest non-degenerate return,11,PWR.N,0.03092729916649512,3092729.916649512
+esg_min_75,Risk Prone,Highest non-degenerate return,11,RSG.N,0.010043686305579743,1004368.6305579743
+esg_min_75,Risk Prone,Highest non-degenerate return,11,SDZ.S,0.03981458298182911,3981458.2981829112
+esg_min_75,Risk Prone,Highest non-degenerate return,11,TT.N,0.010000175161820977,1000017.5161820977
+esg_min_75,Risk Prone,Highest non-degenerate return,11,WM.N,0.010003178085783763,1000317.8085783763
+esg_min_75,Risk Prone,Highest non-degenerate return,11,WMT.OQ,0.1535786823688395,15357868.236883951
+esg_min_75,Risk Prone,Highest non-degenerate return,11,ZEG.L,0.012010346773186176,1201034.6773186177
+esg_min_75,Risk Prone,Highest non-degenerate return,11,ZURN.S,0.011718008140768503,1171800.8140768502
+esg_min_80,Risk Averse,Minimum variance,0,AD.AS,0.02402563688798195,2402563.688798195
+esg_min_80,Risk Averse,Minimum variance,0,BARN.S,0.010019967699294094,1001996.7699294094
+esg_min_80,Risk Averse,Minimum variance,0,BCVN.S,0.06785766014673564,6785766.014673564
+esg_min_80,Risk Averse,Minimum variance,0,BMY.N,0.012666742448852452,1266674.244885245
+esg_min_80,Risk Averse,Minimum variance,0,CBOE.Z,0.010191662018872763,1019166.2018872764
+esg_min_80,Risk Averse,Minimum variance,0,CLX.N,0.046436574504202494,4643657.450420249
+esg_min_80,Risk Averse,Minimum variance,0,COST.OQ,0.0199836290189894,1998362.9018989399
+esg_min_80,Risk Averse,Minimum variance,0,CPB.OQ,0.010489283256776302,1048928.3256776303
+esg_min_80,Risk Averse,Minimum variance,0,DKSH.S,0.023532471200554295,2353247.1200554296
+esg_min_80,Risk Averse,Minimum variance,0,GALE.S,0.05681287150877079,5681287.150877079
+esg_min_80,Risk Averse,Minimum variance,0,GILD.OQ,0.030570649960626653,3057064.9960626652
+esg_min_80,Risk Averse,Minimum variance,0,GIS.N,0.023766125912969442,2376612.5912969443
+esg_min_80,Risk Averse,Minimum variance,0,HLT.N,0.026216853449978747,2621685.344997875
+esg_min_80,Risk Averse,Minimum variance,0,JNJ.N,0.0748430902652494,7484309.0265249405
+esg_min_80,Risk Averse,Minimum variance,0,KR.N,0.04352102329120734,4352102.329120734
+esg_min_80,Risk Averse,Minimum variance,0,LISP.S,0.022058551438956367,2205855.143895637
+esg_min_80,Risk Averse,Minimum variance,0,LMT.N,0.026855033191732568,2685503.319173257
+esg_min_80,Risk Averse,Minimum variance,0,MO.N,0.02589628525904707,2589628.525904707
+esg_min_80,Risk Averse,Minimum variance,0,MOBN.S,0.1504417354295367,15044173.54295367
+esg_min_80,Risk Averse,Minimum variance,0,MRK.N,0.010901892807886561,1090189.280788656
+esg_min_80,Risk Averse,Minimum variance,0,NEM.N,0.0258191133147199,2581911.33147199
+esg_min_80,Risk Averse,Minimum variance,0,NESN.S,0.0173647448104748,1736474.48104748
+esg_min_80,Risk Averse,Minimum variance,0,NOVN.S,0.01198940338546348,1198940.338546348
+esg_min_80,Risk Averse,Minimum variance,0,PSPN.S,0.018907157370204198,1890715.73702042
+esg_min_80,Risk Averse,Minimum variance,0,QIA.DE,0.027671138800574157,2767113.880057416
+esg_min_80,Risk Averse,Minimum variance,0,ROPC.S,0.051537619452825846,5153761.945282585
+esg_min_80,Risk Averse,Minimum variance,0,SCMN.S,0.014252252958639033,1425225.2958639034
+esg_min_80,Risk Averse,Minimum variance,0,SIGNC.S,0.02032708002382667,2032708.002382667
+esg_min_80,Risk Averse,Minimum variance,0,UPM.HE,0.016579073295917523,1657907.3295917523
+esg_min_80,Risk Averse,Minimum variance,0,VZ.N,0.02202661564324365,2202661.564324365
+esg_min_80,Risk Averse,Minimum variance,0,WMT.OQ,0.05643806124588977,5643806.124588978
+esg_min_80,Neutral,Maximum return/risk ratio,7,ABBN.S,0.042506311226029644,4250631.122602965
+esg_min_80,Neutral,Maximum return/risk ratio,7,AD.AS,0.012329770843144799,1232977.08431448
+esg_min_80,Neutral,Maximum return/risk ratio,7,APH.N,0.010236726662056226,1023672.6662056226
+esg_min_80,Neutral,Maximum return/risk ratio,7,ARGX.BR,0.016811679193045072,1681167.9193045073
+esg_min_80,Neutral,Maximum return/risk ratio,7,AZN.L,0.03185984752201558,3185984.752201558
+esg_min_80,Neutral,Maximum return/risk ratio,7,BCVN.S,0.0100935283043837,1009352.83043837
+esg_min_80,Neutral,Maximum return/risk ratio,7,BKWB.S,0.010029690211551541,1002969.0211551541
+esg_min_80,Neutral,Maximum return/risk ratio,7,COST.OQ,0.07126508366762599,7126508.366762599
+esg_min_80,Neutral,Maximum return/risk ratio,7,GALE.S,0.06526061475384776,6526061.475384776
+esg_min_80,Neutral,Maximum return/risk ratio,7,HLT.N,0.013460341658355001,1346034.1658355002
+esg_min_80,Neutral,Maximum return/risk ratio,7,IBE.MC,0.010865649727316734,1086564.9727316734
+esg_min_80,Neutral,Maximum return/risk ratio,7,JNJ.N,0.06692025424456263,6692025.424456263
+esg_min_80,Neutral,Maximum return/risk ratio,7,KR.N,0.017328304165004752,1732830.4165004753
+esg_min_80,Neutral,Maximum return/risk ratio,7,LLY.N,0.02429244390550577,2429244.390550577
+esg_min_80,Neutral,Maximum return/risk ratio,7,LOTB.BR,0.01006158484465042,1006158.4844650419
+esg_min_80,Neutral,Maximum return/risk ratio,7,MOBN.S,0.1503170489681274,15031704.896812739
+esg_min_80,Neutral,Maximum return/risk ratio,7,MSFT.OQ,0.02332926123200936,2332926.123200936
+esg_min_80,Neutral,Maximum return/risk ratio,7,NEM.N,0.04441264694600891,4441264.694600891
+esg_min_80,Neutral,Maximum return/risk ratio,7,NOVN.S,0.01765926436901476,1765926.436901476
+esg_min_80,Neutral,Maximum return/risk ratio,7,PGR.N,0.028053937218963765,2805393.7218963765
+esg_min_80,Neutral,Maximum return/risk ratio,7,PLUSP.L,0.010004762632652174,1000476.2632652174
+esg_min_80,Neutral,Maximum return/risk ratio,7,PWR.N,0.01001139048645181,1001139.048645181
+esg_min_80,Neutral,Maximum return/risk ratio,7,ROPC.S,0.03235683506766413,3235683.5067664133
+esg_min_80,Neutral,Maximum return/risk ratio,7,RSG.N,0.025014614343113088,2501461.434311309
+esg_min_80,Neutral,Maximum return/risk ratio,7,SDZ.S,0.019706589228440506,1970658.9228440507
+esg_min_80,Neutral,Maximum return/risk ratio,7,SIGNC.S,0.010045479768623787,1004547.9768623788
+esg_min_80,Neutral,Maximum return/risk ratio,7,UPM.HE,0.010116051179339686,1011605.1179339687
+esg_min_80,Neutral,Maximum return/risk ratio,7,WM.N,0.04467461464763366,4467461.464763367
+esg_min_80,Neutral,Maximum return/risk ratio,7,WMT.OQ,0.1307122755238612,13071227.55238612
+esg_min_80,Neutral,Maximum return/risk ratio,7,ZURN.S,0.030263397458999947,3026339.745899995
+esg_min_80,Risk Prone,Highest non-degenerate return,11,ABBN.S,0.10396375782550386,10396375.782550387
+esg_min_80,Risk Prone,Highest non-degenerate return,11,ABBV.N,0.010000129978499996,1000012.9978499996
+esg_min_80,Risk Prone,Highest non-degenerate return,11,ACLN.S,0.010000138006978786,1000013.8006978786
+esg_min_80,Risk Prone,Highest non-degenerate return,11,APH.N,0.011238323493710305,1123832.3493710305
+esg_min_80,Risk Prone,Highest non-degenerate return,11,ARGX.BR,0.04608839268396876,4608839.268396876
+esg_min_80,Risk Prone,Highest non-degenerate return,11,AZN.L,0.024060014137321485,2406001.4137321487
+esg_min_80,Risk Prone,Highest non-degenerate return,11,CDNS.OQ,0.010340639436906872,1034063.9436906872
+esg_min_80,Risk Prone,Highest non-degenerate return,11,COST.OQ,0.043131915386401515,4313191.538640152
+esg_min_80,Risk Prone,Highest non-degenerate return,11,GALE.S,0.010000083610708867,1000008.3610708867
+esg_min_80,Risk Prone,Highest non-degenerate return,11,GASI.MI,0.010000057413951042,1000005.7413951042
+esg_min_80,Risk Prone,Highest non-degenerate return,11,GOOG.OQ,0.010000359064288445,1000035.9064288444
+esg_min_80,Risk Prone,Highest non-degenerate return,11,GOOGL.OQ,0.010000268523995992,1000026.8523995992
+esg_min_80,Risk Prone,Highest non-degenerate return,11,HLT.N,0.010000460653555802,1000046.0653555803
+esg_min_80,Risk Prone,Highest non-degenerate return,11,IBE.MC,0.10337550061879495,10337550.061879495
+esg_min_80,Risk Prone,Highest non-degenerate return,11,JNJ.N,0.010000102153739015,1000010.2153739015
+esg_min_80,Risk Prone,Highest non-degenerate return,11,LLY.N,0.04629198965737062,4629198.9657370625
+esg_min_80,Risk Prone,Highest non-degenerate return,11,LONN.S,0.010000080763857482,1000008.0763857482
+esg_min_80,Risk Prone,Highest non-degenerate return,11,MOBN.S,0.010000688453031882,1000068.8453031882
+esg_min_80,Risk Prone,Highest non-degenerate return,11,MSFT.OQ,0.11982517617388139,11982517.617388139
+esg_min_80,Risk Prone,Highest non-degenerate return,11,NEM.N,0.06196583391810344,6196583.391810344
+esg_min_80,Risk Prone,Highest non-degenerate return,11,PGR.N,0.03466560533830035,3466560.533830035
+esg_min_80,Risk Prone,Highest non-degenerate return,11,PLUSP.L,0.010000066719223736,1000006.6719223736
+esg_min_80,Risk Prone,Highest non-degenerate return,11,PWR.N,0.0193485864695298,1934858.6469529802
+esg_min_80,Risk Prone,Highest non-degenerate return,11,RSG.N,0.01002117367541942,1002117.3675419419
+esg_min_80,Risk Prone,Highest non-degenerate return,11,SDZ.S,0.023490463878707374,2349046.3878707374
+esg_min_80,Risk Prone,Highest non-degenerate return,11,TT.N,0.010000217569263531,1000021.7569263531
+esg_min_80,Risk Prone,Highest non-degenerate return,11,WM.N,0.01001621517242221,1001621.517242221
+esg_min_80,Risk Prone,Highest non-degenerate return,11,WMT.OQ,0.15563554799917084,15563554.799917085
+esg_min_80,Risk Prone,Highest non-degenerate return,11,ZEG.L,0.010000226431330916,1000022.6431330916
+esg_min_80,Risk Prone,Highest non-degenerate return,11,ZURN.S,0.04653798479206127,4653798.479206127
+country_cap_20,Risk Averse,Minimum variance,0,AD.AS,0.028582441290823782,2858244.129082378
+country_cap_20,Risk Averse,Minimum variance,0,ALLN.S,0.04519785606065063,4519785.606065063
+country_cap_20,Risk Averse,Minimum variance,0,AMZN.OQ,0.010000364123110192,1000036.4123110191
+country_cap_20,Risk Averse,Minimum variance,0,BCVN.S,0.028244713366650975,2824471.3366650976
+country_cap_20,Risk Averse,Minimum variance,0,BFT.WA,0.010011108540391894,1001110.8540391894
+country_cap_20,Risk Averse,Minimum variance,0,BMY.N,0.018424998062505624,1842499.8062505624
+country_cap_20,Risk Averse,Minimum variance,0,CBOE.Z,0.024757605537604543,2475760.553760454
+country_cap_20,Risk Averse,Minimum variance,0,CHD.N,0.010003108824875364,1000310.8824875364
+country_cap_20,Risk Averse,Minimum variance,0,CHRW.OQ,0.0239098302221661,2390983.02221661
+country_cap_20,Risk Averse,Minimum variance,0,CLX.N,0.04447852384160897,4447852.384160897
+country_cap_20,Risk Averse,Minimum variance,0,CMG.N,0.01002336019852542,1002336.0198525421
+country_cap_20,Risk Averse,Minimum variance,0,COST.OQ,0.010041245903864147,1004124.5903864148
+country_cap_20,Risk Averse,Minimum variance,0,CPB.OQ,0.02674365560843959,2674365.560843959
+country_cap_20,Risk Averse,Minimum variance,0,DPZ.OQ,0.018947632165485388,1894763.2165485388
+country_cap_20,Risk Averse,Minimum variance,0,GALE.S,0.03362162663167608,3362162.663167608
+country_cap_20,Risk Averse,Minimum variance,0,GILD.OQ,0.020105767493981696,2010576.7493981696
+country_cap_20,Risk Averse,Minimum variance,0,GIS.N,0.020515461307350456,2051546.1307350455
+country_cap_20,Risk Averse,Minimum variance,0,GTT.PA,0.01000094070064373,1000094.0700643731
+country_cap_20,Risk Averse,Minimum variance,0,HLN.L,0.03306880127522271,3306880.1275222707
+country_cap_20,Risk Averse,Minimum variance,0,HLT.N,0.01312120509952166,1312120.5099521661
+country_cap_20,Risk Averse,Minimum variance,0,HRL.N,0.010016257307290664,1001625.7307290664
+country_cap_20,Risk Averse,Minimum variance,0,IMB.L,0.010000525709016952,1000052.5709016953
+country_cap_20,Risk Averse,Minimum variance,0,JNJ.N,0.04127321135673232,4127321.135673232
+country_cap_20,Risk Averse,Minimum variance,0,KR.N,0.04106877550878787,4106877.550878787
+country_cap_20,Risk Averse,Minimum variance,0,LMT.N,0.01050966569221582,1050966.569221582
+country_cap_20,Risk Averse,Minimum variance,0,LOTB.BR,0.021634127157338166,2163412.715733817
+country_cap_20,Risk Averse,Minimum variance,0,MO.N,0.010001437932736014,1000143.7932736013
+country_cap_20,Risk Averse,Minimum variance,0,MOBN.S,0.06944475745215181,6944475.745215181
+country_cap_20,Risk Averse,Minimum variance,0,MRK.N,0.010103223924215234,1010322.3924215233
+country_cap_20,Risk Averse,Minimum variance,0,NEM.N,0.02331234047821526,2331234.047821526
+country_cap_20,Risk Averse,Minimum variance,0,NOC.N,0.012467869093016812,1246786.9093016812
+country_cap_20,Risk Averse,Minimum variance,0,NOVOb.CO,0.010000801674243495,1000080.1674243495
+country_cap_20,Risk Averse,Minimum variance,0,ORNBV.HE,0.017944744467911968,1794474.4467911967
+country_cap_20,Risk Averse,Minimum variance,0,PLUSP.L,0.010002403802533484,1000240.3802533484
+country_cap_20,Risk Averse,Minimum variance,0,PSPN.S,0.013482421343831156,1348242.1343831157
+country_cap_20,Risk Averse,Minimum variance,0,QIA.DE,0.03513186555678944,3513186.555678944
+country_cap_20,Risk Averse,Minimum variance,0,QQ.L,0.01382475482872378,1382475.482872378
+country_cap_20,Risk Averse,Minimum variance,0,SBNOR.OL,0.021443628682375152,2144362.8682375154
+country_cap_20,Risk Averse,Minimum variance,0,SJM.N,0.021355807582077842,2135580.758207784
+country_cap_20,Risk Averse,Minimum variance,0,TCFP.PA,0.010042521354751055,1004252.1354751055
+country_cap_20,Risk Averse,Minimum variance,0,TPRO.MI,0.01000018047292326,1000018.047292326
+country_cap_20,Risk Averse,Minimum variance,0,VATN.S,0.010008616248580801,1000861.6248580802
+country_cap_20,Risk Averse,Minimum variance,0,VIS.MC,0.022504560403771523,2250456.040377152
+country_cap_20,Risk Averse,Minimum variance,0,VOPA.AS,0.01000246151056305,1000246.151056305
+country_cap_20,Risk Averse,Minimum variance,0,VZ.N,0.04906418676425756,4906418.676425756
+country_cap_20,Risk Averse,Minimum variance,0,WMT.OQ,0.04555860743985053,4555860.743985053
+country_cap_20,Neutral,Maximum return/risk ratio,8,ABBV.N,0.01746498389463934,1746498.389463934
+country_cap_20,Neutral,Maximum return/risk ratio,8,ACLN.S,0.011976891799258984,1197689.1799258983
+country_cap_20,Neutral,Maximum return/risk ratio,8,AD.AS,0.02856263653698407,2856263.653698407
+country_cap_20,Neutral,Maximum return/risk ratio,8,APH.N,0.010305133087211718,1030513.3087211718
+country_cap_20,Neutral,Maximum return/risk ratio,8,ARGX.BR,0.022133882403152585,2213388.2403152585
+country_cap_20,Neutral,Maximum return/risk ratio,8,BFT.WA,0.010031199171647607,1003119.9171647606
+country_cap_20,Neutral,Maximum return/risk ratio,8,BKWB.S,0.035239325321781,3523932.5321780997
+country_cap_20,Neutral,Maximum return/risk ratio,8,CBOE.Z,0.012791353092193283,1279135.3092193282
+country_cap_20,Neutral,Maximum return/risk ratio,8,COST.OQ,0.08186557411130577,8186557.411130576
+country_cap_20,Neutral,Maximum return/risk ratio,8,GALD.S,0.010002912147205304,1000291.2147205304
+country_cap_20,Neutral,Maximum return/risk ratio,8,GALE.S,0.06840843435493622,6840843.435493622
+country_cap_20,Neutral,Maximum return/risk ratio,8,GAW.L,0.011723154170360142,1172315.4170360141
+country_cap_20,Neutral,Maximum return/risk ratio,8,GTT.PA,0.010000705651761333,1000070.5651761333
+country_cap_20,Neutral,Maximum return/risk ratio,8,HLN.L,0.010000825594172166,1000082.5594172166
+country_cap_20,Neutral,Maximum return/risk ratio,8,HLT.N,0.010062361940753472,1006236.1940753473
+country_cap_20,Neutral,Maximum return/risk ratio,8,IBE.MC,0.0178860285546831,1788602.85546831
+country_cap_20,Neutral,Maximum return/risk ratio,8,KR.N,0.023105229068448287,2310522.9068448287
+country_cap_20,Neutral,Maximum return/risk ratio,8,LLY.N,0.048756551976354465,4875655.197635447
+country_cap_20,Neutral,Maximum return/risk ratio,8,LOTB.BR,0.03745266802944825,3745266.802944825
+country_cap_20,Neutral,Maximum return/risk ratio,8,LTMC.MI,0.02630074449448932,2630074.449448932
+country_cap_20,Neutral,Maximum return/risk ratio,8,MOBN.S,0.06435438330271159,6435438.330271159
+country_cap_20,Neutral,Maximum return/risk ratio,8,NEM.N,0.03984501665316422,3984501.665316422
+country_cap_20,Neutral,Maximum return/risk ratio,8,ORNBV.HE,0.010098602756469429,1009860.2756469429
+country_cap_20,Neutral,Maximum return/risk ratio,8,PGR.N,0.061116936686713204,6111693.66867132
+country_cap_20,Neutral,Maximum return/risk ratio,8,PLUSP.L,0.023548746125146985,2354874.6125146984
+country_cap_20,Neutral,Maximum return/risk ratio,8,RILBA.CO,0.010002251625062361,1000225.1625062361
+country_cap_20,Neutral,Maximum return/risk ratio,8,RSG.N,0.05136609549749766,5136609.5497497665
+country_cap_20,Neutral,Maximum return/risk ratio,8,SBNOR.OL,0.036221367671656464,3622136.7671656464
+country_cap_20,Neutral,Maximum return/risk ratio,8,SDZ.S,0.010018016167467001,1001801.6167467001
+country_cap_20,Neutral,Maximum return/risk ratio,8,TKO.N,0.010003526742221292,1000352.6742221292
+country_cap_20,Neutral,Maximum return/risk ratio,8,WM.N,0.03966208194977908,3966208.1949779075
+country_cap_20,Neutral,Maximum return/risk ratio,8,WMT.OQ,0.12901372196079464,12901372.196079463
+country_cap_20,Neutral,Maximum return/risk ratio,8,ZEG.L,0.010678657460529617,1067865.7460529618
+country_cap_20,Risk Prone,Highest non-degenerate return,11,AAPL.OQ,0.01000081430041132,1000081.4300411319
+country_cap_20,Risk Prone,Highest non-degenerate return,11,ABBN.S,0.01000187718315457,1000187.7183154571
+country_cap_20,Risk Prone,Highest non-degenerate return,11,ACLN.S,0.07648963804532218,7648963.804532218
+country_cap_20,Risk Prone,Highest non-degenerate return,11,APH.N,0.033637789626227904,3363778.9626227906
+country_cap_20,Risk Prone,Highest non-degenerate return,11,ARGX.BR,0.055627021705889894,5562702.17058899
+country_cap_20,Risk Prone,Highest non-degenerate return,11,AVGO.OQ,0.010002171506239244,1000217.1506239244
+country_cap_20,Risk Prone,Highest non-degenerate return,11,BEAN.S,0.01000090814313394,1000090.814313394
+country_cap_20,Risk Prone,Highest non-degenerate return,11,BKWB.S,0.04217449277666757,4217449.277666757
+country_cap_20,Risk Prone,Highest non-degenerate return,11,CDNS.OQ,0.010002851499222079,1000285.1499222079
+country_cap_20,Risk Prone,Highest non-degenerate return,11,COST.OQ,0.07528619371267445,7528619.371267444
+country_cap_20,Risk Prone,Highest non-degenerate return,11,GALD.S,0.01002021537511416,1002021.5375114159
+country_cap_20,Risk Prone,Highest non-degenerate return,11,GALE.S,0.010004897294415874,1000489.7294415875
+country_cap_20,Risk Prone,Highest non-degenerate return,11,GAW.L,0.037551234028616834,3755123.402861683
+country_cap_20,Risk Prone,Highest non-degenerate return,11,IBE.MC,0.058502205549006855,5850220.554900685
+country_cap_20,Risk Prone,Highest non-degenerate return,11,KOG.OL,0.01000012995900386,1000012.995900386
+country_cap_20,Risk Prone,Highest non-degenerate return,11,LLY.N,0.09283860268952782,9283860.268952781
+country_cap_20,Risk Prone,Highest non-degenerate return,11,LOTB.BR,0.010000108364160968,1000010.8364160968
+country_cap_20,Risk Prone,Highest non-degenerate return,11,LTMC.MI,0.02081906786577351,2081906.786577351
+country_cap_20,Risk Prone,Highest non-degenerate return,11,MSFT.OQ,0.013490954649172923,1349095.4649172924
+country_cap_20,Risk Prone,Highest non-degenerate return,11,NEM.N,0.025289496200249593,2528949.620024959
+country_cap_20,Risk Prone,Highest non-degenerate return,11,PGR.N,0.09707851984952827,9707851.984952826
+country_cap_20,Risk Prone,Highest non-degenerate return,11,PLUSP.L,0.020019285322741765,2001928.5322741766
+country_cap_20,Risk Prone,Highest non-degenerate return,11,PWR.N,0.025638234513457488,2563823.4513457487
+country_cap_20,Risk Prone,Highest non-degenerate return,11,RSG.N,0.010020993815240993,1002099.3815240994
+country_cap_20,Risk Prone,Highest non-degenerate return,11,SDZ.S,0.031052635855969707,3105263.5855969707
+country_cap_20,Risk Prone,Highest non-degenerate return,11,TT.N,0.010000224121188563,1000022.4121188563
+country_cap_20,Risk Prone,Highest non-degenerate return,11,WM.N,0.010000476897356187,1000047.6897356187
+country_cap_20,Risk Prone,Highest non-degenerate return,11,WMT.OQ,0.14797936898553682,14797936.898553682
+country_cap_20,Risk Prone,Highest non-degenerate return,11,ZEG.L,0.01646610514187212,1646610.514187212
+country_cap_20,Risk Prone,Highest non-degenerate return,11,ZURN.S,0.010003485023122321,1000348.5023122322
+country_cap_25,Risk Averse,Minimum variance,0,AD.AS,0.029003086984801727,2900308.6984801725
+country_cap_25,Risk Averse,Minimum variance,0,ALLN.S,0.054356628540824715,5435662.854082472
+country_cap_25,Risk Averse,Minimum variance,0,BCVN.S,0.0378132241305305,3781322.41305305
+country_cap_25,Risk Averse,Minimum variance,0,BFT.WA,0.01017383797351865,1017383.7973518649
+country_cap_25,Risk Averse,Minimum variance,0,BMY.N,0.017603843889730166,1760384.3889730165
+country_cap_25,Risk Averse,Minimum variance,0,CBOE.Z,0.021446833069852043,2144683.306985204
+country_cap_25,Risk Averse,Minimum variance,0,CHD.N,0.010261567353498757,1026156.7353498758
+country_cap_25,Risk Averse,Minimum variance,0,CHRW.OQ,0.022835400968353105,2283540.0968353106
+country_cap_25,Risk Averse,Minimum variance,0,CLX.N,0.0446466609271737,4464666.09271737
+country_cap_25,Risk Averse,Minimum variance,0,CMG.N,0.010322714587482492,1032271.4587482492
+country_cap_25,Risk Averse,Minimum variance,0,COST.OQ,0.014185277637099876,1418527.7637099875
+country_cap_25,Risk Averse,Minimum variance,0,CPB.OQ,0.026452594554888985,2645259.4554888983
+country_cap_25,Risk Averse,Minimum variance,0,DPZ.OQ,0.018296484624261478,1829648.4624261477
+country_cap_25,Risk Averse,Minimum variance,0,GALE.S,0.04174258719456026,4174258.7194560263
+country_cap_25,Risk Averse,Minimum variance,0,GILD.OQ,0.020788766729122107,2078876.6729122107
+country_cap_25,Risk Averse,Minimum variance,0,GIS.N,0.021612433045159907,2161243.304515991
+country_cap_25,Risk Averse,Minimum variance,0,GTT.PA,0.010054628333408873,1005462.8333408873
+country_cap_25,Risk Averse,Minimum variance,0,HLN.L,0.028664881513986013,2866488.1513986015
+country_cap_25,Risk Averse,Minimum variance,0,HLT.N,0.015270521056231359,1527052.1056231358
+country_cap_25,Risk Averse,Minimum variance,0,HRL.N,0.01022415598058508,1022415.598058508
+country_cap_25,Risk Averse,Minimum variance,0,JNJ.N,0.03863819925366707,3863819.925366707
+country_cap_25,Risk Averse,Minimum variance,0,KR.N,0.04173292774228377,4173292.7742283773
+country_cap_25,Risk Averse,Minimum variance,0,LMT.N,0.010725376691761502,1072537.66917615
+country_cap_25,Risk Averse,Minimum variance,0,LOTB.BR,0.020937721110836735,2093772.1110836735
+country_cap_25,Risk Averse,Minimum variance,0,MO.N,0.010176793859365207,1017679.3859365208
+country_cap_25,Risk Averse,Minimum variance,0,MOBN.S,0.07984385524459787,7984385.524459788
+country_cap_25,Risk Averse,Minimum variance,0,MRK.N,0.010340122598859766,1034012.2598859766
+country_cap_25,Risk Averse,Minimum variance,0,NEM.N,0.021885345264109235,2188534.5264109233
+country_cap_25,Risk Averse,Minimum variance,0,NOC.N,0.011363234246930304,1136323.4246930303
+country_cap_25,Risk Averse,Minimum variance,0,NOVOb.CO,0.010028757182605288,1002875.7182605288
+country_cap_25,Risk Averse,Minimum variance,0,ORNBV.HE,0.015601638200670615,1560163.8200670616
+country_cap_25,Risk Averse,Minimum variance,0,PLUSP.L,0.010029123376213237,1002912.3376213236
+country_cap_25,Risk Averse,Minimum variance,0,PSPN.S,0.02044945777803689,2044945.777803689
+country_cap_25,Risk Averse,Minimum variance,0,QIA.DE,0.03306011524421832,3306011.524421832
+country_cap_25,Risk Averse,Minimum variance,0,QQ.L,0.012109809257051631,1210980.925705163
+country_cap_25,Risk Averse,Minimum variance,0,SBNOR.OL,0.01764973606270694,1764973.606270694
+country_cap_25,Risk Averse,Minimum variance,0,SJM.N,0.02175787944727701,2175787.944727701
+country_cap_25,Risk Averse,Minimum variance,0,TCFP.PA,0.010093157161935927,1009315.7161935926
+country_cap_25,Risk Averse,Minimum variance,0,TPRO.MI,0.010022403961963631,1002240.3961963631
+country_cap_25,Risk Averse,Minimum variance,0,VATN.S,0.015794053128029874,1579405.3128029874
+country_cap_25,Risk Averse,Minimum variance,0,VIS.MC,0.0196277465668981,1962774.6566898099
+country_cap_25,Risk Averse,Minimum variance,0,VZ.N,0.04336804953330011,4336804.953330011
+country_cap_25,Risk Averse,Minimum variance,0,WMT.OQ,0.049008367991611373,4900836.799161137
+country_cap_25,Neutral,Maximum return/risk ratio,8,ABBV.N,0.016937908222906993,1693790.8222906992
+country_cap_25,Neutral,Maximum return/risk ratio,8,ACLN.S,0.02116386960071363,2116386.960071363
+country_cap_25,Neutral,Maximum return/risk ratio,8,AD.AS,0.02688450358716924,2688450.358716924
+country_cap_25,Neutral,Maximum return/risk ratio,8,APH.N,0.010055014831412514,1005501.4831412515
+country_cap_25,Neutral,Maximum return/risk ratio,8,ARGX.BR,0.02100921981703019,2100921.981703019
+country_cap_25,Neutral,Maximum return/risk ratio,8,BFT.WA,0.010011521253154767,1001152.1253154767
+country_cap_25,Neutral,Maximum return/risk ratio,8,BKWB.S,0.046395038114303275,4639503.811430328
+country_cap_25,Neutral,Maximum return/risk ratio,8,CBOE.Z,0.012825278782556841,1282527.8782556842
+country_cap_25,Neutral,Maximum return/risk ratio,8,COST.OQ,0.0830193413269179,8301934.13269179
+country_cap_25,Neutral,Maximum return/risk ratio,8,GALD.S,0.01108909895299261,1108909.895299261
+country_cap_25,Neutral,Maximum return/risk ratio,8,GALE.S,0.08139235087818163,8139235.0878181625
+country_cap_25,Neutral,Maximum return/risk ratio,8,GAW.L,0.011886349495798655,1188634.9495798654
+country_cap_25,Neutral,Maximum return/risk ratio,8,HLT.N,0.010014698910098747,1001469.8910098748
+country_cap_25,Neutral,Maximum return/risk ratio,8,IBE.MC,0.010208836816661302,1020883.6816661302
+country_cap_25,Neutral,Maximum return/risk ratio,8,KR.N,0.02335412916557984,2335412.916557984
+country_cap_25,Neutral,Maximum return/risk ratio,8,LLY.N,0.04852567588624568,4852567.588624568
+country_cap_25,Neutral,Maximum return/risk ratio,8,LOTB.BR,0.037331776708954593,3733177.670895459
+country_cap_25,Neutral,Maximum return/risk ratio,8,LTMC.MI,0.02682420238479659,2682420.238479659
+country_cap_25,Neutral,Maximum return/risk ratio,8,MOBN.S,0.0780437594868405,7804375.948684051
+country_cap_25,Neutral,Maximum return/risk ratio,8,NEM.N,0.037125701329888745,3712570.1329888743
+country_cap_25,Neutral,Maximum return/risk ratio,8,ORNBV.HE,0.010001453182986234,1000145.3182986234
+country_cap_25,Neutral,Maximum return/risk ratio,8,PGR.N,0.06107504733735941,6107504.733735941
+country_cap_25,Neutral,Maximum return/risk ratio,8,PLUSP.L,0.023100261127203935,2310026.1127203936
+country_cap_25,Neutral,Maximum return/risk ratio,8,RSG.N,0.04642572919019138,4642572.919019138
+country_cap_25,Neutral,Maximum return/risk ratio,8,SBNOR.OL,0.03986955414169954,3986955.414169954
+country_cap_25,Neutral,Maximum return/risk ratio,8,SDZ.S,0.011915814299836288,1191581.429983629
+country_cap_25,Neutral,Maximum return/risk ratio,8,TKO.N,0.010001860767199021,1000186.0767199021
+country_cap_25,Neutral,Maximum return/risk ratio,8,WM.N,0.033744928537566464,3374492.8537566466
+country_cap_25,Neutral,Maximum return/risk ratio,8,WMT.OQ,0.12940970784659364,12940970.784659363
+country_cap_25,Neutral,Maximum return/risk ratio,8,ZEG.L,0.010357368017159637,1035736.8017159638
+country_cap_25,Risk Prone,Highest non-degenerate return,11,AAPL.OQ,0.01000001982578838,1000001.9825788379
+country_cap_25,Risk Prone,Highest non-degenerate return,11,ABBN.S,0.01000001290350971,1000001.290350971
+country_cap_25,Risk Prone,Highest non-degenerate return,11,ACLN.S,0.0776054850894267,7760548.50894267
+country_cap_25,Risk Prone,Highest non-degenerate return,11,APH.N,0.03212476656094212,3212476.6560942116
+country_cap_25,Risk Prone,Highest non-degenerate return,11,ARGX.BR,0.0549460188993532,5494601.88993532
+country_cap_25,Risk Prone,Highest non-degenerate return,11,AVGO.OQ,0.01000002729570323,1000002.7295703229
+country_cap_25,Risk Prone,Highest non-degenerate return,11,BEAN.S,0.010000011443982817,1000001.1443982817
+country_cap_25,Risk Prone,Highest non-degenerate return,11,BKWB.S,0.04687721184429943,4687721.184429943
+country_cap_25,Risk Prone,Highest non-degenerate return,11,CDNS.OQ,0.010000047353309432,1000004.7353309431
+country_cap_25,Risk Prone,Highest non-degenerate return,11,COST.OQ,0.07595380280710644,7595380.280710644
+country_cap_25,Risk Prone,Highest non-degenerate return,11,GALD.S,0.010000162801809324,1000016.2801809324
+country_cap_25,Risk Prone,Highest non-degenerate return,11,GALE.S,0.010000041637148703,1000004.1637148703
+country_cap_25,Risk Prone,Highest non-degenerate return,11,GAW.L,0.034364347173565866,3436434.717356587
+country_cap_25,Risk Prone,Highest non-degenerate return,11,IBE.MC,0.05873175161866427,5873175.161866427
+country_cap_25,Risk Prone,Highest non-degenerate return,11,KOG.OL,0.010000005598243843,1000000.5598243843
+country_cap_25,Risk Prone,Highest non-degenerate return,11,LLY.N,0.09250250416877293,9250250.416877292
+country_cap_25,Risk Prone,Highest non-degenerate return,11,LTMC.MI,0.018196162675362993,1819616.2675362993
+country_cap_25,Risk Prone,Highest non-degenerate return,11,MSFT.OQ,0.01319432249192451,1319432.249192451
+country_cap_25,Risk Prone,Highest non-degenerate return,11,NEM.N,0.02571439173959721,2571439.173959721
+country_cap_25,Risk Prone,Highest non-degenerate return,11,PGR.N,0.09636577031322352,9636577.031322353
+country_cap_25,Risk Prone,Highest non-degenerate return,11,PLUSP.L,0.019193145278241758,1919314.5278241758
+country_cap_25,Risk Prone,Highest non-degenerate return,11,PWR.N,0.02479100866417106,2479100.8664171062
+country_cap_25,Risk Prone,Highest non-degenerate return,11,RSG.N,0.010000513244060576,1000051.3244060576
+country_cap_25,Risk Prone,Highest non-degenerate return,11,SDZ.S,0.033989496813050156,3398949.6813050155
+country_cap_25,Risk Prone,Highest non-degenerate return,11,SQN.S,0.010000009375951547,1000000.9375951546
+country_cap_25,Risk Prone,Highest non-degenerate return,11,TT.N,0.010000007222456886,1000000.7222456887
+country_cap_25,Risk Prone,Highest non-degenerate return,11,WM.N,0.010000010818626377,1000001.0818626377
+country_cap_25,Risk Prone,Highest non-degenerate return,11,WMT.OQ,0.1494289883496154,14942898.834961541
+country_cap_25,Risk Prone,Highest non-degenerate return,11,ZEG.L,0.016019937510286304,1601993.7510286304
+country_cap_25,Risk Prone,Highest non-degenerate return,11,ZURN.S,0.010000018481805345,1000001.8481805346
+country_cap_30,Risk Averse,Minimum variance,0,AD.AS,0.02752921825878419,2752921.825878419
+country_cap_30,Risk Averse,Minimum variance,0,ALLN.S,0.060978347470514144,6097834.747051414
+country_cap_30,Risk Averse,Minimum variance,0,BCVN.S,0.04782023914775346,4782023.914775346
+country_cap_30,Risk Averse,Minimum variance,0,BFT.WA,0.010104184411691468,1010418.4411691468
+country_cap_30,Risk Averse,Minimum variance,0,BMY.N,0.018032985484458728,1803298.5484458727
+country_cap_30,Risk Averse,Minimum variance,0,CBOE.Z,0.019527703227214817,1952770.3227214818
+country_cap_30,Risk Averse,Minimum variance,0,CHD.N,0.01023067044316522,1023067.0443165221
+country_cap_30,Risk Averse,Minimum variance,0,CHRW.OQ,0.019940609857803458,1994060.9857803457
+country_cap_30,Risk Averse,Minimum variance,0,CLX.N,0.043946107664823146,4394610.766482315
+country_cap_30,Risk Averse,Minimum variance,0,CMG.N,0.010150389420122159,1015038.9420122158
+country_cap_30,Risk Averse,Minimum variance,0,COST.OQ,0.015650711614779263,1565071.1614779264
+country_cap_30,Risk Averse,Minimum variance,0,CPB.OQ,0.02592528309586831,2592528.309586831
+country_cap_30,Risk Averse,Minimum variance,0,DPZ.OQ,0.016357919057622655,1635791.9057622654
+country_cap_30,Risk Averse,Minimum variance,0,GALE.S,0.05128823356974922,5128823.356974922
+country_cap_30,Risk Averse,Minimum variance,0,GILD.OQ,0.021099434014000676,2109943.4014000674
+country_cap_30,Risk Averse,Minimum variance,0,GIS.N,0.02250722740667218,2250722.740667218
+country_cap_30,Risk Averse,Minimum variance,0,GTT.PA,0.010027193092856428,1002719.3092856428
+country_cap_30,Risk Averse,Minimum variance,0,HLN.L,0.024640180234885102,2464018.0234885104
+country_cap_30,Risk Averse,Minimum variance,0,HLT.N,0.015122133091486772,1512213.3091486772
+country_cap_30,Risk Averse,Minimum variance,0,HRL.N,0.010117805190918929,1011780.5190918929
+country_cap_30,Risk Averse,Minimum variance,0,JNJ.N,0.03768071239861651,3768071.2398616513
+country_cap_30,Risk Averse,Minimum variance,0,KR.N,0.04198090362729439,4198090.362729439
+country_cap_30,Risk Averse,Minimum variance,0,LMT.N,0.01080985554645679,1080985.554645679
+country_cap_30,Risk Averse,Minimum variance,0,LOTB.BR,0.02020871061636867,2020871.061636867
+country_cap_30,Risk Averse,Minimum variance,0,MO.N,0.010422186520318167,1042218.6520318167
+country_cap_30,Risk Averse,Minimum variance,0,MOBN.S,0.08912457800297227,8912457.800297227
+country_cap_30,Risk Averse,Minimum variance,0,MRK.N,0.01047041144108985,1047041.144108985
+country_cap_30,Risk Averse,Minimum variance,0,NEM.N,0.02000370692584105,2000370.6925841048
+country_cap_30,Risk Averse,Minimum variance,0,NOC.N,0.011341368451974858,1134136.8451974858
+country_cap_30,Risk Averse,Minimum variance,0,ORNBV.HE,0.01420638287668434,1420638.287668434
+country_cap_30,Risk Averse,Minimum variance,0,PLUSP.L,0.010004112091640559,1000411.2091640559
+country_cap_30,Risk Averse,Minimum variance,0,PSPN.S,0.027099238278139207,2709923.8278139206
+country_cap_30,Risk Averse,Minimum variance,0,QIA.DE,0.03125664888686353,3125664.8886863533
+country_cap_30,Risk Averse,Minimum variance,0,QQ.L,0.011613929896660718,1161392.9896660717
+country_cap_30,Risk Averse,Minimum variance,0,SBNOR.OL,0.013562593944450241,1356259.3944450242
+country_cap_30,Risk Averse,Minimum variance,0,SJM.N,0.021895353759329286,2189535.3759329286
+country_cap_30,Risk Averse,Minimum variance,0,TPRO.MI,0.010036229755806696,1003622.9755806696
+country_cap_30,Risk Averse,Minimum variance,0,VATN.S,0.023689025502618487,2368902.5502618486
+country_cap_30,Risk Averse,Minimum variance,0,VIS.MC,0.016058772579092575,1605877.2579092574
+country_cap_30,Risk Averse,Minimum variance,0,VZ.N,0.037953737668444856,3795373.7668444854
+country_cap_30,Risk Averse,Minimum variance,0,WMT.OQ,0.04958496547416628,4958496.547416627
+country_cap_30,Neutral,Maximum return/risk ratio,8,ABBV.N,0.015300065442924702,1530006.5442924702
+country_cap_30,Neutral,Maximum return/risk ratio,8,ACLN.S,0.027704989598099927,2770498.9598099925
+country_cap_30,Neutral,Maximum return/risk ratio,8,AD.AS,0.020281967381944006,2028196.7381944007
+country_cap_30,Neutral,Maximum return/risk ratio,8,APH.N,0.010002017420316298,1000201.7420316298
+country_cap_30,Neutral,Maximum return/risk ratio,8,ARGX.BR,0.019411312753604464,1941131.2753604464
+country_cap_30,Neutral,Maximum return/risk ratio,8,BCVN.S,0.01021909467413305,1021909.467413305
+country_cap_30,Neutral,Maximum return/risk ratio,8,BFT.WA,0.010000226320137038,1000022.6320137038
+country_cap_30,Neutral,Maximum return/risk ratio,8,BKWB.S,0.0541283594306,5412835.94306
+country_cap_30,Neutral,Maximum return/risk ratio,8,CBOE.Z,0.010417955988106698,1041795.5988106698
+country_cap_30,Neutral,Maximum return/risk ratio,8,COST.OQ,0.085366492851414,8536649.2851414
+country_cap_30,Neutral,Maximum return/risk ratio,8,GALD.S,0.014560295544461633,1456029.5544461634
+country_cap_30,Neutral,Maximum return/risk ratio,8,GALE.S,0.09088963733600577,9088963.733600577
+country_cap_30,Neutral,Maximum return/risk ratio,8,GAW.L,0.010155093372661206,1015509.3372661206
+country_cap_30,Neutral,Maximum return/risk ratio,8,HLT.N,0.010001111546437255,1000111.1546437255
+country_cap_30,Neutral,Maximum return/risk ratio,8,IBE.MC,0.010000045298121086,1000004.5298121086
+country_cap_30,Neutral,Maximum return/risk ratio,8,KR.N,0.022514687872428354,2251468.7872428354
+country_cap_30,Neutral,Maximum return/risk ratio,8,LLY.N,0.04839638490116518,4839638.490116518
+country_cap_30,Neutral,Maximum return/risk ratio,8,LOTB.BR,0.03475819037941844,3475819.037941844
+country_cap_30,Neutral,Maximum return/risk ratio,8,LTMC.MI,0.022989647885870823,2298964.788587082
+country_cap_30,Neutral,Maximum return/risk ratio,8,MOBN.S,0.08719348967368512,8719348.967368511
+country_cap_30,Neutral,Maximum return/risk ratio,8,NEM.N,0.03431566830744555,3431566.8307445548
+country_cap_30,Neutral,Maximum return/risk ratio,8,PGR.N,0.06014633960052577,6014633.960052577
+country_cap_30,Neutral,Maximum return/risk ratio,8,PLUSP.L,0.021603329602585954,2160332.9602585956
+country_cap_30,Neutral,Maximum return/risk ratio,8,RSG.N,0.040293694329693555,4029369.4329693555
+country_cap_30,Neutral,Maximum return/risk ratio,8,SBNOR.OL,0.035596985274238956,3559698.5274238954
+country_cap_30,Neutral,Maximum return/risk ratio,8,SDZ.S,0.015304110254374543,1530411.0254374542
+country_cap_30,Neutral,Maximum return/risk ratio,8,TKO.N,0.010000395657368582,1000039.5657368582
+country_cap_30,Neutral,Maximum return/risk ratio,8,WM.N,0.02734829519688447,2734829.519688447
+country_cap_30,Neutral,Maximum return/risk ratio,8,WMT.OQ,0.13106705955643225,13106705.955643225
+country_cap_30,Neutral,Maximum return/risk ratio,8,ZEG.L,0.010033056548915393,1003305.6548915392
+country_cap_30,Risk Prone,Highest non-degenerate return,11,AAPL.OQ,0.010000007396692543,1000000.7396692543
+country_cap_30,Risk Prone,Highest non-degenerate return,11,ABBN.S,0.010000003094535682,1000000.3094535682
+country_cap_30,Risk Prone,Highest non-degenerate return,11,ACLN.S,0.07780902337743768,7780902.3377437685
+country_cap_30,Risk Prone,Highest non-degenerate return,11,APH.N,0.03235239780746877,3235239.780746877
+country_cap_30,Risk Prone,Highest non-degenerate return,11,ARGX.BR,0.05514072326091828,5514072.326091828
+country_cap_30,Risk Prone,Highest non-degenerate return,11,AVGO.OQ,0.010000010743246865,1000001.0743246865
+country_cap_30,Risk Prone,Highest non-degenerate return,11,BEAN.S,0.010000004432208416,1000000.4432208417
+country_cap_30,Risk Prone,Highest non-degenerate return,11,BKWB.S,0.04644134783189617,4644134.783189617
+country_cap_30,Risk Prone,Highest non-degenerate return,11,CDNS.OQ,0.010000012691313908,1000001.2691313908
+country_cap_30,Risk Prone,Highest non-degenerate return,11,COST.OQ,0.0756493003889749,7564930.038897489
+country_cap_30,Risk Prone,Highest non-degenerate return,11,GALD.S,0.010000083415270367,1000008.3415270366
+country_cap_30,Risk Prone,Highest non-degenerate return,11,GALE.S,0.010000015319934243,1000001.5319934243
+country_cap_30,Risk Prone,Highest non-degenerate return,11,GAW.L,0.0345103628805421,3451036.28805421
+country_cap_30,Risk Prone,Highest non-degenerate return,11,IBE.MC,0.05871246189592406,5871246.189592406
+country_cap_30,Risk Prone,Highest non-degenerate return,11,KOG.OL,0.010000002370324654,1000000.2370324654
+country_cap_30,Risk Prone,Highest non-degenerate return,11,LLY.N,0.09271320415835736,9271320.415835736
+country_cap_30,Risk Prone,Highest non-degenerate return,11,LTMC.MI,0.018037396173363127,1803739.6173363128
+country_cap_30,Risk Prone,Highest non-degenerate return,11,MSFT.OQ,0.013339093860751817,1333909.3860751817
+country_cap_30,Risk Prone,Highest non-degenerate return,11,NEM.N,0.0255470036666558,2554700.36666558
+country_cap_30,Risk Prone,Highest non-degenerate return,11,PGR.N,0.09641054968904313,9641054.968904313
+country_cap_30,Risk Prone,Highest non-degenerate return,11,PLUSP.L,0.019131044251536927,1913104.4251536927
+country_cap_30,Risk Prone,Highest non-degenerate return,11,PWR.N,0.02501397849604037,2501397.849604037
+country_cap_30,Risk Prone,Highest non-degenerate return,11,RSG.N,0.010000156062867267,1000015.6062867267
+country_cap_30,Risk Prone,Highest non-degenerate return,11,SDZ.S,0.03391973090933689,3391973.0909336894
+country_cap_30,Risk Prone,Highest non-degenerate return,11,SQN.S,0.010000004321688516,1000000.4321688516
+country_cap_30,Risk Prone,Highest non-degenerate return,11,TT.N,0.010000002900530812,1000000.2900530812
+country_cap_30,Risk Prone,Highest non-degenerate return,11,WM.N,0.010000003709766088,1000000.3709766088
+country_cap_30,Risk Prone,Highest non-degenerate return,11,WMT.OQ,0.14924934895188843,14924934.895188844
+country_cap_30,Risk Prone,Highest non-degenerate return,11,ZEG.L,0.016022721663992847,1602272.1663992847
+country_cap_30,Risk Prone,Highest non-degenerate return,11,ZURN.S,0.010000004277491885,1000000.4277491885
+country_cap_40,Risk Averse,Minimum variance,0,AD.AS,0.018752700238137205,1875270.0238137206
+country_cap_40,Risk Averse,Minimum variance,0,ALLN.S,0.0678373266593785,6783732.66593785
+country_cap_40,Risk Averse,Minimum variance,0,BARN.S,0.010030523632806727,1003052.3632806727
+country_cap_40,Risk Averse,Minimum variance,0,BCVN.S,0.057157941757297576,5715794.175729757
+country_cap_40,Risk Averse,Minimum variance,0,BFT.WA,0.010015073812370613,1001507.3812370612
+country_cap_40,Risk Averse,Minimum variance,0,BMY.N,0.018038311195492724,1803831.1195492723
+country_cap_40,Risk Averse,Minimum variance,0,CBOE.Z,0.016939773108498018,1693977.3108498019
+country_cap_40,Risk Averse,Minimum variance,0,CHD.N,0.010124777673991277,1012477.7673991277
+country_cap_40,Risk Averse,Minimum variance,0,CHRW.OQ,0.017473537043890954,1747353.7043890953
+country_cap_40,Risk Averse,Minimum variance,0,CLX.N,0.04126756386548311,4126756.386548311
+country_cap_40,Risk Averse,Minimum variance,0,CMG.N,0.010114111019877492,1011411.1019877492
+country_cap_40,Risk Averse,Minimum variance,0,COST.OQ,0.01715423561410717,1715423.5614107172
+country_cap_40,Risk Averse,Minimum variance,0,CPB.OQ,0.024379839477716665,2437983.9477716666
+country_cap_40,Risk Averse,Minimum variance,0,DKSH.S,0.010273743727362113,1027374.3727362113
+country_cap_40,Risk Averse,Minimum variance,0,DPZ.OQ,0.0149638275348945,1496382.7534894499
+country_cap_40,Risk Averse,Minimum variance,0,GALE.S,0.059376225202216804,5937622.52022168
+country_cap_40,Risk Averse,Minimum variance,0,GILD.OQ,0.0208129884518744,2081298.84518744
+country_cap_40,Risk Averse,Minimum variance,0,GIS.N,0.02128063786432088,2128063.786432088
+country_cap_40,Risk Averse,Minimum variance,0,HLN.L,0.015816165044658968,1581616.5044658969
+country_cap_40,Risk Averse,Minimum variance,0,HLT.N,0.014009159819701945,1400915.9819701945
+country_cap_40,Risk Averse,Minimum variance,0,HRL.N,0.010048318366733457,1004831.8366733456
+country_cap_40,Risk Averse,Minimum variance,0,HUBN.S,0.010077785308271876,1007778.5308271876
+country_cap_40,Risk Averse,Minimum variance,0,JNJ.N,0.034134798462431885,3413479.8462431887
+country_cap_40,Risk Averse,Minimum variance,0,KR.N,0.04083735688489482,4083735.6884894823
+country_cap_40,Risk Averse,Minimum variance,0,LISP.S,0.010821404120392402,1082140.4120392401
+country_cap_40,Risk Averse,Minimum variance,0,LMT.N,0.010480725126287543,1048072.5126287543
+country_cap_40,Risk Averse,Minimum variance,0,LOTB.BR,0.015304480027918664,1530448.0027918664
+country_cap_40,Risk Averse,Minimum variance,0,MO.N,0.010226807860629555,1022680.7860629555
+country_cap_40,Risk Averse,Minimum variance,0,MOBN.S,0.09594777058247814,9594777.058247814
+country_cap_40,Risk Averse,Minimum variance,0,MRK.N,0.010462759193637849,1046275.919363785
+country_cap_40,Risk Averse,Minimum variance,0,NEM.N,0.01815157577344802,1815157.577344802
+country_cap_40,Risk Averse,Minimum variance,0,NOC.N,0.011155281151258401,1115528.11512584
+country_cap_40,Risk Averse,Minimum variance,0,ORNBV.HE,0.0104159853793136,1041598.5379313601
+country_cap_40,Risk Averse,Minimum variance,0,PSPN.S,0.031176775742758133,3117677.5742758135
+country_cap_40,Risk Averse,Minimum variance,0,QIA.DE,0.025623101508007562,2562310.150800756
+country_cap_40,Risk Averse,Minimum variance,0,QQ.L,0.010542650916241486,1054265.0916241487
+country_cap_40,Risk Averse,Minimum variance,0,SBNOR.OL,0.010047292604722757,1004729.2604722758
+country_cap_40,Risk Averse,Minimum variance,0,SCMN.S,0.01496093580618056,1496093.580618056
+country_cap_40,Risk Averse,Minimum variance,0,SJM.N,0.020516489621480893,2051648.9621480894
+country_cap_40,Risk Averse,Minimum variance,0,VATN.S,0.03233833939426142,3233833.9394261423
+country_cap_40,Risk Averse,Minimum variance,0,VIS.MC,0.010424395330440475,1042439.5330440475
+country_cap_40,Risk Averse,Minimum variance,0,VZ.N,0.03123263449090839,3123263.449090839
+country_cap_40,Risk Averse,Minimum variance,0,WMT.OQ,0.04925387360322447,4925387.360322447
+country_cap_40,Neutral,Maximum return/risk ratio,8,ABBV.N,0.013441185878703113,1344118.5878703112
+country_cap_40,Neutral,Maximum return/risk ratio,8,ACLN.S,0.03439831657892485,3439831.657892485
+country_cap_40,Neutral,Maximum return/risk ratio,8,AD.AS,0.010423147333185098,1042314.7333185098
+country_cap_40,Neutral,Maximum return/risk ratio,8,APH.N,0.01000020746580276,1000020.7465802759
+country_cap_40,Neutral,Maximum return/risk ratio,8,ARGX.BR,0.016793339334058778,1679333.9334058778
+country_cap_40,Neutral,Maximum return/risk ratio,8,BCVN.S,0.02105223471670305,2105223.471670305
+country_cap_40,Neutral,Maximum return/risk ratio,8,BEAN.S,0.010000036975048612,1000003.6975048612
+country_cap_40,Neutral,Maximum return/risk ratio,8,BFT.WA,0.010000086987027238,1000008.6987027237
+country_cap_40,Neutral,Maximum return/risk ratio,8,BKWB.S,0.06250970689705354,6250970.689705354
+country_cap_40,Neutral,Maximum return/risk ratio,8,CBOE.Z,0.010011131123098527,1001113.1123098527
+country_cap_40,Neutral,Maximum return/risk ratio,8,COST.OQ,0.0830108806340295,8301088.063402951
+country_cap_40,Neutral,Maximum return/risk ratio,8,GALD.S,0.017129547992737273,1712954.7992737272
+country_cap_40,Neutral,Maximum return/risk ratio,8,GALE.S,0.10181240807464627,10181240.807464628
+country_cap_40,Neutral,Maximum return/risk ratio,8,GAW.L,0.010000053819038462,1000005.3819038462
+country_cap_40,Neutral,Maximum return/risk ratio,8,HLT.N,0.010000303397267134,1000030.3397267135
+country_cap_40,Neutral,Maximum return/risk ratio,8,KR.N,0.020502657043910348,2050265.7043910348
+country_cap_40,Neutral,Maximum return/risk ratio,8,LLY.N,0.04799827411701666,4799827.411701666
+country_cap_40,Neutral,Maximum return/risk ratio,8,LOTB.BR,0.027358786457554476,2735878.6457554474
+country_cap_40,Neutral,Maximum return/risk ratio,8,LTMC.MI,0.017500164236199756,1750016.4236199756
+country_cap_40,Neutral,Maximum return/risk ratio,8,MOBN.S,0.1008724856072281,10087248.56072281
+country_cap_40,Neutral,Maximum return/risk ratio,8,NEM.N,0.03131970925122702,3131970.925122702
+country_cap_40,Neutral,Maximum return/risk ratio,8,PGR.N,0.05988076924770491,5988076.924770491
+country_cap_40,Neutral,Maximum return/risk ratio,8,PLUSP.L,0.019432755064547672,1943275.5064547672
+country_cap_40,Neutral,Maximum return/risk ratio,8,RSG.N,0.03595221449006219,3595221.449006219
+country_cap_40,Neutral,Maximum return/risk ratio,8,SBNOR.OL,0.02696154869157456,2696154.869157456
+country_cap_40,Neutral,Maximum return/risk ratio,8,SDZ.S,0.019050500910576605,1905050.0910576605
+country_cap_40,Neutral,Maximum return/risk ratio,8,TKO.N,0.010000625299347067,1000062.5299347067
+country_cap_40,Neutral,Maximum return/risk ratio,8,WM.N,0.02307487591469206,2307487.591469206
+country_cap_40,Neutral,Maximum return/risk ratio,8,WMT.OQ,0.12951044336269443,12951044.336269444
+country_cap_40,Neutral,Maximum return/risk ratio,8,ZEG.L,0.01000160309834002,1000160.3098340019
+country_cap_40,Risk Prone,Highest non-degenerate return,11,AAPL.OQ,0.010000018911957188,1000001.8911957188
+country_cap_40,Risk Prone,Highest non-degenerate return,11,ABBN.S,0.010000010722670823,1000001.0722670823
+country_cap_40,Risk Prone,Highest non-degenerate return,11,ACLN.S,0.07676320050640865,7676320.050640865
+country_cap_40,Risk Prone,Highest non-degenerate return,11,APH.N,0.031320347365392076,3132034.7365392074
+country_cap_40,Risk Prone,Highest non-degenerate return,11,ARGX.BR,0.05417406869607183,5417406.869607183
+country_cap_40,Risk Prone,Highest non-degenerate return,11,AVGO.OQ,0.010000024514372633,1000002.4514372633
+country_cap_40,Risk Prone,Highest non-degenerate return,11,BEAN.S,0.010000009623307781,1000000.9623307781
+country_cap_40,Risk Prone,Highest non-degenerate return,11,BKWB.S,0.048591540549301704,4859154.05493017
+country_cap_40,Risk Prone,Highest non-degenerate return,11,CDNS.OQ,0.010000040221666728,1000004.0221666729
+country_cap_40,Risk Prone,Highest non-degenerate return,11,COST.OQ,0.07723794530698323,7723794.530698324
+country_cap_40,Risk Prone,Highest non-degenerate return,11,GALD.S,0.01000014416336421,1000014.416336421
+country_cap_40,Risk Prone,Highest non-degenerate return,11,GALE.S,0.010000044914219625,1000004.4914219625
+country_cap_40,Risk Prone,Highest non-degenerate return,11,GAW.L,0.03376143161133269,3376143.161133269
+country_cap_40,Risk Prone,Highest non-degenerate return,11,IBE.MC,0.05886813543836589,5886813.543836589
+country_cap_40,Risk Prone,Highest non-degenerate return,11,KOG.OL,0.010000004182157914,1000000.4182157913
+country_cap_40,Risk Prone,Highest non-degenerate return,11,LLY.N,0.09166436487525094,9166436.487525094
+country_cap_40,Risk Prone,Highest non-degenerate return,11,LTMC.MI,0.018810821864389198,1881082.1864389197
+country_cap_40,Risk Prone,Highest non-degenerate return,11,MSFT.OQ,0.012386220207357667,1238622.0207357667
+country_cap_40,Risk Prone,Highest non-degenerate return,11,NEM.N,0.02639564865052577,2639564.865052577
+country_cap_40,Risk Prone,Highest non-degenerate return,11,PGR.N,0.0961989865643818,9619898.656438181
+country_cap_40,Risk Prone,Highest non-degenerate return,11,PLUSP.L,0.01944004337686363,1944004.3376863631
+country_cap_40,Risk Prone,Highest non-degenerate return,11,PWR.N,0.023914823457871298,2391482.34578713
+country_cap_40,Risk Prone,Highest non-degenerate return,11,RSG.N,0.01000064475701084,1000064.475701084
+country_cap_40,Risk Prone,Highest non-degenerate return,11,SDZ.S,0.03428299735945782,3428299.735945782
+country_cap_40,Risk Prone,Highest non-degenerate return,11,SQN.S,0.010000008043767923,1000000.8043767923
+country_cap_40,Risk Prone,Highest non-degenerate return,11,TT.N,0.010000007020173916,1000000.7020173917
+country_cap_40,Risk Prone,Highest non-degenerate return,11,WM.N,0.010000011503508448,1000001.1503508448
+country_cap_40,Risk Prone,Highest non-degenerate return,11,WMT.OQ,0.15018458491978864,15018458.491978865
+country_cap_40,Risk Prone,Highest non-degenerate return,11,ZEG.L,0.016003855812502528,1600385.581250253
+country_cap_40,Risk Prone,Highest non-degenerate return,11,ZURN.S,0.010000014859576441,1000001.4859576441

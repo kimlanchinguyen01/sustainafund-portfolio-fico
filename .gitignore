@@ -1,51 +1,23 @@
-# ============ LICENCE: never commit. It is a credential. ============
+# ============ licence: never commit. It is a credential. ============
 *.xpr
 
-# ============ large generated artifacts ============
-# Every one of these is reproducible; see README.md for the script and timing.
+# ============ large generated files, reproducible (see README) ============
 **/covariance_matrix*.csv
-# ...except the one current model input, so FINAL_data_cleaning/ runs as shipped
-# without regenerating anything (23 MB, well under GitHub's warning threshold).
-!FINAL_data_cleaning/data/covariance_matrix_v4.csv
+# ...except the one current model input
+!2_optimisation_model/data/covariance_matrix_v4.csv
 **/prices_clean*.csv
 **/prices_div_usd.csv
-**/fx_rates_ecb.csv
-!FINAL_data_cleaning/data/fx_rates_ecb.csv
 
-# Source price data. LSEG-derived and large; the team already holds both files.
-# prices_lseg_dividend_adjusted.csv (49 MB) is the current raw input - ask Chloe.
+# Source price data. LSEG-derived and large; not in the repository.
 **/prices_lseg_dividend_adjusted.csv
-
-# ============ historical snapshots, superseded by HTWSS_v3/ ============
-teammate/
-to_send/
-HTWSS_v3/covariance/
-*.zip
 
 # ============ run logs and caches ============
 **/*_log.txt
 **/__pycache__/
 *.pyc
+*.zip
 
-# ============ node / editor / OS ============
-node_modules/
-package-lock.json
-package.json
+# ============ editor / OS ============
 .DS_Store
 .vscode/
 .idea/
-
-# ============ pristine course dataset ============
-# Kept out of git: it is byte-identical to the copies under pipeline/, which is
-# where the scripts read from. The originals ship with the course materials
-# (data_full / data_test).
-# LEADING SLASH matters: a bare "data/" also matches FINAL_data_cleaning/data/,
-# which silently excluded the whole folder Chloe asked for.
-/data/
-
-# write-ups delivered to the team as HTWSS_v3.zip, deliberately out of git
-# (they describe the archived country-cap model as the deliverable)
-HTWSS_summary_v*.docx
-
-# deck build scratch (charts are regenerated; the PPTX/PDF are deliverables)
-deck/charts/

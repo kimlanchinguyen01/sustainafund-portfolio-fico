@@ -1,8 +1,8 @@
-# FICO Xpress case study — SustainaFund portfolio selection
+# SustainaFund - ESG-constrained portfolio selection with FICO Xpress
 xpress>=9.9,<10          # solver; needs a licence at $XPAUTH_PATH
 numpy>=1.26
 pandas>=2.2
-scikit-learn>=1.4        # Ledoit-Wolf, used by 01c and 09
-scipy>=1.12              # eigh (truncated eigendecomposition) in 06a
-streamlit>=1.35          # dashboard (not built yet)
-plotly>=5.20             # dashboard charts
+openpyxl>=3.1            # reads sectors.xlsx and the LSEG workbooks
+scikit-learn>=1.4        # Ledoit-Wolf
+scipy>=1.12              # eigendecomposition, statistics
+matplotlib>=3.8          # figures of the report (7_report_figures)

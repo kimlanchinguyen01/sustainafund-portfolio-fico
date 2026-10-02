@@ -62,7 +62,7 @@ and `risk_std` are **decimals**, every `*_%` column is already **percent**.
 
 Sources: `shares_imputed.csv`, `sectors.xlsx`, `expected_return_v4.csv`,
 `per_stock_risk_v4.csv`, `covariance_matrix_v4.csv` (header only),
-`results_chloe/portfolio_tier2off_*.csv`.
+`2_optimisation_model/results/portfolio_tier2off_*.csv`.
 
 ---
 
@@ -70,7 +70,7 @@ Sources: `shares_imputed.csv`, `sectors.xlsx`, `expected_return_v4.csv`,
 
 | File | Rows | Source |
 |---|---|---|
-| `frontier_points.csv` | 15 | `results_chloe/efficient_frontier_model2_sec30_tier1_tier2off_esgfloor30.csv` |
+| `frontier_points.csv` | 15 | `2_optimisation_model/results/efficient_frontier_model2_sec30_tier1_tier2off_esgfloor30.csv` |
 | `frontier_weights.csv` | 1077 | `..._weights_sec30_tier1_tier2off_esgfloor30.csv` |
 | `frontier_points_tier2on.csv` | 15 | the tier2-on variant |
 | `frontier_weights_tier2on.csv` | 1077 | the tier2-on variant |
@@ -149,14 +149,14 @@ magnitude: `d_risk_pp` is the risk cost at matched return,
 `reltol = 0` reproduces the max-return corner exactly.
 
 The country cap is **off** in the delivered model. These files describe what
-turning it on would cost — see `results_country_cap/README.md`.
+turning it on would cost — see `2_optimisation_model/results/country_cap/README.md`.
 
 ---
 
 ## backtest/  (walk-forward, out-of-sample)
 
-Source: `results_chloe/backtest/`. Produced by
-`pipeline/21_backtest_walkforward.py`. **Tests the minimum-variance book, not
+Source: `4_backtest/results/min_variance/`. Produced by
+`4_backtest/code/21_backtest_walkforward.py`. **Tests the minimum-variance book, not
 the neutral recommendation** — rolling 3-year window, quarterly rebalance,
 2018-04 to 2025-12.
 
@@ -175,8 +175,8 @@ edge is volatility, −22% overall.
 
 ## backtest_profiles/  (walk-forward, the recommended profile)
 
-Source: `backtest_profiles/results/`, produced by
-`backtest_profiles/26_backtest_profiles.py`. Same protocol as `backtest/` above,
+Source: `4_backtest/results/profiles/`, produced by
+`4_backtest/code/26_backtest_profiles.py`. Same protocol as `backtest/` above,
 but **four books instead of one**: `minvar`, `mandate20`, `mandate10`,
 `equal_weight`. This is the one that tests something close to the recommendation.
 
@@ -187,7 +187,7 @@ but **four books instead of one**: `minvar`, `mandate20`, `mandate10`,
 | `subperiods.csv` | six regimes plus FULL, per book |
 | `rebalances.csv` | 31 rebalances × 4 books: held, predicted risk, ESG, turnover, solstatus |
 | `diagnostics.csv` | Sharpe vs 1/N with t-tests, risk understatement, turnover |
-| `gate.csv` | reproduction check against `pipeline/21_backtest_walkforward.py` |
+| `gate.csv` | reproduction check against `4_backtest/code/21_backtest_walkforward.py` |
 | `option_b_comparison.csv` | what a 2–3 rebalance-point protocol concludes under three different splits — methodology evidence, not a chart |
 
 ⚠ **Do not present any Sharpe difference here as an edge.** All three t-stats
@@ -195,7 +195,7 @@ are inside ±1.96 (−0.87, +0.60, +1.12), so the whole spread 0.829 → 0.914 i
 noise. What is robust is volatility and drawdown, which rise monotonically as
 the mandate loosens, and turnover: `mandate20` runs 170% a year against
 min-variance's 83%, and at 10bp its Sharpe drops below the benchmark. Read
-`backtest_profiles/README.md` before charting any of it.
+`4_backtest/README.md` before charting any of it.
 
 `subperiods.csv` and `diagnostics.csv` here are regenerable replacements for
 `backtest/subperiods.csv` and `backtest/diagnostics.csv`, which nothing in the
@@ -205,7 +205,7 @@ repo writes.
 
 ## benchmark_1n/  (the naive benchmark, full study period)
 
-Source: `benchmark_1n/results/`, produced by `benchmark_1n/30_benchmark_1n.py`.
+Source: `5_benchmark_1n/results/`, produced by `5_benchmark_1n/code/30_benchmark_1n.py`.
 The only benchmark series covering **all 11 years** (2015-01-02 → 2025-12-31);
 the two backtest folders only reach back to 2018-04.
 
@@ -235,9 +235,9 @@ alternative portfolio.
 
 ## stress/  (crisis windows)
 
-Source: `stress_test/results/`. Produced by
-`stress_test/25_crisis_stress_test.py`. Full write-up in
-`stress_test/README.md` — **read it before putting these on a slide**, because
+Source: `6_stress_test/results/`. Produced by
+`6_stress_test/code/25_crisis_stress_test.py`. Full write-up in
+`6_stress_test/README.md` — **read it before putting these on a slide**, because
 the two panels disagree by design.
 
 | File | Rows | Contents |
@@ -268,12 +268,12 @@ them if the dashboard surfaces that book.
 | Wanted? | Where it is | Why not copied |
 |---|---|---|
 | covariance matrix | `covariance_matrix_v4.csv`, `FINAL_data_cleaning/data/` | 24 MB; only the shipped copy is in git |
-| daily price history | `pipeline/prices_div_usd.csv` | 52 MB, gitignored, LSEG-derived |
+| daily price history | `1_data_preparation/results/prices_div_usd.csv` | 52 MB, gitignored, LSEG-derived |
 | raw prices | `data/data_full/stockprices_full.csv` | 22 MB, gitignored |
 | the PDF deck | `SustainaFund_interim_review.pdf` | not data |
 
 If the dashboard needs per-stock price charts it needs `prices_div_usd.csv`,
-which is not in git. Rebuild with `pipeline/20_dividend_adjusted_pipeline.py`
+which is not in git. Rebuild with `1_data_preparation/code/20_dividend_adjusted_pipeline.py`
 or ask Chloe. Everything else here is self-contained.
 
 ## Provenance

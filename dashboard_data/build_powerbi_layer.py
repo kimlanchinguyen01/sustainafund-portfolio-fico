@@ -111,14 +111,14 @@ def build_universe():
     current sector and the LSEG GICS sector are exposed so a slicer can use
     either without implying the model switched.
     """
-    shares = read("shares_imputed.csv").set_index("Stock")
+    shares = read("2_optimisation_model/data/shares_imputed.csv").set_index("Stock")
     sector = read("sectors.xlsx".replace(".xlsx", ".xlsx")) if False else \
-        pd.read_excel(os.path.join(ROOT, "sectors.xlsx")).set_index("Stock")["Sector"]
-    mu = read("expected_return_v4.csv").set_index("Stock")["expected_return"]
-    sd = read("per_stock_risk_v4.csv").set_index("Stock")["risk_std"]
-    cov_cols = read("covariance_matrix_v4.csv", nrows=0).columns.tolist()[1:]
+        pd.read_excel(os.path.join(ROOT, "2_optimisation_model", "data", "sectors.xlsx")).set_index("Stock")["Sector"]
+    mu = read("2_optimisation_model/data/expected_return_v4.csv").set_index("Stock")["expected_return"]
+    sd = read("2_optimisation_model/data/per_stock_risk_v4.csv").set_index("Stock")["risk_std"]
+    cov_cols = read("2_optimisation_model/data/covariance_matrix_v4.csv", nrows=0).columns.tolist()[1:]
 
-    gics_path = os.path.join(ROOT, "data_lseg_update", "sectors_gics.xlsx")
+    gics_path = os.path.join(ROOT, "3_sensitivity_studies", "data", "lseg_update", "sectors_gics.xlsx")
     have_industry = os.path.exists(gics_path)
     if have_industry:
         g = pd.read_excel(gics_path).set_index("Stock")
@@ -154,11 +154,11 @@ def build_backtests(out):
 
     SOURCES = [
         # (label of the run, folder, book->column mapping present in that run)
-        ("walk-forward min-variance (script 21)", "results_chloe/backtest",
+        ("walk-forward min-variance (script 21)", "4_backtest/results/min_variance",
          {"optimised": "optimised", "equal_weight": "equal_weight"},
          "backtest_summary.csv", "backtest_equity_curves.csv",
          "backtest_subperiods.csv", "backtest_diagnostics.csv"),
-        ("walk-forward profiles (script 26)", "backtest_profiles/results",
+        ("walk-forward profiles (script 26)", "4_backtest/results/profiles",
          {"minvar": "minvar", "mandate20": "mandate20",
           "mandate10": "mandate10", "equal_weight": "equal_weight"},
          "summary.csv", "equity_curves.csv", "subperiods.csv", "diagnostics.csv"),
@@ -236,7 +236,7 @@ def build_backtests(out):
 # 3. stress test, standardised, with explicit identifiers
 # ===========================================================================
 def build_stress(out):
-    src = os.path.join(ROOT, "stress_test", "results")
+    src = os.path.join(ROOT, "6_stress_test", "results")
     if not os.path.exists(src):
         return 0
 
@@ -302,7 +302,7 @@ def build_stress(out):
 # 4. the 1/N benchmark, standardised
 # ===========================================================================
 def build_benchmark(out):
-    src = os.path.join(ROOT, "benchmark_1n", "results")
+    src = os.path.join(ROOT, "5_benchmark_1n", "results")
     if not os.path.exists(src):
         return 0
 
@@ -361,9 +361,9 @@ def build_run_reconciliation(out):
     rows = []
     SRC = [
         ("script 21 — the original walk-forward",
-         "results_chloe/backtest/backtest_summary.csv", "Model 2 (min-variance)", 100),
+         "4_backtest/results/min_variance/backtest_summary.csv", "Model 2 (min-variance)", 100),
         ("script 26 — four books on the same protocol",
-         "backtest_profiles/results/summary.csv", "minvar", 100),
+         "4_backtest/results/profiles/summary.csv", "minvar", 100),
         ("script 33 — canonical profiles",
          "walkforward/summary.csv", "Risk Averse", 1),
     ]
@@ -403,7 +403,7 @@ def build_run_reconciliation(out):
 def build_tier2_comparison(out):
     """At matched risk, what does excluding conventional defence cost?
 
-    The committed results_chloe/comparison_tier2.csv is a stale artefact no live
+    The committed 2_optimisation_model/results/comparison_tier2.csv is a stale artefact no live
     script writes, and its `risk` column holds percentage STRINGS ("9.26%") while
     its return columns hold percent-as-number. Rather than hand-patch a generated
     file, this derives the same comparison from the canonical scenario frontiers
@@ -536,7 +536,7 @@ def validate(u, have_industry):
                     # 1e-3 (0.1pp), not 1e-6: MIP_GAP = 0.001 admits alternative
                     # optima on the flat min-risk end, so the same solve can
                     # return 9.87% or 9.92% with 42 or 43 holdings. Documented in
-                    # results_country_cap/README.md. The frontier POINT must
+                    # 2_optimisation_model/results/country_cap/README.md. The frontier POINT must
                     # still match exactly - that is the selection rule, not the
                     # solver's tie-breaking.
                     if d > 1e-3:

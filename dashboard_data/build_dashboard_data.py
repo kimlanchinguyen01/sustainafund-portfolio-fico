@@ -2,7 +2,7 @@
 Assemble dashboard_data/ from the result files scattered across the repo.
 
 The dashboard should read from ONE place with stable names, not from
-results_chloe/ plus the repo root plus results_country_cap/ plus stress_test/.
+2_optimisation_model/results/ plus the repo root plus 2_optimisation_model/results/country_cap/ plus stress_test/.
 This copies what a dashboard needs, renames it predictably, and builds the one
 table that does not exist yet: a joined per-stock universe.
 
@@ -27,67 +27,67 @@ TIER2ON = "sec30_tier1_tier2on_esgfloor30"
 COPIES = [
     # the frontier
     (f"frontier/frontier_points.csv",
-     f"results_chloe/efficient_frontier_model2_{TIER2OFF}.csv"),
+     f"2_optimisation_model/results/efficient_frontier_model2_{TIER2OFF}.csv"),
     (f"frontier/frontier_weights.csv",
-     f"results_chloe/efficient_frontier_weights_{TIER2OFF}.csv"),
+     f"2_optimisation_model/results/efficient_frontier_weights_{TIER2OFF}.csv"),
     (f"frontier/frontier_points_tier2on.csv",
-     f"results_chloe/efficient_frontier_model2_{TIER2ON}.csv"),
+     f"2_optimisation_model/results/efficient_frontier_model2_{TIER2ON}.csv"),
     (f"frontier/frontier_weights_tier2on.csv",
-     f"results_chloe/efficient_frontier_weights_{TIER2ON}.csv"),
+     f"2_optimisation_model/results/efficient_frontier_weights_{TIER2ON}.csv"),
 
     # the three delivered books
-    ("portfolios/summary.csv",              "results_chloe/portfolio_summary.csv"),
-    ("portfolios/risk_averse.csv",          "results_chloe/portfolio_tier2off_risk_averse.csv"),
-    ("portfolios/neutral.csv",              "results_chloe/portfolio_tier2off_neutral.csv"),
-    ("portfolios/risk_prone.csv",           "results_chloe/portfolio_tier2off_risk_prone.csv"),
-    ("portfolios/risk_averse_tier2on.csv",  "results_chloe/portfolio_tier2on_risk_averse.csv"),
-    ("portfolios/neutral_tier2on.csv",      "results_chloe/portfolio_tier2on_neutral.csv"),
-    ("portfolios/risk_prone_tier2on.csv",   "results_chloe/portfolio_tier2on_risk_prone.csv"),
-    ("portfolios/profile_definitions.csv",  "results_chloe/risk_profile_scenarios_summary.csv"),
+    ("portfolios/summary.csv",              "2_optimisation_model/results/portfolio_summary.csv"),
+    ("portfolios/risk_averse.csv",          "2_optimisation_model/results/portfolio_tier2off_risk_averse.csv"),
+    ("portfolios/neutral.csv",              "2_optimisation_model/results/portfolio_tier2off_neutral.csv"),
+    ("portfolios/risk_prone.csv",           "2_optimisation_model/results/portfolio_tier2off_risk_prone.csv"),
+    ("portfolios/risk_averse_tier2on.csv",  "2_optimisation_model/results/portfolio_tier2on_risk_averse.csv"),
+    ("portfolios/neutral_tier2on.csv",      "2_optimisation_model/results/portfolio_tier2on_neutral.csv"),
+    ("portfolios/risk_prone_tier2on.csv",   "2_optimisation_model/results/portfolio_tier2on_risk_prone.csv"),
+    ("portfolios/profile_definitions.csv",  "2_optimisation_model/results/risk_profile_scenarios_summary.csv"),
 
     # constraint sensitivity
-    ("sensitivity/scenario_matrix.csv",     "results_chloe/scenario_matrix.csv"),
-    ("sensitivity/tier2_comparison.csv",    "results_chloe/comparison_tier2.csv"),
-    ("sensitivity/country_cap_frontier.csv", "results_country_cap/cap_frontier.csv"),
-    ("sensitivity/country_cap_cost.csv",    "results_country_cap/cap_cost.csv"),
-    ("sensitivity/country_cap_profiles.csv", "results_country_cap/cap_profiles.csv"),
-    ("sensitivity/mandate_sweep.csv",       "results_country_cap/mandate.csv"),
-    ("sensitivity/top_countries.csv",       "results_country_cap/top_countries.csv"),
+    ("sensitivity/scenario_matrix.csv",     "2_optimisation_model/results/scenario_matrix.csv"),
+    ("sensitivity/tier2_comparison.csv",    "2_optimisation_model/results/comparison_tier2.csv"),
+    ("sensitivity/country_cap_frontier.csv", "2_optimisation_model/results/country_cap/cap_frontier.csv"),
+    ("sensitivity/country_cap_cost.csv",    "2_optimisation_model/results/country_cap/cap_cost.csv"),
+    ("sensitivity/country_cap_profiles.csv", "2_optimisation_model/results/country_cap/cap_profiles.csv"),
+    ("sensitivity/mandate_sweep.csv",       "2_optimisation_model/results/country_cap/mandate.csv"),
+    ("sensitivity/top_countries.csv",       "2_optimisation_model/results/country_cap/top_countries.csv"),
 
     # walk-forward backtest
-    ("backtest/equity_curves.csv",          "results_chloe/backtest/backtest_equity_curves.csv"),
-    ("backtest/subperiods.csv",             "results_chloe/backtest/backtest_subperiods.csv"),
-    ("backtest/summary.csv",                "results_chloe/backtest/backtest_summary.csv"),
-    ("backtest/rebalances.csv",             "results_chloe/backtest/backtest_rebalances.csv"),
-    ("backtest/diagnostics.csv",            "results_chloe/backtest/backtest_diagnostics.csv"),
+    ("backtest/equity_curves.csv",          "4_backtest/results/min_variance/backtest_equity_curves.csv"),
+    ("backtest/subperiods.csv",             "4_backtest/results/min_variance/backtest_subperiods.csv"),
+    ("backtest/summary.csv",                "4_backtest/results/min_variance/backtest_summary.csv"),
+    ("backtest/rebalances.csv",             "4_backtest/results/min_variance/backtest_rebalances.csv"),
+    ("backtest/diagnostics.csv",            "4_backtest/results/min_variance/backtest_diagnostics.csv"),
 
     # walk-forward backtest of the recommended profile (script 26)
-    ("backtest_profiles/summary.csv",       "backtest_profiles/results/summary.csv"),
-    ("backtest_profiles/equity_curves.csv", "backtest_profiles/results/equity_curves.csv"),
-    ("backtest_profiles/subperiods.csv",    "backtest_profiles/results/subperiods.csv"),
-    ("backtest_profiles/rebalances.csv",    "backtest_profiles/results/rebalances.csv"),
-    ("backtest_profiles/diagnostics.csv",   "backtest_profiles/results/diagnostics.csv"),
-    ("backtest_profiles/gate.csv",          "backtest_profiles/results/gate.csv"),
+    ("backtest_profiles/summary.csv",       "4_backtest/results/profiles/summary.csv"),
+    ("backtest_profiles/equity_curves.csv", "4_backtest/results/profiles/equity_curves.csv"),
+    ("backtest_profiles/subperiods.csv",    "4_backtest/results/profiles/subperiods.csv"),
+    ("backtest_profiles/rebalances.csv",    "4_backtest/results/profiles/rebalances.csv"),
+    ("backtest_profiles/diagnostics.csv",   "4_backtest/results/profiles/diagnostics.csv"),
+    ("backtest_profiles/gate.csv",          "4_backtest/results/profiles/gate.csv"),
     ("backtest_profiles/option_b_comparison.csv",
-     "backtest_profiles/results/option_b_comparison.csv"),
+     "4_backtest/results/profiles/option_b_comparison.csv"),
 
     # 1/N benchmark over the full study period (script 30)
-    ("benchmark_1n/curves.csv",       "benchmark_1n/results/curves.csv"),
-    ("benchmark_1n/summary.csv",      "benchmark_1n/results/summary.csv"),
-    ("benchmark_1n/annual.csv",       "benchmark_1n/results/annual.csv"),
-    ("benchmark_1n/windows.csv",      "benchmark_1n/results/windows.csv"),
-    ("benchmark_1n/feasibility.csv",  "benchmark_1n/results/feasibility.csv"),
-    ("benchmark_1n/universe.csv",     "benchmark_1n/results/universe.csv"),
-    ("benchmark_1n/gate_vs_script21.csv", "benchmark_1n/results/gate_vs_script21.csv"),
+    ("benchmark_1n/curves.csv",       "5_benchmark_1n/results/curves.csv"),
+    ("benchmark_1n/summary.csv",      "5_benchmark_1n/results/summary.csv"),
+    ("benchmark_1n/annual.csv",       "5_benchmark_1n/results/annual.csv"),
+    ("benchmark_1n/windows.csv",      "5_benchmark_1n/results/windows.csv"),
+    ("benchmark_1n/feasibility.csv",  "5_benchmark_1n/results/feasibility.csv"),
+    ("benchmark_1n/universe.csv",     "5_benchmark_1n/results/universe.csv"),
+    ("benchmark_1n/gate_vs_script21.csv", "5_benchmark_1n/results/gate_vs_script21.csv"),
 
     # crisis stress test
-    ("stress/panelA_windows.csv",           "stress_test/results/panelA_windows.csv"),
-    ("stress/panelB_windows.csv",           "stress_test/results/panelB_windows.csv"),
-    ("stress/panelB_portfolios.csv",        "stress_test/results/panelB_portfolios.csv"),
-    ("stress/panelB_holdings.csv",          "stress_test/results/panelB_holdings.csv"),
-    ("stress/panelB_not_testable.csv",      "stress_test/results/panelB_not_testable.csv"),
-    ("stress/covid_attribution.csv",        "stress_test/results/drawdown_attribution.csv"),
-    ("stress/worst_windows.csv",            "stress_test/results/worst_windows.csv"),
+    ("stress/panelA_windows.csv",           "6_stress_test/results/panelA_windows.csv"),
+    ("stress/panelB_windows.csv",           "6_stress_test/results/panelB_windows.csv"),
+    ("stress/panelB_portfolios.csv",        "6_stress_test/results/panelB_portfolios.csv"),
+    ("stress/panelB_holdings.csv",          "6_stress_test/results/panelB_holdings.csv"),
+    ("stress/panelB_not_testable.csv",      "6_stress_test/results/panelB_not_testable.csv"),
+    ("stress/covid_attribution.csv",        "6_stress_test/results/drawdown_attribution.csv"),
+    ("stress/worst_windows.csv",            "6_stress_test/results/worst_windows.csv"),
 ]
 
 
@@ -101,13 +101,13 @@ def build_universe():
         passes_esg_floor    individual ESG >= 30
         in_model_universe   both of the above - what Model 2 optimised over
     """
-    shares = pd.read_csv(f"{ROOT}/shares_imputed.csv").set_index("Stock")
-    sectors = pd.read_excel(f"{ROOT}/sectors.xlsx").set_index("Stock")["Sector"]
-    mu = pd.read_csv(f"{ROOT}/expected_return_v4.csv").set_index("Stock")["expected_return"]
-    sd = pd.read_csv(f"{ROOT}/per_stock_risk_v4.csv").set_index("Stock")["risk_std"]
+    shares = pd.read_csv(f"{ROOT}/2_optimisation_model/data/shares_imputed.csv").set_index("Stock")
+    sectors = pd.read_excel(f"{ROOT}/2_optimisation_model/data/sectors.xlsx").set_index("Stock")["Sector"]
+    mu = pd.read_csv(f"{ROOT}/2_optimisation_model/data/expected_return_v4.csv").set_index("Stock")["expected_return"]
+    sd = pd.read_csv(f"{ROOT}/2_optimisation_model/data/per_stock_risk_v4.csv").set_index("Stock")["risk_std"]
 
     # header row only: the file is 24 MB and we need the ticker list, not the matrix
-    cov_cols = pd.read_csv(f"{ROOT}/covariance_matrix_v4.csv", nrows=0).columns.tolist()[1:]
+    cov_cols = pd.read_csv(f"{ROOT}/2_optimisation_model/data/covariance_matrix_v4.csv", nrows=0).columns.tolist()[1:]
 
     u = pd.DataFrame(index=shares.index)
     u["region"] = shares["Region"]
@@ -123,7 +123,7 @@ def build_universe():
 
     # which of the delivered books holds it, and at what weight
     for name in ("risk_averse", "neutral", "risk_prone"):
-        w = pd.read_csv(f"{ROOT}/results_chloe/portfolio_tier2off_{name}.csv",
+        w = pd.read_csv(f"{ROOT}/2_optimisation_model/results/portfolio_tier2off_{name}.csv",
                         index_col=0)["weight_%"]
         u[f"weight_{name}_%"] = w.reindex(u.index).fillna(0.0)
     return u.sort_index()
@@ -140,6 +140,19 @@ def main():
         os.makedirs(os.path.dirname(d), exist_ok=True)
         shutil.copyfile(s, d)
         n_copied += 1
+    # whole folders: the scripts write them inside their part; the dashboard keeps a copy
+    TREES = [("scenarios", "3_sensitivity_studies/results/scenario_grid"),
+             ("robustness", "3_sensitivity_studies/results/robustness_windows"),
+             ("walkforward", "4_backtest/results/walkforward")]
+    for dst_dir, src_dir in TREES:
+        sdir = os.path.join(ROOT, src_dir)
+        if not os.path.isdir(sdir):
+            missing.append(src_dir)
+            continue
+        os.makedirs(os.path.join(HERE, dst_dir), exist_ok=True)
+        for fn in sorted(os.listdir(sdir)):
+            shutil.copyfile(os.path.join(sdir, fn), os.path.join(HERE, dst_dir, fn))
+            n_copied += 1
     print(f"copied {n_copied} files")
     if missing:
         print("MISSING sources (regenerate them, then re-run):")
