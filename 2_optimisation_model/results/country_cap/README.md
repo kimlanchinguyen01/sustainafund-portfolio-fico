@@ -4,7 +4,7 @@ Output of `2_optimisation_model/code/24_country_cap_and_mandate.py` and nothing 
 Both additions come from FICO's own
 [python-notebooks/xpress-api/modeling_examples](https://github.com/fico-xpress/python-notebooks/tree/main/xpress-api/modeling_examples).
 
-The model is `2_optimisation_model/code/Model2_ori.py`. `ENABLE_COUNTRY_CAP` ships **OFF**, so nothing
+The model is `2_optimisation_model/code/Main_model.py`. `ENABLE_COUNTRY_CAP` ships **OFF**, so nothing
 here changes the existing results until it is switched on deliberately.
 
 ---

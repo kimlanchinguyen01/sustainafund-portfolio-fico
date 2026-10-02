@@ -67,7 +67,7 @@ PART = os.path.dirname(HERE)                    # <repo>/<part>
 ROOT = os.path.dirname(PART)                    # <repo>
 sys.path.insert(0, os.path.join(ROOT, "2_optimisation_model", "code"))
 
-import Model2_ori as m2
+import Main_model as m2
 
 TD = 252
 WINDOW_Y = 3
@@ -212,7 +212,7 @@ def estimate(rets, sh, sec, t):
 
 def profiles_point_in_time(est, cap):
     """min-var, max-ratio ("neutral") and max-return, from a small frontier.
-    Reuses Model2_ori.solve_model2, so the constraint set cannot drift."""
+    Reuses Main_model.solve_model2, so the constraint set cannot drift."""
     mu, Sigma, reg, esg, sec, ctry, _ = est
     m2.ENABLE_COUNTRY_CAP = cap is not None
     if cap is not None:

@@ -1,7 +1,7 @@
 """
 ESG score exploration — SustainaFund
 ================================================================
-Standalone EDA script, separate from Model2_ori.py. Looks at the
+Standalone EDA script, separate from Main_model.py. Looks at the
 distribution of individual-stock ESG scores to pick a defensible
 ESG_FLOOR value (per-stock minimum) instead of guessing a number.
 

@@ -79,7 +79,7 @@ import os
 import numpy as np
 import pandas as pd
 
-import Model2_ori as m2
+import Main_model as m2
 
 # The workbook is kept in the repo so this does not depend on a WhatsApp temp
 # directory that gets cleared. LSEG_XLSX overrides it.

@@ -46,7 +46,7 @@ FOUR BOOKS PER REBALANCE
 Estimation, eligibility, ESG floor, rebalance dates, buy-and-hold convention
 and cost treatment are all IDENTICAL to script 21. Only the objective differs.
 
-Everything is solved through Model2_ori.solve_model2, so the constraint set
+Everything is solved through Main_model.solve_model2, so the constraint set
 cannot drift from the model. The country cap stays OFF, as in the delivered
 model.
 
@@ -85,7 +85,7 @@ PART = os.path.dirname(HERE)                    # <repo>/<part>
 ROOT = os.path.dirname(PART)                    # <repo>
 sys.path.insert(0, os.path.join(ROOT, "2_optimisation_model", "code"))
 
-import Model2_ori as m2
+import Main_model as m2
 
 TD = 252
 WINDOW_Y = 3              # script 21's window, kept

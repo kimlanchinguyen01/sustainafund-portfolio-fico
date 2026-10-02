@@ -30,7 +30,7 @@ The numbers above come from `2_optimisation_model/results/` (Tier 2 switch off, 
     data/                 raw inputs (course data, ECB rates, case study PDF)
     results/              intermediate and exploratory outputs
 2_optimisation_model/   the MIQP, the profile rule and the frontier
-    code/                 Model2_ori.py, profile_rule.py, analyze_risk.py, 23_, 24_, check_license.py
+    code/                 Main_model.py, profile_rule.py, analyze_risk.py, 23_, 24_, check_license.py
     data/                 the six model inputs (returns, covariance, shares, sectors)
     results/              frontier, three portfolios, scenario matrix, country_cap/
 3_sensitivity_studies/  how much the answer depends on the inputs and the rules
@@ -50,7 +50,7 @@ Each part has a `README.md` with the method, the run time and the caveats.
 
 ## The model
 
-`2_optimisation_model/code/Model2_ori.py` solves, for a grid of target returns β:
+`2_optimisation_model/code/Main_model.py` solves, for a grid of target returns β:
 
 ```
 minimise   wᵀΣw
@@ -74,7 +74,7 @@ the three profiles.
 ```bash
 pip install -r requirements.txt
 export XPAUTH_PATH=/path/to/xpauth.xpr     # Xpress licence, never committed
-python 2_optimisation_model/code/Model2_ori.py     # the frontier, about 15 seconds
+python 2_optimisation_model/code/Main_model.py     # the frontier, about 15 seconds
 python 2_optimisation_model/code/analyze_risk.py   # the three profiles from the saved frontier
 ```
 
@@ -87,7 +87,7 @@ Everything except solving works without the licence.
 |---|---|---|
 | 3.1 Data and preprocessing | `1_data_preparation/code/02a_esg_and_price_eda_cleaning.py`, `20_dividend_adjusted_pipeline.py` | `2_optimisation_model/data/` |
 | 3.2.2 and Table A2: factor count | `3_sensitivity_studies/code/29_factor_count_v4.py` (about 9 min) | `3_sensitivity_studies/results/factor_count/` |
-| 3.3.1 Frontier and three portfolios | `Model2_ori.py`, `analyze_risk.py`, `profile_rule.py` | `2_optimisation_model/results/` |
+| 3.3.1 Frontier and three portfolios | `Main_model.py`, `analyze_risk.py`, `profile_rule.py` | `2_optimisation_model/results/` |
 | 3.3.2 Cost of the constraints | `23_scenario_matrix.py`, `24_country_cap_and_mandate.py` (about 6 min) | `2_optimisation_model/results/scenario_matrix.csv`, `country_cap/` |
 | 3.3.3 Stability across windows | `3_sensitivity_studies/code/32_robustness_windows.py`, `1_data_preparation/code/03e_composition_stability.py`, `06a_bootstrap_robust.py` | `3_sensitivity_studies/results/robustness_windows/` |
 | 3.3.4 Out-of-sample backtest | `4_backtest/code/26_backtest_profiles.py` (about 13 min), `5_benchmark_1n/code/30_benchmark_1n.py`, `4_backtest/code/26c_forecast_vs_realised.py` (no solver) | `4_backtest/results/profiles/`, `5_benchmark_1n/results/` |
@@ -100,7 +100,7 @@ Everything except solving works without the licence.
 | You have | You can run |
 |---|---|
 | nothing extra | the figure scripts, `26c`, `analyze_risk.py`, the cleaning step `02a`, the `dashboard_data` builders; every stored result can be read as is |
-| the Xpress licence | the model (`Model2_ori.py`), `23`, `24`, `31` |
+| the Xpress licence | the model (`Main_model.py`), `23`, `24`, `31` |
 | the licence and the price file | `21`, `25`, `26`, `29`, `30`, `32`, `33` |
 
 The price file is `1_data_preparation/results/prices_div_usd.csv` (about 52 MB), built by

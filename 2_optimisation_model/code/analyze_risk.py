@@ -9,7 +9,7 @@ Case study requirement (Case Study Description 2.pdf, p.2):
    objectives."
 
 This script does NOT call the Xpress solver again. It reads the two
-files already saved by Model2_ori.py's full frontier sweep
+files already saved by Main_model.py's full frontier sweep
 (RUN_FULL_SWEEP = True):
     efficient_frontier_model2.csv
     efficient_frontier_weights.csv
@@ -31,13 +31,13 @@ and extracts 3 named scenario portfolios from the frontier already computed:
                   of the best risk/return trade-off point.
 
 NOTE: still running on the provisional ~997-stock universe (data
-cleaning in progress) -- rerun this script after Model2_ori.py is
+cleaning in progress) -- rerun this script after Main_model.py is
 rerun on the final cleaned data.
 """
 
 import os
 import pandas as pd
-import Model2_ori as m2
+import Main_model as m2
 tag = m2.scenario_tag()
 FRONTIER_CSV = os.path.join(m2.RESULTS_DIR, f"efficient_frontier_model2_{tag}.csv")
 WEIGHTS_CSV = os.path.join(m2.RESULTS_DIR, f"efficient_frontier_weights_{tag}.csv")
@@ -51,7 +51,7 @@ frontier["feasible"] = frontier["feasible"].astype(str).str.strip() == "True"
 
 # IMPORTANT: do NOT reset_index here. The row position in this CSV
 # matches the "beta_<i>" column names in efficient_frontier_weights.csv
-# (both come from the same enumerate() in Model2_ori.py's sweep loop).
+# (both come from the same enumerate() in Main_model.py's sweep loop).
 frontier = frontier[frontier["feasible"]]
 if frontier.empty:
     raise RuntimeError("No feasible point found in efficient_frontier_model2.csv")

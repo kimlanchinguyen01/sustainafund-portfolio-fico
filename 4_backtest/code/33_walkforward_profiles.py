@@ -29,7 +29,7 @@ PROTOCOL - identical to scripts 21 and 26 so the numbers are comparable:
 rolling 3-year estimation window, quarterly rebalance, buy-and-hold in between
 so weights drift, only data strictly before each rebalance used, trailing mean
 log-return and a Ledoit-Wolf shrunk sample covariance, 1/N over the same
-eligible universe as benchmark. Solving goes through Model2_ori.solve_model2 so
+eligible universe as benchmark. Solving goes through Main_model.solve_model2 so
 the constraint set cannot drift, and the country cap stays off.
 
 THE GATE: the Risk Averse leg is minimum variance by definition, so it must
@@ -67,7 +67,7 @@ import numpy as np
 import pandas as pd
 from sklearn.covariance import LedoitWolf
 
-import Model2_ori as m2
+import Main_model as m2
 import profile_rule as pr
 
 TD = 252

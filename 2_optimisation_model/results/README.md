@@ -1,11 +1,11 @@
-# Results — corrected Model2_ori.py
+# Results — corrected Main_model.py
 
-Everything here is the output of running `2_optimisation_model/code/Model2_ori.py` and nothing else.
+Everything here is the output of running `2_optimisation_model/code/Main_model.py` and nothing else.
 Two invocations, differing only in `ENABLE_TIER2_EXCLUSION`.
 
 ## What was corrected in the model first
 
-Defects only; the design and the defaults are unchanged. `git log -p Model2_ori.py`
+Defects only; the design and the defaults are unchanged. `git log -p Main_model.py`
 shows every line.
 
 | # | Defect | Effect before the fix |
@@ -115,9 +115,9 @@ ratio; and the highest-return point that is not a degenerate corner (top-3 weigh
 
 ```bash
 export XPAUTH_PATH=/path/to/xpauth.xpr
-python3 Model2_ori.py                      # -> tier2off
+python3 Main_model.py                      # -> tier2off
 # set ENABLE_TIER2_EXCLUSION = True
-python3 Model2_ori.py                      # -> tier2on, no longer overwrites
+python3 Main_model.py                      # -> tier2on, no longer overwrites
 ```
 
 Needs `covariance_matrix_v4.csv` (23 MB, gitignored). Regenerate with a single

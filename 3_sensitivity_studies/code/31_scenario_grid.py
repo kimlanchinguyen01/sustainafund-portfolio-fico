@@ -65,7 +65,7 @@ import os
 import numpy as np
 import pandas as pd
 
-import Model2_ori as m2
+import Main_model as m2
 
 OUTDIR = os.path.join(PART, "results", "scenario_grid")
 BUDGET = 100_000_000
@@ -78,7 +78,7 @@ from profile_rule import (DEG_TOP3, DEG_FLOOR_N, FLOOR_TOL, PROFILE_RULES,
                           pick_profiles)
 
 # ---------------------------------------------------------------------------
-# The grid. Every entry is (scenario_id, overrides on Model2_ori's constants).
+# The grid. Every entry is (scenario_id, overrides on Main_model's constants).
 # Only combinations we actually solve appear in the catalog.
 # ---------------------------------------------------------------------------
 BASE = dict(ENABLE_SECTOR_CAP=True, SECTOR_CAP=0.30, ESG_MIN=70.0,

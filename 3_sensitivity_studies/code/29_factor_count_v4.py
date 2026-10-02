@@ -44,7 +44,7 @@ If it does not, the sweep is measuring something other than our model and
 nothing below it can be trusted.
 
 Difference from 05d, deliberately: the frontier is solved with the CURRENT model
-(`Model2_ori`, so sector cap 30%, per-stock ESG floor 30, Tier-1 exclusion),
+(`Main_model`, so sector cap 30%, per-stock ESG floor 30, Tier-1 exclusion),
 because the question is which k is right for the model we ship.
 
 Outputs (3_sensitivity_studies/results/factor_count/):
@@ -77,7 +77,7 @@ import sys
 import numpy as np
 import pandas as pd
 
-import Model2_ori as m2
+import Main_model as m2
 
 TD, MIN_OBS = 252, 252
 K_GRID = [1, 2, 5, 10, 20, 30, 50]

@@ -3,7 +3,7 @@ SustainaFund — 24: country cap, and risk profiles stated as mandates
 =====================================================================
 Produces the numbers behind the two additions of 3 Sep 2026. Both come out of
 FICO's own python-notebooks/xpress-api/modeling_examples; the ADDITIONS block
-in Model2_ori.py records which ideas were adopted and which were measured and
+in Main_model.py records which ideas were adopted and which were measured and
 rejected.
 
 Part A — COUNTRY CAP
@@ -34,7 +34,7 @@ import os
 import numpy as np
 import pandas as pd
 
-import Model2_ori as m2
+import Main_model as m2
 
 OUTDIR = os.path.join(m2.RESULTS_DIR, "country_cap")
 CAP_LEVELS = [0.20, 0.25, 0.30, 0.40]

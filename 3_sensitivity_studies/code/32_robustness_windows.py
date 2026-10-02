@@ -62,7 +62,7 @@ import os
 import numpy as np
 import pandas as pd
 
-import Model2_ori as m2
+import Main_model as m2
 
 TD, K, MIN_OBS = 252, 20, 252
 WINDOWS = [10, 5, 3]

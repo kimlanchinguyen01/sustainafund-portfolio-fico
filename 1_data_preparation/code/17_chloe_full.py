@@ -33,7 +33,7 @@ import pandas as pd
 
 os.environ["XPAUTH_PATH"] = os.path.expanduser("~/Documents/FICO-case-study/xpauth.xpr")
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), "2_optimisation_model", "code"))
-import Model2_ori as CM
+import Main_model as CM
 
 T2 = ["LMT.N", "RTX.N", "NOC.N", "GD.N", "LHX.N", "KOG.OL",
       "BAES.L", "TCFP.PA", "LDOF.MI", "SAABb.ST"]

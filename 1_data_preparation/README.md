@@ -1,6 +1,6 @@
 # 1_data_preparation/ — input preparation and the analysis behind it
 
-These scripts build the inputs that `2_optimisation_model/code/Model2_ori.py` consumes, and they are the
+These scripts build the inputs that `2_optimisation_model/code/Main_model.py` consumes, and they are the
 record of how each choice was established. Numbering follows the order findings
 were made, not a required run order.
 
@@ -95,7 +95,7 @@ choosing it would have cost.
 ## Three limitations that belong on the slides
 
 These are properties of the data and the estimator, so they carry over to any
-model built on these inputs, including `Model2_ori.py`.
+model built on these inputs, including `Main_model.py`.
 
 **1. The estimation window is a judgement, and it matters.** Bootstrap
 resampling of a given window converges reliably (top selection frequency 1.00),
@@ -175,7 +175,7 @@ assumed. But only four are live.
 | `07_final_portfolio.py` | first attempt at picking three profiles; belongs to the archived model track |
 | `10_outlier_relative.py` | fixed 50% threshold vs a per-stock 5σ rule |
 | `12_fx_model_free.py` | is the USD conversion necessary at all? (model-free: 8.04% local vs 8.99% USD) |
-| `16_run_chloe_model.py`, `17_chloe_full.py` | Chloe's model on the **older** inputs; superseded by running `2_optimisation_model/code/Model2_ori.py` directly |
+| `16_run_chloe_model.py`, `17_chloe_full.py` | Chloe's model on the **older** inputs; superseded by running `2_optimisation_model/code/Main_model.py` directly |
 
 ### Moved out
 
@@ -197,5 +197,5 @@ in `2_optimisation_model/results/`.
 ---
 
 The country-cap model track these notes were written around is frozen in
-`../archive/our_model_frozen/`. The current model is `2_optimisation_model/code/Model2_ori.py`; its
+`../archive/our_model_frozen/`. The current model is `2_optimisation_model/code/Main_model.py`; its
 results are in `2_optimisation_model/results/`.

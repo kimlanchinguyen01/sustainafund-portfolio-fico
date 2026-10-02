@@ -34,7 +34,7 @@ at return/risk 1.345 against the grid-picked Neutral's 1.346.
 Four books per rebalance: `minvar`, `mandate20`, `mandate10`, `equal_weight`.
 Estimation, eligibility, ESG floor, rebalance dates, buy-and-hold convention and
 cost treatment are identical to script 21. Only the objective differs. All
-solving goes through `Model2_ori.solve_model2`, so the constraint set cannot
+solving goes through `Main_model.solve_model2`, so the constraint set cannot
 drift from the model. Country cap off, as delivered.
 
 ### And B is not just smaller, it is unstable — measured, not asserted

@@ -9,7 +9,7 @@ definitions from analyze_risk.py: minimum risk, maximum return/risk ratio,
 maximum return.
 """
 import os
-import numpy as np, pandas as pd, Model2_ori as m2, profile_rule as pr
+import numpy as np, pandas as pd, Main_model as m2, profile_rule as pr
 
 BASE=dict(ENABLE_ESG_CONSTRAINT=True, ENABLE_ESG_FLOOR=True, ESG_FLOOR=30.0,
           ENABLE_SECTOR_CAP=True, ENABLE_TIER1_EXCLUSION=True, ENABLE_TIER2_EXCLUSION=False)

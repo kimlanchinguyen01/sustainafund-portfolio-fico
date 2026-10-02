@@ -1,7 +1,7 @@
 """
 21 — Walk-forward backtest of Model 2 (option A, tightly scoped)
 
-Constraint set matches Model2_ori.py as of 3 Sep, including the per-stock
+Constraint set matches Main_model.py as of 3 Sep, including the per-stock
 ESG floor of 30 that Chloe added.
 ================================================================
 Protocol
